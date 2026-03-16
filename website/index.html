@@ -69,8 +69,79 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="hero min-h-screen bg-base-100">
-        <div class="hero-content text-center">
+    <div class="hero min-h-screen bg-base-100 relative overflow-hidden">
+
+        <!-- Brand override: constellation SVG background echoing the logo mark -->
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1440 810" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Connection lines — cogniva-mid at low opacity -->
+            <g stroke="#AFA9EC" stroke-width="1" opacity="0.25" fill="none">
+                <line x1="120" y1="180" x2="310" y2="260"/>
+                <line x1="310" y1="260" x2="520" y2="190"/>
+                <line x1="520" y1="190" x2="680" y2="310"/>
+                <line x1="680" y1="310" x2="520" y2="190"/>
+                <line x1="310" y1="260" x2="680" y2="310"/>
+                <line x1="680" y1="310" x2="900" y2="220"/>
+                <line x1="900" y1="220" x2="1080" y2="300"/>
+                <line x1="1080" y1="300" x2="1280" y2="180"/>
+                <line x1="900" y1="220" x2="1280" y2="180"/>
+                <line x1="680" y1="310" x2="580" y2="500"/>
+                <line x1="580" y1="500" x2="310" y2="260"/>
+                <line x1="580" y1="500" x2="760" y2="560"/>
+                <line x1="760" y1="560" x2="680" y2="310"/>
+                <line x1="760" y1="560" x2="1000" y2="480"/>
+                <line x1="1000" y1="480" x2="1080" y2="300"/>
+                <line x1="120" y1="180" x2="60" y2="400"/>
+                <line x1="60" y1="400" x2="200" y2="620"/>
+                <line x1="200" y1="620" x2="580" y2="500"/>
+                <line x1="1280" y1="180" x2="1380" y2="400"/>
+                <line x1="1080" y1="300" x2="1000" y2="480"/>
+            </g>
+            <!-- Amber accent lines — key insight cluster, bottom-right -->
+            <g stroke="#EF9F27" stroke-width="1.5" opacity="0.3" fill="none">
+                <line x1="1000" y1="480" x2="1200" y2="580"/>
+                <line x1="1200" y1="580" x2="1380" y2="400"/>
+                <line x1="1200" y1="580" x2="1100" y2="700"/>
+                <line x1="1100" y1="700" x2="900" y2="680"/>
+                <line x1="900" y1="680" x2="760" y2="560"/>
+            </g>
+
+            <!-- Cogniva-purple nodes (outer ring) -->
+            <g fill="none" stroke="#534AB7" opacity="0.3">
+                <circle cx="120" cy="180" r="10" stroke-width="1.5"/><circle cx="120" cy="180" r="4" fill="#534AB7"/>
+                <circle cx="310" cy="260" r="8"  stroke-width="1.5"/><circle cx="310" cy="260" r="3" fill="#534AB7"/>
+                <circle cx="520" cy="190" r="7"  stroke-width="1.5"/><circle cx="520" cy="190" r="2.5" fill="#534AB7"/>
+                <circle cx="900" cy="220" r="9"  stroke-width="1.5"/><circle cx="900" cy="220" r="3.5" fill="#534AB7"/>
+                <circle cx="1080" cy="300" r="7" stroke-width="1.5"/><circle cx="1080" cy="300" r="2.5" fill="#534AB7"/>
+                <circle cx="1280" cy="180" r="8" stroke-width="1.5"/><circle cx="1280" cy="180" r="3" fill="#534AB7"/>
+                <circle cx="60"   cy="400" r="7" stroke-width="1.5"/><circle cx="60"   cy="400" r="2.5" fill="#534AB7"/>
+                <circle cx="200"  cy="620" r="8" stroke-width="1.5"/><circle cx="200"  cy="620" r="3" fill="#534AB7"/>
+                <circle cx="580"  cy="500" r="9" stroke-width="1.5"/><circle cx="580"  cy="500" r="3.5" fill="#534AB7"/>
+                <circle cx="1380" cy="400" r="7" stroke-width="1.5"/><circle cx="1380" cy="400" r="2.5" fill="#534AB7"/>
+            </g>
+
+            <!-- Central hub — largest node, echoes logo centre circle -->
+            <g fill="none" stroke="#534AB7" opacity="0.35">
+                <circle cx="680" cy="310" r="18" stroke-width="2"/>
+                <circle cx="680" cy="310" r="7"  fill="#534AB7"/>
+            </g>
+
+            <!-- Secondary hub -->
+            <g fill="none" stroke="#534AB7" opacity="0.28">
+                <circle cx="760" cy="560" r="14" stroke-width="1.5"/>
+                <circle cx="760" cy="560" r="5"  fill="#534AB7"/>
+                <circle cx="1000" cy="480" r="12" stroke-width="1.5"/>
+                <circle cx="1000" cy="480" r="4.5" fill="#534AB7"/>
+            </g>
+
+            <!-- Amber insight nodes -->
+            <g fill="none" stroke="#EF9F27" opacity="0.35">
+                <circle cx="1200" cy="580" r="14" stroke-width="2"/><circle cx="1200" cy="580" r="5.5" fill="#EF9F27"/>
+                <circle cx="1100" cy="700" r="10" stroke-width="1.5"/><circle cx="1100" cy="700" r="4"   fill="#EF9F27"/>
+                <circle cx="900"  cy="680" r="9"  stroke-width="1.5"/><circle cx="900"  cy="680" r="3.5" fill="#EF9F27"/>
+            </g>
+        </svg>
+
+        <div class="hero-content text-center relative z-10">
             <div class="max-w-2xl">
                 <!-- Brand override: Space Grotesk hero headline, clamp size -->
                 <h1 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #26215C; font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -1px; line-height: 1.1;">Enhance Your Customer Data with AI</h1>
