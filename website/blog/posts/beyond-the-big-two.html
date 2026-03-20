@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cogstrata">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the Big Two: Why FS Teams Are Moving Away From CACI and Experian - Cogstrata.ai Blog</title>
+    <meta name="description" content="Financial services analytics teams are quietly rebuilding their third-party data stacks. We examine why CACI and Experian no longer meet the demands of modern risk and personalisation — and what's replacing them.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cogstrata.ai/blog/posts/beyond-the-big-two.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cogstrata.ai/blog/posts/beyond-the-big-two.html">
+    <meta property="og:title" content="Beyond the Big Two: Why FS Teams Are Moving Away From CACI and Experian - Cogstrata.ai Blog">
+    <meta property="og:description" content="Financial services analytics teams are quietly rebuilding their third-party data stacks. We examine why CACI and Experian no longer meet the demands of modern risk and personalisation — and what's replacing them.">
+    <meta property="og:image" content="https://cogstrata.ai/assets/og-image.png">
+    <meta property="og:site_name" content="Cogstrata.ai">
+    <meta property="article:author" content="Cogstrata.ai">
+    <meta property="article:published_time" content="2026-02-19T00:00:00+00:00">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cogstrata.ai/blog/posts/beyond-the-big-two.html">
+    <meta name="twitter:title" content="Beyond the Big Two: Why FS Teams Are Moving Away From CACI and Experian - Cogstrata.ai Blog">
+    <meta name="twitter:description" content="Financial services analytics teams are quietly rebuilding their third-party data stacks. We examine why CACI and Experian no longer meet the demands of modern risk and personalisation — and what's replacing them.">
+    <meta name="twitter:image" content="https://cogstrata.ai/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/index.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Beyond the Big Two: Why FS Teams Are Moving Away From CACI and Experian",
+      "description": "Financial services analytics teams are quietly rebuilding their third-party data stacks. We examine why CACI and Experian no longer meet the demands of modern risk and personalisation — and what's replacing them.",
+      "url": "https://cogstrata.ai/blog/posts/beyond-the-big-two.html",
+      "datePublished": "2026-02-19T00:00:00+00:00",
+      "dateModified": "2026-02-19T00:00:00+00:00",
+      "author": {"@type": "Organization", "name": "Cogstrata.ai", "url": "https://cogstrata.ai"},
+      "publisher": {"@type": "Organization", "name": "Cogstrata.ai", "logo": {"@type": "ImageObject", "url": "https://cogstrata.ai/favicon.svg"}},
+      "image": "https://cogstrata.ai/assets/og-image.png",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cogstrata.ai/blog/posts/beyond-the-big-two.html"}
+    }
+    </script>
+</head>
+<body class="bg-base-100 text-base-content">
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#features">Features</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#use-cases">Use Cases</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#pricing">Pricing</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#faq">FAQ</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../index.html">Blog</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost flex items-center gap-2" href="../../index.html">
+                <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8"/>
+                    <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="10" r="1.5" fill="#3e77ff"/>
+                    <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="37" r="1.5" fill="#3e77ff"/>
+                    <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="34" cy="14" r="1.5" fill="#3e77ff"/>
+                    <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2"/>
+                    <circle cx="22" cy="24" r="2.5" fill="#3e77ff"/>
+                    <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8"/>
+                    <circle cx="34" cy="34" r="1.8" fill="#91c1ff"/>
+                    <circle cx="43" cy="27" r="3" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+                    <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
+                </svg>
+                <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: 1.25rem;">cogstrata</span>
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#use-cases">Use Cases</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#pricing">Pricing</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#faq">FAQ</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../index.html">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-primary" href="../../contact.html">Register Interest</a>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-16 max-w-3xl">
+        <div class="mb-4">
+            <span class="badge badge-secondary badge-outline">Thought Leadership</span>
+        </div>
+        <h1 class="text-4xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Beyond the big two: why FS teams are moving away from CACI and Experian</h1>
+        <p class="text-sm mb-10 text-neutral/60">Published 19 February 2026 &nbsp;·&nbsp; 9 min read</p>
+
+        <div class="prose max-w-none text-neutral/80 space-y-6">
+            <p>For the better part of three decades, UK financial services analytics teams operated within an established duopoly when it came to third-party demographic intelligence. CACI's Acorn and Experian's Mosaic were not merely vendor options — they were infrastructure. Embedded in decisioning engines, credit models, marketing platforms, and regulatory reporting frameworks, they became the assumed foundation beneath customer intelligence.</p>
+
+            <p>That assumption is now being challenged from within. Conversations with heads of analytics, chief data officers, and customer intelligence leads at UK retail banks, insurers, and credit providers reveal a consistent and accelerating pattern: quiet but deliberate diversification away from legacy geodemographic products, driven not by dissatisfaction with vendor relationships but by a growing recognition that the underlying data architecture is no longer fit for the precision demands of modern financial services.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">The precision gap</h2>
+
+            <p>The core issue is temporal precision. Financial services operate in an environment where the economic conditions affecting a customer's financial resilience, borrowing behaviour, and switching propensity can shift materially within a quarter. Mortgage rate changes, energy price movements, regional employment shocks — these are not slow-moving forces. They restructure household financial behaviour rapidly and unevenly across geographic and demographic segments.</p>
+
+            <p>Both CACI and Experian have built capable products for a world where third-party demographic data was updated annually at best. But that world is increasingly at odds with the analytical demands being placed on it. A retail bank's credit risk model may incorporate Mosaic types as proxy variables for financial resilience — but if those types reflect a population profile from two or three years ago, the model is introducing systematic lag into a decisioning process that needs to respond to current conditions.</p>
+
+            <p>The consequences are not always visible in aggregate model performance metrics, because the lag affects all customers equally and the model continues to rank them in roughly the right order relative to each other. The problem emerges at the margins: the segment that was historically stable and low-risk but has experienced disproportionate financial stress since the data was compiled; the postcode cluster that was flagged as high-value for cross-sell but has seen significant household composition change; the Mosaic type that correlated with low churn before interest rates rose but whose loyalty assumptions no longer hold.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">The regulatory context</h2>
+
+            <p>The FCA's Consumer Duty regulations, which came into full force in 2023 and 2024, have sharpened focus on whether financial services firms can demonstrate that their understanding of customer vulnerability is current and proportionate. A firm that relies on demographic classifications built before the cost-of-living crisis to assess financial vulnerability in 2026 faces a growing tension between its regulatory obligations and the data it is actually using to meet them.</p>
+
+            <p>This is not a hypothetical risk. Supervision teams are increasingly asking firms to evidence how their customer intelligence frameworks account for the economic changes of the past three years. A response that points to a Mosaic or Acorn classification as the primary source of vulnerability insight — without being able to demonstrate that those classifications reflect current household financial stress levels — is unlikely to satisfy a determination focused on outcomes rather than inputs.</p>
+
+            <p>This regulatory pressure is one of the drivers behind the growing appetite among FS analytics teams for data sources that can demonstrate continuous refresh. The ability to show that your customer vulnerability model is informed by current insolvency filing rates, current claimant data, and current mortgage pressure signals — rather than a pre-crisis demographic snapshot — is becoming a meaningful differentiator in regulatory dialogue.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">What the alternative looks like in practice</h2>
+
+            <p>The firms making the most progress in this space are not, in the main, replacing CACI or Experian wholesale. They are building a layered architecture in which legacy geodemographic classifications continue to provide historical continuity and broad segmentation, while continuously refreshed attributes handle the tasks that require current precision: vulnerability assessment, churn risk scoring, cross-sell timing, and marketing suppression.</p>
+
+            <p>Cogstrata's model fits this architecture directly. Our 500+ postcode-level attributes — derived from continuous processing of Land Registry data, EPC records, insolvency filings, claimant data, macroeconomic indicators, and retail environment signals — are designed to augment an existing data stack rather than replace it. A retail bank can retain its Mosaic-derived segmentation for historical analysis and broad campaign targeting while using Cogstrata's Mortgage Pressure Delta, Cost-of-Living Stress score, and Discretionary Spend Estimate for the decisioning layers that require current insight.</p>
+
+            <p>The integration path is straightforward. Cogstrata appends attributes to a client's existing customer base at the postcode level — no individual PII is required or processed — and the enriched data can be consumed via API, batch export, or direct integration into cloud data platforms including AWS, Snowflake, and BigQuery. For most teams, the first analytical output is available within 24 to 48 hours of initiating a data sample run.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">The market is moving</h2>
+
+            <p>The shift away from exclusive dependence on the big two is not yet universal, but it is no longer exceptional. The firms that are furthest along this journey are not necessarily the largest — some of the most progressive data stacks we have seen are at mid-market lenders and specialist insurers where the analytics team has sufficient autonomy to experiment with new data sources without the institutional inertia that slows change at larger organisations.</p>
+
+            <p>What is clear is that the combination of regulatory pressure, economic volatility, and the genuine commercial cost of demographic data lag has created conditions where the status quo is harder to defend than it used to be. CACI and Experian built durable businesses on the foundation that periodic demographic classification was the best available option. That foundation is now contestable in a way it has not been before. The question for analytics leaders is not whether to evolve their data architecture, but how quickly.</p>
+        </div>
+
+        <div class="mt-12 p-6 bg-base-200 rounded-xl border border-base-300">
+            <p class="font-semibold text-neutral mb-2">Ready to see what continuous refresh looks like on your data?</p>
+            <p class="text-neutral/70 text-sm mb-4">Cogstrata can enrich your existing customer postcodes with 500+ continuously-refreshed attributes. Free sample, results in 24 hours, no contract required.</p>
+            <a class="btn btn-primary" href="../../contact.html">Request a Free Sample</a>
+        </div>
+
+        <div class="mt-8">
+            <a class="btn btn-outline btn-primary" href="../index.html">Back to Blog</a>
+        </div>
+    </div>
+
+    <footer class="footer footer-center p-10 bg-neutral text-neutral-content rounded">
+        <div class="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8"/>
+                <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="1.5" fill="#3e77ff"/>
+                <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="10" cy="37" r="1.5" fill="#3e77ff"/>
+                <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="34" cy="14" r="1.5" fill="#3e77ff"/>
+                <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2"/>
+                <circle cx="22" cy="24" r="2.5" fill="#3e77ff"/>
+                <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8"/>
+                <circle cx="34" cy="34" r="1.8" fill="#91c1ff"/>
+                <circle cx="43" cy="27" r="3" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+                <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
+            </svg>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
+        </div>
+        <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Demographic intelligence</p>
+        <nav class="grid grid-flow-col gap-4">
+            <a class="link link-hover" href="../../index.html#features">Features</a>
+            <a class="link link-hover" href="../../index.html#use-cases">Use Cases</a>
+            <a class="link link-hover" href="../../index.html#pricing">Pricing</a>
+            <a class="link link-hover" href="../../index.html#faq">FAQ</a>
+            <a class="link link-hover" href="../index.html">Blog</a>
+            <a class="link link-hover" href="../../contact.html">Contact</a>
+        </nav>
+        <aside>
+            <p>Copyright © 2026 - All right reserved by Cogstrata.ai</p>
+        </aside>
+    </footer>
+</body>
+</html>

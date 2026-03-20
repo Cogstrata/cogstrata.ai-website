@@ -3086,7 +3086,7 @@ details.collapse summary::-webkit-details-marker {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-/* Brand override: Cogniva typography */
+/* Brand override: Cogstrata typography */
 
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;

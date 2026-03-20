@@ -5,7 +5,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        cogniva: {
+        cogstrata: {
           "primary":           "#3e77ff",
           "primary-content":   "#fefffe",
           "secondary":         "#91c1ff",

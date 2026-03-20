@@ -1,7 +1,7 @@
 {
-  "name": "cogniva-ai-website",
+  "name": "cogstrata-ai-website",
   "version": "1.0.0",
-  "description": "GitHub Pages website for Cogniva.ai data product",
+  "description": "GitHub Pages website for Cogstrata.ai data product",
   "main": "index.js",
   "scripts": {
     "build-css": "tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",

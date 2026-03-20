@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cogstrata">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CACI Acorn Problem: Why Geodemographic Classifications Are Stuck in 2011 - Cogstrata.ai Blog</title>
+    <meta name="description" content="CACI's Acorn classification is still anchored to 2011 census data. We examine what that lag costs businesses — and why AI-continuous data has changed what's possible.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cogstrata.ai/blog/posts/caci-acorn-problem.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cogstrata.ai/blog/posts/caci-acorn-problem.html">
+    <meta property="og:title" content="The CACI Acorn Problem: Why Geodemographic Classifications Are Stuck in 2011 - Cogstrata.ai Blog">
+    <meta property="og:description" content="CACI's Acorn classification is still anchored to 2011 census data. We examine what that lag costs businesses — and why AI-continuous data has changed what's possible.">
+    <meta property="og:image" content="https://cogstrata.ai/assets/og-image.png">
+    <meta property="og:site_name" content="Cogstrata.ai">
+    <meta property="article:author" content="Cogstrata.ai">
+    <meta property="article:published_time" content="2026-02-05T00:00:00+00:00">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cogstrata.ai/blog/posts/caci-acorn-problem.html">
+    <meta name="twitter:title" content="The CACI Acorn Problem: Why Geodemographic Classifications Are Stuck in 2011 - Cogstrata.ai Blog">
+    <meta name="twitter:description" content="CACI's Acorn classification is still anchored to 2011 census data. We examine what that lag costs businesses — and why AI-continuous data has changed what's possible.">
+    <meta name="twitter:image" content="https://cogstrata.ai/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/index.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The CACI Acorn Problem: Why Geodemographic Classifications Are Stuck in 2011",
+      "description": "CACI's Acorn classification is still anchored to 2011 census data. We examine what that lag costs businesses — and why AI-continuous data has changed what's possible.",
+      "url": "https://cogstrata.ai/blog/posts/caci-acorn-problem.html",
+      "datePublished": "2026-02-05T00:00:00+00:00",
+      "dateModified": "2026-02-05T00:00:00+00:00",
+      "author": {"@type": "Organization", "name": "Cogstrata.ai", "url": "https://cogstrata.ai"},
+      "publisher": {"@type": "Organization", "name": "Cogstrata.ai", "logo": {"@type": "ImageObject", "url": "https://cogstrata.ai/favicon.svg"}},
+      "image": "https://cogstrata.ai/assets/og-image.png",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cogstrata.ai/blog/posts/caci-acorn-problem.html"}
+    }
+    </script>
+</head>
+<body class="bg-base-100 text-base-content">
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#features">Features</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#use-cases">Use Cases</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#pricing">Pricing</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#faq">FAQ</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../index.html">Blog</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost flex items-center gap-2" href="../../index.html">
+                <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8"/>
+                    <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="10" r="1.5" fill="#3e77ff"/>
+                    <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="37" r="1.5" fill="#3e77ff"/>
+                    <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="34" cy="14" r="1.5" fill="#3e77ff"/>
+                    <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2"/>
+                    <circle cx="22" cy="24" r="2.5" fill="#3e77ff"/>
+                    <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8"/>
+                    <circle cx="34" cy="34" r="1.8" fill="#91c1ff"/>
+                    <circle cx="43" cy="27" r="3" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+                    <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
+                </svg>
+                <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: 1.25rem;">cogstrata</span>
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#use-cases">Use Cases</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#pricing">Pricing</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#faq">FAQ</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../index.html">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-primary" href="../../contact.html">Register Interest</a>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-16 max-w-3xl">
+        <div class="mb-4">
+            <span class="badge badge-primary badge-outline">Market Analysis</span>
+        </div>
+        <h1 class="text-4xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">The CACI Acorn problem: why geodemographic classifications are stuck in 2011</h1>
+        <p class="text-sm mb-10 text-neutral/60">Published 5 February 2026 &nbsp;·&nbsp; 7 min read</p>
+
+        <div class="prose max-w-none text-neutral/80 space-y-6">
+            <p>CACI's Acorn classification has been a fixture of UK marketing for decades. Walk into any CRM team, any direct mail house, or any financial services analytics function and you will find Acorn codes embedded in their customer data. It is the lingua franca of geodemographic targeting — and that familiarity has become one of the UK data industry's most expensive blind spots.</p>
+
+            <p>The problem is structural. Acorn, like all geodemographic classifications derived from the decennial census, is anchored to a point-in-time snapshot of population characteristics. The most recent major rebuild was anchored to the 2011 census. Even with supplemental commercial data layered on top, the foundational classification schema — the one that determines which "type" of consumer lives in a given postcode — reflects a Britain that is now fifteen years in the past.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">What 2011 Britain looked like</h2>
+
+            <p>In 2011, interest rates were at a historic low following the financial crisis but had not yet been tested by sustained inflationary pressure. The cost-of-living crisis that would reshape household finances across the income spectrum was a decade away. Gig economy employment was a curiosity rather than a defining feature of working-age demographics. EPC ratings were not a mainstream consideration for property value. The phrase "banking desert" was not in common usage.</p>
+
+            <p>None of that context appears in an Acorn classification. A postcode classified as "Affluent Achievers" in the Acorn schema reflects the characteristics of households that lived there in 2011 — not the households that live there today, under materially different economic conditions. The postcode may have experienced significant property turnover, demographic change, or financial stress since the classification was assigned.</p>
+
+            <p>For a retailer making promotional targeting decisions, the difference may be marginal. But for a financial services firm assessing mortgage risk, an insurer pricing home cover, or a telecoms company modelling churn propensity, operating from a fifteen-year-old picture of socioeconomic reality is a genuine business risk — one that is rarely named as such, because it is so deeply embedded in standard practice.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">The 2021 census and why it doesn't solve the problem</h2>
+
+            <p>The 2021 census has now been published, and CACI and other geodemographic providers are in the process of incorporating that data. This is a genuine improvement, and it will produce more accurate classifications than what existed before. But it does not fundamentally change the model. By the time the 2021 data has been processed, validated, licensed, and integrated into commercial products, the market will be operating from data that reflects a population snapshot taken four or five years ago.</p>
+
+            <p>More importantly, the 2021 census was conducted during an unusual moment — during the tail end of a pandemic that temporarily suppressed mobility, altered household composition patterns, and shifted employment in ways that were partially but not wholly reversed in the following years. Any classification built on that snapshot carries noise from a period of extreme structural disruption.</p>
+
+            <p>The deeper issue is that census-anchored classification is inherently retrospective. It can never tell you what is happening now, because census data collection and processing lag the present by years. The question is not whether CACI's next Acorn release will be better than the last — it will be. The question is whether "better than before" is good enough when the alternative is continuous AI refresh.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">What continuous refresh actually changes</h2>
+
+            <p>Cogstrata does not build classifications on census snapshots. Instead, our models continuously ingest and process real-world event streams: Land Registry transaction data, EPC certificate issuance, insolvency filing rates, claimant count data from HMRC, retail opening and closure patterns, fuel and energy price movements, regional CPI variance, and local news sentiment signals.</p>
+
+            <p>These are not supplementary data sources layered on top of a census backbone. They are the primary inputs to our postcode-level models, processed and updated on a continuous cycle. When a wave of mortgage stress begins to affect a particular postcode cluster, Cogstrata's models detect the signal — in shifts in insolvency filing rates, claimant counts, and transaction volumes — and update the relevant attributes before that stress has manifested as the kind of observable behaviour that census-derived models would eventually pick up.</p>
+
+            <p>For a financial services team, this means their customer intelligence reflects current financial vulnerability, not a profile of what their customers looked like before the cost-of-living crisis. For a retail team, it means campaign targeting reflects current discretionary spend capacity rather than income bands estimated from a pre-pandemic employment landscape.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">The migration question</h2>
+
+            <p>We are sometimes asked whether switching from Acorn to a continuously-refreshed data stack requires ripping out existing infrastructure. It does not. Cogstrata is designed to augment existing customer data rather than replace the classification layer wholesale. Teams that have Acorn codes embedded in their CRM can layer Cogstrata's real-time attributes alongside their existing segmentation, using the enriched attributes for campaign decisioning, risk modelling, and churn prediction without requiring a full classification rebuild.</p>
+
+            <p>The practical starting point for most teams is a data sample run — taking a subset of their existing customer postcodes and running them through Cogstrata's attribute set to compare the current picture against the Acorn-derived view. In most cases, the divergence is significant enough to make the business case for continuous refresh on its own terms.</p>
+
+            <p>CACI built something genuinely useful in Acorn, and it served the UK market well for a long time. But geodemographic classification built on decennial census data is a product of its era — an era when continuous real-world data processing was not technically or commercially feasible. That constraint no longer exists. The question now is not whether continuous refresh is better than a census snapshot. It is whether your organisation is still paying for a product designed around the limitations of 2011.</p>
+        </div>
+
+        <div class="mt-12 p-6 bg-base-200 rounded-xl border border-base-300">
+            <p class="font-semibold text-neutral mb-2">See the difference for yourself</p>
+            <p class="text-neutral/70 text-sm mb-4">Run a free Cogstrata sample against your existing customer postcodes and compare the current picture against your Acorn-derived view. Results in 24 hours, no contract required.</p>
+            <a class="btn btn-primary" href="../../contact.html">Request a Free Sample</a>
+        </div>
+
+        <div class="mt-8">
+            <a class="btn btn-outline btn-primary" href="../index.html">Back to Blog</a>
+        </div>
+    </div>
+
+    <footer class="footer footer-center p-10 bg-neutral text-neutral-content rounded">
+        <div class="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8"/>
+                <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="1.5" fill="#3e77ff"/>
+                <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="10" cy="37" r="1.5" fill="#3e77ff"/>
+                <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="34" cy="14" r="1.5" fill="#3e77ff"/>
+                <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2"/>
+                <circle cx="22" cy="24" r="2.5" fill="#3e77ff"/>
+                <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8"/>
+                <circle cx="34" cy="34" r="1.8" fill="#91c1ff"/>
+                <circle cx="43" cy="27" r="3" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+                <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
+            </svg>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
+        </div>
+        <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Demographic intelligence</p>
+        <nav class="grid grid-flow-col gap-4">
+            <a class="link link-hover" href="../../index.html#features">Features</a>
+            <a class="link link-hover" href="../../index.html#use-cases">Use Cases</a>
+            <a class="link link-hover" href="../../index.html#pricing">Pricing</a>
+            <a class="link link-hover" href="../../index.html#faq">FAQ</a>
+            <a class="link link-hover" href="../index.html">Blog</a>
+            <a class="link link-hover" href="../../contact.html">Contact</a>
+        </nav>
+        <aside>
+            <p>Copyright © 2026 - All right reserved by Cogstrata.ai</p>
+        </aside>
+    </footer>
+</body>
+</html>
