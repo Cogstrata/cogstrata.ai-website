@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="cogniva">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +8,68 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Heroicons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/index.min.css">
 </head>
+
 <body class="bg-base-100 text-base-content">
     <!-- Navbar -->
     <div class="navbar bg-base-100 shadow-sm">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
                     </svg>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a class="text-primary hover:text-secondary" href="index.html">Home</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="marketplace.html">Marketplace</a></li>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="text-primary hover:text-secondary" href="#features">Features</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="#use-cases">Use Cases</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="#pricing">Pricing</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="#faq">FAQ</a></li>
                     <li><a class="text-primary hover:text-secondary" href="blog/index.html">Blog</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="industry.html">Industry</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="faq.html">FAQ</a></li>
                     <li><a class="text-primary hover:text-secondary" href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <a class="btn btn-ghost flex items-center gap-2" href="index.html">
                 <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                    <line x1="10" y1="10" x2="22" y2="24" stroke="#AFA9EC" stroke-width="1.2"/>
-                    <line x1="22" y1="24" x2="10" y2="37" stroke="#AFA9EC" stroke-width="1.2"/>
-                    <line x1="22" y1="24" x2="34" y2="14" stroke="#AFA9EC" stroke-width="1.2"/>
-                    <line x1="22" y1="24" x2="34" y2="34" stroke="#EF9F27" stroke-width="1.8"/>
-                    <line x1="34" y1="34" x2="43" y2="27" stroke="#EF9F27" stroke-width="1.5"/>
-                    <circle cx="10" cy="10" r="3.5" fill="none" stroke="#534AB7" stroke-width="1.5"/>
-                    <circle cx="10" cy="10" r="1.5" fill="#534AB7"/>
-                    <circle cx="10" cy="37" r="3.5" fill="none" stroke="#534AB7" stroke-width="1.5"/>
-                    <circle cx="10" cy="37" r="1.5" fill="#534AB7"/>
-                    <circle cx="34" cy="14" r="3.5" fill="none" stroke="#534AB7" stroke-width="1.5"/>
-                    <circle cx="34" cy="14" r="1.5" fill="#534AB7"/>
-                    <circle cx="22" cy="24" r="6" fill="none" stroke="#534AB7" stroke-width="2"/>
-                    <circle cx="22" cy="24" r="2.5" fill="#534AB7"/>
-                    <circle cx="34" cy="34" r="4.5" fill="none" stroke="#EF9F27" stroke-width="1.8"/>
-                    <circle cx="34" cy="34" r="1.8" fill="#EF9F27"/>
-                    <circle cx="43" cy="27" r="3" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
-                    <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
+                    <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2" />
+                    <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2" />
+                    <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2" />
+                    <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8" />
+                    <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="1.5" fill="#3e77ff" />
+                    <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                    <circle cx="10" cy="37" r="1.5" fill="#3e77ff" />
+                    <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                    <circle cx="34" cy="14" r="1.5" fill="#3e77ff" />
+                    <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2" />
+                    <circle cx="22" cy="24" r="2.5" fill="#3e77ff" />
+                    <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8" />
+                    <circle cx="34" cy="34" r="1.8" fill="#91c1ff" />
+                    <circle cx="43" cy="27" r="3" fill="none" stroke="#91c1ff" stroke-width="1.5" />
+                    <circle cx="43" cy="27" r="1.2" fill="#91c1ff" />
                 </svg>
                 <!-- Brand override: Space Grotesk 700 wordmark -->
-                <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #26215C; font-size: 1.25rem;">cogniva</span>
+                <span
+                    style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: 1.25rem;">cogniva</span>
             </a>
         </div>
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-                <li><a class="text-primary hover:text-secondary" href="index.html">Home</a></li>
-                <li><a class="text-primary hover:text-secondary" href="marketplace.html">Marketplace</a></li>
+                <li><a class="text-primary hover:text-secondary" href="#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="#use-cases">Use Cases</a></li>
+                <li><a class="text-primary hover:text-secondary" href="#pricing">Pricing</a></li>
+                <li><a class="text-primary hover:text-secondary" href="#faq">FAQ</a></li>
                 <li><a class="text-primary hover:text-secondary" href="blog/index.html">Blog</a></li>
-                <li><a class="text-primary hover:text-secondary" href="industry.html">Industry</a></li>
-                <li><a class="text-primary hover:text-secondary" href="faq.html">FAQ</a></li>
                 <li><a class="text-primary hover:text-secondary" href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -72,203 +82,824 @@
     <div class="hero min-h-screen bg-base-100 relative overflow-hidden">
 
         <!-- Brand override: constellation SVG background echoing the logo mark -->
-        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1440 810" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1440 810" preserveAspectRatio="xMidYMid slice"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <!-- Connection lines — cogniva-mid at low opacity -->
-            <g stroke="#AFA9EC" stroke-width="1" opacity="0.25" fill="none">
-                <line x1="120" y1="180" x2="310" y2="260"/>
-                <line x1="310" y1="260" x2="520" y2="190"/>
-                <line x1="520" y1="190" x2="680" y2="310"/>
-                <line x1="680" y1="310" x2="520" y2="190"/>
-                <line x1="310" y1="260" x2="680" y2="310"/>
-                <line x1="680" y1="310" x2="900" y2="220"/>
-                <line x1="900" y1="220" x2="1080" y2="300"/>
-                <line x1="1080" y1="300" x2="1280" y2="180"/>
-                <line x1="900" y1="220" x2="1280" y2="180"/>
-                <line x1="680" y1="310" x2="580" y2="500"/>
-                <line x1="580" y1="500" x2="310" y2="260"/>
-                <line x1="580" y1="500" x2="760" y2="560"/>
-                <line x1="760" y1="560" x2="680" y2="310"/>
-                <line x1="760" y1="560" x2="1000" y2="480"/>
-                <line x1="1000" y1="480" x2="1080" y2="300"/>
-                <line x1="120" y1="180" x2="60" y2="400"/>
-                <line x1="60" y1="400" x2="200" y2="620"/>
-                <line x1="200" y1="620" x2="580" y2="500"/>
-                <line x1="1280" y1="180" x2="1380" y2="400"/>
-                <line x1="1080" y1="300" x2="1000" y2="480"/>
+            <g stroke="#91c1ff" stroke-width="1" opacity="0.25" fill="none">
+                <line x1="120" y1="180" x2="310" y2="260" />
+                <line x1="310" y1="260" x2="520" y2="190" />
+                <line x1="520" y1="190" x2="680" y2="310" />
+                <line x1="680" y1="310" x2="520" y2="190" />
+                <line x1="310" y1="260" x2="680" y2="310" />
+                <line x1="680" y1="310" x2="900" y2="220" />
+                <line x1="900" y1="220" x2="1080" y2="300" />
+                <line x1="1080" y1="300" x2="1280" y2="180" />
+                <line x1="900" y1="220" x2="1280" y2="180" />
+                <line x1="680" y1="310" x2="580" y2="500" />
+                <line x1="580" y1="500" x2="310" y2="260" />
+                <line x1="580" y1="500" x2="760" y2="560" />
+                <line x1="760" y1="560" x2="680" y2="310" />
+                <line x1="760" y1="560" x2="1000" y2="480" />
+                <line x1="1000" y1="480" x2="1080" y2="300" />
+                <line x1="120" y1="180" x2="60" y2="400" />
+                <line x1="60" y1="400" x2="200" y2="620" />
+                <line x1="200" y1="620" x2="580" y2="500" />
+                <line x1="1280" y1="180" x2="1380" y2="400" />
+                <line x1="1080" y1="300" x2="1000" y2="480" />
             </g>
             <!-- Amber accent lines — key insight cluster, bottom-right -->
-            <g stroke="#EF9F27" stroke-width="1.5" opacity="0.3" fill="none">
-                <line x1="1000" y1="480" x2="1200" y2="580"/>
-                <line x1="1200" y1="580" x2="1380" y2="400"/>
-                <line x1="1200" y1="580" x2="1100" y2="700"/>
-                <line x1="1100" y1="700" x2="900" y2="680"/>
-                <line x1="900" y1="680" x2="760" y2="560"/>
+            <g stroke="#91c1ff" stroke-width="1.5" opacity="0.3" fill="none">
+                <line x1="1000" y1="480" x2="1200" y2="580" />
+                <line x1="1200" y1="580" x2="1380" y2="400" />
+                <line x1="1200" y1="580" x2="1100" y2="700" />
+                <line x1="1100" y1="700" x2="900" y2="680" />
+                <line x1="900" y1="680" x2="760" y2="560" />
             </g>
 
             <!-- Cogniva-purple nodes (outer ring) -->
             <g fill="none" stroke="#534AB7" opacity="0.3">
-                <circle cx="120" cy="180" r="10" stroke-width="1.5"/><circle cx="120" cy="180" r="4" fill="#534AB7"/>
-                <circle cx="310" cy="260" r="8"  stroke-width="1.5"/><circle cx="310" cy="260" r="3" fill="#534AB7"/>
-                <circle cx="520" cy="190" r="7"  stroke-width="1.5"/><circle cx="520" cy="190" r="2.5" fill="#534AB7"/>
-                <circle cx="900" cy="220" r="9"  stroke-width="1.5"/><circle cx="900" cy="220" r="3.5" fill="#534AB7"/>
-                <circle cx="1080" cy="300" r="7" stroke-width="1.5"/><circle cx="1080" cy="300" r="2.5" fill="#534AB7"/>
-                <circle cx="1280" cy="180" r="8" stroke-width="1.5"/><circle cx="1280" cy="180" r="3" fill="#534AB7"/>
-                <circle cx="60"   cy="400" r="7" stroke-width="1.5"/><circle cx="60"   cy="400" r="2.5" fill="#534AB7"/>
-                <circle cx="200"  cy="620" r="8" stroke-width="1.5"/><circle cx="200"  cy="620" r="3" fill="#534AB7"/>
-                <circle cx="580"  cy="500" r="9" stroke-width="1.5"/><circle cx="580"  cy="500" r="3.5" fill="#534AB7"/>
-                <circle cx="1380" cy="400" r="7" stroke-width="1.5"/><circle cx="1380" cy="400" r="2.5" fill="#534AB7"/>
+                <circle cx="120" cy="180" r="10" stroke-width="1.5" />
+                <circle cx="120" cy="180" r="4" fill="#534AB7" />
+                <circle cx="310" cy="260" r="8" stroke-width="1.5" />
+                <circle cx="310" cy="260" r="3" fill="#534AB7" />
+                <circle cx="520" cy="190" r="7" stroke-width="1.5" />
+                <circle cx="520" cy="190" r="2.5" fill="#534AB7" />
+                <circle cx="900" cy="220" r="9" stroke-width="1.5" />
+                <circle cx="900" cy="220" r="3.5" fill="#534AB7" />
+                <circle cx="1080" cy="300" r="7" stroke-width="1.5" />
+                <circle cx="1080" cy="300" r="2.5" fill="#534AB7" />
+                <circle cx="1280" cy="180" r="8" stroke-width="1.5" />
+                <circle cx="1280" cy="180" r="3" fill="#534AB7" />
+                <circle cx="60" cy="400" r="7" stroke-width="1.5" />
+                <circle cx="60" cy="400" r="2.5" fill="#534AB7" />
+                <circle cx="200" cy="620" r="8" stroke-width="1.5" />
+                <circle cx="200" cy="620" r="3" fill="#534AB7" />
+                <circle cx="580" cy="500" r="9" stroke-width="1.5" />
+                <circle cx="580" cy="500" r="3.5" fill="#534AB7" />
+                <circle cx="1380" cy="400" r="7" stroke-width="1.5" />
+                <circle cx="1380" cy="400" r="2.5" fill="#534AB7" />
             </g>
 
             <!-- Central hub — largest node, echoes logo centre circle -->
             <g fill="none" stroke="#534AB7" opacity="0.35">
-                <circle cx="680" cy="310" r="18" stroke-width="2"/>
-                <circle cx="680" cy="310" r="7"  fill="#534AB7"/>
+                <circle cx="680" cy="310" r="18" stroke-width="2" />
+                <circle cx="680" cy="310" r="7" fill="#534AB7" />
             </g>
 
             <!-- Secondary hub -->
             <g fill="none" stroke="#534AB7" opacity="0.28">
-                <circle cx="760" cy="560" r="14" stroke-width="1.5"/>
-                <circle cx="760" cy="560" r="5"  fill="#534AB7"/>
-                <circle cx="1000" cy="480" r="12" stroke-width="1.5"/>
-                <circle cx="1000" cy="480" r="4.5" fill="#534AB7"/>
+                <circle cx="760" cy="560" r="14" stroke-width="1.5" />
+                <circle cx="760" cy="560" r="5" fill="#534AB7" />
+                <circle cx="1000" cy="480" r="12" stroke-width="1.5" />
+                <circle cx="1000" cy="480" r="4.5" fill="#534AB7" />
             </g>
 
             <!-- Amber insight nodes -->
             <g fill="none" stroke="#EF9F27" opacity="0.35">
-                <circle cx="1200" cy="580" r="14" stroke-width="2"/><circle cx="1200" cy="580" r="5.5" fill="#EF9F27"/>
-                <circle cx="1100" cy="700" r="10" stroke-width="1.5"/><circle cx="1100" cy="700" r="4"   fill="#EF9F27"/>
-                <circle cx="900"  cy="680" r="9"  stroke-width="1.5"/><circle cx="900"  cy="680" r="3.5" fill="#EF9F27"/>
+                <circle cx="1200" cy="580" r="14" stroke-width="2" />
+                <circle cx="1200" cy="580" r="5.5" fill="#EF9F27" />
+                <circle cx="1100" cy="700" r="10" stroke-width="1.5" />
+                <circle cx="1100" cy="700" r="4" fill="#EF9F27" />
+                <circle cx="900" cy="680" r="9" stroke-width="1.5" />
+                <circle cx="900" cy="680" r="3.5" fill="#EF9F27" />
             </g>
         </svg>
 
         <div class="hero-content text-center relative z-10">
-            <div class="max-w-2xl">
-                <!-- Brand override: Space Grotesk hero headline, clamp size -->
-                <h1 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #26215C; font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -1px; line-height: 1.1;">Enhance Your Customer Data with AI</h1>
-                <p class="py-6 text-neutral/70">Cogniva.ai augments customer and contact data with demographic and AI-powered segmentation attributes for highly personalized experiences.</p>
-                <div class="flex flex-wrap gap-4 justify-center">
-                    <a class="btn btn-secondary" href="contact.html">Get Started</a>
-                    <a class="btn btn-outline btn-primary" href="marketplace.html">Explore Marketplaces</a>
+            <div class="max-w-3xl">
+                <h1
+                    style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: clamp(2.5rem, 6vw, 4rem); letter-spacing: -1px; line-height: 1.1;">
+                    The next generation of AI-powered data personlisation
+                </h1>
+                <p class="py-6 text-lg text-neutral/70 max-w-2xl mx-auto">The most accurate customer personalisation
+                    solution on the market. Providing Enterprise-grade intelligence, built by AI and accessibel to every
+                    team.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <a class="btn btn-primary btn-lg" href="contact.html">Book a Demo</a>
+                    <a class="btn btn-outline btn-primary btn-lg" href="#marketplace">Explore the Data</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Features Section -->
-    <div class="bg-base-200 py-16">
+    <!-- Trusted By Section -->
+    <div class="border-t border-b border-base-300 py-8 bg-base-100/50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8 text-neutral">Key Features</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card bg-base-100 shadow-sm border border-base-300">
-                    <div class="card-body">
-                        <!-- Brand override: Space Grotesk 700 card titles -->
-                        <h3 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Demographic Enrichment</h3>
-                        <p class="text-neutral/70">Add detailed demographic data to your customer profiles for better targeting.</p>
-                    </div>
+            <div class="flex flex-wrap justify-center items-center gap-12">
+                <div class="text-center">
+                    <p class="font-bold text-2xl text-primary">5000+</p>
+                    <p class="text-xs text-neutral/70">Datapoints</p>
                 </div>
-                <div class="card bg-base-100 shadow-sm border border-base-300">
-                    <div class="card-body">
-                        <h3 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">AI Segmentation</h3>
-                        <p class="text-neutral/70">Leverage AI to create precise customer segments based on behavior and preferences.</p>
-                    </div>
+                <div class="text-center">
+                    <p class="font-bold text-2xl text-primary">99.9%</p>
+                    <p class="text-xs text-neutral/70">Data Accuracy</p>
                 </div>
-                <div class="card bg-base-100 shadow-sm border border-base-300">
-                    <div class="card-body">
-                        <h3 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Personalization Engine</h3>
-                        <p class="text-neutral/70">Use enhanced data to deliver highly personalized customer experiences.</p>
+                <div class="text-center">
+                    <p class="font-bold text-2xl text-primary">Real time</p>
+                    <p class="text-xs text-neutral/70">Macro-economic signals</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-bold text-2xl text-primary">8</p>
+                    <p class="text-xs text-neutral/70">AI inference models</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core Features Section -->
+        <div id="features" class="bg-base-100 py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-neutral mb-4">Everything you need to know your
+                        customers better than they know themselves
+                    </h2>
+                    <p class="text-lg text-neutral/70 max-w-xl mx-auto">Four layers of intelligence that compound to
+                        deliver personalisation no single dataset can match.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1: Enrichment Datapoints -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <img src="assets/profile_enrichment.png" alt="Profile Enrichment" class="w-10 h-10 mb-4 object-contain" />
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Profile Enrichment
+                            </h3>
+                            <p class="text-neutral/70 text-sm">500+ Enrichment Datapoints. Extend every customer profile
+                                with deep attributes spanning Retail & Consumer Spending, Financial Services,
+                                Automotive, Telecoms, Energy and Insurance. Replace guesswork with granular,
+                                sector-specific intelligence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2: Segmentation -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <img src="assets/segmentation.png" alt="Segmentation" class="w-10 h-10 mb-4 object-contain" />
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Segmentation</h3>
+                            <p class="text-neutral/70 text-sm">Proprietary Segmentation. Go beyond basic demographics.
+                                Our markers cover Housing, Household Composition, Education & Work, Retail Access,
+                                Banking Access, Transport & Commute and Crime & Financial Risk — so every segment is
+                                contextually precise.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3: Live Signals -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <img src="assets/live_signals.png" alt="Live Signals" class="w-10 h-10 mb-4 object-contain" />
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Live Signals</h3>
+                            <p class="text-neutral/70 text-sm">Real-Time Macro Signals. Customer context changes daily.
+                                We recalibrate profiles against the BoE base rate, CPI/RPI inflation, regional weather,
+                                employment stats, fuel & energy prices, house price indices and local news sentiment —
+                                automatically.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4: Intelligence -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <img src="assets/intelligence.png" alt="Intelligence" class="w-10 h-10 mb-4 object-contain" />
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Intelligence</h3>
+                            <p class="text-neutral/70 text-sm">AI-Powered Inference. Turn raw data into action. Eight
+                                proprietary models surface Mortgage Pressure Delta, Discretionary Spend Estimates, Churn
+                                Risk Uplift, Cost-of-Living Stress, Demand Intent Score and more — before your
+                                competitors even notice the shift.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 5: Connectivity -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <img src="assets/connectivity.png" alt="Connectivity" class="w-10 h-10 mb-4 object-contain" />
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Connectivity</h3>
+                            <p class="text-neutral/70 text-sm">Integration Services. Plug Cogniva into your existing
+                                stack. Our integration layer augments your first-party datasets with our intelligence —
+                                no rip-and-replace, no six-month migration. Your data, dramatically enhanced.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6: Prediction -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <img src="assets/prediction.png" alt="Prediction" class="w-10 h-10 mb-4 object-contain" />
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Prediction</h3>
+                            <p class="text-neutral/70 text-sm">Predictive Actions Engine. Don't just understand your
+                                customers — anticipate them. Our predictive services analyse enriched profiles and
+                                deliver suggestive next-best-actions, turning data into measurable revenue outcomes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 7: Compliance -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <img src="assets/compliance.png" alt="Compliance" class="w-10 h-10 mb-4 object-contain" />
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Compliance</h3>
+                            <p class="text-neutral/70 text-sm">Enterprise-Grade Security. SOC 2 compliant, GDPR-ready
+                                architecture with full audit trails. Role-based access, encryption at rest and in
+                                transit, and data residency controls built for regulated industries from day one.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 8: Accessibility -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <img src="assets/accessibility.png" alt="Accessibility" class="w-10 h-10 mb-4 object-contain" />
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Accessibility</h3>
+                            <p class="text-neutral/70 text-sm">Team-Wide Accessibility. Built so every team — not just
+                                data scientists — can extract value. Intuitive dashboards, no-code segmentation
+                                builders, and API access mean marketing, product and CX teams all operate from the same
+                                intelligence layer.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Pricing Section -->
-    <div class="bg-base-100 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8 text-neutral">Pricing</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card bg-base-100 shadow-sm border border-base-300">
-                    <div class="card-body">
-                        <h3 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Starter</h3>
-                        <!-- Brand override: amber for metric/price callout -->
-                        <p class="text-2xl font-bold"><span style="font-family: 'Space Grotesk', sans-serif; color: #EF9F27;">$99</span>/month</p>
-                        <p class="text-neutral/70">Up to 1,000 records</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-outline btn-primary">Choose Plan</button>
+        <!-- Use Cases Section -->
+        <div id="use-cases" class="bg-base-200 py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-neutral mb-4"
+                        style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Outcomes that move the
+                        needle,<br>not just the dashboard</h2>
+                    <p class="text-lg text-neutral/70 max-w-2xl mx-auto">See how teams across industries are using
+                        Cogniva to drive measurable returns from personalisation.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Retail & E-Commerce -->
+                    <div class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden">
+                        <img src="assets/retail_ecommerce.png" alt="Retail & E-Commerce"
+                            class="w-full h-32 object-cover">
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Retail & E-Commerce
+                            </h3>
+                            <p class="text-neutral/70 text-sm font-semibold mb-2">Reduce promotional waste by targeting
+                                only customers with real buying intent</p>
+                            <p class="text-neutral/70 text-sm mb-4">Layer Discretionary Spend Estimates and Seasonal
+                                Demand Signals onto your CRM to stop blanket discounting and start precision offers.
+                                Every pound of marketing spend goes to the customers most likely to convert.</p>
+                            <p class="text-sm font-bold text-primary mt-4">3.2× average campaign ROI uplift</p>
                         </div>
                     </div>
-                </div>
-                <div class="card bg-base-100 shadow-sm border border-base-300">
-                    <div class="card-body">
-                        <h3 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Professional</h3>
-                        <p class="text-2xl font-bold"><span style="font-family: 'Space Grotesk', sans-serif; color: #EF9F27;">$299</span>/month</p>
-                        <p class="text-neutral/70">Up to 10,000 records</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Choose Plan</button>
+
+                    <!-- Financial Services -->
+                    <div class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden">
+                        <img src="assets/finance.png" alt="Financial Services" class="w-full h-32 object-cover">
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Financial Services
+                            </h3>
+                            <p class="text-neutral/70 text-sm font-semibold mb-2">Identify mortgage stress and financial
+                                vulnerability before it becomes attrition</p>
+                            <p class="text-neutral/70 text-sm mb-4">Mortgage Pressure Delta and Cost-of-Living Stress
+                                models flag customers approaching hardship — enabling proactive outreach, retention
+                                offers, and responsible lending decisions that protect revenue and reputation.</p>
+                            <p class="text-sm font-bold text-primary mt-4">41% reduction in early-stage churn</p>
                         </div>
                     </div>
-                </div>
-                <div class="card bg-base-100 shadow-sm border border-base-300">
-                    <div class="card-body">
-                        <h3 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Enterprise</h3>
-                        <p class="text-2xl font-bold"><span style="font-family: 'Space Grotesk', sans-serif; color: #EF9F27;">Custom</span></p>
-                        <p class="text-neutral/70">Unlimited records</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-secondary">Contact Sales</button>
+
+                    <!-- Insurance -->
+                    <div class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden">
+                        <img src="assets/insurance.png" alt="Insurance" class="w-full h-32 object-cover">
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Insurance</h3>
+                            <p class="text-neutral/70 text-sm font-semibold mb-2">Price risk dynamically with real-time
+                                environmental and behavioural signals</p>
+                            <p class="text-neutral/70 text-sm mb-4">Combine Property Sentiment, Crime & Financial Risk
+                                markers, and regional weather data to sharpen underwriting accuracy. Move from annual
+                                repricing to living risk profiles that adjust as the world does.</p>
+                            <p class="text-sm font-bold text-primary mt-4">27% improvement in loss ratio accuracy</p>
+                        </div>
+                    </div>
+
+                    <!-- Telecoms & Utilities -->
+                    <div class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden">
+                        <img src="assets/telecoms.png" alt="Telecoms & Utilities" class="w-full h-32 object-cover">
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Telecoms & Utilities
+                            </h3>
+                            <p class="text-neutral/70 text-sm font-semibold mb-2">Predict churn before the customer even
+                                starts comparing alternatives</p>
+                            <p class="text-neutral/70 text-sm mb-4">Churn Risk Uplift models combined with Demand Intent
+                                Scores identify at-risk customers at the moment their behaviour shifts — not after
+                                they've already called to cancel. Intervene earlier, retain more.</p>
+                            <p class="text-sm font-bold text-primary mt-4">£2.4M annual retained revenue (avg.
+                                enterprise)</p>
+                        </div>
+                    </div>
+
+                    <!-- Automotive -->
+                    <div class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden">
+                        <img src="assets/automotive.png" alt="Automotive" class="w-full h-32 object-cover">
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Automotive</h3>
+                            <p class="text-neutral/70 text-sm font-semibold mb-2">Time your outreach to the exact moment
+                                purchase intent peaks</p>
+                            <p class="text-neutral/70 text-sm mb-4">Footfall Likelihood and Demand Intent Scores help
+                                dealerships and OEMs identify when households are entering the buying window — aligning
+                                sales efforts with real-world readiness, not arbitrary cadences.</p>
+                            <p class="text-sm font-bold text-primary mt-4">58% increase in test-drive conversion</p>
+                        </div>
+                    </div>
+
+                    <!-- Energy -->
+                    <div class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden">
+                        <img src="assets/energy.png" alt="Energy" class="w-full h-32 object-cover">
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Energy</h3>
+                            <p class="text-neutral/70 text-sm font-semibold mb-2">Personalise tariff offers based on
+                                real household economics</p>
+                            <p class="text-neutral/70 text-sm mb-4">Household Composition, Cost-of-Living Stress and
+                                fuel price sensitivity data let you build tariff bundles that speak to each customer's
+                                actual financial position — improving take-up rates and reducing bad debt.</p>
+                            <p class="text-sm font-bold text-primary mt-4">35% increase in tariff switch uptake</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Contact Teaser -->
-    <div class="bg-base-200 py-16 text-center">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-4 text-neutral">Ready to Enhance Your Data?</h2>
-            <p class="mb-8 text-neutral/70">Register your interest and get early access to Cogniva.ai.</p>
-            <a class="btn btn-secondary btn-lg" href="contact.html">Register Interest</a>
-        </div>
-    </div>
+        <!-- Pricing Section -->
+        <div id="pricing" class="bg-base-200 py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-neutral mb-4">Simple, transparent pricing</h2>
+                    <p class="text-lg text-neutral/70 max-w-xl mx-auto">Choose the perfect plan for your team. Always
+                        know what you'll pay.</p>
+                </div>
 
-    <!-- Footer -->
-    <footer class="footer footer-center p-10 bg-neutral text-neutral-content rounded">
-        <div class="flex items-center gap-3">
-            <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <line x1="10" y1="10" x2="22" y2="24" stroke="#AFA9EC" stroke-width="1.2"/>
-                <line x1="22" y1="24" x2="10" y2="37" stroke="#AFA9EC" stroke-width="1.2"/>
-                <line x1="22" y1="24" x2="34" y2="14" stroke="#AFA9EC" stroke-width="1.2"/>
-                <line x1="22" y1="24" x2="34" y2="34" stroke="#EF9F27" stroke-width="1.8"/>
-                <line x1="34" y1="34" x2="43" y2="27" stroke="#EF9F27" stroke-width="1.5"/>
-                <circle cx="10" cy="10" r="3.5" fill="none" stroke="#534AB7" stroke-width="1.5"/>
-                <circle cx="10" cy="10" r="1.5" fill="#534AB7"/>
-                <circle cx="10" cy="37" r="3.5" fill="none" stroke="#534AB7" stroke-width="1.5"/>
-                <circle cx="10" cy="37" r="1.5" fill="#534AB7"/>
-                <circle cx="34" cy="14" r="3.5" fill="none" stroke="#534AB7" stroke-width="1.5"/>
-                <circle cx="34" cy="14" r="1.5" fill="#534AB7"/>
-                <circle cx="22" cy="24" r="6" fill="none" stroke="#534AB7" stroke-width="2"/>
-                <circle cx="22" cy="24" r="2.5" fill="#534AB7"/>
-                <circle cx="34" cy="34" r="4.5" fill="none" stroke="#EF9F27" stroke-width="1.8"/>
-                <circle cx="34" cy="34" r="1.8" fill="#EF9F27"/>
-                <circle cx="43" cy="27" r="3" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
-                <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
-            </svg>
-            <!-- Brand override: Space Grotesk 700 wordmark in neutral-content -->
-            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogniva</span>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Starter Plan -->
+                    <div class="card bg-base-100 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral mt-2"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Starter</h3>
+                            <p class="text-sm text-neutral/70">Perfect for individuals and small teams</p>
+                            <div class="my-6">
+                                <p class="text-3xl font-bold text-neutral"><span
+                                        style="color: #91c1ff;">$99</span>/month</p>
+                            </div>
+                            <a class="btn btn-outline btn-primary w-full mb-6" href="contact.html">Request Access</a>
+                            <ul class="space-y-3 text-sm text-neutral/70">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>10,000 lookups/month</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Full attribute set</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Email support</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>API access</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Professional Plan (Most Popular) -->
+                    <div class="card bg-base-100 shadow-lg border-2 border-primary">
+                        <div class="card-body">
+                            <div class="badge badge-primary absolute -top-3 left-6">Most Popular</div>
+                            <h3 class="card-title text-neutral mt-2"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Professional</h3>
+                            <p class="text-sm text-neutral/70">For growing teams and businesses</p>
+                            <div class="my-6">
+                                <p class="text-3xl font-bold text-neutral"><span
+                                        style="color: #91c1ff;">$299</span>/month</p>
+                            </div>
+                            <a class="btn btn-primary w-full mb-6" href="contact.html">Request Access</a>
+                            <ul class="space-y-3 text-sm text-neutral/70">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>100,000 lookups/month</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Priority support</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Custom integrations</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Analytics dashboard</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="card bg-base-100 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral mt-2"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Enterprise</h3>
+                            <p class="text-sm text-neutral/70">For large organizations with custom needs</p>
+                            <div class="my-6">
+                                <p class="text-3xl font-bold text-neutral"><span style="color: #91c1ff;">Custom</span>
+                                </p>
+                            </div>
+                            <a class="btn btn-outline btn-primary w-full mb-6" href="contact.html">Contact Sales</a>
+                            <ul class="space-y-3 text-sm text-neutral/70">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Unlimited API calls</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Dedicated support</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Custom development</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span>SLA guarantee</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Brand override: DM Sans 300, uppercase, wide-tracked tagline -->
-        <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Demographic intelligence</p>
-        <nav class="grid grid-flow-col gap-4">
-            <a class="link link-hover" href="index.html">Home</a>
-            <a class="link link-hover" href="marketplace.html">Marketplace</a>
-            <a class="link link-hover" href="blog/index.html">Blog</a>
-            <a class="link link-hover" href="industry.html">Industry</a>
-            <a class="link link-hover" href="faq.html">FAQ</a>
-            <a class="link link-hover" href="contact.html">Contact</a>
-        </nav>
-        <aside>
-            <p>Copyright © 2026 - All right reserved by Cogniva.ai</p>
-        </aside>
-    </footer>
+
+        <!-- Marketplace Section -->
+        <div id="marketplace" class="bg-base-100 py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-neutral mb-4">Cloud Data Marketplaces</h2>
+                    <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Access Cogniva data through major cloud data
+                        marketplaces. Subscribe to the full attribute set and integrate directly into your data
+                        warehouse environment.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <figure class="px-8 pt-8">
+                            <img src="assets/aws_marketplace.png" alt="AWS Marketplace" class="rounded-lg object-contain h-16 w-full" />
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">AWS Data Exchange
+                            </h3>
+                            <p class="text-neutral/70">Subscribe to Cogniva's full attribute set directly within AWS.
+                                Zero data movement required — the data lands in your existing S3 or Redshift
+                                environment.</p>
+                            <div class="card-actions justify-end">
+                                <a class="btn btn-outline btn-primary" href="#" target="_blank">View on AWS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <figure class="px-8 pt-8">
+                            <img src="assets/snowflake_marketplace.png" alt="Snowflake Marketplace" class="rounded-lg object-contain h-16 w-full" />
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Snowflake
+                                Marketplace</h3>
+                            <p class="text-neutral/70">Access live Cogniva data shares inside Snowflake. Join directly
+                                to your customer tables without leaving your data warehouse.</p>
+                            <div class="card-actions justify-end">
+                                <a class="btn btn-outline btn-primary" href="#" target="_blank">View on Snowflake</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <figure class="px-8 pt-8">
+                            <img src="assets/gcp_marketplace.png" alt="Google Cloud Marketplace" class="rounded-lg object-contain h-16 w-full" />
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Google Cloud
+                                Marketplace</h3>
+                            <p class="text-neutral/70">Integrate Cogniva data with BigQuery and your broader Google
+                                Cloud analytics stack. Available as a managed dataset.</p>
+                            <div class="card-actions justify-end">
+                                <a class="btn btn-outline btn-primary" href="#" target="_blank">View on GCP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="bg-base-100 py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-neutral mb-4">Trusted by industry leaders</h2>
+                    <p class="text-lg text-neutral/70 max-w-xl mx-auto">Join thousands of companies transforming their
+                        decisions with Cogniva</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <div class="flex gap-1 mb-4">
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-neutral/70 mb-4">"Cogniva is the only data platform that actually keeps pace
+                                with market changes. We've improved targeting accuracy by 40% in just 2 months."</p>
+                            <p class="font-semibold text-neutral">Sarah Mitchell</p>
+                            <p class="text-sm text-neutral/60">Director of Analytics, FinTech Inc.</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <div class="flex gap-1 mb-4">
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-neutral/70 mb-4">"Integration was seamless. Within 30 days we saw positive
+                                ROI. Support throughout was exceptional and the team is responsive."</p>
+                            <p class="font-semibold text-neutral">Richard Chen</p>
+                            <p class="text-sm text-neutral/60">VP Risk Analytics, InsureFlow</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="card-body">
+                            <div class="flex gap-1 mb-4">
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                            <p class="text-neutral/70 mb-4">"The data quality is exceptional and the attributes are
+                                unique. Our customer segmentation is now data-driven instead of guesswork."</p>
+                            <p class="font-semibold text-neutral">Emily Rodriguez</p>
+                            <p class="text-sm text-neutral/60">Head of Growth, RetailCo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <p class="text-neutral/70 mb-4">10,000+ companies trust Cogniva</p>
+                    <div class="flex flex-wrap justify-center gap-8">
+                        <div class="text-center">
+                            <p class="text-2xl font-bold text-primary">4.9/5</p>
+                            <p class="text-xs text-neutral/70">Average Rating</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-2xl font-bold text-primary">99%</p>
+                            <p class="text-xs text-neutral/70">Satisfaction</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-2xl font-bold text-primary">24/7</p>
+                            <p class="text-xs text-neutral/70">Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div id="faq" class="bg-base-200 py-20">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-neutral mb-4">Frequently asked questions</h2>
+                    <p class="text-lg text-neutral/70">Everything you need to know about Cogniva</p>
+                </div>
+
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="faq-accordion" />
+                        <div class="collapse-title text-lg font-semibold text-neutral">How is Cogniva different from
+                            other data providers?</div>
+                        <div class="collapse-content">
+                            <p class="text-neutral/70">Most providers sell static annual snapshots. Cogniva uses AI to
+                                continuously re-process signals monthly, reflecting current market reality. We also
+                                include 60+ exclusive attributes (OAC classification, deprivation scores, food desert
+                                flags) unavailable anywhere else.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="faq-accordion" />
+                        <div class="collapse-title text-lg font-semibold text-neutral">What data attributes are
+                            included?</div>
+                        <div class="collapse-content">
+                            <p class="text-neutral/70">Six categories: Location & Classification, Wealth & Deprivation,
+                                Housing & Property, Education & Skills, Household Composition, and Mobility & Retail
+                                Access. Full data dictionary available on request.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="faq-accordion" />
+                        <div class="collapse-title text-lg font-semibold text-neutral">How do I access the data?</div>
+                        <div class="collapse-content">
+                            <p class="text-neutral/70">Four options: real-time REST API, batch file export, cloud
+                                marketplace listings (AWS Data Exchange, Snowflake), or direct CRM/CDP integration. Our
+                                team recommends the best fit for your stack.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="faq-accordion" />
+                        <div class="collapse-title text-lg font-semibold text-neutral">Is the data GDPR compliant?</div>
+                        <div class="collapse-content">
+                            <p class="text-neutral/70">Yes. All data is aggregated at location/output area level — no
+                                individual PII. We hold no personal data. Fully compliant with UK GDPR, Data Protection
+                                Act 2018, and US privacy frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="faq-accordion" />
+                        <div class="collapse-title text-lg font-semibold text-neutral">How do I get started?</div>
+                        <div class="collapse-content">
+                            <p class="text-neutral/70">Register your interest and we'll set up a free sample run against
+                                your own data within 24 hours. No contract needed to evaluate. You'll see results
+                                immediately.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <p class="text-neutral/70 mb-6">Still have questions?</p>
+                    <a class="btn btn-primary" href="contact.html">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final CTA Section -->
+        <div class="bg-base-100 py-20">
+            <div class="container mx-auto px-4 text-center max-w-2xl">
+                <h2 class="text-5xl font-bold mb-6 text-neutral"
+                    style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Ready to transform your
+                    decisions?</h2>
+                <p class="text-xl text-neutral/70 mb-8">Join businesses making smarter choices with Cogniva's AI-powered
+                    intelligence platform.</p>
+                <a class="btn btn-primary btn-lg" href="contact.html">Get Started</a>
+                <p class="text-sm text-neutral/60 mt-6">Custom demo on your own data. Results in 24 hours.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer footer-center p-10 bg-neutral text-neutral-content rounded">
+            <div class="flex items-center gap-3">
+                <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2" />
+                    <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2" />
+                    <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2" />
+                    <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8" />
+                    <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="1.5" fill="#3e77ff" />
+                    <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                    <circle cx="10" cy="37" r="1.5" fill="#3e77ff" />
+                    <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                    <circle cx="34" cy="14" r="1.5" fill="#3e77ff" />
+                    <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2" />
+                    <circle cx="22" cy="24" r="2.5" fill="#3e77ff" />
+                    <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8" />
+                    <circle cx="34" cy="34" r="1.8" fill="#91c1ff" />
+                    <circle cx="43" cy="27" r="3" fill="none" stroke="#91c1ff" stroke-width="1.5" />
+                    <circle cx="43" cy="27" r="1.2" fill="#91c1ff" />
+                </svg>
+                <!-- Brand override: Space Grotesk 700 wordmark in neutral-content -->
+                <span
+                    style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogniva</span>
+            </div>
+            <!-- Brand override: DM Sans 300, uppercase, wide-tracked tagline -->
+            <p
+                style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">
+                Demographic intelligence</p>
+            <nav class="grid grid-flow-col gap-4">
+                <a class="link link-hover" href="#features">Features</a>
+                <a class="link link-hover" href="#use-cases">Use Cases</a>
+                <a class="link link-hover" href="#pricing">Pricing</a>
+                <a class="link link-hover" href="#faq">FAQ</a>
+                <a class="link link-hover" href="blog/index.html">Blog</a>
+                <a class="link link-hover" href="contact.html">Contact</a>
+            </nav>
+            <aside>
+                <p>Copyright © 2026 - All right reserved by Cogniva.ai</p>
+            </aside>
+        </footer>
 </body>
+
 </html>
