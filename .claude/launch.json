@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "website-serve",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "website", "run", "serve"],
+      "port": 3000
+    },
+    {
+      "name": "website-build-css",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "website", "run", "build-css"],
+      "port": 0
+    }
+  ]
+}

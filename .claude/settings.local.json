@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(node node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./assets/css/styles.css)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(rm /Users/andy/Development/OACIP/.claude/worktrees/eloquent-morse/website/industry.html /Users/andy/Development/OACIP/.claude/worktrees/eloquent-morse/website/marketplace.html)",
+      "Bash(ls /Users/andy/Development/OACIP/.claude/worktrees/eloquent-morse/website/*.html)",
+      "Bash(gh api:*)",
+      "Bash(git -C /Users/andy/Development/OACIP/.claude/worktrees/eloquent-morse status --short)"
+    ]
+  }
+}
