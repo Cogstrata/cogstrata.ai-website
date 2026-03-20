@@ -1,9 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cogniva">
+<html lang="en" data-theme="cogstrata">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Cogniva.ai</title>
+    <title>Frequently Asked Questions - Cogstrata.ai</title>
+    <meta name="description" content="Answers to common questions about Cogstrata.ai — data accuracy, GDPR compliance, integration options, pricing, and how to get started with a free sample.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cogstrata.ai/faq.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cogstrata.ai/faq.html">
+    <meta property="og:title" content="Frequently Asked Questions - Cogstrata.ai">
+    <meta property="og:description" content="Answers to common questions about Cogstrata.ai — data accuracy, GDPR compliance, integration options, pricing, and how to get started with a free sample.">
+    <meta property="og:image" content="https://cogstrata.ai/assets/og-image.png">
+    <meta property="og:site_name" content="Cogstrata.ai">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cogstrata.ai/faq.html">
+    <meta name="twitter:title" content="Frequently Asked Questions - Cogstrata.ai">
+    <meta name="twitter:description" content="Answers to common questions about Cogstrata.ai — data accuracy, GDPR compliance, integration options, pricing, and how to get started with a free sample.">
+    <meta name="twitter:image" content="https://cogstrata.ai/assets/og-image.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +27,55 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Heroicons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/index.min.css">
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What makes Cogstrata different from existing data providers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most providers sell static data compiled from annual surveys. Cogstrata uses AI to continuously re-process and update its data, so every attribute reflects current reality. We also include unique derived metrics such as retail accessibility scores, banking desert flags, and commute-mode splits that aren't available anywhere else."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data attributes are included?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Six categories: Location & Classification, Wealth & Deprivation, Housing & Property, Education & Skills, Household Composition, and Mobility & Retail Access. Full data dictionary available on request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I access the data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Four options: real-time REST API, batch file export, cloud marketplace listings (AWS Data Exchange, Snowflake), or direct CRM/CDP integration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the data GDPR compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All Cogstrata data is aggregated at postcode or output area level — no individual-level personal data is stored or transmitted. We hold no PII. Our data processing is fully compliant with UK GDPR, the Data Protection Act 2018, and US privacy frameworks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Register your interest and we'll set up a free sample run against your own data within 24 hours. No contract needed to evaluate."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-base-100 text-base-content">
     <!-- Navbar -->
@@ -52,7 +117,7 @@
                     <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
                 </svg>
                 <!-- Brand override: Space Grotesk 700 wordmark -->
-                <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: 1.25rem;">cogniva</span>
+                <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: 1.25rem;">cogstrata</span>
             </a>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -77,16 +142,16 @@
             <div class="join join-vertical w-full">
                 <div class="collapse collapse-arrow join-item border border-base-300">
                     <input type="radio" name="faq-accordion" />
-                    <div class="collapse-title text-xl font-medium">What makes Cogniva different from existing data providers?</div>
+                    <div class="collapse-title text-xl font-medium">What makes Cogstrata different from existing data providers?</div>
                     <div class="collapse-content">
-                        <p class="text-neutral/70">Most providers sell static data compiled from annual surveys. Cogniva uses AI to continuously re-process and update its data, so every attribute reflects current reality — not last year's picture. We also include unique derived metrics, such as retail accessibility scores, banking desert flags, and commute-mode splits, that aren't available anywhere else.</p>
+                        <p class="text-neutral/70">Most providers sell static data compiled from annual surveys. Cogstrata uses AI to continuously re-process and update its data, so every attribute reflects current reality — not last year's picture. We also include unique derived metrics, such as retail accessibility scores, banking desert flags, and commute-mode splits, that aren't available anywhere else.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border border-base-300">
                     <input type="radio" name="faq-accordion" />
                     <div class="collapse-title text-xl font-medium">What data attributes are included?</div>
                     <div class="collapse-content">
-                        <p class="text-neutral/70">Every Cogniva record covers six attribute categories: Location &amp; Classification (OAC Supergroup, ward, rural/urban); Wealth &amp; Deprivation (average income, IMD decile, claimant count, insolvency rate); Housing &amp; Property (tenure split, Land Registry prices, EPC energy rating); Education &amp; Skills (qualification levels); Household Composition (single-person, families, lone parents); and Mobility &amp; Retail Access (commute mode, nearest retailer, food desert flag, banking access). Full data dictionary available on request.</p>
+                        <p class="text-neutral/70">Every Cogstrata record covers six attribute categories: Location &amp; Classification (OAC Supergroup, ward, rural/urban); Wealth &amp; Deprivation (average income, IMD decile, claimant count, insolvency rate); Housing &amp; Property (tenure split, Land Registry prices, EPC energy rating); Education &amp; Skills (qualification levels); Household Composition (single-person, families, lone parents); and Mobility &amp; Retail Access (commute mode, nearest retailer, food desert flag, banking access). Full data dictionary available on request.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border border-base-300">
@@ -100,7 +165,7 @@
                     <input type="radio" name="faq-accordion" />
                     <div class="collapse-title text-xl font-medium">Is the data GDPR and privacy compliant?</div>
                     <div class="collapse-content">
-                        <p class="text-neutral/70">Yes. All Cogniva data is aggregated at postcode or output area level — no individual-level personal data is stored or transmitted. We hold no PII. Our data processing is fully compliant with UK GDPR, the Data Protection Act 2018, and US privacy frameworks.</p>
+                        <p class="text-neutral/70">Yes. All Cogstrata data is aggregated at postcode or output area level — no individual-level personal data is stored or transmitted. We hold no PII. Our data processing is fully compliant with UK GDPR, the Data Protection Act 2018, and US privacy frameworks.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border border-base-300">
@@ -142,7 +207,7 @@
                 <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
             </svg>
             <!-- Brand override: Space Grotesk 700 wordmark in neutral-content -->
-            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogniva</span>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
         </div>
         <!-- Brand override: DM Sans 300, uppercase, wide-tracked tagline -->
         <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Demographic intelligence</p>
@@ -155,7 +220,7 @@
             <a class="link link-hover" href="contact.html">Contact</a>
         </nav>
         <aside>
-            <p>Copyright © 2026 - All right reserved by Cogniva.ai</p>
+            <p>Copyright © 2026 - All right reserved by Cogstrata.ai</p>
         </aside>
     </footer>
 </body>
