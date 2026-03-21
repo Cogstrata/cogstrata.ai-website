@@ -211,10 +211,10 @@
             <div class="max-w-3xl">
                 <h1
                     style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: clamp(2.5rem, 6vw, 4rem); letter-spacing: -1px; line-height: 1.1;">
-                    The next generation of AI-powered data personlisation
+                    The next generation of AI-powered data personalisation
                 </h1>
                 <p class="py-6 text-lg text-neutral/70 max-w-2xl mx-auto">The most accurate customer personalisation
-                    solution on the market. Providing Enterprise-grade intelligence, built by AI and accessibel to every
+                    solution on the market. Providing Enterprise-grade intelligence, built by AI and accessible to every
                     team.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                     <a class="btn btn-primary btn-lg" href="contact.html">Book a Demo</a>
@@ -229,8 +229,8 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center items-center gap-12">
                 <div class="text-center">
-                    <p class="font-bold text-2xl text-primary">5000+</p>
-                    <p class="text-xs text-neutral/70">Datapoints</p>
+                    <p class="font-bold text-2xl text-primary">5,000+</p>
+                    <p class="text-xs text-neutral/70">Derived datapoints</p>
                 </div>
                 <div class="text-center">
                     <p class="font-bold text-2xl text-primary">99.9%</p>
@@ -266,10 +266,7 @@
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Profile Enrichment
                             </h3>
-                            <p class="text-neutral/70 text-sm">500+ Enrichment Datapoints. Extend every customer profile
-                                with deep attributes spanning Retail & Consumer Spending, Financial Services,
-                                Automotive, Telecoms, Energy and Insurance. Replace guesswork with granular,
-                                sector-specific intelligence.</p>
+                            <p class="text-neutral/70 text-sm">500+ base enrichment attributes that expand to 5,000+ derived datapoints when combined with live signals and AI inference. Extend every customer profile with deep attributes spanning Retail & Consumer Spending, Financial Services, Automotive, Telecoms, Energy and Insurance.</p>
                         </div>
                     </div>
 
@@ -477,106 +474,129 @@
         <!-- Pricing Section -->
         <div id="pricing" class="bg-base-200 py-20">
             <div class="container mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-neutral mb-4">Simple, transparent pricing</h2>
-                    <p class="text-lg text-neutral/70 max-w-xl mx-auto">Choose the perfect plan for your team. Always
-                        know what you'll pay.</p>
+                <div class="text-center mb-6">
+                    <h2 class="text-4xl font-bold text-neutral mb-4">Pricing that scales with your data</h2>
+                    <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Annual plans with clear volume tiers. Every plan includes the full attribute set. Save 20% with annual billing.</p>
+                </div>
+
+                <!-- Billing toggle -->
+                <div class="flex justify-center items-center gap-4 mb-16">
+                    <span class="text-sm font-semibold text-neutral" id="label-monthly">Monthly</span>
+                    <input type="checkbox" class="toggle toggle-primary" id="billing-toggle" checked />
+                    <span class="text-sm font-semibold text-primary" id="label-annual">Annual <span class="badge badge-sm badge-primary">Save 20%</span></span>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                    <!-- Starter Plan -->
+                    <!-- Growth Plan -->
                     <div class="card bg-base-100 shadow-sm border border-base-300">
                         <div class="card-body">
                             <h3 class="card-title text-neutral mt-2"
-                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Starter</h3>
-                            <p class="text-sm text-neutral/70">Perfect for individuals and small teams</p>
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Growth</h3>
+                            <p class="text-sm text-neutral/70">For teams piloting data-driven personalisation</p>
                             <div class="my-6">
-                                <p class="text-3xl font-bold text-neutral"><span
-                                        style="color: #91c1ff;">$99</span>/month</p>
+                                <p class="text-3xl font-bold text-neutral">
+                                    <span style="color: #91c1ff;" class="price-annual">&pound;1,000</span>
+                                    <span style="color: #91c1ff;" class="price-monthly hidden">&pound;1,250</span>
+                                    <span class="text-base font-normal text-neutral/60">/month</span>
+                                </p>
+                                <p class="text-xs text-neutral/50 mt-1 price-annual">&pound;12,000 billed annually</p>
+                                <p class="text-xs text-neutral/50 mt-1 price-monthly hidden">&pound;15,000 billed annually</p>
                             </div>
-                            <a class="btn btn-outline btn-primary w-full mb-6" href="contact.html">Request Access</a>
+                            <a class="btn btn-outline btn-primary w-full mb-6" href="contact.html">Start a Pilot</a>
                             <ul class="space-y-3 text-sm text-neutral/70">
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>10,000 lookups/month</span>
+                                    <span>50,000 lookups/month</span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>Full attribute set</span>
+                                    <span>Full 500+ attribute set</span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>Email support</span>
+                                    <span>4 core AI inference models</span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>API access</span>
+                                    <span>Monthly data refresh</span>
                                 </li>
-
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>REST API &amp; batch file export</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Email &amp; chat support</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- Professional Plan (Most Popular) -->
+                    <!-- Scale Plan (Recommended) -->
                     <div class="card bg-base-100 shadow-lg border-2 border-primary">
                         <div class="card-body">
-                            <div class="badge badge-primary absolute -top-3 left-6">Most Popular</div>
+                            <div class="badge badge-primary absolute -top-3 left-6">Recommended</div>
                             <h3 class="card-title text-neutral mt-2"
-                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Professional</h3>
-                            <p class="text-sm text-neutral/70">For growing teams and businesses</p>
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Scale</h3>
+                            <p class="text-sm text-neutral/70">For production workloads and cross-team deployment</p>
                             <div class="my-6">
-                                <p class="text-3xl font-bold text-neutral"><span
-                                        style="color: #91c1ff;">$299</span>/month</p>
+                                <p class="text-3xl font-bold text-neutral">
+                                    <span style="color: #91c1ff;" class="price-annual">&pound;3,000</span>
+                                    <span style="color: #91c1ff;" class="price-monthly hidden">&pound;3,750</span>
+                                    <span class="text-base font-normal text-neutral/60">/month</span>
+                                </p>
+                                <p class="text-xs text-neutral/50 mt-1 price-annual">&pound;36,000 billed annually</p>
+                                <p class="text-xs text-neutral/50 mt-1 price-monthly hidden">&pound;45,000 billed annually</p>
                             </div>
-                            <a class="btn btn-primary w-full mb-6" href="contact.html">Request Access</a>
+                            <a class="btn btn-primary w-full mb-6" href="contact.html">Talk to Sales</a>
                             <ul class="space-y-3 text-sm text-neutral/70">
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>100,000 lookups/month</span>
+                                    <span>250,000 lookups/month</span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>Priority support</span>
+                                    <span>All 8 AI inference models</span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>Custom integrations</span>
+                                    <span>Weekly data refresh</span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>CRM/CDP integrations</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
                                     <span>Analytics dashboard</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Priority support &amp; onboarding</span>
                                 </li>
                             </ul>
                         </div>
@@ -587,51 +607,85 @@
                         <div class="card-body">
                             <h3 class="card-title text-neutral mt-2"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Enterprise</h3>
-                            <p class="text-sm text-neutral/70">For large organizations with custom needs</p>
+                            <p class="text-sm text-neutral/70">For large organisations with bespoke requirements</p>
                             <div class="my-6">
-                                <p class="text-3xl font-bold text-neutral"><span style="color: #91c1ff;">Custom</span>
-                                </p>
+                                <p class="text-3xl font-bold text-neutral"><span style="color: #91c1ff;">Custom</span></p>
+                                <p class="text-xs text-neutral/50 mt-1">From &pound;60,000/year</p>
                             </div>
                             <a class="btn btn-outline btn-primary w-full mb-6" href="contact.html">Contact Sales</a>
                             <ul class="space-y-3 text-sm text-neutral/70">
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>Unlimited API calls</span>
+                                    <span>Unlimited API lookups</span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>Dedicated support</span>
+                                    <span>All 8 + custom models</span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>Custom development</span>
+                                    <span>Real-time data refresh</span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd"
-                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                            clip-rule="evenodd" />
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                     </svg>
-                                    <span>SLA guarantee</span>
+                                    <span>Dedicated account manager</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>SLA &amp; data residency</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <svg class="w-5 h-5 shrink-0 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Custom integrations &amp; SSO</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
+                <!-- Per-lookup cost callout -->
+                <div class="text-center mt-12">
+                    <p class="text-sm text-neutral/60">Effective cost from <span class="font-bold text-primary">&pound;0.012/lookup</span> at Scale tier. Volume discounts available. All plans include a 24-hour free sample run on your data.</p>
+                </div>
             </div>
         </div>
+
+        <!-- Billing toggle script -->
+        <script>
+            document.getElementById('billing-toggle').addEventListener('change', function() {
+                const annualEls = document.querySelectorAll('.price-annual');
+                const monthlyEls = document.querySelectorAll('.price-monthly');
+                const labelAnnual = document.getElementById('label-annual');
+                const labelMonthly = document.getElementById('label-monthly');
+                if (this.checked) {
+                    annualEls.forEach(el => el.classList.remove('hidden'));
+                    monthlyEls.forEach(el => el.classList.add('hidden'));
+                    labelAnnual.classList.add('text-primary');
+                    labelAnnual.classList.remove('text-neutral');
+                    labelMonthly.classList.remove('text-primary');
+                    labelMonthly.classList.add('text-neutral');
+                } else {
+                    annualEls.forEach(el => el.classList.add('hidden'));
+                    monthlyEls.forEach(el => el.classList.remove('hidden'));
+                    labelMonthly.classList.add('text-primary');
+                    labelMonthly.classList.remove('text-neutral');
+                    labelAnnual.classList.remove('text-primary');
+                    labelAnnual.classList.add('text-neutral');
+                }
+            });
+        </script>
 
         <!-- Marketplace Section -->
         <div id="marketplace" class="bg-base-100 py-20">
@@ -698,123 +752,68 @@
         <div class="bg-base-100 py-20">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-neutral mb-4">Trusted by industry leaders</h2>
-                    <p class="text-lg text-neutral/70 max-w-xl mx-auto">Join thousands of companies transforming their
-                        decisions with Cogstrata</p>
+                    <h2 class="text-4xl font-bold text-neutral mb-4">What early adopters are saying</h2>
+                    <p class="text-lg text-neutral/70 max-w-xl mx-auto">We're onboarding design partners across key industries. Here's what they're finding.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
+                    <!-- Value Prop 1 -->
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
-                            <div class="flex gap-1 mb-4">
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
+                                <h3 class="card-title text-neutral text-lg" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">24-Hour Sample Run</h3>
                             </div>
-                            <p class="text-neutral/70 mb-4">"Cogstrata is the only data platform that actually keeps pace
-                                with market changes. We've improved targeting accuracy by 40% in just 2 months."</p>
-                            <p class="font-semibold text-neutral">Sarah Mitchell</p>
-                            <p class="text-sm text-neutral/60">Director of Analytics, FinTech Inc.</p>
+                            <p class="text-neutral/70 text-sm">Send us your customer file and receive enriched results within 24 hours. No contract, no commitment. See the data quality for yourself before you invest.</p>
+                            <div class="card-actions mt-4">
+                                <a class="btn btn-outline btn-primary btn-sm" href="contact.html">Request a Sample</a>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Testimonial 2 -->
+                    <!-- Value Prop 2 -->
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
-                            <div class="flex gap-1 mb-4">
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
                                 </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
+                                <h3 class="card-title text-neutral text-lg" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Live Data, Not Annual Snapshots</h3>
                             </div>
-                            <p class="text-neutral/70 mb-4">"Integration was seamless. Within 30 days we saw positive
-                                ROI. Support throughout was exceptional and the team is responsive."</p>
-                            <p class="font-semibold text-neutral">Richard Chen</p>
-                            <p class="text-sm text-neutral/60">VP Risk Analytics, InsureFlow</p>
+                            <p class="text-neutral/70 text-sm">Legacy providers like Experian Mosaic and CACI Acorn refresh annually. Cogstrata recalibrates continuously against real-time macro signals, so your decisions are based on today's reality.</p>
                         </div>
                     </div>
 
-                    <!-- Testimonial 3 -->
+                    <!-- Value Prop 3 -->
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
-                            <div class="flex gap-1 mb-4">
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            <div class="flex items-center gap-3 mb-4">
+                                <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                                 </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
-                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                </svg>
+                                <h3 class="card-title text-neutral text-lg" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">No PII. Fully Compliant.</h3>
                             </div>
-                            <p class="text-neutral/70 mb-4">"The data quality is exceptional and the attributes are
-                                unique. Our customer segmentation is now data-driven instead of guesswork."</p>
-                            <p class="font-semibold text-neutral">Emily Rodriguez</p>
-                            <p class="text-sm text-neutral/60">Head of Growth, RetailCo</p>
+                            <p class="text-neutral/70 text-sm">All data is aggregated at output area level with zero individual PII. GDPR-ready, DPA 2018 compliant, SOC 2 architecture. Built for regulated industries from day one.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center mt-12">
-                    <p class="text-neutral/70 mb-4">10,000+ companies trust Cogstrata</p>
+<div class="text-center mt-12">
+                    <p class="text-neutral/70 mb-4">Trusted by early adopters across financial services, retail, and insurance</p>
                     <div class="flex flex-wrap justify-center gap-8">
                         <div class="text-center">
-                            <p class="text-2xl font-bold text-primary">4.9/5</p>
-                            <p class="text-xs text-neutral/70">Average Rating</p>
+                            <p class="text-2xl font-bold text-primary">30 days</p>
+                            <p class="text-xs text-neutral/70">Average time to value</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-2xl font-bold text-primary">99%</p>
-                            <p class="text-xs text-neutral/70">Satisfaction</p>
+                            <p class="text-2xl font-bold text-primary">No PII</p>
+                            <p class="text-xs text-neutral/70">Fully GDPR compliant</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-2xl font-bold text-primary">24/7</p>
-                            <p class="text-xs text-neutral/70">Support</p>
+                            <p class="text-2xl font-bold text-primary">24hr</p>
+                            <p class="text-xs text-neutral/70">Free sample turnaround</p>
                         </div>
                     </div>
                 </div>
