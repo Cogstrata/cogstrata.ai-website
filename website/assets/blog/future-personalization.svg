@@ -1,0 +1,130 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#060e1f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGrad4)"/>
+
+  <!-- Subtle grid pattern -->
+  <g stroke="#91c1ff" stroke-width="0.3" opacity="0.06">
+    <line x1="0" y1="0" x2="1200" y2="0" />
+    <line x1="0" y1="30" x2="1200" y2="30" />
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="90" x2="1200" y2="90" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="210" x2="1200" y2="210" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="330" x2="1200" y2="330" />
+    <line x1="0" y1="360" x2="1200" y2="360" />
+    <line x1="0" y1="390" x2="1200" y2="390" />
+    <line x1="0" y1="420" x2="1200" y2="420" />
+    <line x1="0" y1="450" x2="1200" y2="450" />
+    <line x1="0" y1="480" x2="1200" y2="480" />
+    <line x1="0" y1="510" x2="1200" y2="510" />
+    <line x1="0" y1="540" x2="1200" y2="540" />
+    <line x1="0" y1="570" x2="1200" y2="570" />
+    <line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="0" y1="630" x2="1200" y2="630" />
+
+    <line x1="0" y1="0" x2="0" y2="630" />
+    <line x1="60" y1="0" x2="60" y2="630" />
+    <line x1="120" y1="0" x2="120" y2="630" />
+    <line x1="180" y1="0" x2="180" y2="630" />
+    <line x1="240" y1="0" x2="240" y2="630" />
+    <line x1="300" y1="0" x2="300" y2="630" />
+    <line x1="360" y1="0" x2="360" y2="630" />
+    <line x1="420" y1="0" x2="420" y2="630" />
+    <line x1="480" y1="0" x2="480" y2="630" />
+    <line x1="540" y1="0" x2="540" y2="630" />
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="660" y1="0" x2="660" y2="630" />
+    <line x1="720" y1="0" x2="720" y2="630" />
+    <line x1="780" y1="0" x2="780" y2="630" />
+    <line x1="840" y1="0" x2="840" y2="630" />
+    <line x1="900" y1="0" x2="900" y2="630" />
+    <line x1="960" y1="0" x2="960" y2="630" />
+    <line x1="1020" y1="0" x2="1020" y2="630" />
+    <line x1="1080" y1="0" x2="1080" y2="630" />
+    <line x1="1140" y1="0" x2="1140" y2="630" />
+    <line x1="1200" y1="0" x2="1200" y2="630" />
+  </g>
+
+  <!-- LEFT SIDE: Traditional form/clipboard shape -->
+  <g opacity="0.8">
+    <!-- Clipboard outline -->
+    <rect x="140" y="180" width="180" height="270" fill="none" stroke="#534AB7" stroke-width="2" rx="6"/>
+    <!-- Clip -->
+    <rect x="170" y="160" width="120" height="30" fill="#534AB7" opacity="0.5" rx="3"/>
+    <!-- Form lines -->
+    <line x1="170" y1="230" x2="290" y2="230" stroke="#534AB7" stroke-width="1.5" opacity="0.6"/>
+    <line x1="170" y1="260" x2="290" y2="260" stroke="#534AB7" stroke-width="1.5" opacity="0.5"/>
+    <line x1="170" y1="290" x2="290" y2="290" stroke="#534AB7" stroke-width="1.5" opacity="0.5"/>
+    <line x1="170" y1="320" x2="290" y2="320" stroke="#534AB7" stroke-width="1.5" opacity="0.4"/>
+    <line x1="170" y1="350" x2="290" y2="350" stroke="#534AB7" stroke-width="1.5" opacity="0.4"/>
+    <line x1="170" y1="380" x2="240" y2="380" stroke="#534AB7" stroke-width="1.5" opacity="0.35"/>
+  </g>
+
+  <!-- CENTER: Transition/dissolving area -->
+  <!-- Form dissolving into particles -->
+  <circle cx="380" cy="200" r="5" fill="#534AB7" opacity="0.5"/>
+  <circle cx="390" cy="220" r="4" fill="#534AB7" opacity="0.4"/>
+  <circle cx="370" cy="240" r="5" fill="#534AB7" opacity="0.35"/>
+  <circle cx="400" cy="260" r="4" fill="#3E77FF" opacity="0.5"/>
+  <circle cx="380" cy="290" r="5" fill="#3E77FF" opacity="0.45"/>
+  <circle cx="410" cy="310" r="4" fill="#3E77FF" opacity="0.4"/>
+  <circle cx="390" cy="340" r="5" fill="#3E77FF" opacity="0.35"/>
+  <circle cx="420" cy="360" r="4" fill="#3E77FF" opacity="0.3"/>
+
+  <!-- RIGHT SIDE: Network of AI-connected nodes -->
+  <!-- Central AI hub -->
+  <circle cx="850" cy="315" r="18" fill="#3E77FF" opacity="0.9"/>
+  <circle cx="850" cy="315" r="12" fill="#EF9F27" opacity="0.7"/>
+
+  <!-- Primary nodes around AI hub -->
+  <circle cx="950" cy="200" r="12" fill="#3E77FF" opacity="0.8"/>
+  <circle cx="1000" cy="260" r="12" fill="#EF9F27" opacity="0.85"/>
+  <circle cx="980" cy="370" r="12" fill="#3E77FF" opacity="0.75"/>
+  <circle cx="900" cy="430" r="12" fill="#EF9F27" opacity="0.8"/>
+  <circle cx="750" cy="400" r="12" fill="#3E77FF" opacity="0.7"/>
+  <circle cx="720" cy="280" r="12" fill="#EF9F27" opacity="0.75"/>
+  <circle cx="780" cy="180" r="12" fill="#3E77FF" opacity="0.75"/>
+
+  <!-- Secondary nodes forming outer constellation -->
+  <circle cx="1050" cy="150" r="8" fill="#91c1ff" opacity="0.6"/>
+  <circle cx="1080" cy="300" r="8" fill="#91c1ff" opacity="0.5"/>
+  <circle cx="1040" cy="450" r="8" fill="#91c1ff" opacity="0.55"/>
+  <circle cx="850" cy="520" r="8" fill="#91c1ff" opacity="0.5"/>
+  <circle cx="650" cy="480" r="8" fill="#91c1ff" opacity="0.55"/>
+  <circle cx="610" cy="320" r="8" fill="#91c1ff" opacity="0.6"/>
+  <circle cx="680" cy="120" r="8" fill="#91c1ff" opacity="0.55"/>
+
+  <!-- Connecting lines from AI hub to primary nodes -->
+  <line x1="850" y1="315" x2="950" y2="200" stroke="#3E77FF" stroke-width="2" opacity="0.5"/>
+  <line x1="850" y1="315" x2="1000" y2="260" stroke="#EF9F27" stroke-width="2" opacity="0.5"/>
+  <line x1="850" y1="315" x2="980" y2="370" stroke="#3E77FF" stroke-width="2" opacity="0.45"/>
+  <line x1="850" y1="315" x2="900" y2="430" stroke="#EF9F27" stroke-width="2" opacity="0.5"/>
+  <line x1="850" y1="315" x2="750" y2="400" stroke="#3E77FF" stroke-width="2" opacity="0.45"/>
+  <line x1="850" y1="315" x2="720" y2="280" stroke="#EF9F27" stroke-width="2" opacity="0.5"/>
+  <line x1="850" y1="315" x2="780" y2="180" stroke="#3E77FF" stroke-width="2" opacity="0.48"/>
+
+  <!-- Connecting lines from primary to secondary nodes -->
+  <line x1="950" y1="200" x2="1050" y2="150" stroke="#3E77FF" stroke-width="1.5" opacity="0.35"/>
+  <line x1="1000" y1="260" x2="1080" y2="300" stroke="#EF9F27" stroke-width="1.5" opacity="0.35"/>
+  <line x1="980" y1="370" x2="1040" y2="450" stroke="#3E77FF" stroke-width="1.5" opacity="0.32"/>
+  <line x1="900" y1="430" x2="850" y2="520" stroke="#EF9F27" stroke-width="1.5" opacity="0.35"/>
+  <line x1="750" y1="400" x2="650" y2="480" stroke="#3E77FF" stroke-width="1.5" opacity="0.32"/>
+  <line x1="720" y1="280" x2="610" y2="320" stroke="#EF9F27" stroke-width="1.5" opacity="0.35"/>
+  <line x1="780" y1="180" x2="680" y2="120" stroke="#3E77FF" stroke-width="1.5" opacity="0.34"/>
+
+  <!-- Additional inter-node connections for network feel -->
+  <line x1="950" y1="200" x2="1000" y2="260" stroke="#3E77FF" stroke-width="1" opacity="0.25"/>
+  <line x1="1000" y1="260" x2="980" y2="370" stroke="#3E77FF" stroke-width="1" opacity="0.25"/>
+  <line x1="780" y1="180" x2="950" y2="200" stroke="#3E77FF" stroke-width="1" opacity="0.2"/>
+</svg>
