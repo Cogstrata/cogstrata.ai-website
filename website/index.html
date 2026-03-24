@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cogstrata">
+<html lang="en" data-theme="sentient-architect">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -12,6 +12,15 @@
       gtag('config', 'G-JZBCGQDWVH');
     </script>
     <meta charset="UTF-8">
+    <script>
+      /* A/B theme assignment — runs before first paint to avoid flash */
+      (function() {
+        try {
+          var t = localStorage.getItem('cs-ab-theme') || 'sentient-architect';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch(e) {}
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cogstrata.ai - AI-Powered Customer Data Enhancement</title>
     <meta name="description" content="Cogstrata.ai delivers AI-powered customer data enrichment with 5,000+ datapoints, real-time macro signals, and proprietary segmentation. Enterprise-grade intelligence for every team.">
@@ -34,7 +43,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Heroicons CDN -->
@@ -547,33 +556,33 @@
 
                     <!-- DETAIL LABELS (alternating heights) -->
                     <g transform="translate(50, 152)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888">Multiple curated</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888">open data sources</text>
+                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5" class="pipe-detail-bg"/>
+                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">Multiple curated</text>
+                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">open data sources</text>
                       <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#3E77FF" font-weight="500">International coverage</text>
                     </g>
                     <g transform="translate(290, 272)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888">Cross-source linkage</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888">&amp; country harmonisation</text>
+                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5" class="pipe-detail-bg"/>
+                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">Cross-source linkage</text>
+                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">&amp; country harmonisation</text>
                       <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#3E77FF" font-weight="500">Millions regions and zip/postal codes</text>
                     </g>
                     <g transform="translate(530, 152)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888">Supplementary datasets</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888">across 12 categories</text>
+                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5" class="pipe-detail-bg"/>
+                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">Supplementary datasets</text>
+                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">across 12 categories</text>
                       <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#534AB7" font-weight="500">100+ base attributes</text>
                     </g>
                     <g transform="translate(770, 272)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888">AI-weighted derivation</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888">with full lineage</text>
+                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5" class="pipe-detail-bg"/>
+                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">AI-weighted derivation</text>
+                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">with full lineage</text>
                       <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#534AB7" font-weight="500">175+ total attributes</text>
                     </g>
                     <g transform="translate(1010, 152)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#EF9F27" stroke-width="0.5" stroke-opacity="0.3"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888">Autonomous monitoring</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888">&amp; drift detection</text>
+                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#EF9F27" stroke-width="0.5" stroke-opacity="0.3" class="pipe-detail-bg"/>
+                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">Autonomous monitoring</text>
+                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">&amp; drift detection</text>
                       <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#EF9F27" font-weight="500">Never goes stale</text>
                     </g>
                     <g transform="translate(1250, 272)">
@@ -608,11 +617,11 @@
                     <!-- Colour legend -->
                     <g transform="translate(500, 510)">
                       <circle cx="0" cy="0" r="4" fill="#3E77FF" opacity="0.5"/>
-                      <text x="10" y="4" font-size="9" fill="#888">Open data</text>
+                      <text x="10" y="4" font-size="9" fill="#888" class="pipe-detail-text">Open data</text>
                       <circle cx="120" cy="0" r="4" fill="#534AB7" opacity="0.5"/>
-                      <text x="130" y="4" font-size="9" fill="#888">AI-derived</text>
+                      <text x="130" y="4" font-size="9" fill="#888" class="pipe-detail-text">AI-derived</text>
                       <circle cx="240" cy="0" r="4" fill="#EF9F27" opacity="0.5"/>
-                      <text x="250" y="4" font-size="9" fill="#888">Agent-maintained</text>
+                      <text x="250" y="4" font-size="9" fill="#888" class="pipe-detail-text">Agent-maintained</text>
                     </g>
                     </svg>
                 </div>

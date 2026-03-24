@@ -6,7 +6,7 @@
 @layer base {
   body {
     font-family: 'DM Sans', sans-serif;
-    background-color: #F8F7FF;
+    background-color: oklch(var(--b1));
   }
 
   h1, h2, h3, h4, h5, h6, .display {
@@ -14,4 +14,507 @@
     font-weight: 700;
     letter-spacing: -0.5px;
   }
+}
+
+/* ─── Hero accent span & theme label ─────────────────────────────────────── */
+
+/* Label hidden by default — each theme opt-in below */
+.sa-only {
+  display: none !important;
+}
+
+/* Accent span defaults to inheriting the heading colour (neutral for all
+   themes that don't override it, so it looks like normal heading text)   */
+.hero-accent {
+  color: inherit;
+}
+
+/* sentient-architect: show label, second line in primary light-blue */
+[data-theme="sentient-architect"] .sa-only {
+  display: inline-flex !important;
+}
+[data-theme="sentient-architect"] .hero-accent {
+  color: #a4c9ff !important;
+}
+
+/* chromatic-velocity: accent in primary-container (lighter violet) */
+[data-theme="chromatic-velocity"] .hero-accent {
+  color: #a192ff !important;
+}
+
+/* digital-schematic: accent in primary cyan */
+[data-theme="digital-schematic"] .hero-accent {
+  color: #00e5ff !important;
+}
+
+/* cogstrata: accent in primary blue */
+[data-theme="cogstrata"] .hero-accent {
+  color: #3e77ff !important;
+}
+
+/* ─── Chromatic Velocity theme overrides ─────────────────────────────────── */
+
+/* Body font: Inter instead of DM Sans */
+[data-theme="chromatic-velocity"] body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Tighter headline tracking per the "Speed Elements" spec */
+[data-theme="chromatic-velocity"] h1,
+[data-theme="chromatic-velocity"] h2,
+[data-theme="chromatic-velocity"] h3,
+[data-theme="chromatic-velocity"] h4,
+[data-theme="chromatic-velocity"] h5,
+[data-theme="chromatic-velocity"] h6,
+[data-theme="chromatic-velocity"] .display {
+  letter-spacing: -0.02em;
+}
+
+/* Glassmorphism navbar — "Glass & Gradient" rule */
+[data-theme="chromatic-velocity"] .navbar {
+  background: color-mix(in oklch, oklch(var(--b1)) 70%, transparent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Primary button — solid #5827fc, on-primary text, 0px radius.
+   Hover: darken to #4c02f1 + 4px rightward "thrust". */
+[data-theme="chromatic-velocity"] .btn-primary {
+  background-color: #5827fc;
+  background-image: none;
+  color: #f6f0ff;
+  border: none;
+  border-radius: 0;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+[data-theme="chromatic-velocity"] .btn-primary:hover {
+  background-color: #4c02f1;
+  background-image: none;
+  transform: translateX(4px);
+}
+
+/* Secondary button — surface-container-highest (#e6d6ff), no border */
+[data-theme="chromatic-velocity"] .btn-secondary {
+  background-color: #e6d6ff;
+  background-image: none;
+  color: #1d1040;
+  border: none;
+  border-radius: 0;
+}
+[data-theme="chromatic-velocity"] .btn-secondary:hover {
+  background-color: #d9c5ff;
+  background-image: none;
+}
+
+/* Ghost / tertiary — primary-coloured text only.
+   A 2px underline grows from the centre on hover. */
+[data-theme="chromatic-velocity"] .btn-ghost {
+  position: relative;
+  color: #5827fc;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+}
+[data-theme="chromatic-velocity"] .btn-ghost::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #5827fc;
+  transition: width 200ms ease, left 200ms ease;
+}
+[data-theme="chromatic-velocity"] .btn-ghost:hover {
+  background: transparent;
+}
+[data-theme="chromatic-velocity"] .btn-ghost:hover::after {
+  width: 80%;
+  left: 10%;
+}
+
+/* Hero CTA gradient (reserved for hero sections, not regular buttons) —
+   primary (#5827fc) → primary-container (#a192ff) at 135°               */
+[data-theme="chromatic-velocity"] .cv-hero-cta {
+  background-image: linear-gradient(135deg, #5827fc, #a192ff);
+  color: #f6f0ff;
+  border: none;
+  border-radius: 0;
+  transition: background-image 150ms ease, transform 150ms ease;
+}
+[data-theme="chromatic-velocity"] .cv-hero-cta:hover {
+  background-image: linear-gradient(135deg, #4c02f1, #8f7efc);
+  transform: translateX(4px);
+}
+
+/* Input fields: bottom-border only (Prism Entry spec) */
+[data-theme="chromatic-velocity"] .input,
+[data-theme="chromatic-velocity"] .textarea,
+[data-theme="chromatic-velocity"] .select {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(127, 111, 155, 0.4);
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+[data-theme="chromatic-velocity"] .input:focus,
+[data-theme="chromatic-velocity"] .textarea:focus,
+[data-theme="chromatic-velocity"] .select:focus {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(90deg, #5827fc, #00f4fe) 1;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Ambient shadow for floating elements (no hard drop shadow) */
+[data-theme="chromatic-velocity"] .card,
+[data-theme="chromatic-velocity"] .dropdown-content {
+  box-shadow: 0 12px 40px rgba(29, 16, 64, 0.06);
+}
+
+/* ─── Digital Schematic theme overrides ──────────────────────────────────── */
+
+/* Body font: Plus Jakarta Sans */
+[data-theme="digital-schematic"] body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Headlines retain Space Grotesk — "laser-etched" precision.
+   !important needed to beat hardcoded inline color styles in the HTML. */
+[data-theme="digital-schematic"] h1,
+[data-theme="digital-schematic"] h2,
+[data-theme="digital-schematic"] h3,
+[data-theme="digital-schematic"] h4,
+[data-theme="digital-schematic"] h5,
+[data-theme="digital-schematic"] h6,
+[data-theme="digital-schematic"] .display {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+  color: #dfe2eb !important;
+}
+
+/* Glassmorphism navbar — surface_container_high at 70% opacity, 20px blur */
+[data-theme="digital-schematic"] .navbar {
+  background: rgba(38, 42, 49, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Hero "cyan hum" — subtle primary-to-primary_container gradient overlay at 15% */
+[data-theme="digital-schematic"] .ds-hero-bg {
+  background-image: linear-gradient(
+    180deg,
+    rgba(195, 245, 255, 0.15) 0%,
+    rgba(0, 229, 255, 0.15) 100%
+  );
+}
+
+/* Primary button — primary_container (#00e5ff) bg, on_primary (#00363d) text.
+   Hover: cyan outer glow (4px blur, 10% opacity). */
+[data-theme="digital-schematic"] .btn-primary {
+  background-color: #00e5ff;
+  background-image: none;
+  color: #00363d;
+  border: none;
+  border-radius: 0;
+  transition: box-shadow 150ms ease, background-color 150ms ease;
+}
+[data-theme="digital-schematic"] .btn-primary:hover {
+  background-color: #00e5ff;
+  background-image: none;
+  box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.1);
+}
+
+/* Secondary button — transparent bg, primary text, ghost border at 20% opacity */
+[data-theme="digital-schematic"] .btn-secondary {
+  background-color: transparent;
+  background-image: none;
+  color: #c3f5ff;
+  border: 1px solid rgba(195, 245, 255, 0.2);
+  border-radius: 0;
+  transition: box-shadow 150ms ease;
+}
+[data-theme="digital-schematic"] .btn-secondary:hover {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.1);
+}
+
+/* Navbar logo text — inline color: #393333 on the span overrides inheritance,
+   so we target it directly with !important                                   */
+[data-theme="digital-schematic"] .navbar span {
+  color: #dfe2eb !important;
+}
+
+/* Ghost button — full opacity on text so nav labels stay legible */
+[data-theme="digital-schematic"] .btn-ghost {
+  color: #dfe2eb !important;
+  background: transparent !important;
+  border: none;
+  border-radius: 0;
+  opacity: 1;
+  transition: box-shadow 150ms ease, color 150ms ease;
+}
+[data-theme="digital-schematic"] .btn-ghost:hover {
+  color: #c3f5ff !important;
+  background: transparent !important;
+  box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.1);
+}
+
+/* Input fields — surface_container_highest bg, bottom-edge glow on focus */
+[data-theme="digital-schematic"] .input,
+[data-theme="digital-schematic"] .textarea,
+[data-theme="digital-schematic"] .select {
+  background-color: #31353c;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  color: #dfe2eb;
+  outline: none;
+  box-shadow: none;
+  transition: border-color 150ms ease;
+}
+[data-theme="digital-schematic"] .input:focus,
+[data-theme="digital-schematic"] .textarea:focus,
+[data-theme="digital-schematic"] .select:focus {
+  border-bottom-color: #80c8d4; /* primary_fixed_dim */
+  outline: none;
+  box-shadow: none;
+}
+
+/* Cards — one step up the surface scale + ambient primary glow */
+[data-theme="digital-schematic"] .card {
+  background-color: #1c2026;
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.05);
+}
+
+/* Dropdown — surface_container_highest */
+[data-theme="digital-schematic"] .dropdown-content {
+  background-color: #31353c;
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.05);
+}
+
+/* Data Node — monospaced schematic metadata tag */
+[data-theme="digital-schematic"] .ds-data-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #bdc2ff;
+}
+[data-theme="digital-schematic"] .ds-data-node::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #bdc2ff;
+  flex-shrink: 0;
+}
+
+/* "Ghost Border" fallback separator — outline_variant at 15% opacity */
+[data-theme="digital-schematic"] .divider {
+  border-color: rgba(59, 73, 76, 0.15);
+}
+
+/* ── Text colour corrections for dark background ─────────────────────────
+   The site uses text-neutral as its default readable text class (correct for
+   the light cogstrata theme). In digital-schematic, neutral (#31353c) is a
+   dark surface colour — nearly invisible on #10141a. Redirect all text-neutral
+   variants to the spec's on_surface value (#dfe2eb).                        */
+[data-theme="digital-schematic"] .text-neutral {
+  color: #dfe2eb;
+}
+[data-theme="digital-schematic"] .text-neutral\/50 {
+  color: rgba(223, 226, 235, 0.5);
+}
+[data-theme="digital-schematic"] .text-neutral\/60 {
+  color: rgba(223, 226, 235, 0.6);
+}
+[data-theme="digital-schematic"] .text-neutral\/70 {
+  color: rgba(223, 226, 235, 0.7);
+}
+
+/* ─── "How it Works" SVG — dark theme fixes ─────────────────────────────────
+   The detail boxes use fill="white" opacity="0.6" which turns grey over dark
+   backgrounds. Swap to a solid dark surface so text stays legible.           */
+
+[data-theme="sentient-architect"] .pipe-detail-bg,
+[data-theme="digital-schematic"]  .pipe-detail-bg {
+  opacity: 1 !important;
+}
+[data-theme="sentient-architect"] .pipe-detail-bg {
+  fill: #1f2a3c !important;
+  stroke: #2a3548 !important;
+}
+[data-theme="digital-schematic"] .pipe-detail-bg {
+  fill: #1c2026 !important;
+  stroke: #31353c !important;
+}
+
+[data-theme="sentient-architect"] .pipe-detail-text {
+  fill: #8899bb !important;
+}
+[data-theme="digital-schematic"] .pipe-detail-text {
+  fill: #9baabb !important;
+}
+
+/* ─── Sentient Architect theme overrides ─────────────────────────────────── */
+
+/* Body font: Manrope — the "Human" voice */
+[data-theme="sentient-architect"] body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Headlines: Space Grotesk — the "Technical" voice.
+   !important needed to beat inline color: #393333 on spans in the HTML.    */
+[data-theme="sentient-architect"] h1,
+[data-theme="sentient-architect"] h2,
+[data-theme="sentient-architect"] h3,
+[data-theme="sentient-architect"] h4,
+[data-theme="sentient-architect"] h5,
+[data-theme="sentient-architect"] h6,
+[data-theme="sentient-architect"] .display {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+  color: #eaf0ff !important;
+}
+
+/* Navbar logo span — inline style override */
+[data-theme="sentient-architect"] .navbar span {
+  color: #c4c5d9 !important;
+}
+
+/* Glassmorphism navbar — surface-bright at 60% opacity, 24px blur */
+[data-theme="sentient-architect"] .navbar {
+  background: rgba(47, 58, 76, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* Ghost / secondary nav links */
+[data-theme="sentient-architect"] .btn-ghost {
+  color: #c4c5d9 !important;
+  background: transparent !important;
+  border: none;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+[data-theme="sentient-architect"] .btn-ghost:hover {
+  background-color: #1f2a3c !important;
+  color: #eaf0ff !important;
+}
+
+/* Primary button — solid blue, xl radius, all-caps label-md, 0.05em tracking */
+[data-theme="sentient-architect"] .btn-primary {
+  background-color: #1c6fbe;
+  background-image: none;
+  color: #eaf0ff;
+  border: none;
+  border-radius: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+[data-theme="sentient-architect"] .btn-primary:hover {
+  background-color: #1a5fa3;
+  background-image: none;
+  box-shadow: 0 0 32px rgba(164, 201, 255, 0.15);
+}
+
+/* Secondary button — no fill, no border, on-surface-variant text */
+[data-theme="sentient-architect"] .btn-secondary {
+  background-color: transparent;
+  background-image: none;
+  color: #c4c5d9;
+  border: none;
+  border-radius: 0.75rem;
+  transition: background-color 150ms ease;
+}
+[data-theme="sentient-architect"] .btn-secondary:hover {
+  background-color: #1f2a3c;
+  color: #eaf0ff;
+}
+
+/* Input fields — surface-container-lowest fill, ghost border, primary glow on focus */
+[data-theme="sentient-architect"] .input,
+[data-theme="sentient-architect"] .textarea,
+[data-theme="sentient-architect"] .select {
+  background-color: #040e1f;
+  border: 1px solid rgba(67, 70, 86, 0.1);
+  border-radius: 0.75rem;
+  color: #c4c5d9;
+  outline: none;
+  box-shadow: none;
+  transition: border-color 150ms ease;
+}
+[data-theme="sentient-architect"] .input:focus,
+[data-theme="sentient-architect"] .textarea:focus,
+[data-theme="sentient-architect"] .select:focus {
+  border-color: #a4c9ff;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Cards — surface-container bg, xl radius, ambient primary glow */
+[data-theme="sentient-architect"] .card {
+  background-color: #152031;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 32px rgba(164, 201, 255, 0.06);
+}
+
+/* Dropdown — surface-container-highest */
+[data-theme="sentient-architect"] .dropdown-content {
+  background-color: #2a3548;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 32px rgba(164, 201, 255, 0.06);
+}
+
+/* Action chips — secondary-container with full roundedness */
+[data-theme="sentient-architect"] .badge {
+  border-radius: 9999px;
+  background-color: #3a4a5f;
+  color: #c4c5d9;
+  border: none;
+}
+
+/* Signature: Insight Pulse — glowing dot next to key actionable insight    */
+[data-theme="sentient-architect"] .sa-insight-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #a4c9ff;
+  box-shadow: 0 0 6px 2px rgba(164, 201, 255, 0.4);
+  animation: sa-pulse 2s ease-in-out infinite;
+}
+@keyframes sa-pulse {
+  0%, 100% { box-shadow: 0 0 6px 2px rgba(164, 201, 255, 0.4); }
+  50%       { box-shadow: 0 0 14px 4px rgba(164, 201, 255, 0.7); }
+}
+
+/* Ghost border fallback divider — outline-variant at 15% */
+[data-theme="sentient-architect"] .divider {
+  border-color: rgba(67, 70, 86, 0.15);
+}
+
+/* ── Text colour corrections for dark background ───────────────────────────
+   neutral (#2a3548) is a dark surface — redirect text-neutral to on-surface */
+[data-theme="sentient-architect"] .text-neutral {
+  color: #c4c5d9;
+}
+[data-theme="sentient-architect"] .text-neutral\/50 {
+  color: rgba(196, 197, 217, 0.5);
+}
+[data-theme="sentient-architect"] .text-neutral\/60 {
+  color: rgba(196, 197, 217, 0.6);
+}
+[data-theme="sentient-architect"] .text-neutral\/70 {
+  color: rgba(196, 197, 217, 0.7);
 }
