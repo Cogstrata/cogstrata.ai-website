@@ -656,9 +656,137 @@ html {
   --tab-radius: 0.5rem;
 }
 
+[data-theme=cogstrata] {
+  --p: 60.8406% 0.211498 263.984096;
+  --inc: 12.1681% 0.0423 263.984096;
+  --suc: 12.4611% 0.024634 165.498777;
+  --wac: 16.0078% 0.020444 255.128802;
+  --erc: 12.4678% 0.037544 24.723741;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --pc: 99.8967% 0.001678 145.562457;
+  --s: 80.0392% 0.102218 255.128802;
+  --sc: 32.7385% 0.00857 17.598251;
+  --a: 80.0392% 0.102218 255.128802;
+  --ac: 32.7385% 0.00857 17.598251;
+  --n: 32.7385% 0.00857 17.598251;
+  --nc: 99.8967% 0.001678 145.562457;
+  --b1: 99.8967% 0.001678 145.562457;
+  --b2: 97.0151% 0 0;
+  --b3: 93.0999% 0 0;
+  --bc: 32.7385% 0.00857 17.598251;
+  --in: 60.8406% 0.211498 263.984096;
+  --su: 62.3057% 0.12317 165.498777;
+  --wa: 80.0392% 0.102218 255.128802;
+  --er: 62.3389% 0.18772 24.723741;
+  --rounded-box: 0.75rem;
+  --rounded-btn: 0.5rem;
+  --rounded-badge: 0.375rem;
+  --tab-radius: 0.5rem;
+}
+
+[data-theme=digital-schematic] {
+  --p: 84.4151% 0.145654 209.285079;
+  --inc: 18.7752% 0.010528 211.183046;
+  --suc: 12.4611% 0.024634 165.498777;
+  --wac: 16.6288% 0.017115 280.711684;
+  --erc: 12.4678% 0.037544 24.723741;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --pc: 30.4676% 0.052485 208.750681;
+  --s: 83.144% 0.085573 280.711684;
+  --sc: 23.1026% 0.03658 280.81344;
+  --a: 93.8758% 0.052639 211.183046;
+  --ac: 30.4676% 0.052485 208.750681;
+  --n: 32.7886% 0.01357 261.721825;
+  --nc: 91.3114% 0.012627 271.276937;
+  --b1: 18.9858% 0.013761 258.362818;
+  --b2: 24.2058% 0.012937 258.371943;
+  --b3: 28.3966% 0.014082 261.69487;
+  --bc: 91.3114% 0.012627 271.276937;
+  --in: 93.8758% 0.052639 211.183046;
+  --su: 62.3057% 0.12317 165.498777;
+  --wa: 83.144% 0.085573 280.711684;
+  --er: 62.3389% 0.18772 24.723741;
+  --rounded-box: 0rem;
+  --rounded-btn: 0rem;
+  --rounded-badge: 0rem;
+  --tab-radius: 0rem;
+}
+
+[data-theme=sentient-architect] {
+  --p: 82.8393% 0.086154 257.748305;
+  --inc: 16.5679% 0.017231 257.748305;
+  --suc: 16.5721% 0.007491 271.99711;
+  --wac: 16.5721% 0.007491 271.99711;
+  --erc: 16.7661% 0.017817 26.757495;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --pc: 20.9255% 0.038109 251.480324;
+  --s: 40.4276% 0.041031 255.401177;
+  --sc: 82.8846% 0.027811 283.492865;
+  --a: 82.8607% 0.037457 271.99711;
+  --ac: 24.2055% 0.03637 258.870833;
+  --n: 32.7556% 0.037083 261.156347;
+  --nc: 82.8846% 0.027811 283.492865;
+  --b1: 19.0319% 0.038923 257.06608;
+  --b2: 22.5302% 0.036967 258.849477;
+  --b3: 28.3521% 0.036722 260.039221;
+  --bc: 82.8846% 0.027811 283.492865;
+  --in: 82.8393% 0.086154 257.748305;
+  --su: 82.8607% 0.037457 271.99711;
+  --wa: 82.8607% 0.037457 271.99711;
+  --er: 83.8304% 0.089085 26.757495;
+  --rounded-box: 0.75rem;
+  --rounded-btn: 0.75rem;
+  --rounded-badge: 9999px;
+  --tab-radius: 0.75rem;
+}
+
+[data-theme=chromatic-velocity] {
+  --p: 50.572% 0.279171 280.186464;
+  --inc: 90.1144% 0.055834 280.186464;
+  --suc: 12.4611% 0.024634 165.498777;
+  --wac: 89.9928% 0.040187 4.383138;
+  --erc: 12.4678% 0.037544 24.723741;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --pc: 96.4122% 0.020858 304.035209;
+  --s: 87.9116% 0.149456 200.099149;
+  --sc: 41.5238% 0.070594 200.214233;
+  --a: 49.9641% 0.200935 4.383138;
+  --ac: 100% 0 0;
+  --n: 22.4568% 0.086347 290.124195;
+  --nc: 95.9056% 0.012348 317.74209;
+  --b1: 97.6479% 0.016768 316.935799;
+  --b2: 95.9148% 0.026083 310.406778;
+  --b3: 87.7232% 0.072151 301.931568;
+  --bc: 22.4568% 0.086347 290.124195;
+  --in: 50.572% 0.279171 280.186464;
+  --su: 62.3057% 0.12317 165.498777;
+  --wa: 49.9641% 0.200935 4.383138;
+  --er: 62.3389% 0.18772 24.723741;
+  --rounded-box: 0rem;
+  --rounded-btn: 0rem;
+  --rounded-badge: 0rem;
+  --tab-radius: 0rem;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
-  background-color: #F8F7FF;
+  background-color: oklch(var(--b1));
 }
 
 h1, h2, h3, h4, h5, h6, .display {
@@ -3110,23 +3238,6 @@ details.collapse summary::-webkit-details-marker {
   position: absolute;
 }
 
-.avatar.online:before {
-  content: "";
-  position: absolute;
-  z-index: 10;
-  display: block;
-  border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity)));
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: var(--fallback-b1,oklch(var(--b1)/1));
-  width: 15%;
-  height: 15%;
-  top: 7%;
-  right: 7%;
-}
-
 .card-compact .card-body {
   padding: 1rem;
   font-size: 0.875rem;
@@ -3276,10 +3387,6 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: 0.5rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -3348,24 +3455,12 @@ details.collapse summary::-webkit-details-marker {
   height: 2.5rem;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .h-32 {
   height: 8rem;
 }
 
 .h-5 {
   height: 1.25rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-9 {
-  height: 2.25rem;
 }
 
 .h-auto {
@@ -3384,24 +3479,12 @@ details.collapse summary::-webkit-details-marker {
   width: 2.5rem;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
 .w-5 {
   width: 1.25rem;
 }
 
 .w-52 {
   width: 13rem;
-}
-
-.w-6 {
-  width: 1.5rem;
-}
-
-.w-9 {
-  width: 2.25rem;
 }
 
 .w-fit {
@@ -3419,10 +3502,6 @@ details.collapse summary::-webkit-details-marker {
 
 .max-w-3xl {
   max-width: 48rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
 }
 
 .max-w-5xl {
@@ -3497,14 +3576,6 @@ details.collapse summary::-webkit-details-marker {
   gap: 1rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
@@ -3537,10 +3608,6 @@ details.collapse summary::-webkit-details-marker {
 
 .rounded-box {
   border-radius: var(--rounded-box, 1rem);
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-lg {
@@ -3591,10 +3658,6 @@ details.collapse summary::-webkit-details-marker {
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity, 1)));
 }
 
-.bg-base-200\/50 {
-  background-color: var(--fallback-b2,oklch(var(--b2)/0.5));
-}
-
 .bg-neutral {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity, 1)));
@@ -3616,10 +3679,6 @@ details.collapse summary::-webkit-details-marker {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .p-6 {
@@ -3738,14 +3797,6 @@ details.collapse summary::-webkit-details-marker {
   text-transform: uppercase;
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
-}
-
 .text-base-content {
   --tw-text-opacity: 1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity, 1)));
@@ -3759,18 +3810,6 @@ details.collapse summary::-webkit-details-marker {
 .text-neutral-content {
   --tw-text-opacity: 1;
   color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity, 1)));
-}
-
-.text-neutral-content\/60 {
-  color: var(--fallback-nc,oklch(var(--nc)/0.6));
-}
-
-.text-neutral-content\/80 {
-  color: var(--fallback-nc,oklch(var(--nc)/0.8));
-}
-
-.text-neutral\/40 {
-  color: var(--fallback-n,oklch(var(--n)/0.4));
 }
 
 .text-neutral\/50 {
@@ -3835,6 +3874,586 @@ details.collapse summary::-webkit-details-marker {
 
 /* Brand override: Cogstrata typography */
 
+/* ─── Hero accent span & theme label ─────────────────────────────────────── */
+
+/* Label hidden by default — each theme opt-in below */
+
+.sa-only {
+  display: none !important;
+}
+
+/* Accent span defaults to inheriting the heading colour (neutral for all
+   themes that don't override it, so it looks like normal heading text)   */
+
+.hero-accent {
+  color: inherit;
+}
+
+/* sentient-architect: show label, second line in primary light-blue */
+
+[data-theme="sentient-architect"] .sa-only {
+  display: inline-flex !important;
+}
+
+[data-theme="sentient-architect"] .hero-accent {
+  color: #a4c9ff !important;
+}
+
+/* chromatic-velocity: accent in primary-container (lighter violet) */
+
+[data-theme="chromatic-velocity"] .hero-accent {
+  color: #a192ff !important;
+}
+
+/* digital-schematic: accent in primary cyan */
+
+[data-theme="digital-schematic"] .hero-accent {
+  color: #00e5ff !important;
+}
+
+/* cogstrata: accent in primary blue */
+
+[data-theme="cogstrata"] .hero-accent {
+  color: #3e77ff !important;
+}
+
+/* ─── Chromatic Velocity theme overrides ─────────────────────────────────── */
+
+/* Body font: Inter instead of DM Sans */
+
+[data-theme="chromatic-velocity"] body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Tighter headline tracking per the "Speed Elements" spec */
+
+[data-theme="chromatic-velocity"] h1,
+[data-theme="chromatic-velocity"] h2,
+[data-theme="chromatic-velocity"] h3,
+[data-theme="chromatic-velocity"] h4,
+[data-theme="chromatic-velocity"] h5,
+[data-theme="chromatic-velocity"] h6,
+[data-theme="chromatic-velocity"] .display {
+  letter-spacing: -0.02em;
+}
+
+/* Glassmorphism navbar — "Glass & Gradient" rule */
+
+[data-theme="chromatic-velocity"] .navbar {
+  background: color-mix(in oklch, oklch(var(--b1)) 70%, transparent);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Primary button — solid #5827fc, on-primary text, 0px radius.
+   Hover: darken to #4c02f1 + 4px rightward "thrust". */
+
+[data-theme="chromatic-velocity"] .btn-primary {
+  background-color: #5827fc;
+  background-image: none;
+  color: #f6f0ff;
+  border: none;
+  border-radius: 0;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+[data-theme="chromatic-velocity"] .btn-primary:hover {
+  background-color: #4c02f1;
+  background-image: none;
+  transform: translateX(4px);
+}
+
+/* Secondary button — surface-container-highest (#e6d6ff), no border */
+
+[data-theme="chromatic-velocity"] .btn-secondary {
+  background-color: #e6d6ff;
+  background-image: none;
+  color: #1d1040;
+  border: none;
+  border-radius: 0;
+}
+
+[data-theme="chromatic-velocity"] .btn-secondary:hover {
+  background-color: #d9c5ff;
+  background-image: none;
+}
+
+/* Ghost / tertiary — primary-coloured text only.
+   A 2px underline grows from the centre on hover. */
+
+[data-theme="chromatic-velocity"] .btn-ghost {
+  position: relative;
+  color: #5827fc;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+}
+
+[data-theme="chromatic-velocity"] .btn-ghost::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #5827fc;
+  transition: width 200ms ease, left 200ms ease;
+}
+
+[data-theme="chromatic-velocity"] .btn-ghost:hover {
+  background: transparent;
+}
+
+[data-theme="chromatic-velocity"] .btn-ghost:hover::after {
+  width: 80%;
+  left: 10%;
+}
+
+/* Hero CTA gradient (reserved for hero sections, not regular buttons) —
+   primary (#5827fc) → primary-container (#a192ff) at 135°               */
+
+[data-theme="chromatic-velocity"] .cv-hero-cta {
+  background-image: linear-gradient(135deg, #5827fc, #a192ff);
+  color: #f6f0ff;
+  border: none;
+  border-radius: 0;
+  transition: background-image 150ms ease, transform 150ms ease;
+}
+
+[data-theme="chromatic-velocity"] .cv-hero-cta:hover {
+  background-image: linear-gradient(135deg, #4c02f1, #8f7efc);
+  transform: translateX(4px);
+}
+
+/* Input fields: bottom-border only (Prism Entry spec) */
+
+[data-theme="chromatic-velocity"] .input,
+[data-theme="chromatic-velocity"] .textarea,
+[data-theme="chromatic-velocity"] .select {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(127, 111, 155, 0.4);
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+[data-theme="chromatic-velocity"] .input:focus,
+[data-theme="chromatic-velocity"] .textarea:focus,
+[data-theme="chromatic-velocity"] .select:focus {
+  border-bottom: 2px solid;
+  -o-border-image: linear-gradient(90deg, #5827fc, #00f4fe) 1;
+     border-image: linear-gradient(90deg, #5827fc, #00f4fe) 1;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Ambient shadow for floating elements (no hard drop shadow) */
+
+[data-theme="chromatic-velocity"] .card,
+[data-theme="chromatic-velocity"] .dropdown-content {
+  box-shadow: 0 12px 40px rgba(29, 16, 64, 0.06);
+}
+
+/* ─── Digital Schematic theme overrides ──────────────────────────────────── */
+
+/* Body font: Plus Jakarta Sans */
+
+[data-theme="digital-schematic"] body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Headlines retain Space Grotesk — "laser-etched" precision.
+   !important needed to beat hardcoded inline color styles in the HTML. */
+
+[data-theme="digital-schematic"] h1,
+[data-theme="digital-schematic"] h2,
+[data-theme="digital-schematic"] h3,
+[data-theme="digital-schematic"] h4,
+[data-theme="digital-schematic"] h5,
+[data-theme="digital-schematic"] h6,
+[data-theme="digital-schematic"] .display {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+  color: #dfe2eb !important;
+}
+
+/* Glassmorphism navbar — surface_container_high at 70% opacity, 20px blur */
+
+[data-theme="digital-schematic"] .navbar {
+  background: rgba(38, 42, 49, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Hero "cyan hum" — subtle primary-to-primary_container gradient overlay at 15% */
+
+[data-theme="digital-schematic"] .ds-hero-bg {
+  background-image: linear-gradient(
+    180deg,
+    rgba(195, 245, 255, 0.15) 0%,
+    rgba(0, 229, 255, 0.15) 100%
+  );
+}
+
+/* Primary button — primary_container (#00e5ff) bg, on_primary (#00363d) text.
+   Hover: cyan outer glow (4px blur, 10% opacity). */
+
+[data-theme="digital-schematic"] .btn-primary {
+  background-color: #00e5ff;
+  background-image: none;
+  color: #00363d;
+  border: none;
+  border-radius: 0;
+  transition: box-shadow 150ms ease, background-color 150ms ease;
+}
+
+[data-theme="digital-schematic"] .btn-primary:hover {
+  background-color: #00e5ff;
+  background-image: none;
+  box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.1);
+}
+
+/* Secondary button — transparent bg, primary text, ghost border at 20% opacity */
+
+[data-theme="digital-schematic"] .btn-secondary {
+  background-color: transparent;
+  background-image: none;
+  color: #c3f5ff;
+  border: 1px solid rgba(195, 245, 255, 0.2);
+  border-radius: 0;
+  transition: box-shadow 150ms ease;
+}
+
+[data-theme="digital-schematic"] .btn-secondary:hover {
+  background-color: transparent;
+  background-image: none;
+  box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.1);
+}
+
+/* Navbar logo text — inline color: #393333 on the span overrides inheritance,
+   so we target it directly with !important                                   */
+
+[data-theme="digital-schematic"] .navbar span {
+  color: #dfe2eb !important;
+}
+
+/* Ghost button — full opacity on text so nav labels stay legible */
+
+[data-theme="digital-schematic"] .btn-ghost {
+  color: #dfe2eb !important;
+  background: transparent !important;
+  border: none;
+  border-radius: 0;
+  opacity: 1;
+  transition: box-shadow 150ms ease, color 150ms ease;
+}
+
+[data-theme="digital-schematic"] .btn-ghost:hover {
+  color: #c3f5ff !important;
+  background: transparent !important;
+  box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.1);
+}
+
+/* Input fields — surface_container_highest bg, bottom-edge glow on focus */
+
+[data-theme="digital-schematic"] .input,
+[data-theme="digital-schematic"] .textarea,
+[data-theme="digital-schematic"] .select {
+  background-color: #31353c;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  color: #dfe2eb;
+  outline: none;
+  box-shadow: none;
+  transition: border-color 150ms ease;
+}
+
+[data-theme="digital-schematic"] .input:focus,
+[data-theme="digital-schematic"] .textarea:focus,
+[data-theme="digital-schematic"] .select:focus {
+  border-bottom-color: #80c8d4;
+  /* primary_fixed_dim */
+  outline: none;
+  box-shadow: none;
+}
+
+/* Cards — one step up the surface scale + ambient primary glow */
+
+[data-theme="digital-schematic"] .card {
+  background-color: #1c2026;
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.05);
+}
+
+/* Dropdown — surface_container_highest */
+
+[data-theme="digital-schematic"] .dropdown-content {
+  background-color: #31353c;
+  box-shadow: 0 0 40px rgba(0, 229, 255, 0.05);
+}
+
+/* Data Node — monospaced schematic metadata tag */
+
+[data-theme="digital-schematic"] .ds-data-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #bdc2ff;
+}
+
+[data-theme="digital-schematic"] .ds-data-node::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #bdc2ff;
+  flex-shrink: 0;
+}
+
+/* "Ghost Border" fallback separator — outline_variant at 15% opacity */
+
+[data-theme="digital-schematic"] .divider {
+  border-color: rgba(59, 73, 76, 0.15);
+}
+
+/* ── Text colour corrections for dark background ─────────────────────────
+   The site uses text-neutral as its default readable text class (correct for
+   the light cogstrata theme). In digital-schematic, neutral (#31353c) is a
+   dark surface colour — nearly invisible on #10141a. Redirect all text-neutral
+   variants to the spec's on_surface value (#dfe2eb).                        */
+
+[data-theme="digital-schematic"] .text-neutral {
+  color: #dfe2eb;
+}
+
+[data-theme="digital-schematic"] .text-neutral\/50 {
+  color: rgba(223, 226, 235, 0.5);
+}
+
+[data-theme="digital-schematic"] .text-neutral\/60 {
+  color: rgba(223, 226, 235, 0.6);
+}
+
+[data-theme="digital-schematic"] .text-neutral\/70 {
+  color: rgba(223, 226, 235, 0.7);
+}
+
+/* ─── "How it Works" SVG — dark theme fixes ─────────────────────────────────
+   The detail boxes use fill="white" opacity="0.6" which turns grey over dark
+   backgrounds. Swap to a solid dark surface so text stays legible.           */
+
+[data-theme="sentient-architect"] .pipe-detail-bg,
+[data-theme="digital-schematic"]  .pipe-detail-bg {
+  opacity: 1 !important;
+}
+
+[data-theme="sentient-architect"] .pipe-detail-bg {
+  fill: #1f2a3c !important;
+  stroke: #2a3548 !important;
+}
+
+[data-theme="digital-schematic"] .pipe-detail-bg {
+  fill: #1c2026 !important;
+  stroke: #31353c !important;
+}
+
+[data-theme="sentient-architect"] .pipe-detail-text {
+  fill: #8899bb !important;
+}
+
+[data-theme="digital-schematic"] .pipe-detail-text {
+  fill: #9baabb !important;
+}
+
+/* ─── Sentient Architect theme overrides ─────────────────────────────────── */
+
+/* Body font: Manrope — the "Human" voice */
+
+[data-theme="sentient-architect"] body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Headlines: Space Grotesk — the "Technical" voice.
+   !important needed to beat inline color: #393333 on spans in the HTML.    */
+
+[data-theme="sentient-architect"] h1,
+[data-theme="sentient-architect"] h2,
+[data-theme="sentient-architect"] h3,
+[data-theme="sentient-architect"] h4,
+[data-theme="sentient-architect"] h5,
+[data-theme="sentient-architect"] h6,
+[data-theme="sentient-architect"] .display {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+  color: #eaf0ff !important;
+}
+
+/* Navbar logo span — inline style override */
+
+[data-theme="sentient-architect"] .navbar span {
+  color: #c4c5d9 !important;
+}
+
+/* Glassmorphism navbar — surface-bright at 60% opacity, 24px blur */
+
+[data-theme="sentient-architect"] .navbar {
+  background: rgba(47, 58, 76, 0.6);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* Ghost / secondary nav links */
+
+[data-theme="sentient-architect"] .btn-ghost {
+  color: #c4c5d9 !important;
+  background: transparent !important;
+  border: none;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+[data-theme="sentient-architect"] .btn-ghost:hover {
+  background-color: #1f2a3c !important;
+  color: #eaf0ff !important;
+}
+
+/* Primary button — solid blue, xl radius, all-caps label-md, 0.05em tracking */
+
+[data-theme="sentient-architect"] .btn-primary {
+  background-color: #1c6fbe;
+  background-image: none;
+  color: #eaf0ff;
+  border: none;
+  border-radius: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+
+[data-theme="sentient-architect"] .btn-primary:hover {
+  background-color: #1a5fa3;
+  background-image: none;
+  box-shadow: 0 0 32px rgba(164, 201, 255, 0.15);
+}
+
+/* Secondary button — no fill, no border, on-surface-variant text */
+
+[data-theme="sentient-architect"] .btn-secondary {
+  background-color: transparent;
+  background-image: none;
+  color: #c4c5d9;
+  border: none;
+  border-radius: 0.75rem;
+  transition: background-color 150ms ease;
+}
+
+[data-theme="sentient-architect"] .btn-secondary:hover {
+  background-color: #1f2a3c;
+  color: #eaf0ff;
+}
+
+/* Input fields — surface-container-lowest fill, ghost border, primary glow on focus */
+
+[data-theme="sentient-architect"] .input,
+[data-theme="sentient-architect"] .textarea,
+[data-theme="sentient-architect"] .select {
+  background-color: #040e1f;
+  border: 1px solid rgba(67, 70, 86, 0.1);
+  border-radius: 0.75rem;
+  color: #c4c5d9;
+  outline: none;
+  box-shadow: none;
+  transition: border-color 150ms ease;
+}
+
+[data-theme="sentient-architect"] .input:focus,
+[data-theme="sentient-architect"] .textarea:focus,
+[data-theme="sentient-architect"] .select:focus {
+  border-color: #a4c9ff;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Cards — surface-container bg, xl radius, ambient primary glow */
+
+[data-theme="sentient-architect"] .card {
+  background-color: #152031;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 32px rgba(164, 201, 255, 0.06);
+}
+
+/* Dropdown — surface-container-highest */
+
+[data-theme="sentient-architect"] .dropdown-content {
+  background-color: #2a3548;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 32px rgba(164, 201, 255, 0.06);
+}
+
+/* Action chips — secondary-container with full roundedness */
+
+[data-theme="sentient-architect"] .badge {
+  border-radius: 9999px;
+  background-color: #3a4a5f;
+  color: #c4c5d9;
+  border: none;
+}
+
+/* Signature: Insight Pulse — glowing dot next to key actionable insight    */
+
+[data-theme="sentient-architect"] .sa-insight-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #a4c9ff;
+  box-shadow: 0 0 6px 2px rgba(164, 201, 255, 0.4);
+  animation: sa-pulse 2s ease-in-out infinite;
+}
+
+@keyframes sa-pulse {
+  0%, 100% {
+    box-shadow: 0 0 6px 2px rgba(164, 201, 255, 0.4);
+  }
+
+  50%       {
+    box-shadow: 0 0 14px 4px rgba(164, 201, 255, 0.7);
+  }
+}
+
+/* Ghost border fallback divider — outline-variant at 15% */
+
+[data-theme="sentient-architect"] .divider {
+  border-color: rgba(67, 70, 86, 0.15);
+}
+
+/* ── Text colour corrections for dark background ───────────────────────────
+   neutral (#2a3548) is a dark surface — redirect text-neutral to on-surface */
+
+[data-theme="sentient-architect"] .text-neutral {
+  color: #c4c5d9;
+}
+
+[data-theme="sentient-architect"] .text-neutral\/50 {
+  color: rgba(196, 197, 217, 0.5);
+}
+
+[data-theme="sentient-architect"] .text-neutral\/60 {
+  color: rgba(196, 197, 217, 0.6);
+}
+
+[data-theme="sentient-architect"] .text-neutral\/70 {
+  color: rgba(196, 197, 217, 0.7);
+}
+
 .hover\:text-secondary:hover {
   --tw-text-opacity: 1;
   color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity, 1)));
@@ -3853,11 +4472,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 }
 

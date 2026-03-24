@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cogstrata">
+<html lang="en" data-theme="sentient-architect">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZBCGQDWVH"></script>
@@ -11,6 +11,15 @@
       gtag('config', 'G-JZBCGQDWVH');
     </script>
     <meta charset="UTF-8">
+    <script>
+      /* A/B theme assignment — runs before first paint to avoid flash */
+      (function() {
+        try {
+          var t = localStorage.getItem('cs-ab-theme') || 'sentient-architect';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch(e) {}
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experian Mosaic vs. Reality: The Hidden Cost of a Three-Year Data Lag - Cogstrata.ai Blog</title>
     <meta name="description" content="Experian's Mosaic classification updates on a multi-year cycle. This analysis examines the commercial cost of that lag and what always-on demographic intelligence changes for financial services and retail teams.">
@@ -32,7 +41,7 @@
     <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/index.min.css">
     <script type="application/ld+json">
