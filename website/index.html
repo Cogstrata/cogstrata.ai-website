@@ -42,12 +42,10 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap"></noscript>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Heroicons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/index.min.css">
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -273,8 +271,18 @@
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
                             <picture>
-  <source srcset="assets/profile_enrichment.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/profile_enrichment.png" alt="Profile Enrichment" class=" mb-4 object-contain" />
+  <source
+    type="image/webp"
+    srcset="assets/profile_enrichment-500w.webp 500w, assets/profile_enrichment-1000w.webp 1000w"
+    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
+  <img
+    src="assets/profile_enrichment-500w.webp"
+    alt="Profile Enrichment"
+    width="500"
+    height="273"
+    loading="lazy"
+    decoding="async"
+    class="mb-4 object-contain">
 </picture>
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Profile Enrichment
@@ -287,8 +295,18 @@
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
                             <picture>
-  <source srcset="assets/segmentation.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/segmentation.png" alt="Segmentation" class="mb-4 object-contain" />
+  <source
+    type="image/webp"
+    srcset="assets/segmentation-500w.webp 500w, assets/segmentation-1000w.webp 1000w"
+    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
+  <img
+    src="assets/segmentation-500w.webp"
+    alt="Segmentation"
+    width="500"
+    height="273"
+    loading="lazy"
+    decoding="async"
+    class="mb-4 object-contain">
 </picture>
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Segmentation</h3>
@@ -303,8 +321,18 @@
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
                             <picture>
-  <source srcset="assets/live_signals.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/live_signals.png" alt="Live Signals" class="mb-4 object-contain" />
+  <source
+    type="image/webp"
+    srcset="assets/live_signals-500w.webp 500w, assets/live_signals-1000w.webp 1000w"
+    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
+  <img
+    src="assets/live_signals-500w.webp"
+    alt="Live Signals"
+    width="500"
+    height="273"
+    loading="lazy"
+    decoding="async"
+    class="mb-4 object-contain">
 </picture>
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Live Signals</h3>
@@ -319,8 +347,18 @@
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
                             <picture>
-  <source srcset="assets/intelligence.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/intelligence.png" alt="Intelligence" class="mb-4 object-contain" />
+  <source
+    type="image/webp"
+    srcset="assets/intelligence-500w.webp 500w, assets/intelligence-1000w.webp 1000w"
+    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
+  <img
+    src="assets/intelligence-500w.webp"
+    alt="Intelligence"
+    width="500"
+    height="273"
+    loading="lazy"
+    decoding="async"
+    class="mb-4 object-contain">
 </picture>
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Intelligence</h3>
@@ -335,8 +373,18 @@
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
                             <picture>
-  <source srcset="assets/connectivity.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/connectivity.png" alt="Connectivity" class="mb-4 object-contain" />
+  <source
+    type="image/webp"
+    srcset="assets/connectivity-500w.webp 500w, assets/connectivity-1000w.webp 1000w"
+    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
+  <img
+    src="assets/connectivity-500w.webp"
+    alt="Connectivity"
+    width="500"
+    height="273"
+    loading="lazy"
+    decoding="async"
+    class="mb-4 object-contain">
 </picture>
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Connectivity</h3>
@@ -350,8 +398,18 @@
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
                             <picture>
-  <source srcset="assets/prediction.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/prediction.png" alt="Prediction" class="mb-4 object-contain" />
+  <source
+    type="image/webp"
+    srcset="assets/prediction-500w.webp 500w, assets/prediction-1000w.webp 1000w"
+    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
+  <img
+    src="assets/prediction-500w.webp"
+    alt="Prediction"
+    width="500"
+    height="273"
+    loading="lazy"
+    decoding="async"
+    class="mb-4 object-contain">
 </picture>
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Prediction</h3>
@@ -365,8 +423,18 @@
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
                             <picture>
-  <source srcset="assets/compliance.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/compliance.png" alt="Compliance" class="mb-4 object-contain" />
+  <source
+    type="image/webp"
+    srcset="assets/compliance-500w.webp 500w, assets/compliance-1000w.webp 1000w"
+    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
+  <img
+    src="assets/compliance-500w.webp"
+    alt="Compliance"
+    width="500"
+    height="273"
+    loading="lazy"
+    decoding="async"
+    class="mb-4 object-contain">
 </picture>
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Compliance</h3>
@@ -380,8 +448,18 @@
                     <div class="card bg-base-200 shadow-sm border border-base-300">
                         <div class="card-body">
                             <picture>
-  <source srcset="assets/accessibility.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/accessibility.png" alt="Accessibility" class="mb-4 object-contain" />
+  <source
+    type="image/webp"
+    srcset="assets/accessibility-500w.webp 500w, assets/accessibility-1000w.webp 1000w"
+    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
+  <img
+    src="assets/accessibility-500w.webp"
+    alt="Accessibility"
+    width="500"
+    height="273"
+    loading="lazy"
+    decoding="async"
+    class="mb-4 object-contain">
 </picture>
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Accessibility</h3>
