@@ -518,3 +518,53 @@
 [data-theme="sentient-architect"] .text-neutral\/70 {
   color: rgba(196, 197, 217, 0.7);
 }
+[data-theme="sentient-architect"] .text-neutral\/80 {
+  color: rgba(196, 197, 217, 0.8);
+}
+[data-theme="sentient-architect"] .text-neutral\/90 {
+  color: rgba(196, 197, 217, 0.9);
+}
+
+/* ── Prose / blog body typography for dark background ──────────────────────
+   The prose container uses text-neutral/80 for body text. Ensure all prose
+   child elements inherit readable colours on the dark base-100 surface.    */
+[data-theme="sentient-architect"] .prose {
+  color: rgba(196, 197, 217, 0.85);
+}
+[data-theme="sentient-architect"] .prose h2,
+[data-theme="sentient-architect"] .prose h3,
+[data-theme="sentient-architect"] .prose h4 {
+  color: #eaf0ff !important;
+}
+[data-theme="sentient-architect"] .prose strong {
+  color: #dfe2eb;
+}
+[data-theme="sentient-architect"] .prose a {
+  color: #a4c9ff;
+}
+[data-theme="sentient-architect"] .prose a:hover {
+  color: #c8ddff;
+}
+[data-theme="sentient-architect"] .prose blockquote {
+  border-color: rgba(164, 201, 255, 0.3);
+  color: rgba(196, 197, 217, 0.7);
+}
+[data-theme="sentient-architect"] .prose code {
+  color: #a4c9ff;
+  background-color: rgba(164, 201, 255, 0.1);
+}
+[data-theme="sentient-architect"] .prose li::marker {
+  color: rgba(196, 197, 217, 0.5);
+}
+
+/* ── Card image sizing ────────────────────────────────────────────────────
+   <picture> inside DaisyUI card figures needs explicit width to fill the
+   figure container, otherwise it collapses to the image's intrinsic size. */
+.card figure picture {
+  display: block;
+  width: 100%;
+}
+.card figure picture img {
+  display: block;
+  width: 100%;
+}
