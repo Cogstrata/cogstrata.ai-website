@@ -21,22 +21,22 @@
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cogstrata - Request a Free Data Sample</title>
-    <meta name="description" content="Register your interest in Cogstrata.ai and get a free data sample run against your own customer data within 24 hours. No contract needed to evaluate.">
+    <title>Get in Touch — Cogstrata.ai</title>
+    <meta name="description" content="Join the Cogstrata wait list, register as a pilot partner, or ask us a question. We're building the next generation of AI-powered customer data intelligence.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cogstrata.ai/contact.html">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cogstrata.ai/contact.html">
-    <meta property="og:title" content="Request a Free Data Sample - Cogstrata.ai">
-    <meta property="og:description" content="Register your interest in Cogstrata.ai and get a free data sample run against your own customer data within 24 hours. No contract needed to evaluate.">
+    <meta property="og:title" content="Get in Touch — Cogstrata.ai">
+    <meta property="og:description" content="Join the Cogstrata wait list, register as a pilot partner, or ask us a question. We're building the next generation of AI-powered customer data intelligence.">
     <meta property="og:image" content="https://cogstrata.ai/assets/og-image.png">
     <meta property="og:site_name" content="Cogstrata.ai">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cogstrata.ai/contact.html">
-    <meta name="twitter:title" content="Request a Free Data Sample - Cogstrata.ai">
-    <meta name="twitter:description" content="Register your interest in Cogstrata.ai and get a free data sample run against your own customer data within 24 hours. No contract needed to evaluate.">
+    <meta name="twitter:title" content="Get in Touch — Cogstrata.ai">
+    <meta name="twitter:description" content="Join the Cogstrata wait list, register as a pilot partner, or ask us a question. We're building the next generation of AI-powered customer data intelligence.">
     <meta name="twitter:image" content="https://cogstrata.ai/assets/og-image.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,10 +105,36 @@
     </div>
 
     <!-- Contact Form -->
-    <div class="container mx-auto px-4 py-16">
-        <p class="text-sm font-semibold tracking-widest uppercase text-primary text-center mb-4" style="font-family: 'DM Sans', sans-serif; letter-spacing: 3px;">AI Agent Ready</p>
-        <h1 class="text-4xl font-bold text-center mb-8 text-neutral">Get your free data sample</h1>
-        <p class="text-center mb-12 text-neutral/70">Send us a list of postcodes and we'll return a fully enriched sample — all 500+ attributes — within 24 hours. Agent-ready via API, batch, or marketplace. No contract, no commitment.</p>
+    <div class="container mx-auto px-4 py-16 max-w-4xl">
+        <p class="text-sm font-semibold tracking-widest uppercase text-primary text-center mb-4" style="font-family: 'DM Sans', sans-serif; letter-spacing: 3px;">Early Access</p>
+        <h1 class="text-4xl font-bold text-center mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Get in touch</h1>
+        <p class="text-center mb-12 text-neutral/70 max-w-xl mx-auto">Whether you want to join our wait list, become an early pilot partner, or just ask us a question — we'd love to hear from you.</p>
+
+        <!-- Three reasons to get in touch -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="card bg-base-200 border border-base-300">
+                <div class="card-body text-center">
+                    <div class="text-3xl mb-2">📋</div>
+                    <h2 class="card-title justify-center text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Join the Wait List</h2>
+                    <p class="text-neutral/70 text-sm">Be first to access Cogstrata when we launch. We'll keep you updated on our progress and give you early access priority.</p>
+                </div>
+            </div>
+            <div class="card bg-base-200 border border-base-300">
+                <div class="card-body text-center">
+                    <div class="text-3xl mb-2">🚀</div>
+                    <h2 class="card-title justify-center text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Become a Pilot</h2>
+                    <p class="text-neutral/70 text-sm">Work with us directly to trial Cogstrata on your own data. Shape the product and get preferential terms as a founding customer.</p>
+                </div>
+            </div>
+            <div class="card bg-base-200 border border-base-300">
+                <div class="card-body text-center">
+                    <div class="text-3xl mb-2">💬</div>
+                    <h2 class="card-title justify-center text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Ask a Question</h2>
+                    <p class="text-neutral/70 text-sm">Curious about our data sources, coverage, or how we integrate? Drop us a message and we'll get back to you promptly.</p>
+                </div>
+            </div>
+        </div>
+
         <div class="max-w-md mx-auto">
             <form action="https://formspree.io/f/xzdjqvgo" method="post" class="space-y-4">
                 <div class="form-control">
@@ -131,12 +157,23 @@
                 </div>
                 <div class="form-control">
                     <label class="label">
+                        <span class="label-text">How can we help?</span>
+                    </label>
+                    <select name="enquiry_type" class="select select-bordered" required>
+                        <option value="" disabled selected>Select one…</option>
+                        <option value="wait_list">Join the wait list</option>
+                        <option value="pilot">Become a pilot partner</option>
+                        <option value="question">Ask a question</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label class="label">
                         <span class="label-text">Message</span>
                     </label>
-                    <textarea class="textarea textarea-bordered" name="message" placeholder="Tell us a bit about your use case and how many records you're looking to enrich."></textarea>
+                    <textarea class="textarea textarea-bordered" name="message" rows="4" placeholder="Tell us a bit about yourself and what you're looking for."></textarea>
                 </div>
                 <div class="form-control mt-6">
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button class="btn btn-primary" type="submit">Send Message</button>
                 </div>
             </form>
         </div>
