@@ -122,6 +122,10 @@
         </div>
         <h1 class="text-4xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">From API call to autonomous action: how agents consume demographic intelligence</h1>
         <p class="text-sm mb-10 text-neutral/60">Published 16 April 2026 &nbsp;&middot;&nbsp; 9 min read</p>
+        <picture>
+  <source srcset="../../assets/blog/how-agents-consume-data.webp" type="image/webp">
+  <img decoding="async" loading="lazy" src="../../assets/blog/how-agents-consume-data.png" alt="Pipeline from API call through structured channels to agent actions" class="w-full rounded-xl mb-10 shadow-sm">
+</picture>
 
         <div class="prose max-w-none text-neutral/80 space-y-6">
             <p>The conversation about AI agents and data quality often stays at the conceptual level — data needs to be fresh, structured, trustworthy. All true. But for the teams actually building agentic applications, the practical question is more specific: what does the interaction between an agent and a data source actually look like at runtime? What happens between the moment an agent decides it needs demographic context and the moment it takes an action based on what it receives?</p>
@@ -144,6 +148,19 @@
 
             <p>The difference this makes to agent behaviour is substantial. An agent that receives a bare score of 7.3 can only compare it numerically against a threshold. An agent that receives the full metadata envelope can make conditional decisions: if the score is high-confidence and recently updated, act on it directly; if the confidence is low, seek corroborating signals before proceeding; if the score has changed significantly since the last query, flag the change for review rather than treating the new value as stable.</p>
 
+
+
+            <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <div class="flex-1">
+                        <p class="font-bold text-neutral text-lg mb-1" style="font-family: 'Space Grotesk', sans-serif;">Try the API on your own data</p>
+                        <p class="text-neutral/70 text-sm">Send us a set of postcodes and we'll return the full meta-rich response — values, confidence bands, provenance, and freshness metadata — so you can see exactly what your agents would receive.</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm whitespace-nowrap" href="../../contact.html">Try It Free</a>
+                </div>
+            </div>
+        </div>
+
             <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">The interpretation layer: how agents process structured attributes</h2>
 
             <p>Between receiving the data and taking action, the agent must interpret what it has received. This is where the semantic structure of the data product becomes critical. An agent operating on well-structured demographic data can build interpretation logic that is generalised and maintainable. An agent working with poorly structured data must build bespoke interpretation for every attribute, every source, and every edge case.</p>
@@ -164,17 +181,6 @@
 
             <p>For teams building agentic applications, this is the standard to evaluate data sources against. Not just: is the data accurate? But: does the data give my agent the information it needs to know how accurate it is, how current it is, and how much confidence to place in it? The data sources that answer yes to these questions are the ones that will power the next generation of autonomous decision-making. The ones that do not will produce agents that are impressively fluent and systematically unreliable.</p>
 
-            <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                    <div class="flex-1">
-                        <p class="font-bold text-neutral text-lg mb-1" style="font-family: 'Space Grotesk', sans-serif;">Try the API on your own data</p>
-                        <p class="text-neutral/70 text-sm">Send us a set of postcodes and we'll return the full meta-rich response — values, confidence bands, provenance, and freshness metadata — so you can see exactly what your agents would receive.</p>
-                    </div>
-                    <a class="btn btn-primary btn-sm whitespace-nowrap" href="../../contact.html">Try It Free</a>
-                </div>
-            </div>
-        </div>
-
         <div class="mt-12 p-6 bg-base-200 rounded-xl border border-base-300">
             <p class="font-semibold text-neutral mb-2">This is part four of our Agent-Ready Data series</p>
             <p class="text-neutral/70 text-sm mb-4">Exploring why demographic intelligence built for autonomous AI agents requires a fundamentally different approach to data architecture, curation, and delivery.</p>
@@ -182,7 +188,7 @@
         </div>
 
         <div class="mt-8">
-            <a class="btn btn-outline btn-primary" href="../index.html">Back to Blog</a>
+            <a class="btn btn-outline btn-secondary" href="../index.html">Back to Blog</a>
         </div>
     </div>
 

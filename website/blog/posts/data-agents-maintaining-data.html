@@ -122,6 +122,10 @@
         </div>
         <h1 class="text-4xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Data agents maintaining data for AI agents: the Cogstrata approach</h1>
         <p class="text-sm mb-10 text-neutral/60">Published 2 April 2026 &nbsp;&middot;&nbsp; 9 min read</p>
+        <picture>
+  <source srcset="../../assets/blog/data-agents-maintaining-data.webp" type="image/webp">
+  <img decoding="async" loading="lazy" src="../../assets/blog/data-agents-maintaining-data.png" alt="Fleet of data agents maintaining a central data structure" class="w-full rounded-xl mb-10 shadow-sm">
+</picture>
 
         <div class="prose max-w-none text-neutral/80 space-y-6">
             <p>There is a certain elegance to the idea that the best way to prepare data for AI agents is to use AI agents to prepare it. At Cogstrata, this is not a philosophical position — it is the operational architecture. Our data is maintained by a fleet of specialised data agents, each responsible for a distinct aspect of the curation pipeline. The result is a dataset that is not just accurate and current, but structurally ready for consumption by the next generation of autonomous AI systems.</p>
@@ -148,6 +152,19 @@
 
             <p>The fourth layer is metadata enrichment. Every time an attribute is updated or recomputed, these agents attach structured metadata: the timestamp of the update, the input signals that contributed, the confidence level of the new value, and the delta from the previous value. This metadata is not an afterthought — it is a first-class part of the data product, because it is what allows a consuming AI agent to make informed decisions about how much weight to place on any given attribute.</p>
 
+
+
+            <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <div class="flex-1">
+                        <p class="font-bold text-neutral text-lg mb-1" style="font-family: 'Space Grotesk', sans-serif;">Explore the metadata layer</p>
+                        <p class="text-neutral/70 text-sm">Request a sample enrichment and see the full provenance metadata, confidence signals, and freshness timestamps that our data agents attach to every attribute.</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm whitespace-nowrap" href="../../contact.html">Try It Free</a>
+                </div>
+            </div>
+        </div>
+
             <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">The virtuous cycle: agents improving data for agents</h2>
 
             <p>The most significant advantage of this architecture is that it creates a feedback loop that improves data quality over time in ways that a batch process cannot. When a downstream consuming agent — a client's credit risk model, for example — queries the Cogstrata API and receives an attribute with a low confidence score, that signal is itself information. It tells the maintenance agents that a particular postcode or attribute class has thin coverage, which can trigger additional inference processing or flag the area for supplementary data sourcing.</p>
@@ -166,17 +183,6 @@
 
             <p>The question for any organisation evaluating data sources for agentic applications is not just whether the data is accurate. It is whether the data was maintained by a process that understands what autonomous consumption requires — and whether that process is itself operating at the speed and scale that continuous decision-making demands.</p>
 
-            <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                    <div class="flex-1">
-                        <p class="font-bold text-neutral text-lg mb-1" style="font-family: 'Space Grotesk', sans-serif;">Explore the metadata layer</p>
-                        <p class="text-neutral/70 text-sm">Request a sample enrichment and see the full provenance metadata, confidence signals, and freshness timestamps that our data agents attach to every attribute.</p>
-                    </div>
-                    <a class="btn btn-primary btn-sm whitespace-nowrap" href="../../contact.html">Try It Free</a>
-                </div>
-            </div>
-        </div>
-
         <div class="mt-12 p-6 bg-base-200 rounded-xl border border-base-300">
             <p class="font-semibold text-neutral mb-2">This is part two of our Agent-Ready Data series</p>
             <p class="text-neutral/70 text-sm mb-4">Exploring why demographic intelligence built for autonomous AI agents requires a fundamentally different approach to data architecture, curation, and delivery.</p>
@@ -184,7 +190,7 @@
         </div>
 
         <div class="mt-8">
-            <a class="btn btn-outline btn-primary" href="../index.html">Back to Blog</a>
+            <a class="btn btn-outline btn-secondary" href="../index.html">Back to Blog</a>
         </div>
     </div>
 
