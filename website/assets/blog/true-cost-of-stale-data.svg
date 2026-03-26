@@ -1,15 +1,15 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0d1b3e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#060e1f;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#162640;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1d33;stop-opacity:1" />
     </linearGradient>
   </defs>
 
   <rect width="1200" height="630" fill="url(#bgGrad6)"/>
 
   <!-- Subtle grid pattern -->
-  <g stroke="#91c1ff" stroke-width="0.3" opacity="0.06">
+  <g stroke="#91c1ff" stroke-width="0.3" opacity="0.08">
     <line x1="0" y1="0" x2="1200" y2="0" />
     <line x1="0" y1="30" x2="1200" y2="30" />
     <line x1="0" y1="60" x2="1200" y2="60" />
@@ -58,59 +58,59 @@
 
   <!-- LEFT SIDE: Descending bars/losses (fading purple) -->
   <!-- Tall descending bars on left showing losses -->
-  <rect x="150" y="140" width="45" height="320" fill="#534AB7" opacity="0.7"/>
-  <rect x="220" y="180" width="45" height="280" fill="#534AB7" opacity="0.6"/>
-  <rect x="290" y="230" width="45" height="230" fill="#534AB7" opacity="0.5"/>
-  <rect x="360" y="280" width="45" height="180" fill="#534AB7" opacity="0.35"/>
-  <rect x="430" y="340" width="45" height="120" fill="#534AB7" opacity="0.2"/>
+  <rect x="150" y="140" width="45" height="320" fill="#534AB7" opacity="0.84"/>
+  <rect x="220" y="180" width="45" height="280" fill="#534AB7" opacity="0.72"/>
+  <rect x="290" y="230" width="45" height="230" fill="#534AB7" opacity="0.6"/>
+  <rect x="360" y="280" width="45" height="180" fill="#534AB7" opacity="0.42"/>
+  <rect x="430" y="340" width="45" height="120" fill="#534AB7" opacity="0.24"/>
 
   <!-- Fading effect on left bars (more transparent as they fade) -->
-  <line x1="150" y1="460" x2="195" y2="460" stroke="#534AB7" stroke-width="1" opacity="0.8"/>
-  <line x1="220" y1="460" x2="265" y2="460" stroke="#534AB7" stroke-width="1" opacity="0.6"/>
-  <line x1="290" y1="460" x2="335" y2="460" stroke="#534AB7" stroke-width="1" opacity="0.4"/>
+  <line x1="150" y1="460" x2="195" y2="460" stroke="#534AB7" stroke-width="1" opacity="0.96"/>
+  <line x1="220" y1="460" x2="265" y2="460" stroke="#534AB7" stroke-width="1" opacity="0.72"/>
+  <line x1="290" y1="460" x2="335" y2="460" stroke="#534AB7" stroke-width="1" opacity="0.48"/>
 
   <!-- RIGHT SIDE: Rising bars/gains (bright blue to amber gradient) -->
   <!-- Ascending bars on right showing gains -->
-  <rect x="670" y="420" width="45" height="40" fill="#3E77FF" opacity="0.5"/>
-  <rect x="740" y="340" width="45" height="120" fill="#3E77FF" opacity="0.65"/>
-  <rect x="810" y="260" width="45" height="200" fill="#91c1ff" opacity="0.7"/>
-  <rect x="880" y="160" width="45" height="300" fill="#EF9F27" opacity="0.8"/>
+  <rect x="670" y="420" width="45" height="40" fill="#3E77FF" opacity="0.6"/>
+  <rect x="740" y="340" width="45" height="120" fill="#3E77FF" opacity="0.78"/>
+  <rect x="810" y="260" width="45" height="200" fill="#91c1ff" opacity="0.84"/>
+  <rect x="880" y="160" width="45" height="300" fill="#EF9F27" opacity="0.96"/>
   <rect x="950" y="80" width="45" height="380" fill="#EF9F27" opacity="0.9"/>
 
   <!-- Brightening effect on right bars -->
-  <line x1="670" y1="460" x2="715" y2="460" stroke="#3E77FF" stroke-width="1" opacity="0.4"/>
-  <line x1="740" y1="460" x2="785" y2="460" stroke="#3E77FF" stroke-width="1" opacity="0.6"/>
-  <line x1="810" y1="460" x2="855" y2="460" stroke="#91c1ff" stroke-width="1" opacity="0.7"/>
-  <line x1="880" y1="460" x2="925" y2="460" stroke="#EF9F27" stroke-width="1" opacity="0.85"/>
+  <line x1="670" y1="460" x2="715" y2="460" stroke="#3E77FF" stroke-width="1" opacity="0.48"/>
+  <line x1="740" y1="460" x2="785" y2="460" stroke="#3E77FF" stroke-width="1" opacity="0.72"/>
+  <line x1="810" y1="460" x2="855" y2="460" stroke="#91c1ff" stroke-width="1" opacity="0.84"/>
+  <line x1="880" y1="460" x2="925" y2="460" stroke="#EF9F27" stroke-width="1" opacity="0.95"/>
   <line x1="950" y1="460" x2="995" y2="460" stroke="#EF9F27" stroke-width="1" opacity="0.95"/>
 
   <!-- Center transition area showing shift from losses to gains -->
-  <rect x="500" y="320" width="45" height="140" fill="#534AB7" opacity="0.25"/>
-  <line x1="520" y1="320" x2="520" y2="300" stroke="#3E77FF" stroke-width="2" opacity="0.4"/>
+  <rect x="500" y="320" width="45" height="140" fill="#534AB7" opacity="0.3"/>
+  <line x1="520" y1="320" x2="520" y2="300" stroke="#3E77FF" stroke-width="2" opacity="0.48"/>
 
   <!-- Baseline/axis -->
-  <line x1="100" y1="460" x2="1050" y2="460" stroke="#91c1ff" stroke-width="2" opacity="0.3"/>
+  <line x1="100" y1="460" x2="1050" y2="460" stroke="#91c1ff" stroke-width="2" opacity="0.36"/>
 
   <!-- Bracket/label areas (abstract representation without text) -->
   <!-- Left loss area bracket -->
-  <line x1="110" y1="120" x2="110" y2="480" stroke="#534AB7" stroke-width="1.5" opacity="0.3"/>
-  <line x1="110" y1="120" x2="130" y2="120" stroke="#534AB7" stroke-width="1.5" opacity="0.3"/>
-  <line x1="110" y1="480" x2="130" y2="480" stroke="#534AB7" stroke-width="1.5" opacity="0.3"/>
+  <line x1="110" y1="120" x2="110" y2="480" stroke="#534AB7" stroke-width="1.5" opacity="0.36"/>
+  <line x1="110" y1="120" x2="130" y2="120" stroke="#534AB7" stroke-width="1.5" opacity="0.36"/>
+  <line x1="110" y1="480" x2="130" y2="480" stroke="#534AB7" stroke-width="1.5" opacity="0.36"/>
 
   <!-- Right gain area bracket -->
-  <line x1="1010" y1="60" x2="1010" y2="480" stroke="#EF9F27" stroke-width="1.5" opacity="0.5"/>
-  <line x1="1010" y1="60" x2="990" y2="60" stroke="#EF9F27" stroke-width="1.5" opacity="0.5"/>
-  <line x1="1010" y1="480" x2="990" y2="480" stroke="#EF9F27" stroke-width="1.5" opacity="0.5"/>
+  <line x1="1010" y1="60" x2="1010" y2="480" stroke="#EF9F27" stroke-width="1.5" opacity="0.6"/>
+  <line x1="1010" y1="60" x2="990" y2="60" stroke="#EF9F27" stroke-width="1.5" opacity="0.6"/>
+  <line x1="1010" y1="480" x2="990" y2="480" stroke="#EF9F27" stroke-width="1.5" opacity="0.6"/>
 
   <!-- CFO/ROI indicator elements -->
   <!-- Up arrow on right (gains) -->
-  <polygon points="950,40 960,60 940,60" fill="#EF9F27" opacity="0.7"/>
-  <line x1="950" y1="60" x2="950" y2="80" stroke="#EF9F27" stroke-width="2" opacity="0.6"/>
+  <polygon points="950,40 960,60 940,60" fill="#EF9F27" opacity="0.84"/>
+  <line x1="950" y1="60" x2="950" y2="80" stroke="#EF9F27" stroke-width="2" opacity="0.72"/>
 
   <!-- Down arrow on left (losses) -->
-  <polygon points="175,110 185,130 165,130" fill="#534AB7" opacity="0.6"/>
-  <line x1="175" y1="130" x2="175" y2="150" stroke="#534AB7" stroke-width="2" opacity="0.5"/>
+  <polygon points="175,110 185,130 165,130" fill="#534AB7" opacity="0.72"/>
+  <line x1="175" y1="130" x2="175" y2="150" stroke="#534AB7" stroke-width="2" opacity="0.6"/>
 
   <!-- Additional visual separation with dashed line -->
-  <line x1="550" y1="100" x2="550" y2="520" stroke="#91c1ff" stroke-width="1" opacity="0.15" stroke-dasharray="5,5"/>
+  <line x1="550" y1="100" x2="550" y2="520" stroke="#91c1ff" stroke-width="1" opacity="0.18" stroke-dasharray="5,5"/>
 </svg>

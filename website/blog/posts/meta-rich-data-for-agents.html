@@ -122,6 +122,10 @@
         </div>
         <h1 class="text-4xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Meta-rich data: what it means and why agentic services need it</h1>
         <p class="text-sm mb-10 text-neutral/60">Published 9 April 2026 &nbsp;&middot;&nbsp; 8 min read</p>
+        <picture>
+  <source srcset="../../assets/blog/meta-rich-data-for-agents.webp" type="image/webp">
+  <img decoding="async" loading="lazy" src="../../assets/blog/meta-rich-data-for-agents.png" alt="Central data point surrounded by four concentric metadata layers" class="w-full rounded-xl mb-10 shadow-sm">
+</picture>
 
         <div class="prose max-w-none text-neutral/80 space-y-6">
             <p>The term "metadata" has been part of the data industry vocabulary for decades, but in practice it has usually meant column headers, data types, and perhaps a description field in a data catalogue. For most third-party data products, metadata is documentation — something a human reads once to understand the dataset and then largely ignores. The data itself does the work.</p>
@@ -150,6 +154,19 @@
 
             <p>The consequence is that data products designed for human consumption produce systematically overconfident behaviour in agentic systems. The agent treats every attribute as equally current, equally reliable, and equally well-sourced — because the data gives it no basis for differentiating. This is not a failure of the agent. It is a failure of the data to carry the information the agent needs to calibrate its confidence.</p>
 
+
+
+            <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <div class="flex-1">
+                        <p class="font-bold text-neutral text-lg mb-1" style="font-family: 'Space Grotesk', sans-serif;">See meta-rich data in action</p>
+                        <p class="text-neutral/70 text-sm">Request a sample enrichment and explore the full metadata envelope — temporal context, provenance, confidence scores, and semantic types — attached to every attribute.</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm whitespace-nowrap" href="../../contact.html">Try It Free</a>
+                </div>
+            </div>
+        </div>
+
             <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">The practical difference for agentic workflows</h2>
 
             <p>Consider an AI agent responsible for personalising outbound marketing for a financial services firm. The agent receives a postcode-level attribute set for a customer segment and must decide which product to recommend and how to frame the message. In a traditional data model, the agent receives values: income band 4, property type semi-detached, household size 3, deprivation index 6. It makes a decision based on those values.</p>
@@ -166,17 +183,6 @@
 
             <p>This is the shift that the agentic era requires from data providers. The product is no longer just the data. The product is the data plus the contextual layer that makes the data usable by machines that cannot bring their own judgement. Building that layer — maintaining it, keeping it current, ensuring it scales — is the challenge that will separate the data products of the next decade from the products of the last one.</p>
 
-            <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                    <div class="flex-1">
-                        <p class="font-bold text-neutral text-lg mb-1" style="font-family: 'Space Grotesk', sans-serif;">See meta-rich data in action</p>
-                        <p class="text-neutral/70 text-sm">Request a sample enrichment and explore the full metadata envelope — temporal context, provenance, confidence scores, and semantic types — attached to every attribute.</p>
-                    </div>
-                    <a class="btn btn-primary btn-sm whitespace-nowrap" href="../../contact.html">Try It Free</a>
-                </div>
-            </div>
-        </div>
-
         <div class="mt-12 p-6 bg-base-200 rounded-xl border border-base-300">
             <p class="font-semibold text-neutral mb-2">This is part three of our Agent-Ready Data series</p>
             <p class="text-neutral/70 text-sm mb-4">Exploring why demographic intelligence built for autonomous AI agents requires a fundamentally different approach to data architecture, curation, and delivery.</p>
@@ -184,7 +190,7 @@
         </div>
 
         <div class="mt-8">
-            <a class="btn btn-outline btn-primary" href="../index.html">Back to Blog</a>
+            <a class="btn btn-outline btn-secondary" href="../index.html">Back to Blog</a>
         </div>
     </div>
 

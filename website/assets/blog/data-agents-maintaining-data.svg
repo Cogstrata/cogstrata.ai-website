@@ -1,0 +1,109 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#162640;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1d33;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background with gradient -->
+  <rect width="1200" height="630" fill="url(#bg1)"/>
+
+  <!-- Grid overlay -->
+  <defs>
+    <pattern id="grid1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#91c1ff" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid1)" opacity="0.08"/>
+
+  <!-- Left side: Raw data streams coming in -->
+  <line x1="50" y1="150" x2="250" y2="180" stroke="#3E77FF" stroke-width="2" opacity="0.6"/>
+  <line x1="60" y1="250" x2="260" y2="280" stroke="#3E77FF" stroke-width="2" opacity="0.6"/>
+  <line x1="50" y1="350" x2="250" y2="320" stroke="#3E77FF" stroke-width="2" opacity="0.6"/>
+  <line x1="60" y1="450" x2="260" y2="420" stroke="#3E77FF" stroke-width="2" opacity="0.6"/>
+
+  <!-- Central honeycomb/hexagonal grid structure -->
+  <!-- Hexagon outline -->
+  <g id="central-structure" opacity="0.7">
+    <polygon points="600,200 680,250 680,350 600,400 520,350 520,250"
+             fill="none" stroke="#91c1ff" stroke-width="2"/>
+    <circle cx="600" cy="300" r="80" fill="none" stroke="#91c1ff" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Inner grid nodes -->
+    <circle cx="600" cy="300" r="5" fill="#91c1ff" opacity="0.8"/>
+    <circle cx="560" cy="270" r="4" fill="#91c1ff" opacity="0.6"/>
+    <circle cx="640" cy="270" r="4" fill="#91c1ff" opacity="0.6"/>
+    <circle cx="560" cy="330" r="4" fill="#91c1ff" opacity="0.6"/>
+    <circle cx="640" cy="330" r="4" fill="#91c1ff" opacity="0.6"/>
+
+    <!-- Connecting lines -->
+    <line x1="600" y1="300" x2="560" y2="270" stroke="#91c1ff" stroke-width="1" opacity="0.5"/>
+    <line x1="600" y1="300" x2="640" y2="270" stroke="#91c1ff" stroke-width="1" opacity="0.5"/>
+    <line x1="600" y1="300" x2="560" y2="330" stroke="#91c1ff" stroke-width="1" opacity="0.5"/>
+    <line x1="600" y1="300" x2="640" y2="330" stroke="#91c1ff" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Worker agent nodes (blue) around the structure -->
+  <!-- Top left agent -->
+  <g filter="url(#glow1)">
+    <line x1="380" y1="150" x2="500" y2="240" stroke="#3E77FF" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="380" cy="150" r="12" fill="none" stroke="#3E77FF" stroke-width="2" opacity="0.8"/>
+    <circle cx="380" cy="150" r="6" fill="#3E77FF" opacity="0.7"/>
+  </g>
+
+  <!-- Top right agent -->
+  <g filter="url(#glow1)">
+    <line x1="820" y1="150" x2="700" y2="240" stroke="#3E77FF" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="820" cy="150" r="12" fill="none" stroke="#3E77FF" stroke-width="2" opacity="0.8"/>
+    <circle cx="820" cy="150" r="6" fill="#3E77FF" opacity="0.7"/>
+  </g>
+
+  <!-- Left agent -->
+  <g filter="url(#glow1)">
+    <line x1="300" y1="300" x2="480" y2="300" stroke="#3E77FF" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="300" cy="300" r="12" fill="none" stroke="#3E77FF" stroke-width="2" opacity="0.8"/>
+    <circle cx="300" cy="300" r="6" fill="#3E77FF" opacity="0.7"/>
+  </g>
+
+  <!-- Right agent -->
+  <g filter="url(#glow1)">
+    <line x1="900" y1="300" x2="720" y2="300" stroke="#3E77FF" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="900" cy="300" r="12" fill="none" stroke="#3E77FF" stroke-width="2" opacity="0.8"/>
+    <circle cx="900" cy="300" r="6" fill="#3E77FF" opacity="0.7"/>
+  </g>
+
+  <!-- Bottom left agent -->
+  <g filter="url(#glow1)">
+    <line x1="380" y1="480" x2="500" y2="360" stroke="#3E77FF" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="380" cy="480" r="12" fill="none" stroke="#3E77FF" stroke-width="2" opacity="0.8"/>
+    <circle cx="380" cy="480" r="6" fill="#3E77FF" opacity="0.7"/>
+  </g>
+
+  <!-- Bottom right agent -->
+  <g filter="url(#glow1)">
+    <line x1="820" y1="480" x2="700" y2="360" stroke="#3E77FF" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="820" cy="480" r="12" fill="none" stroke="#3E77FF" stroke-width="2" opacity="0.8"/>
+    <circle cx="820" cy="480" r="6" fill="#3E77FF" opacity="0.7"/>
+  </g>
+
+  <!-- Right side: Clean organized output streams -->
+  <line x1="1000" y1="150" x2="1150" y2="180" stroke="#91c1ff" stroke-width="2" opacity="0.7"/>
+  <line x1="1000" y1="250" x2="1150" y2="280" stroke="#91c1ff" stroke-width="2" opacity="0.7"/>
+  <line x1="1000" y1="350" x2="1150" y2="320" stroke="#91c1ff" stroke-width="2" opacity="0.7"/>
+  <line x1="1000" y1="450" x2="1150" y2="420" stroke="#91c1ff" stroke-width="2" opacity="0.7"/>
+
+  <!-- Output nodes on right -->
+  <circle cx="1050" cy="180" r="4" fill="#91c1ff" opacity="0.8"/>
+  <circle cx="1050" cy="280" r="4" fill="#91c1ff" opacity="0.8"/>
+  <circle cx="1050" cy="320" r="4" fill="#91c1ff" opacity="0.8"/>
+  <circle cx="1050" cy="420" r="4" fill="#91c1ff" opacity="0.8"/>
+
+</svg>

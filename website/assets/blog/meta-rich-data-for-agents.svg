@@ -1,0 +1,85 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#162640;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1d33;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background with gradient -->
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <!-- Grid overlay -->
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#91c1ff" stroke-width="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid2)" opacity="0.08"/>
+
+  <!-- Central data point -->
+  <g filter="url(#glow2)">
+    <circle cx="600" cy="315" r="8" fill="#3E77FF" opacity="0.9"/>
+    <circle cx="600" cy="315" r="8" fill="none" stroke="#3E77FF" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Layer 1: Temporal (blue) - innermost ring -->
+  <circle cx="600" cy="315" r="60" fill="none" stroke="#3E77FF" stroke-width="2" opacity="0.6"/>
+  <!-- Nodes on temporal layer -->
+  <g filter="url(#glow2)">
+    <circle cx="660" cy="315" r="6" fill="#3E77FF" opacity="0.7"/>
+    <circle cx="540" cy="315" r="6" fill="#3E77FF" opacity="0.7"/>
+    <circle cx="600" cy="255" r="6" fill="#3E77FF" opacity="0.7"/>
+    <circle cx="600" cy="375" r="6" fill="#3E77FF" opacity="0.7"/>
+  </g>
+
+  <!-- Layer 2: Provenance (light blue) -->
+  <circle cx="600" cy="315" r="110" fill="none" stroke="#91c1ff" stroke-width="2" opacity="0.5"/>
+  <!-- Nodes on provenance layer -->
+  <g filter="url(#glow2)">
+    <circle cx="710" cy="315" r="5" fill="#91c1ff" opacity="0.6"/>
+    <circle cx="490" cy="315" r="5" fill="#91c1ff" opacity="0.6"/>
+    <circle cx="600" cy="205" r="5" fill="#91c1ff" opacity="0.6"/>
+    <circle cx="600" cy="425" r="5" fill="#91c1ff" opacity="0.6"/>
+    <circle cx="678" cy="253" r="5" fill="#91c1ff" opacity="0.6"/>
+    <circle cx="522" cy="377" r="5" fill="#91c1ff" opacity="0.6"/>
+  </g>
+
+  <!-- Layer 3: Confidence (amber/gold) -->
+  <circle cx="600" cy="315" r="160" fill="none" stroke="#EF9F27" stroke-width="2" opacity="0.5"/>
+  <!-- Nodes on confidence layer -->
+  <g filter="url(#glow2)">
+    <circle cx="760" cy="315" r="5" fill="#EF9F27" opacity="0.6"/>
+    <circle cx="440" cy="315" r="5" fill="#EF9F27" opacity="0.6"/>
+    <circle cx="600" cy="155" r="5" fill="#EF9F27" opacity="0.6"/>
+    <circle cx="600" cy="475" r="5" fill="#EF9F27" opacity="0.6"/>
+    <circle cx="713" cy="213" r="5" fill="#EF9F27" opacity="0.6"/>
+    <circle cx="487" cy="417" r="5" fill="#EF9F27" opacity="0.6"/>
+  </g>
+
+  <!-- Layer 4: Semantic (purple) - outermost ring -->
+  <circle cx="600" cy="315" r="210" fill="none" stroke="#534AB7" stroke-width="2" opacity="0.5"/>
+  <!-- Nodes on semantic layer -->
+  <g filter="url(#glow2)">
+    <circle cx="810" cy="315" r="5" fill="#534AB7" opacity="0.6"/>
+    <circle cx="390" cy="315" r="5" fill="#534AB7" opacity="0.6"/>
+    <circle cx="600" cy="105" r="5" fill="#534AB7" opacity="0.6"/>
+    <circle cx="600" cy="525" r="5" fill="#534AB7" opacity="0.6"/>
+    <circle cx="748" cy="173" r="5" fill="#534AB7" opacity="0.6"/>
+    <circle cx="452" cy="457" r="5" fill="#534AB7" opacity="0.6"/>
+  </g>
+
+  <!-- Connecting lines from center to each layer for visual cohesion -->
+  <line x1="600" y1="315" x2="660" y2="315" stroke="#3E77FF" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="315" x2="710" y2="315" stroke="#91c1ff" stroke-width="1" opacity="0.2"/>
+  <line x1="600" y1="315" x2="760" y2="315" stroke="#EF9F27" stroke-width="1" opacity="0.2"/>
+  <line x1="600" y1="315" x2="810" y2="315" stroke="#534AB7" stroke-width="1" opacity="0.2"/>
+
+</svg>

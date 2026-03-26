@@ -123,6 +123,10 @@
         </div>
         <h1 class="text-4xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Why your AI agent needs curated data, not just more data</h1>
         <p class="text-sm mb-10 text-neutral/60">Published 26 March 2026 &nbsp;&middot;&nbsp; 8 min read</p>
+        <picture>
+  <source srcset="../../assets/blog/curated-data-for-agents.webp" type="image/webp">
+  <img decoding="async" loading="lazy" src="../../assets/blog/curated-data-for-agents.png" alt="Curated data funnel filtering raw data into structured constellation" class="w-full rounded-xl mb-10 shadow-sm">
+</picture>
 
         <div class="prose max-w-none text-neutral/80 space-y-6">
             <p>The prevailing assumption in the AI industry is that more data produces better outcomes. For training foundation models, that assumption holds reasonably well. For deploying AI agents that make real-world decisions — selecting which customers to target, assessing creditworthiness, adjusting pricing, routing support tickets — it does not. The bottleneck for agentic AI is not data volume. It is data quality, structure, and curation.</p>
@@ -144,6 +148,19 @@
             <p>That includes temporal context: when was this attribute last updated, and what is the expected refresh frequency? It includes provenance: what input sources contributed to this derived value, and how were they weighted? It includes confidence: how stable is this estimate across the input signals currently available? And it includes semantic clarity: is this attribute a direct observation, a modelled estimate, or an inference derived from proxy signals?</p>
 
             <p>Without these layers, an agent consuming demographic data is operating with a confidence it has not earned. It will treat a three-year-old survey estimate with the same weight as a value derived from last week's Land Registry transactions. It will act on a modelled inference as though it were an observed fact. These are not edge cases — they are the default behaviour of any agent consuming data that was not curated with autonomous consumption in mind.</p>
+
+
+
+            <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <div class="flex-1">
+                        <p class="font-bold text-neutral text-lg mb-1" style="font-family: 'Space Grotesk', sans-serif;">See agent-ready data in practice</p>
+                        <p class="text-neutral/70 text-sm">Send us a sample of your postcodes and we'll return enriched attributes with full provenance metadata, freshness timestamps, and confidence signals — structured for direct agent consumption.</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm whitespace-nowrap" href="../../contact.html">Try It Free</a>
+                </div>
+            </div>
+        </div>
 
             <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">Why volume makes the problem worse</h2>
 
@@ -169,17 +186,6 @@
 
             <p>The organisations that get this right will build agents that make reliably good decisions. The organisations that do not will build agents that make confidently wrong ones — and may not discover the difference until the commercial damage is done.</p>
 
-            <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
-                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                    <div class="flex-1">
-                        <p class="font-bold text-neutral text-lg mb-1" style="font-family: 'Space Grotesk', sans-serif;">See agent-ready data in practice</p>
-                        <p class="text-neutral/70 text-sm">Send us a sample of your postcodes and we'll return enriched attributes with full provenance metadata, freshness timestamps, and confidence signals — structured for direct agent consumption.</p>
-                    </div>
-                    <a class="btn btn-primary btn-sm whitespace-nowrap" href="../../contact.html">Try It Free</a>
-                </div>
-            </div>
-        </div>
-
         <div class="mt-12 p-6 bg-base-200 rounded-xl border border-base-300">
             <p class="font-semibold text-neutral mb-2">This is part one of our Agent-Ready Data series</p>
             <p class="text-neutral/70 text-sm mb-4">Exploring why demographic intelligence built for autonomous AI agents requires a fundamentally different approach to data architecture, curation, and delivery.</p>
@@ -187,7 +193,7 @@
         </div>
 
         <div class="mt-8">
-            <a class="btn btn-outline btn-primary" href="../index.html">Back to Blog</a>
+            <a class="btn btn-outline btn-secondary" href="../index.html">Back to Blog</a>
         </div>
     </div>
 
