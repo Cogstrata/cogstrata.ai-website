@@ -1141,6 +1141,263 @@
             </div>
         </div>
 
+        <!-- Get Started Section -->
+        <div id="get-started" class="bg-base-200 py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-neutral mb-4"
+                        style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Up and running in five steps</h2>
+                    <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Everything your AI agents or analysts need — structured, fresh, and delivered the way you work.</p>
+                </div>
+
+                <!-- Desktop: horizontal step flow -->
+                <div class="hidden lg:block w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" font-family="'DM Sans', sans-serif" class="w-full h-auto">
+                        <defs>
+                            <!-- Step card shadow -->
+                            <filter id="gsCardShadow" x="-10%" y="-10%" width="120%" height="130%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0002"/>
+                            </filter>
+                            <!-- Connector gradient -->
+                            <linearGradient id="gsConnGrad" x1="0" y1="0" x2="1" y2="0">
+                                <stop offset="0%" stop-color="#3E77FF"/>
+                                <stop offset="50%" stop-color="#534AB7"/>
+                                <stop offset="100%" stop-color="#EF9F27"/>
+                            </linearGradient>
+                            <!-- Arrowhead marker -->
+                            <marker id="gsArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                                <path d="M0,0 L0,6 L8,3 Z" fill="#534AB7"/>
+                            </marker>
+                            <marker id="gsArrow4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                                <path d="M0,0 L0,6 L8,3 Z" fill="#EF9F27"/>
+                            </marker>
+                            <!-- Animated pulse -->
+                            <circle id="gsPulse" r="5" fill="#3E77FF" opacity="0.7"/>
+                        </defs>
+
+                        <!-- Subtle grid background -->
+                        <pattern id="gsGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#534AB720" stroke-width="0.5"/>
+                        </pattern>
+                        <rect width="1200" height="320" fill="url(#gsGrid)" rx="16"/>
+
+                        <!-- Connector lines -->
+                        <!-- 1→2 -->
+                        <line x1="188" y1="120" x2="232" y2="120" stroke="#3E77FF" stroke-width="2" stroke-dasharray="none" marker-end="url(#gsArrow)"/>
+                        <!-- 2→3 -->
+                        <line x1="418" y1="120" x2="462" y2="120" stroke="#534AB7" stroke-width="2" marker-end="url(#gsArrow)"/>
+                        <!-- 3→4 -->
+                        <line x1="648" y1="120" x2="692" y2="120" stroke="#534AB7" stroke-width="2" marker-end="url(#gsArrow4)"/>
+                        <!-- 4→5 -->
+                        <line x1="878" y1="120" x2="922" y2="120" stroke="#EF9F27" stroke-width="2" marker-end="url(#gsArrow4)"/>
+
+                        <!-- STEP 1: Sign Up -->
+                        <g transform="translate(48, 44)">
+                            <rect width="140" height="152" rx="14" fill="white" filter="url(#gsCardShadow)"/>
+                            <rect width="140" height="152" rx="14" fill="none" stroke="#3E77FF" stroke-width="1.5" opacity="0.3"/>
+                            <!-- Number badge -->
+                            <circle cx="22" cy="22" r="14" fill="#3E77FF"/>
+                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">1</text>
+                            <!-- Icon: user-plus -->
+                            <g transform="translate(98, 8)">
+                                <rect width="30" height="30" rx="8" fill="#3E77FF" opacity="0.1"/>
+                                <circle cx="13" cy="12" r="4" fill="none" stroke="#3E77FF" stroke-width="1.4"/>
+                                <path d="M6 24 C6 20 20 20 20 24" fill="none" stroke="#3E77FF" stroke-width="1.4" stroke-linecap="round"/>
+                                <line x1="23" y1="11" x2="23" y2="17" stroke="#3E77FF" stroke-width="1.4" stroke-linecap="round"/>
+                                <line x1="20" y1="14" x2="26" y2="14" stroke="#3E77FF" stroke-width="1.4" stroke-linecap="round"/>
+                            </g>
+                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Sign Up</text>
+                            <text x="70" y="90" text-anchor="middle" font-size="10" fill="#666">Join the wait list</text>
+                            <text x="70" y="103" text-anchor="middle" font-size="10" fill="#666">or become a pilot</text>
+                            <text x="70" y="116" text-anchor="middle" font-size="10" fill="#666">partner to gain</text>
+                            <text x="70" y="129" text-anchor="middle" font-size="10" fill="#666">early access.</text>
+                        </g>
+
+                        <!-- STEP 2: Choose Delivery -->
+                        <g transform="translate(278, 44)">
+                            <rect width="140" height="152" rx="14" fill="white" filter="url(#gsCardShadow)"/>
+                            <rect width="140" height="152" rx="14" fill="none" stroke="#3E77FF" stroke-width="1.5" opacity="0.3"/>
+                            <circle cx="22" cy="22" r="14" fill="#3E77FF"/>
+                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">2</text>
+                            <!-- Icon: delivery/cloud -->
+                            <g transform="translate(98, 8)">
+                                <rect width="30" height="30" rx="8" fill="#3E77FF" opacity="0.1"/>
+                                <path d="M8 19 C8 16 11 14 14 15 C14 12 18 10 21 13 C23 13 24 15 23 17 L8 19Z" fill="none" stroke="#3E77FF" stroke-width="1.4" stroke-linejoin="round"/>
+                            </g>
+                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Choose Delivery</text>
+                            <!-- Mini delivery option pills -->
+                            <rect x="12" y="82" width="116" height="18" rx="9" fill="#3E77FF" opacity="0.08"/>
+                            <text x="70" y="95" text-anchor="middle" font-size="9.5" fill="#3E77FF" font-weight="500">Marketplace</text>
+                            <rect x="12" y="105" width="116" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
+                            <text x="70" y="118" text-anchor="middle" font-size="9.5" fill="#534AB7" font-weight="500">Direct API</text>
+                            <rect x="12" y="128" width="116" height="18" rx="9" fill="#EF9F27" opacity="0.1"/>
+                            <text x="70" y="141" text-anchor="middle" font-size="9.5" fill="#b37200" font-weight="500">Managed Stitching</text>
+                        </g>
+
+                        <!-- STEP 3: Choose Cadence -->
+                        <g transform="translate(508, 44)">
+                            <rect width="140" height="152" rx="14" fill="white" filter="url(#gsCardShadow)"/>
+                            <rect width="140" height="152" rx="14" fill="none" stroke="#534AB7" stroke-width="1.5" opacity="0.3"/>
+                            <circle cx="22" cy="22" r="14" fill="#534AB7"/>
+                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">3</text>
+                            <!-- Icon: clock -->
+                            <g transform="translate(98, 8)">
+                                <rect width="30" height="30" rx="8" fill="#534AB7" opacity="0.1"/>
+                                <circle cx="15" cy="15" r="7" fill="none" stroke="#534AB7" stroke-width="1.4"/>
+                                <path d="M15 10 L15 15 L18 17" fill="none" stroke="#534AB7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Set Cadence</text>
+                            <!-- Cadence pills -->
+                            <rect x="12" y="82" width="54" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
+                            <text x="39" y="95" text-anchor="middle" font-size="9" fill="#534AB7" font-weight="500">Real-time</text>
+                            <rect x="74" y="82" width="54" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
+                            <text x="101" y="95" text-anchor="middle" font-size="9" fill="#534AB7" font-weight="500">Daily</text>
+                            <rect x="12" y="105" width="54" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
+                            <text x="39" y="118" text-anchor="middle" font-size="9" fill="#534AB7" font-weight="500">Weekly</text>
+                            <rect x="74" y="105" width="54" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
+                            <text x="101" y="118" text-anchor="middle" font-size="9" fill="#534AB7" font-weight="500">Monthly</text>
+                            <text x="70" y="142" text-anchor="middle" font-size="9.5" fill="#888">Always fresh,</text>
+                            <text x="70" y="152" text-anchor="middle" font-size="9.5" fill="#888">on your schedule.</text>
+                        </g>
+
+                        <!-- STEP 4: Connect -->
+                        <g transform="translate(738, 44)">
+                            <rect width="140" height="152" rx="14" fill="white" filter="url(#gsCardShadow)"/>
+                            <rect width="140" height="152" rx="14" fill="none" stroke="#EF9F27" stroke-width="1.5" opacity="0.35"/>
+                            <circle cx="22" cy="22" r="14" fill="#EF9F27"/>
+                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">4</text>
+                            <!-- Icon: plug/connect -->
+                            <g transform="translate(98, 8)">
+                                <rect width="30" height="30" rx="8" fill="#EF9F27" opacity="0.12"/>
+                                <path d="M10 10 L10 16 M20 10 L20 16 M8 16 L22 16 L22 19 C22 22 8 22 8 19 L8 16Z" fill="none" stroke="#EF9F27" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="15" y1="22" x2="15" y2="26" stroke="#EF9F27" stroke-width="1.4" stroke-linecap="round"/>
+                            </g>
+                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Connect</text>
+                            <text x="70" y="90" text-anchor="middle" font-size="10" fill="#666">Plug enriched</text>
+                            <text x="70" y="103" text-anchor="middle" font-size="10" fill="#666">data into your</text>
+                            <text x="70" y="116" text-anchor="middle" font-size="10" fill="#666">AI agents, CRM,</text>
+                            <text x="70" y="129" text-anchor="middle" font-size="10" fill="#666">CDP or analytics</text>
+                            <text x="70" y="142" text-anchor="middle" font-size="10" fill="#666">stack.</text>
+                        </g>
+
+                        <!-- STEP 5: Unlock Value -->
+                        <g transform="translate(968, 44)">
+                            <rect width="140" height="152" rx="14" fill="white" filter="url(#gsCardShadow)"/>
+                            <!-- Amber glow border for final step -->
+                            <rect width="140" height="152" rx="14" fill="none" stroke="#EF9F27" stroke-width="2" opacity="0.6"/>
+                            <circle cx="22" cy="22" r="14" fill="#EF9F27"/>
+                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">5</text>
+                            <!-- Icon: sparkle/star -->
+                            <g transform="translate(98, 8)">
+                                <rect width="30" height="30" rx="8" fill="#EF9F27" opacity="0.15"/>
+                                <path d="M15 6 L16.5 12 L22 12 L17.5 15.5 L19 21 L15 18 L11 21 L12.5 15.5 L8 12 L13.5 12 Z" fill="#EF9F27" opacity="0.8"/>
+                            </g>
+                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Unlock Value</text>
+                            <text x="70" y="90" text-anchor="middle" font-size="10" fill="#666">Smarter decisions,</text>
+                            <text x="70" y="103" text-anchor="middle" font-size="10" fill="#666">sharper targeting,</text>
+                            <text x="70" y="116" text-anchor="middle" font-size="10" fill="#666">better predictions</text>
+                            <text x="70" y="129" text-anchor="middle" font-size="10" fill="#666">— from day one.</text>
+                        </g>
+
+                        <!-- Bottom label: delivery note -->
+                        <text x="600" y="230" text-anchor="middle" font-size="11" fill="#888" font-style="italic">Data arrives AI-ready — no transformation required on your side.</text>
+
+                        <!-- Animated pulse along connector path -->
+                        <circle r="5" fill="#3E77FF" opacity="0.8">
+                            <animateMotion dur="4s" repeatCount="indefinite" calcMode="linear">
+                                <mpath href="#gsFullPath"/>
+                            </animateMotion>
+                        </circle>
+                        <path id="gsFullPath" d="M188,120 L232,120 L418,120 L462,120 L648,120 L692,120 L878,120 L922,120 L1108,120" fill="none" stroke="none"/>
+                    </svg>
+                </div>
+
+                <!-- Mobile: vertical step cards -->
+                <div class="lg:hidden flex flex-col gap-4">
+                    <!-- Step 1 -->
+                    <div class="flex gap-4 items-start">
+                        <div class="flex flex-col items-center">
+                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#3E77FF; font-family:'Space Grotesk',sans-serif;">1</div>
+                            <div class="w-0.5 flex-1 mt-1" style="background:linear-gradient(to bottom,#3E77FF,#534AB7); min-height:2rem;"></div>
+                        </div>
+                        <div class="card bg-base-100 shadow-sm border border-base-300 flex-1 mb-2">
+                            <div class="card-body py-4 px-5">
+                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Sign Up</h3>
+                                <p class="text-sm text-neutral/70">Join the wait list or become a pilot partner to gain early access.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex gap-4 items-start">
+                        <div class="flex flex-col items-center">
+                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#3E77FF; font-family:'Space Grotesk',sans-serif;">2</div>
+                            <div class="w-0.5 flex-1 mt-1" style="background:linear-gradient(to bottom,#3E77FF,#534AB7); min-height:2rem;"></div>
+                        </div>
+                        <div class="card bg-base-100 shadow-sm border border-base-300 flex-1 mb-2">
+                            <div class="card-body py-4 px-5">
+                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Choose Delivery Method</h3>
+                                <p class="text-sm text-neutral/70">Access via cloud marketplace, direct API, or let us stitch the data on your behalf.</p>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="badge badge-sm" style="background:#3E77FF18;color:#3E77FF;border:none;">Marketplace</span>
+                                    <span class="badge badge-sm" style="background:#534AB718;color:#534AB7;border:none;">Direct API</span>
+                                    <span class="badge badge-sm" style="background:#EF9F2718;color:#b37200;border:none;">Managed Stitching</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex gap-4 items-start">
+                        <div class="flex flex-col items-center">
+                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#534AB7; font-family:'Space Grotesk',sans-serif;">3</div>
+                            <div class="w-0.5 flex-1 mt-1" style="background:linear-gradient(to bottom,#534AB7,#EF9F27); min-height:2rem;"></div>
+                        </div>
+                        <div class="card bg-base-100 shadow-sm border border-base-300 flex-1 mb-2">
+                            <div class="card-body py-4 px-5">
+                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Set Update Cadence</h3>
+                                <p class="text-sm text-neutral/70">Choose how often your data refreshes — always fresh, on your schedule.</p>
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="badge badge-sm" style="background:#534AB718;color:#534AB7;border:none;">Real-time</span>
+                                    <span class="badge badge-sm" style="background:#534AB718;color:#534AB7;border:none;">Daily</span>
+                                    <span class="badge badge-sm" style="background:#534AB718;color:#534AB7;border:none;">Weekly</span>
+                                    <span class="badge badge-sm" style="background:#534AB718;color:#534AB7;border:none;">Monthly</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex gap-4 items-start">
+                        <div class="flex flex-col items-center">
+                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#EF9F27; font-family:'Space Grotesk',sans-serif;">4</div>
+                            <div class="w-0.5 flex-1 mt-1" style="background:#EF9F27; min-height:2rem;"></div>
+                        </div>
+                        <div class="card bg-base-100 shadow-sm border border-base-300 flex-1 mb-2">
+                            <div class="card-body py-4 px-5">
+                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Connect Your Agents or Analysts</h3>
+                                <p class="text-sm text-neutral/70">Plug enriched data directly into your AI agents, CRM, CDP, or analytics stack — no transformation needed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="flex gap-4 items-start">
+                        <div class="flex flex-col items-center">
+                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#EF9F27; font-family:'Space Grotesk',sans-serif;">5</div>
+                        </div>
+                        <div class="card bg-base-100 shadow-sm flex-1 mb-2" style="border:2px solid #EF9F2799;">
+                            <div class="card-body py-4 px-5">
+                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Unlock Value</h3>
+                                <p class="text-sm text-neutral/70">Smarter decisions, sharper targeting, better predictions — from day one.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA nudge -->
+                <div class="text-center mt-12">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Join the Wait List</a>
+                </div>
+            </div>
+        </div>
+
         <!-- Testimonials Section -->
         <div class="bg-base-100 py-20">
             <div class="container mx-auto px-4">
@@ -1328,6 +1585,7 @@
                 <a class="link link-hover" href="#features">Features</a>
                 <a class="link link-hover" href="#use-cases">Use Cases</a>
                 <a class="link link-hover" href="#pricing">Pricing</a>
+                <a class="link link-hover" href="#get-started">Get Started</a>
                 <a class="link link-hover" href="#faq">FAQ</a>
                 <a class="link link-hover" href="blog/index.html">Blog</a>
                 <a class="link link-hover" href="contact.html">Contact</a>
