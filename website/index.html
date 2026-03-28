@@ -1489,40 +1489,49 @@
                     </p>
                 </div>
 
-                <!-- Three-facet pill strip -->
-                <div class="flex flex-wrap items-center justify-center gap-3 mb-12 text-lg font-semibold"
-                     style="font-family: 'Space Grotesk', sans-serif;">
-                    <span class="px-5 py-2 rounded-full" style="background:#3E77FF18;color:#3E77FF;border:1.5px solid #3E77FF44;">Economic Position</span>
-                    <span class="text-neutral/30 text-2xl select-none">&middot;</span>
-                    <span class="px-5 py-2 rounded-full" style="background:#534AB718;color:#534AB7;border:1.5px solid #534AB744;">Household Profile</span>
-                    <span class="text-neutral/30 text-2xl select-none">&middot;</span>
-                    <span class="px-5 py-2 rounded-full" style="background:#EF9F2718;color:#C47A00;border:1.5px solid #EF9F2744;">Setting</span>
-                </div>
+                <!-- Row 1: explanatory text + dashboard card -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
 
-                <!-- Dashboard card preview + vocabulary grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start mb-12">
+                    <!-- Text -->
+                    <div>
+                        <p class="text-sm font-semibold tracking-widest uppercase text-primary mb-3"
+                           style="font-family:'DM Sans',sans-serif;letter-spacing:3px;">Self-documenting labels</p>
+                        <h3 class="text-2xl font-bold text-neutral mb-4"
+                            style="font-family:'Space Grotesk',sans-serif;font-weight:700;">
+                            Every record tells you exactly what it means
+                        </h3>
+                        <p class="text-neutral/70 mb-4">
+                            Each postcode maps to one of 24 groups, identified by a three-part label drawn from a fixed vocabulary. No codebook required — the label <em>is</em> the description.
+                        </p>
+                        <p class="text-neutral/70 mb-6">
+                            Alongside the label, every record includes the supergroup, a plain-English descriptor, structured trait tags for filtering and segmentation, and a pre-written AI summary ready for direct injection into an agent's context window.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-2 text-sm font-semibold"
+                             style="font-family:'Space Grotesk',sans-serif;">
+                            <span class="px-3 py-1 rounded-full" style="background:#3E77FF18;color:#3E77FF;border:1.5px solid #3E77FF44;">Economic Position</span>
+                            <span class="text-neutral/30 text-xl select-none">&middot;</span>
+                            <span class="px-3 py-1 rounded-full" style="background:#534AB718;color:#534AB7;border:1.5px solid #534AB744;">Household Profile</span>
+                            <span class="text-neutral/30 text-xl select-none">&middot;</span>
+                            <span class="px-3 py-1 rounded-full" style="background:#EF9F2718;color:#C47A00;border:1.5px solid #EF9F2744;">Setting</span>
+                        </div>
+                    </div>
 
                     <!-- Dashboard card -->
-                    <div class="flex justify-center">
-                        <div class="card bg-base-200 shadow-md border border-base-300 w-full overflow-hidden">
-                            <!-- Colour-bar accent -->
-                            <div class="h-1.5 w-full" style="background: linear-gradient(to right, #3E77FF, #534AB7, #EF9F27);"></div>
+                    <div class="flex justify-center lg:justify-end">
+                        <div class="card bg-base-200 shadow-md border border-base-300 w-full max-w-sm overflow-hidden">
+                            <div class="h-1.5 w-full" style="background:linear-gradient(to right,#3E77FF,#534AB7,#EF9F27);"></div>
                             <div class="card-body py-5 px-6">
-                                <!-- Postcode / area -->
                                 <p class="text-xs text-neutral/50 uppercase tracking-widest mb-1"
-                                   style="font-family: 'DM Sans', sans-serif; font-weight: 300;">GU21 &mdash; Woking, Surrey</p>
-                                <!-- Supergroup -->
+                                   style="font-family:'DM Sans',sans-serif;font-weight:300;">GU21 &mdash; Woking, Surrey</p>
                                 <div class="flex items-center gap-2 mb-1">
                                     <span class="badge badge-sm font-bold"
                                           style="background:#3E77FF;color:#fff;border:none;font-family:'Space Grotesk',sans-serif;">PF</span>
                                     <span class="text-base font-bold text-neutral tracking-tight"
-                                          style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">PREMIER FAMILIES</span>
+                                          style="font-family:'Space Grotesk',sans-serif;font-weight:700;">PREMIER FAMILIES</span>
                                 </div>
-                                <!-- Convention name -->
                                 <p class="text-sm font-semibold mb-3" style="color:#534AB7;font-family:'Space Grotesk',sans-serif;">
                                     Affluent &middot; Working Families &middot; Suburban
                                 </p>
-                                <!-- Trait tags -->
                                 <div class="flex flex-wrap gap-1.5 mb-3">
                                     <span class="badge badge-sm" style="background:#3E77FF12;color:#3E77FF;border:none;">dual-income</span>
                                     <span class="badge badge-sm" style="background:#3E77FF12;color:#3E77FF;border:none;">professional</span>
@@ -1530,7 +1539,6 @@
                                     <span class="badge badge-sm" style="background:#534AB712;color:#534AB7;border:none;">school-age-children</span>
                                     <span class="badge badge-sm" style="background:#534AB712;color:#534AB7;border:none;">high-qualifications</span>
                                 </div>
-                                <!-- Confidence -->
                                 <div class="flex items-center gap-2 mt-1">
                                     <div class="flex-1 h-1.5 rounded-full bg-base-300 overflow-hidden">
                                         <div class="h-full rounded-full" style="width:91%;background:linear-gradient(to right,#3E77FF,#534AB7);"></div>
@@ -1542,62 +1550,73 @@
                         </div>
                     </div>
 
+                </div>
+
+                <!-- Row 2: three facet cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+
                     <!-- Economic Position -->
-                        <div class="card bg-base-200 shadow-sm border border-base-300">
-                            <div class="card-body py-5 px-5">
-                                <div class="flex items-center gap-2 mb-3">
-                                    <h3 class="font-bold text-neutral text-sm"
-                                        style="font-family:'Space Grotesk',sans-serif;">Economic Position</h3>
-                                    <span class="badge badge-xs" style="background:#3E77FF;color:#fff;border:none;">5</span>
-                                </div>
-                                <div class="flex flex-col gap-1.5">
-                                    <span class="badge badge-sm w-full justify-start" style="background:#3E77FF18;color:#3E77FF;border:none;">Affluent</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#3E77FF12;color:#3E77FF;border:none;">Comfortable</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#3E77FF0C;color:#3E77FF;border:none;">Moderate</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#534AB710;color:#534AB7;border:none;">Squeezed</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#534AB718;color:#534AB7;border:none;">Supported</span>
-                                </div>
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="h-1 w-full rounded-t-2xl" style="background:#3E77FF;"></div>
+                        <div class="card-body py-5 px-5">
+                            <div class="flex items-center gap-2 mb-2">
+                                <h3 class="font-bold text-neutral"
+                                    style="font-family:'Space Grotesk',sans-serif;">Economic Position</h3>
+                                <span class="badge badge-xs" style="background:#3E77FF;color:#fff;border:none;">5 tiers</span>
+                            </div>
+                            <p class="text-sm text-neutral/60 mb-4">Describes the financial standing of the area — from top-decile affluence through to high deprivation and benefit dependency.</p>
+                            <div class="flex flex-col gap-1.5">
+                                <span class="badge badge-sm w-full justify-start" style="background:#3E77FF18;color:#3E77FF;border:none;">Affluent</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#3E77FF12;color:#3E77FF;border:none;">Comfortable</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#3E77FF0C;color:#3E77FF;border:none;">Moderate</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#534AB710;color:#534AB7;border:none;">Squeezed</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#534AB718;color:#534AB7;border:none;">Supported</span>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Household Profile -->
-                        <div class="card bg-base-200 shadow-sm border border-base-300">
-                            <div class="card-body py-5 px-5">
-                                <div class="flex items-center gap-2 mb-3">
-                                    <h3 class="font-bold text-neutral text-sm"
-                                        style="font-family:'Space Grotesk',sans-serif;">Household Profile</h3>
-                                    <span class="badge badge-xs" style="background:#534AB7;color:#fff;border:none;">6</span>
-                                </div>
-                                <div class="flex flex-col gap-1.5">
-                                    <span class="badge badge-sm w-full justify-start" style="background:#534AB710;color:#534AB7;border:none;">Young Singles</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#534AB710;color:#534AB7;border:none;">Young Families</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#534AB714;color:#534AB7;border:none;">Working Families</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#534AB718;color:#534AB7;border:none;">Established</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#534AB718;color:#534AB7;border:none;">Retired</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#534AB710;color:#534AB7;border:none;">Mixed</span>
-                                </div>
+                    <!-- Household Profile -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="h-1 w-full rounded-t-2xl" style="background:#534AB7;"></div>
+                        <div class="card-body py-5 px-5">
+                            <div class="flex items-center gap-2 mb-2">
+                                <h3 class="font-bold text-neutral"
+                                    style="font-family:'Space Grotesk',sans-serif;">Household Profile</h3>
+                                <span class="badge badge-xs" style="background:#534AB7;color:#fff;border:none;">6 types</span>
+                            </div>
+                            <p class="text-sm text-neutral/60 mb-4">Describes who lives there — age, household composition, and life stage, from young renters through to settled retirees.</p>
+                            <div class="flex flex-col gap-1.5">
+                                <span class="badge badge-sm w-full justify-start" style="background:#534AB710;color:#534AB7;border:none;">Young Singles</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#534AB710;color:#534AB7;border:none;">Young Families</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#534AB714;color:#534AB7;border:none;">Working Families</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#534AB718;color:#534AB7;border:none;">Established</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#534AB718;color:#534AB7;border:none;">Retired</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#534AB710;color:#534AB7;border:none;">Mixed</span>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Setting -->
-                        <div class="card bg-base-200 shadow-sm border border-base-300">
-                            <div class="card-body py-5 px-5">
-                                <div class="flex items-center gap-2 mb-3">
-                                    <h3 class="font-bold text-neutral text-sm"
-                                        style="font-family:'Space Grotesk',sans-serif;">Setting</h3>
-                                    <span class="badge badge-xs" style="background:#C47A00;color:#fff;border:none;">7</span>
-                                </div>
-                                <div class="flex flex-col gap-1.5">
-                                    <span class="badge badge-sm w-full justify-start" style="background:#EF9F2710;color:#C47A00;border:none;">City Core</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#EF9F2712;color:#C47A00;border:none;">Inner City</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#EF9F2714;color:#C47A00;border:none;">Suburban</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#EF9F2716;color:#C47A00;border:none;">Town</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#EF9F2718;color:#C47A00;border:none;">Semi-Rural</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#EF9F271A;color:#C47A00;border:none;">Rural</span>
-                                    <span class="badge badge-sm w-full justify-start" style="background:#EF9F271C;color:#C47A00;border:none;">Estate</span>
-                                </div>
+                    <!-- Setting -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="h-1 w-full rounded-t-2xl" style="background:#EF9F27;"></div>
+                        <div class="card-body py-5 px-5">
+                            <div class="flex items-center gap-2 mb-2">
+                                <h3 class="font-bold text-neutral"
+                                    style="font-family:'Space Grotesk',sans-serif;">Setting</h3>
+                                <span class="badge badge-xs" style="background:#C47A00;color:#fff;border:none;">7 types</span>
+                            </div>
+                            <p class="text-sm text-neutral/60 mb-4">Describes the physical environment and geography — from dense city cores and inner-city estates through to rural villages and dispersed countryside settlements.</p>
+                            <div class="flex flex-col gap-1.5">
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2710;color:#C47A00;border:none;">City Core</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2712;color:#C47A00;border:none;">Inner City</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2714;color:#C47A00;border:none;">Suburban</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2716;color:#C47A00;border:none;">Town</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2718;color:#C47A00;border:none;">Semi-Rural</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F271A;color:#C47A00;border:none;">Rural</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F271C;color:#C47A00;border:none;">Estate</span>
                             </div>
                         </div>
+                    </div>
 
                 </div>
 
