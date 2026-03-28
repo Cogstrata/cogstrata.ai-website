@@ -557,6 +557,56 @@
   color: rgba(196, 197, 217, 0.5);
 }
 
+/* ─── Data-preview badge and text variants ───────────────────────────────── */
+.badge-blue {
+  background: #3E77FF12;
+  color: #3E77FF;
+  border: none;
+}
+.badge-purple {
+  background: #534AB712;
+  color: #534AB7;
+  border: none;
+}
+/* Convention name (e.g. "Affluent · Working Families · Suburban") */
+.convention-name {
+  color: #534AB7;
+  font-family: 'Space Grotesk', sans-serif;
+}
+/* Facet pill strip (rounded-full pills with border) */
+.facet-pill-purple {
+  background: #534AB712;
+  color: #534AB7;
+  border: 1.5px solid #534AB744;
+}
+/* Facet term cells in the convention table */
+.facet-term-purple {
+  color: #534AB7;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+}
+
+/* Dark themes: lift purple to a readable lavender */
+[data-theme="sentient-architect"] .badge-purple,
+[data-theme="digital-schematic"] .badge-purple {
+  background: #a89fef1a !important;
+  color: #a89fef !important;
+}
+[data-theme="sentient-architect"] .convention-name,
+[data-theme="digital-schematic"] .convention-name {
+  color: #a89fef !important;
+}
+[data-theme="sentient-architect"] .facet-pill-purple,
+[data-theme="digital-schematic"] .facet-pill-purple {
+  background: #a89fef1a !important;
+  color: #a89fef !important;
+  border-color: #a89fef44 !important;
+}
+[data-theme="sentient-architect"] .facet-term-purple,
+[data-theme="digital-schematic"] .facet-term-purple {
+  color: #a89fef !important;
+}
+
 /* ── Card image sizing ────────────────────────────────────────────────────
    <picture> inside DaisyUI card figures needs explicit width to fill the
    figure container, otherwise it collapses to the image's intrinsic size. */
