@@ -9,7 +9,21 @@
       "Bash(rm /Users/andy/Development/OACIP/.claude/worktrees/eloquent-morse/website/industry.html /Users/andy/Development/OACIP/.claude/worktrees/eloquent-morse/website/marketplace.html)",
       "Bash(ls /Users/andy/Development/OACIP/.claude/worktrees/eloquent-morse/website/*.html)",
       "Bash(gh api:*)",
-      "Bash(git -C /Users/andy/Development/OACIP/.claude/worktrees/eloquent-morse status --short)"
+      "Bash(git -C /Users/andy/Development/OACIP/.claude/worktrees/eloquent-morse status --short)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(grep -h \"datePublished\\\\|<title>\" /Users/andy/Development/cogstrata_website/website/blog/posts/*.html)",
+      "Bash(sed 's/.*\"\"\"\"datePublished\"\"\"\": \"\"\"\"\\\\\\([^\"\"\"\"]*\\\\\\)\"\"\"\".*/\\\\1/')",
+      "Bash(done)",
+      "Bash(grep -h \"<h1 \" /Users/andy/Development/cogstrata_website/website/blog/posts/*.html)",
+      "Bash(grep -l 'data.html\"\"\"\">Data' *.html)",
+      "Bash(grep -l 'BreadcrumbList' *.html)",
+      "Bash(grep -l '2026-04-' *.html)",
+      "Bash(xargs sed:*)",
+      "Bash(grep -l \"navbar\\\\|mobile\\\\|hamburger\\\\|menu\" /Users/andy/Development/cogstrata_website/website/*.html)",
+      "Bash(git checkout:*)",
+      "Bash(python3 -:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(git -C /Users/andy/Development/cogstrata_website show main:website/assets/css/styles.css)"
     ]
   }
 }
