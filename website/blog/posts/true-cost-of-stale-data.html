@@ -255,7 +255,7 @@
             <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
         </div>
         <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Agent-ready demographic intelligence</p>
-        <nav class="grid grid-flow-col gap-4">
+        <nav class="flex flex-wrap justify-center gap-4">
             <a class="link link-hover" href="../../index.html#features">Features</a>
             <a class="link link-hover" href="../../index.html#use-cases">Use Cases</a>
             <a class="link link-hover" href="../../index.html#pricing">Pricing</a>
@@ -267,5 +267,42 @@
             <p>Copyright © 2026 - All rights reserved by Cogstrata.ai</p>
         </aside>
     </footer>
+<script>
+  // Mobile menu toggle fix for touch devices
+  (function() {
+    var navbar = document.querySelector(".navbar");
+    if (!navbar) return;
+    var dropdown = navbar.querySelector(".dropdown");
+    if (!dropdown) return;
+    var btn = dropdown.querySelector("[role=button]");
+    var menu = dropdown.querySelector(".dropdown-content");
+    if (!btn || !menu) return;
+
+    var open = false;
+
+    function showMenu() {
+      open = true;
+      menu.style.cssText = "display:block!important;visibility:visible!important;opacity:1!important;transform:none!important;position:absolute;z-index:9999;";
+    }
+    function hideMenu() {
+      open = false;
+      menu.style.cssText = "display:none!important;";
+    }
+
+    hideMenu();
+
+    btn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      if (open) { hideMenu(); } else { showMenu(); }
+    });
+
+    menu.querySelectorAll("a").forEach(function(link) {
+      link.addEventListener("click", function() { hideMenu(); });
+    });
+
+    document.addEventListener("click", function() { hideMenu(); });
+  })();
+</script>
 </body>
 </html>

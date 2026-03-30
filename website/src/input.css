@@ -16,6 +16,14 @@
   }
 }
 
+/* ─── Navbar stacking context ────────────────────────────────────────────── */
+/* Ensures the mobile dropdown menu renders above hero and other positioned
+   sections that follow the navbar in the DOM.                               */
+.navbar {
+  position: relative;
+  z-index: 50;
+}
+
 /* ─── Hero accent span & theme label ─────────────────────────────────────── */
 
 /* Label hidden by default — each theme opt-in below */

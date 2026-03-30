@@ -18,7 +18,12 @@
       "Bash(grep -l 'data.html\"\"\"\">Data' *.html)",
       "Bash(grep -l 'BreadcrumbList' *.html)",
       "Bash(grep -l '2026-04-' *.html)",
-      "Bash(xargs sed:*)"
+      "Bash(xargs sed:*)",
+      "Bash(grep -l \"navbar\\\\|mobile\\\\|hamburger\\\\|menu\" /Users/andy/Development/cogstrata_website/website/*.html)",
+      "Bash(git checkout:*)",
+      "Bash(python3 -:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(git -C /Users/andy/Development/cogstrata_website show main:website/assets/css/styles.css)"
     ]
   }
 }
