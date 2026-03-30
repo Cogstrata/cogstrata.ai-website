@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sentient-architect">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZBCGQDWVH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JZBCGQDWVH');
+    </script>
+    <meta charset="UTF-8">
+    <script>
+      /* A/B theme assignment — runs before first paint to avoid flash */
+      (function() {
+        try {
+          var t = localStorage.getItem('cs-ab-theme') || 'sentient-architect';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch(e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Customer Profiles with UK Open Data: A Step-by-Step Guide - Cogstrata Blog</title>
+    <meta name="description" content="Three customers, five data layers, one complete picture. A practical walkthrough showing how ONS, Land Registry, EPC, Ofcom, and Met Office data transforms a name and postcode into a rich customer profile.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cogstrata.ai/blog/posts/building-customer-profiles-open-data.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cogstrata.ai/blog/posts/building-customer-profiles-open-data.html">
+    <meta property="og:title" content="Building Customer Profiles with UK Open Data: A Step-by-Step Guide - Cogstrata.ai Blog">
+    <meta property="og:description" content="Three customers, five data layers, one complete picture. A practical walkthrough showing how ONS, Land Registry, EPC, Ofcom, and Met Office data transforms a name and postcode into a rich customer profile.">
+    <meta property="og:image" content="https://cogstrata.ai/assets/blog/building-customer-profiles-open-data.png">
+    <meta property="og:site_name" content="Cogstrata.ai">
+    <meta property="article:author" content="Cogstrata.ai">
+    <meta property="article:published_time" content="2026-03-30T00:00:00+00:00">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cogstrata.ai/blog/posts/building-customer-profiles-open-data.html">
+    <meta name="twitter:title" content="Building Customer Profiles with UK Open Data: A Step-by-Step Guide - Cogstrata.ai Blog">
+    <meta name="twitter:description" content="Three customers, five data layers, one complete picture. A practical walkthrough showing how ONS, Land Registry, EPC, Ofcom, and Met Office data transforms a name and postcode into a rich customer profile.">
+    <meta name="twitter:image" content="https://cogstrata.ai/assets/blog/building-customer-profiles-open-data.png">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap"></noscript>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <!-- Structured Data: BlogPosting -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Building Customer Profiles with UK Open Data: A Step-by-Step Guide",
+      "description": "Three customers, five data layers, one complete picture. A practical walkthrough showing how ONS, Land Registry, EPC, Ofcom, and Met Office data transforms a name and postcode into a rich customer profile.",
+      "url": "https://cogstrata.ai/blog/posts/building-customer-profiles-open-data.html",
+      "datePublished": "2026-03-30T00:00:00+00:00",
+      "dateModified": "2026-03-30T00:00:00+00:00",
+      "author": {
+        "@type": "Organization",
+        "name": "Cogstrata.ai",
+        "url": "https://cogstrata.ai"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cogstrata.ai",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cogstrata.ai/favicon.svg"
+        }
+      },
+      "image": "https://cogstrata.ai/assets/blog/building-customer-profiles-open-data.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://cogstrata.ai/blog/posts/building-customer-profiles-open-data.html"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://cogstrata.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://cogstrata.ai/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Building Customer Profiles with UK Open Data: A Step-by-Step Guide",
+          "item": "https://cogstrata.ai/blog/posts/building-customer-profiles-open-data.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-base-100 text-base-content">
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#features">Features</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#use-cases">Use Cases</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#pricing">Pricing</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../index.html#faq">FAQ</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../data.html">Data</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../index.html">Blog</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="../../contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost flex items-center gap-2" href="../../index.html">
+                <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8"/>
+                    <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="10" r="1.5" fill="#3e77ff"/>
+                    <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="37" r="1.5" fill="#3e77ff"/>
+                    <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="34" cy="14" r="1.5" fill="#3e77ff"/>
+                    <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2"/>
+                    <circle cx="22" cy="24" r="2.5" fill="#3e77ff"/>
+                    <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8"/>
+                    <circle cx="34" cy="34" r="1.8" fill="#91c1ff"/>
+                    <circle cx="43" cy="27" r="3" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+                    <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
+                </svg>
+                <!-- Brand override: Space Grotesk 700 wordmark -->
+                <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: 1.25rem;">cogstrata</span>
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#use-cases">Use Cases</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#pricing">Pricing</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../index.html#faq">FAQ</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../data.html">Data</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../index.html">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="../../contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-primary hidden lg:flex" href="../../contact.html">Join Wait List</a>
+        </div>
+    </div>
+
+    <!-- Blog Post -->
+    <div class="container mx-auto px-4 py-16 max-w-3xl">
+        <div class="mb-4"><span class="badge badge-secondary badge-outline">Thought Leadership</span></div>
+        <h1 class="text-4xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Building customer profiles with UK open data: a step-by-step guide</h1>
+        <p class="text-sm mb-10 text-neutral/60">Published 30 March 2026 &nbsp;&middot;&nbsp; 7 min read</p>
+        <img decoding="async" loading="lazy" src="../../assets/blog/building-customer-profiles-open-data.svg" alt="Five open data layers progressively enriching a customer record" class="w-full rounded-xl mb-10 shadow-sm">
+        <div class="prose max-w-none text-neutral/80 space-y-6">
+            <p>In our <a href="open-data-customer-insight.html">previous post</a>, we explored how freely available UK open data can add a powerful layer of insight to your customer records. In this post, we'll make that concrete. Starting with three fictional customers who have nothing more than a name and a postcode, we'll walk through five open data sources and show how each one sharpens the picture.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">Starting point: what do we actually know?</h2>
+            <p>Here's our base dataset — the kind of thing you might export from a CRM or e-commerce platform.</p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>#</th><th>First name</th><th>Last name</th><th>Address</th><th>Postcode</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Drew</td><td>Furbad</td><td>28</td><td>LS14 1BG</td></tr>
+                        <tr><td>2</td><td>Andie</td><td>Thurgreat</td><td>11</td><td>HG2 8HJ</td></tr>
+                        <tr><td>3</td><td>Andrea</td><td>Thurbus</td><td>2</td><td>LN5 9AH</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>What can we determine about these customers? Not a huge amount. We don't even know their gender. All we really know is the area they're from — if you happen to be familiar with UK postcode regions. Any attempt to segment this data would leave all three customers in a single undifferentiated group, treated identically by any marketing campaign.</p>
+            <p>Let's change that.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">Layer 1: ONS Census Data — who lives here?</h2>
+            <p>The Office for National Statistics publishes socio-demographic classifications at the postcode level. By matching our customers' postcodes against this data, we can overlay a set of demographic attributes.</p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>#</th><th>Postcode</th><th>Supergroup</th><th>Group</th><th>Subgroup</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>LS14 1BG</td><td>Constrained city dwellers</td><td>Ageing city dwellers</td><td>Retired independent city dwellers</td></tr>
+                        <tr><td>2</td><td>HG2 8HJ</td><td>Suburbanites</td><td>Suburban achievers</td><td>Comfortable suburbia</td></tr>
+                        <tr><td>3</td><td>LN5 9AH</td><td>Suburbanites</td><td>Semi-detached suburbia</td><td>Older workers and retirement</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Suddenly our customers look very different from one another. Customer 1 lives in an area characterised by retired city dwellers. Customer 2 is in a prosperous suburban area with high employment and above-average qualifications. Customer 3 falls somewhere between — an area of older working-age residents approaching retirement.</p>
+            <p>The ONS provides detailed pen portraits for each grouping, describing typical traits like car ownership, industry of employment, and ethnic mix. These descriptions can be used to derive further attributes tailored to a specific business or product category.</p>
+            <p><strong>What we can now infer:</strong></p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>Customer</th><th>Likely age range</th><th>Employment status</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>~65+</td><td>Retired</td></tr>
+                        <tr><td>2</td><td>~44</td><td>Employed</td></tr>
+                        <tr><td>3</td><td>~50</td><td>Employed</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Already, we have a basis for differentiated marketing. The messaging, timing, and channel strategy for a retired customer should look quite different from what works for a working professional in their forties.</p>
+
+            <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <div class="flex-1">
+                        <p class="font-bold text-neutral text-lg mb-1" style="font-family: 'Space Grotesk', sans-serif;">Try this on your own customers</p>
+                        <p class="text-neutral/70 text-sm">Send us a sample of your customer postcodes and we'll return them enriched with 175+ attributes — from ONS classifications to connectivity scores — within 24 hours.</p>
+                    </div>
+                    <a class="btn btn-primary btn-sm whitespace-nowrap" href="../../contact.html">Get Your Free Sample</a>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">Layer 2: Land Registry — what does their home tell us?</h2>
+            <p>The Land Registry records every property transaction in England and Wales. By matching postcodes, we can understand the property market in each customer's area.</p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>#</th><th>Postcode</th><th>Min price</th><th>Avg price</th><th>Max price</th><th>Type</th><th>Build</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>LS14 1BG</td><td>£60,000</td><td>£95,000</td><td>£125,000</td><td>Semi-detached</td><td>Older stock</td></tr>
+                        <tr><td>2</td><td>HG2 8HJ</td><td>£600,000</td><td>£1,597,731</td><td>£2,725,000</td><td>Detached</td><td>Older stock</td></tr>
+                        <tr><td>3</td><td>LN5 9AH</td><td>£132,000</td><td>£151,000</td><td>£167,500</td><td>Semi-detached</td><td>Older stock</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>House price acts as a useful proxy for income. Customer 2 lives in an area where the average property price exceeds £1.5 million — placing them firmly in a high-income bracket. Customer 1's area, by contrast, has modest property values consistent with a lower-income retired population. Customer 3 sits in the middle.</p>
+            <p><strong>Updated customer picture:</strong></p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>Customer</th><th>Age</th><th>Employment</th><th>Income</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>~65+</td><td>Retired</td><td>Low</td></tr>
+                        <tr><td>2</td><td>~44</td><td>Employed</td><td>High</td></tr>
+                        <tr><td>3</td><td>~50</td><td>Employed</td><td>Low/Medium</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>For a luxury brand, Customer 2 is clearly the primary target for premium products. But this data is equally useful for avoiding wasteful marketing — there's little point pushing high-end products to customers whose area profile suggests they won't convert.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">Layer 3: EPC Data — how big is the household?</h2>
+            <p>Energy Performance Certificate data, published by the Department for Levelling Up, Housing and Communities, includes property floor area and room counts.</p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>#</th><th>Postcode</th><th>Floor area (m²)</th><th>Room count</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>LS14 1BG</td><td>67.76</td><td>3</td></tr>
+                        <tr><td>2</td><td>HG2 8HJ</td><td>396</td><td>12</td></tr>
+                        <tr><td>3</td><td>LN5 9AH</td><td>76</td><td>5</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>This complements the Land Registry data and helps distinguish between expensive but small city properties and genuinely large family homes. Customer 2's 12-room, 396 m² property almost certainly houses a family. Customer 1's compact three-room property suggests a single person or couple.</p>
+            <p><strong>Updated customer picture:</strong></p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>Customer</th><th>Age</th><th>Employment</th><th>Income</th><th>Household</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>~65+</td><td>Retired</td><td>Low</td><td>Single/Couple</td></tr>
+                        <tr><td>2</td><td>~44</td><td>Employed</td><td>High</td><td>Large family</td></tr>
+                        <tr><td>3</td><td>~50</td><td>Employed</td><td>Low/Medium</td><td>Small family</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>For household-centric products — furniture, DIY supplies, home appliances — room count is particularly powerful for re-targeting. A customer who has bought one set of curtains for a 12-room house may well need eleven more.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">Layer 4: Ofcom Connectivity Data — how do we reach them?</h2>
+            <p>Ofcom publishes broadband speed data by area, which has direct implications for how you communicate with customers.</p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>#</th><th>Postcode</th><th>Broadband speed</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>LS14 1BG</td><td>6.9 Mbps</td></tr>
+                        <tr><td>2</td><td>HG2 8HJ</td><td>38.1 Mbps</td></tr>
+                        <tr><td>3</td><td>LN5 9AH</td><td>1.5 Mbps</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Customer 3's broadband speed is essentially inhibitive for any media-rich content. Video testimonials, interactive web experiences, streaming product demos — none of these will reach them effectively. Physical mail or simple email campaigns would be far more appropriate. Customer 2, by contrast, has excellent connectivity and could be engaged through video, social media, and rich digital content.</p>
+            <p><strong>Updated customer picture:</strong></p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>Customer</th><th>Age</th><th>Employment</th><th>Income</th><th>Household</th><th>Connectivity</th><th>Best channel</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>~65+</td><td>Retired</td><td>Low</td><td>Single/Couple</td><td>Low</td><td>Email/Post</td></tr>
+                        <tr><td>2</td><td>~44</td><td>Employed</td><td>High</td><td>Large family</td><td>High</td><td>Digital/Video</td></tr>
+                        <tr><td>3</td><td>~50</td><td>Employed</td><td>Low/Medium</td><td>Small family</td><td>Very low</td><td>Post/Email</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>This kind of insight prevents wasteful spending. There's no point serving video ads to someone who can barely load a webpage.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">Layer 5: Met Office Weather Data — when should we reach them?</h2>
+            <p>Weather data might seem like an unusual addition to a customer profile, but it enables a genuinely useful form of contextual marketing. By appending local weather forecasts to customer records, you can time campaigns based on conditions.</p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>#</th><th>Postcode</th><th>5-day avg temp</th><th>5-day rain probability</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>LS14 1BG</td><td>21°C</td><td>7.8%</td></tr>
+                        <tr><td>2</td><td>HG2 8HJ</td><td>20.6°C</td><td>7.4%</td></tr>
+                        <tr><td>3</td><td>LN5 9AH</td><td>23.2°C</td><td>26.4%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>A footwear brand might trigger a rain boot campaign for Customer 3's area when wet weather is forecast. A garden furniture retailer might push promotions to Customers 1 and 2 during a sunny spell. Weather-triggered marketing drives relevance — it reaches people at the moment a product feels most useful.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">The complete picture</h2>
+            <p>Starting with nothing but a name and postcode, we've built a layered profile for each customer that tells us their likely age bracket, employment status, probable income level, household size, how to reach them, and even when conditions are right for certain products.</p>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr><th>Attribute</th><th>Customer 1</th><th>Customer 2</th><th>Customer 3</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Age range</td><td>~65+</td><td>~44</td><td>~50</td></tr>
+                        <tr><td>Employment</td><td>Retired</td><td>Employed</td><td>Employed</td></tr>
+                        <tr><td>Income</td><td>Low</td><td>High</td><td>Low/Medium</td></tr>
+                        <tr><td>Household</td><td>Single/Couple</td><td>Large family</td><td>Small family</td></tr>
+                        <tr><td>Connectivity</td><td>Low</td><td>Excellent</td><td>Very low</td></tr>
+                        <tr><td>Best channel</td><td>Email/Post</td><td>Digital/Video</td><td>Post/Email</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>None of this required a single form field, survey question, or cookie. It's all derived from publicly available, regularly updated open data.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">Combining open data with your own</h2>
+            <p>Open data is most powerful when it's used alongside your internal transactional and interaction data. Consider Customer 2: their open data profile suggests a high-income family in a well-connected suburban area. If your own records show they've made a single mid-range purchase via your website after clicking through from a social media ad, you can start to build a much richer hypothesis.</p>
+            <p>They have the means to buy premium products. They live in a large home with scope for multiple purchases. They're digitally engaged. Their single mid-range purchase isn't a sign of low value — it's a starting point. The open data tells you there's significant headroom.</p>
+            <p>Equally, combining the two data sources can flag inconsistencies worth investigating. If your internal segmentation labels a customer as "high value" based on one large purchase, but open data suggests they live in a low-income area, that's a signal — perhaps they were buying a gift, or perhaps your segmentation needs adjusting.</p>
+
+            <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">Key takeaways</h2>
+            <p>Open data is freely available, well-maintained, and remarkably powerful when structured correctly. The datasets used in this example represent just a tiny subset of what's out there, and we focused on a single dimension — geography. Other open data sources cover transport, education, health, and more.</p>
+            <p>A few things to keep in mind: this data is aggregated at the area level, not the individual level, so it works best as a complement to your own customer data rather than a replacement. Some datasets are updated more frequently than others, so freshness matters. And the real value comes from combining multiple sources — any single dataset tells a partial story.</p>
+            <p>The challenge for most businesses isn't access to the data. It's the work of linking, cleaning, refreshing, and structuring it into something useful. That's where Cogstrata comes in — we do the heavy lifting so you can focus on using the insight.</p>
+        </div>
+
+        <div class="mt-12 p-6 bg-base-200 rounded-xl border border-base-300">
+            <p class="font-semibold text-neutral mb-2">Try this on your own customer data</p>
+            <p class="text-neutral/70 text-sm mb-4">Cogstrata aggregates and continuously refreshes UK open data, delivering 175+ structured demographic attributes at the postcode level. Request a free sample enrichment and see what your customer postcodes reveal.</p>
+            <a class="btn btn-primary" href="../../contact.html">Request a Free Sample</a>
+        </div>
+
+        <div class="mt-8">
+            <a class="btn btn-outline btn-secondary" href="../index.html">Back to Blog</a>
+        </div>
+    </div>
+
+    <!-- Author Bio -->
+    <div class="container mx-auto px-4 max-w-3xl pb-2">
+        <div class="flex items-start gap-4 p-5 bg-base-200 rounded-xl border border-base-300">
+            <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg shrink-0"
+                 style="font-family:'Space Grotesk',sans-serif;">C</div>
+            <div>
+                <p class="font-semibold text-neutral text-sm" style="font-family:'Space Grotesk',sans-serif;">Cogstrata.ai Research Team</p>
+                <p class="text-xs text-neutral/60 mb-1">Demographic Intelligence &amp; Data Science</p>
+                <p class="text-sm text-neutral/70">The Cogstrata research team combines expertise in geodemographic classification, macroeconomic modelling, and AI-driven data inference. We write about the intersection of location intelligence, customer data enrichment, and the emerging needs of agentic AI systems.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Articles -->
+    <div class="container mx-auto px-4 max-w-3xl pb-16">
+        <h2 class="text-xl font-bold text-neutral mb-5" style="font-family:'Space Grotesk',sans-serif;">Related articles</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <a href="open-data-customer-insight.html" class="card bg-base-200 border border-base-300 hover:border-primary transition-colors">
+                <div class="card-body py-4 px-4">
+                    <span class="badge badge-sm badge-outline mb-2">Thought Leadership</span>
+                    <p class="text-sm font-semibold text-neutral leading-snug" style="font-family:'Space Grotesk',sans-serif;">Open Data: The Untapped Layer of Customer Intelligence</p>
+                    <p class="text-xs text-neutral/60 mt-1">How UK open data can enrich a customer record without collecting a single extra data point.</p>
+                </div>
+            </a>
+            <a href="demographic-data.html" class="card bg-base-200 border border-base-300 hover:border-primary transition-colors">
+                <div class="card-body py-4 px-4">
+                    <span class="badge badge-sm badge-outline mb-2">Thought Leadership</span>
+                    <p class="text-sm font-semibold text-neutral leading-snug" style="font-family:'Space Grotesk',sans-serif;">60 Things a Postcode Can Tell You About Your Customer</p>
+                    <p class="text-xs text-neutral/60 mt-1">From commute mode to retail desert risk — the full range of signals hiding in postcode data.</p>
+                </div>
+            </a>
+            <a href="always-on-data-architecture.html" class="card bg-base-200 border border-base-300 hover:border-primary transition-colors">
+                <div class="card-body py-4 px-4">
+                    <span class="badge badge-sm badge-outline mb-2">Market Analysis</span>
+                    <p class="text-sm font-semibold text-neutral leading-snug" style="font-family:'Space Grotesk',sans-serif;">From Batch to Always-On: The Architecture of Modern Customer Intelligence</p>
+                    <p class="text-xs text-neutral/60 mt-1">The technical shift from periodic batch updates to continuous data refresh.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Agent-Ready CTA Banner -->
+    <div class="bg-base-200 py-16">
+        <div class="container mx-auto px-4 text-center max-w-2xl">
+            <p class="text-sm font-semibold tracking-widest uppercase text-primary mb-4" style="font-family: 'DM Sans', sans-serif; letter-spacing: 3px;">AI Agent Ready</p>
+            <h2 class="text-3xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Your agents are only as smart as their data</h2>
+            <p class="text-lg text-neutral/70 mb-8">Demographic intelligence structured for AI agents and human teams alike. API-first, always fresh, privacy-safe.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a class="btn btn-primary btn-lg" href="../../contact.html">Get Your Free Sample</a>
+                <a class="btn btn-outline btn-primary btn-lg" href="../../contact.html">Book a Demo</a>
+            </div>
+            <p class="text-sm text-neutral/60 mt-4">Enriched results on your own data within 24 hours.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-neutral text-neutral-content rounded">
+        <div class="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8"/>
+                <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="1.5" fill="#3e77ff"/>
+                <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="10" cy="37" r="1.5" fill="#3e77ff"/>
+                <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="34" cy="14" r="1.5" fill="#3e77ff"/>
+                <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2"/>
+                <circle cx="22" cy="24" r="2.5" fill="#3e77ff"/>
+                <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8"/>
+                <circle cx="34" cy="34" r="1.8" fill="#91c1ff"/>
+                <circle cx="43" cy="27" r="3" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+                <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
+            </svg>
+            <!-- Brand override: Space Grotesk 700 wordmark in neutral-content -->
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
+        </div>
+        <!-- Brand override: DM Sans 300, uppercase, wide-tracked tagline -->
+        <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Agent-ready demographic intelligence</p>
+        <nav class="flex flex-wrap justify-center gap-4">
+            <a class="link link-hover" href="../../index.html#features">Features</a>
+            <a class="link link-hover" href="../../index.html#use-cases">Use Cases</a>
+            <a class="link link-hover" href="../../index.html#pricing">Pricing</a>
+            <a class="link link-hover" href="../../index.html#faq">FAQ</a>
+            <a class="link link-hover" href="../index.html">Blog</a>
+            <a class="link link-hover" href="../../contact.html">Contact</a>
+        </nav>
+        <aside>
+            <p>Copyright &copy; 2026 - All rights reserved by Cogstrata.ai</p>
+        </aside>
+    </footer>
+<script>
+  // Mobile menu toggle fix for touch devices
+  (function() {
+    var navbar = document.querySelector(".navbar");
+    if (!navbar) return;
+    var dropdown = navbar.querySelector(".dropdown");
+    if (!dropdown) return;
+    var btn = dropdown.querySelector("[role=button]");
+    var menu = dropdown.querySelector(".dropdown-content");
+    if (!btn || !menu) return;
+
+    var open = false;
+
+    function showMenu() {
+      open = true;
+      menu.style.cssText = "display:block!important;visibility:visible!important;opacity:1!important;transform:none!important;position:absolute;z-index:9999;";
+    }
+    function hideMenu() {
+      open = false;
+      menu.style.cssText = "display:none!important;";
+    }
+
+    hideMenu();
+
+    btn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      if (open) { hideMenu(); } else { showMenu(); }
+    });
+
+    menu.querySelectorAll("a").forEach(function(link) {
+      link.addEventListener("click", function() { hideMenu(); });
+    });
+
+    document.addEventListener("click", function() { hideMenu(); });
+  })();
+</script>
+</body>
+</html>
