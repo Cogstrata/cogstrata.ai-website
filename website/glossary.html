@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sentient-architect">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZBCGQDWVH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JZBCGQDWVH');
+    </script>
+    <meta charset="UTF-8">
+    <script>
+      /* A/B theme assignment — runs before first paint to avoid flash */
+      (function() {
+        try {
+          var t = localStorage.getItem('cs-ab-theme') || 'sentient-architect';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch(e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geodemographic Data Glossary: Key Terms Explained | Cogstrata.ai</title>
+    <meta name="description" content="Definitions for key terms in geodemographic data, customer intelligence, and demographic segmentation — from output area classification to IMD decile and postcode sector.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cogstrata.ai/glossary.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cogstrata.ai/glossary.html">
+    <meta property="og:title" content="Geodemographic Data Glossary: Key Terms Explained | Cogstrata.ai">
+    <meta property="og:description" content="Definitions for key terms in geodemographic data, customer intelligence, and demographic segmentation — from output area classification to IMD decile and postcode sector.">
+    <meta property="og:image" content="https://cogstrata.ai/assets/og-image.png">
+    <meta property="og:site_name" content="Cogstrata.ai">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cogstrata.ai/glossary.html">
+    <meta name="twitter:title" content="Geodemographic Data Glossary: Key Terms Explained | Cogstrata.ai">
+    <meta name="twitter:description" content="Definitions for key terms in geodemographic data, customer intelligence, and demographic segmentation — from output area classification to IMD decile and postcode sector.">
+    <meta name="twitter:image" content="https://cogstrata.ai/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap"></noscript>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTermSet",
+      "name": "Geodemographic Data Glossary",
+      "description": "Key terms in geodemographic data, customer intelligence, and demographic segmentation.",
+      "url": "https://cogstrata.ai/glossary.html"
+    }
+    </script>
+</head>
+<body class="bg-base-100 text-base-content">
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="text-primary hover:text-secondary" href="index.html#features">Features</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="index.html#use-cases">Use Cases</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="index.html#pricing">Pricing</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="index.html#faq">FAQ</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="data.html">Data</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="blog/index.html">Blog</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost flex items-center gap-2" href="index.html">
+                <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2"/>
+                    <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8"/>
+                    <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="10" r="1.5" fill="#3e77ff"/>
+                    <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="37" r="1.5" fill="#3e77ff"/>
+                    <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                    <circle cx="34" cy="14" r="1.5" fill="#3e77ff"/>
+                    <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2"/>
+                    <circle cx="22" cy="24" r="2.5" fill="#3e77ff"/>
+                    <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8"/>
+                    <circle cx="34" cy="34" r="1.8" fill="#91c1ff"/>
+                    <circle cx="43" cy="27" r="3" fill="none" stroke="#EF9F27" stroke-width="1.5"/>
+                    <circle cx="43" cy="27" r="1.2" fill="#EF9F27"/>
+                </svg>
+                <!-- Brand override: Space Grotesk 700 wordmark -->
+                <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: 1.25rem;">cogstrata</span>
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="text-primary hover:text-secondary" href="index.html#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="index.html#use-cases">Use Cases</a></li>
+                <li><a class="text-primary hover:text-secondary" href="index.html#pricing">Pricing</a></li>
+                <li><a class="text-primary hover:text-secondary" href="index.html#faq">FAQ</a></li>
+                <li><a class="text-primary hover:text-secondary" href="data.html">Data</a></li>
+                <li><a class="text-primary hover:text-secondary" href="blog/index.html">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-primary hidden lg:flex" href="contact.html">Join Wait List</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-base-200 py-20">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Geodemographic Data Glossary</h1>
+            <p class="text-lg text-neutral/70 max-w-2xl mx-auto" style="font-family: 'DM Sans', sans-serif;">Plain-English definitions for the terms you'll encounter in customer data enrichment, geodemographic classification, and AI-powered intelligence.</p>
+        </div>
+    </section>
+
+    <!-- Glossary Terms Section -->
+    <section class="bg-base-100 py-20">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Geodemographic Classification</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A method of grouping geographical areas (typically postcodes or output areas) by the demographic, socioeconomic, and behavioural characteristics of their residents. Used for customer segmentation, marketing targeting, and risk modelling.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Output Area Classification (OAC)</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A free, publicly available geodemographic classification produced by the Office for National Statistics (ONS) based on UK census data. Assigns each output area (the smallest census geography, ~300 households) to one of eight supergroups.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Index of Multiple Deprivation (IMD)</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A government-produced measure of relative deprivation across small areas of England, covering income, employment, education, health, crime, housing, and living environment. Expressed as a decile rank from 1 (most deprived) to 10 (least deprived).</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Postcode Sector</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A geographic unit formed by the postcode district and the first digit of the postcode suffix (e.g. SW1A 1). Typically contains 2,500–3,000 residential addresses. Cogstrata operates at postcode sector level to enable precision without personal data exposure.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">LSOA (Lower Super Output Area)</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A geographic unit used for census statistics in England and Wales, containing approximately 400–1,200 households. Often used as the base geography for deprivation indices and health data.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Data Enrichment</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">The process of appending third-party data attributes to an existing customer or prospect record. In demographic enrichment, a postcode is used to append socioeconomic, behavioural, and life-stage variables to customer records.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">CACI Acorn</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A proprietary UK geodemographic classification system produced by CACI Ltd, anchoring segment definitions to census data. One of the two dominant legacy systems in UK customer intelligence, alongside Experian Mosaic.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Experian Mosaic</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A proprietary geodemographic segmentation system produced by Experian, updated on a multi-year cycle. Classifies UK households into segments based on a blend of census, credit, and consumer data.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Postcode-Level Intelligence</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">The practice of deriving customer insight from postcode geography rather than individual personal data. This approach is inherently GDPR-compliant as it operates on aggregate area characteristics rather than identifiable records.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Customer Data Platform (CDP)</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A software system that consolidates customer data from multiple sources into a unified customer profile. Demographic enrichment data from sources like Cogstrata is typically ingested via CDP connectors or API calls.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Third-Party Data</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">Data sourced from an external provider rather than collected directly from customers. Demographic enrichment data is a form of third-party data used to supplement first-party CRM records.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Propensity Modelling</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A statistical technique for predicting the likelihood of a customer taking a specific action (purchasing, churning, defaulting). Geodemographic attributes are commonly used as input variables in propensity models.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Census-Anchored Classification</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">A geodemographic system whose core segment definitions are derived from or fixed to a specific census year. As time passes, the accuracy of census-anchored classifications degrades as the population changes.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 border border-base-300">
+                    <div class="card-body">
+                        <h2 class="card-title text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">AI-Inferred Attributes</h2>
+                        <p class="text-neutral/70" style="font-family: 'DM Sans', sans-serif;">Demographic or behavioural attributes derived through machine learning inference rather than direct measurement. Cogstrata uses AI inference to derive attributes like mortgage pressure delta and discretionary spend estimate that cannot be directly observed at the postcode level.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-base-200 py-20">
+        <div class="container mx-auto px-4 max-w-3xl text-center">
+            <h2 class="text-3xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Put these insights to work</h2>
+            <p class="text-lg text-neutral/70 mb-8" style="font-family: 'DM Sans', sans-serif;">Cogstrata enriches your customer postcodes with 5,000+ continuously-refreshed demographic attributes. No census lag, no PII exposure, API-first.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Request a Free Sample</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-neutral text-neutral-content rounded">
+        <div class="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2"/>
+                <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8"/>
+                <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="10" cy="10" r="1.5" fill="#3e77ff"/>
+                <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="10" cy="37" r="1.5" fill="#3e77ff"/>
+                <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5"/>
+                <circle cx="34" cy="14" r="1.5" fill="#3e77ff"/>
+                <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2"/>
+                <circle cx="22" cy="24" r="2.5" fill="#3e77ff"/>
+                <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8"/>
+                <circle cx="34" cy="34" r="1.8" fill="#91c1ff"/>
+                <circle cx="43" cy="27" r="3" fill="none" stroke="#91c1ff" stroke-width="1.5"/>
+                <circle cx="43" cy="27" r="1.2" fill="#91c1ff"/>
+            </svg>
+            <!-- Brand override: Space Grotesk 700 wordmark in neutral-content -->
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
+        </div>
+        <!-- Brand override: DM Sans 300, uppercase, wide-tracked tagline -->
+        <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Agent-ready demographic intelligence</p>
+        <nav class="flex flex-wrap justify-center gap-4">
+            <a class="link link-hover" href="index.html#features">Features</a>
+            <a class="link link-hover" href="index.html#use-cases">Use Cases</a>
+            <a class="link link-hover" href="index.html#pricing">Pricing</a>
+            <a class="link link-hover" href="index.html#faq">FAQ</a>
+            <a class="link link-hover" href="blog/index.html">Blog</a>
+            <a class="link link-hover" href="contact.html">Contact</a>
+        </nav>
+        <aside>
+            <p>Copyright © 2026 - All rights reserved by Cogstrata.ai</p>
+        </aside>
+    </footer>
+<script>
+  // Mobile menu toggle fix for touch devices
+  (function() {
+    var navbar = document.querySelector(".navbar");
+    if (!navbar) return;
+    var dropdown = navbar.querySelector(".dropdown");
+    if (!dropdown) return;
+    var btn = dropdown.querySelector("[role=button]");
+    var menu = dropdown.querySelector(".dropdown-content");
+    if (!btn || !menu) return;
+
+    var open = false;
+
+    function showMenu() {
+      open = true;
+      menu.style.cssText = "display:block!important;visibility:visible!important;opacity:1!important;transform:none!important;position:absolute;z-index:9999;";
+    }
+    function hideMenu() {
+      open = false;
+      menu.style.cssText = "display:none!important;";
+    }
+
+    hideMenu();
+
+    btn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      if (open) { hideMenu(); } else { showMenu(); }
+    });
+
+    menu.querySelectorAll("a").forEach(function(link) {
+      link.addEventListener("click", function() { hideMenu(); });
+    });
+
+    document.addEventListener("click", function() { hideMenu(); });
+  })();
+</script>
+</body>
+</html>
