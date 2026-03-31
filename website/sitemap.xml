@@ -1,133 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cogstrata.ai/</loc>
+    <loc>https://cogstrata.com/</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/contact.html</loc>
+    <loc>https://cogstrata.com/contact.html</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/faq.html</loc>
+    <loc>https://cogstrata.com/faq.html</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/</loc>
+    <loc>https://cogstrata.com/blog/</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/demographic-data.html</loc>
+    <loc>https://cogstrata.com/blog/posts/demographic-data.html</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/future-personalization.html</loc>
+    <loc>https://cogstrata.com/blog/posts/future-personalization.html</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/caci-acorn-problem.html</loc>
+    <loc>https://cogstrata.com/blog/posts/caci-acorn-problem.html</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/experian-mosaic-staleness.html</loc>
+    <loc>https://cogstrata.com/blog/posts/experian-mosaic-staleness.html</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/beyond-the-big-two.html</loc>
+    <loc>https://cogstrata.com/blog/posts/beyond-the-big-two.html</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/true-cost-of-stale-data.html</loc>
+    <loc>https://cogstrata.com/blog/posts/true-cost-of-stale-data.html</loc>
     <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/postcode-privacy-advantage.html</loc>
+    <loc>https://cogstrata.com/blog/posts/postcode-privacy-advantage.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/always-on-data-architecture.html</loc>
+    <loc>https://cogstrata.com/blog/posts/always-on-data-architecture.html</loc>
     <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/data.html</loc>
+    <loc>https://cogstrata.com/data.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/curated-data-for-agents.html</loc>
+    <loc>https://cogstrata.com/blog/posts/curated-data-for-agents.html</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/data-agents-maintaining-data.html</loc>
+    <loc>https://cogstrata.com/blog/posts/data-agents-maintaining-data.html</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/meta-rich-data-for-agents.html</loc>
+    <loc>https://cogstrata.com/blog/posts/meta-rich-data-for-agents.html</loc>
     <lastmod>2026-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/how-agents-consume-data.html</loc>
+    <loc>https://cogstrata.com/blog/posts/how-agents-consume-data.html</loc>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/trust-layer-agent-curated-data.html</loc>
+    <loc>https://cogstrata.com/blog/posts/trust-layer-agent-curated-data.html</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/blog/posts/agentic-use-cases-demographic-data.html</loc>
+    <loc>https://cogstrata.com/blog/posts/agentic-use-cases-demographic-data.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/cogstrata-vs-caci-acorn.html</loc>
+    <loc>https://cogstrata.com/cogstrata-vs-caci-acorn.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/cogstrata-vs-experian-mosaic.html</loc>
+    <loc>https://cogstrata.com/cogstrata-vs-experian-mosaic.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cogstrata.ai/glossary.html</loc>
+    <loc>https://cogstrata.com/glossary.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
