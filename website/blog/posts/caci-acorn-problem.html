@@ -161,7 +161,7 @@
         <div class="prose max-w-none text-neutral/80 space-y-6">
             <p>CACI's Acorn classification has been a fixture of UK marketing for decades. Walk into any CRM team, any direct mail house, or any financial services analytics function and you will find Acorn codes embedded in their customer data. It is the lingua franca of geodemographic targeting — and that familiarity has become one of the UK data industry's most expensive blind spots.</p>
 
-            <p>The problem is structural. Acorn, like all geodemographic classifications derived from the decennial census, is anchored to a point-in-time snapshot of population characteristics. The most recent major rebuild was anchored to the 2011 census. Even with supplemental commercial data layered on top, the foundational classification schema — the one that determines which "type" of consumer lives in a given postcode — reflects a Britain that is now fifteen years in the past.</p>
+            <p>The problem is structural. Acorn, like all geodemographic classifications derived from the decennial census, is anchored to a <a href="true-cost-of-stale-data.html">point-in-time snapshot</a> of population characteristics. The most recent major rebuild was anchored to the 2011 census. Even with supplemental commercial data layered on top, the foundational classification schema — the one that determines which "type" of consumer lives in a given postcode — reflects a Britain that is now fifteen years in the past.</p>
 
             <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">What 2011 Britain looked like</h2>
 
@@ -177,7 +177,7 @@
 
             <p>More importantly, the 2021 census was conducted during an unusual moment — during the tail end of a pandemic that temporarily suppressed mobility, altered household composition patterns, and shifted employment in ways that were partially but not wholly reversed in the following years. Any classification built on that snapshot carries noise from a period of extreme structural disruption.</p>
 
-            <p>The deeper issue is that census-anchored classification is inherently retrospective. It can never tell you what is happening now, because census data collection and processing lag the present by years. The question is not whether CACI's next Acorn release will be better than the last — it will be. The question is whether "better than before" is good enough when the alternative is continuous AI refresh.</p>
+            <p>The deeper issue is that census-anchored classification is inherently retrospective. It can never tell you what is happening now, because census data collection and processing lag the present by years. The question is not whether CACI's next Acorn release will be better than the last — it will be. The question is whether "better than before" is good enough when the alternative is <a href="always-on-data-architecture.html">continuous AI refresh</a>.</p>
 
 
 
@@ -194,7 +194,7 @@
 
             <h2 class="text-2xl font-bold text-neutral mt-10 mb-4" style="font-family: 'Space Grotesk', sans-serif;">What continuous refresh actually changes</h2>
 
-            <p>Cogstrata does not build classifications on census snapshots. Instead, our models continuously ingest and process real-world event streams: Land Registry transaction data, EPC certificate issuance, insolvency filing rates, claimant count data from HMRC, retail opening and closure patterns, fuel and energy price movements, regional CPI variance, and local news sentiment signals.</p>
+            <p>Cogstrata does not build classifications on census snapshots. Instead, our models continuously ingest and process <a href="open-data-customer-insight.html">real-world event streams</a>: Land Registry transaction data, EPC certificate issuance, insolvency filing rates, claimant count data from HMRC, retail opening and closure patterns, fuel and energy price movements, regional CPI variance, and local news sentiment signals.</p>
 
             <p>These are not supplementary data sources layered on top of a census backbone. They are the primary inputs to our postcode-level models, processed and updated on a continuous cycle. When a wave of mortgage stress begins to affect a particular postcode cluster, Cogstrata's models detect the signal — in shifts in insolvency filing rates, claimant counts, and transaction volumes — and update the relevant attributes before that stress has manifested as the kind of observable behaviour that census-derived models would eventually pick up.</p>
 
