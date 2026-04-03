@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sentient-architect">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZBCGQDWVH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JZBCGQDWVH');
+    </script>
+    <meta charset="UTF-8">
+    <script>
+      /* A/B theme assignment — runs before first paint to avoid flash */
+      (function() {
+        try {
+          var t = localStorage.getItem('cs-ab-theme') || 'sentient-architect';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch(e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent-Ready Data — Cogstrata</title>
+    <meta name="description" content="Cogstrata data ships with a built-in semantic layer so AI agents can consume it from day one. No transformation, no mapping, no leg work — just plug in and ask.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cogstrata.com/agentic">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cogstrata.com/agentic">
+    <meta property="og:title" content="Agent-Ready Data — Cogstrata">
+    <meta property="og:description" content="Cogstrata data ships with a built-in semantic layer so AI agents can consume it from day one. No transformation, no mapping, no leg work — just plug in and ask.">
+    <meta property="og:image" content="https://cogstrata.com/assets/og-image.png">
+    <meta property="og:site_name" content="Cogstrata">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cogstrata.com/agentic">
+    <meta name="twitter:title" content="Agent-Ready Data — Cogstrata">
+    <meta name="twitter:description" content="Cogstrata data ships with a built-in semantic layer so AI agents can consume it from day one. No transformation, no mapping, no leg work — just plug in and ask.">
+    <meta name="twitter:image" content="https://cogstrata.com/assets/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap">
+    <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500&family=Space+Grotesk:wght@600;700&display=swap"></noscript>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Agent-Ready Data",
+      "description": "Cogstrata data ships with a built-in semantic layer so AI agents can consume it from day one.",
+      "url": "https://cogstrata.com/agentic",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Cogstrata",
+        "url": "https://cogstrata.com"
+      }
+    }
+    </script>
+</head>
+
+<body class="bg-base-100 text-base-content">
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="/#faq">FAQ</a></li>
+                    <li>
+                        <details>
+                            <summary class="text-primary hover:text-secondary">Features</summary>
+                            <ul>
+                                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost flex items-center gap-2" href="/">
+                <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2" />
+                    <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2" />
+                    <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2" />
+                    <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8" />
+                    <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                    <circle cx="10" cy="10" r="1.5" fill="#3e77ff" />
+                    <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                    <circle cx="10" cy="37" r="1.5" fill="#3e77ff" />
+                    <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                    <circle cx="34" cy="14" r="1.5" fill="#3e77ff" />
+                    <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2" />
+                    <circle cx="22" cy="24" r="2.5" fill="#3e77ff" />
+                    <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8" />
+                    <circle cx="34" cy="34" r="1.8" fill="#91c1ff" />
+                    <circle cx="43" cy="27" r="3" fill="none" stroke="#91c1ff" stroke-width="1.5" />
+                    <circle cx="43" cy="27" r="1.2" fill="#91c1ff" />
+                </svg>
+                <span
+                    style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: 1.25rem;">cogstrata</span>
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/#faq">FAQ</a></li>
+                <li>
+                    <details>
+                        <summary class="text-primary hover:text-secondary">Features</summary>
+                        <ul class="bg-base-100 rounded-box shadow-lg z-[2] w-44 p-2">
+                            <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                            <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-primary hidden lg:flex" href="/contact">Join Wait List</a>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO — Agent-Ready Data
+    ═══════════════════════════════════════════════════════════ -->
+    <div class="hero min-h-screen bg-base-100 relative overflow-hidden">
+
+        <!-- Constellation SVG background -->
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1440 810" preserveAspectRatio="xMidYMid slice"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Connection lines -->
+            <g stroke="#91c1ff" stroke-width="1" opacity="0.2" fill="none">
+                <line x1="200" y1="150" x2="420" y2="280" />
+                <line x1="420" y1="280" x2="660" y2="180" />
+                <line x1="660" y1="180" x2="880" y2="320" />
+                <line x1="880" y1="320" x2="1100" y2="200" />
+                <line x1="1100" y1="200" x2="1300" y2="340" />
+                <line x1="420" y1="280" x2="360" y2="480" />
+                <line x1="360" y1="480" x2="600" y2="540" />
+                <line x1="600" y1="540" x2="880" y2="320" />
+                <line x1="880" y1="320" x2="1040" y2="500" />
+                <line x1="1040" y1="500" x2="1300" y2="340" />
+                <line x1="600" y1="540" x2="800" y2="620" />
+                <line x1="800" y1="620" x2="1040" y2="500" />
+            </g>
+            <!-- Semantic layer highlight — amber connections radiating from central hub -->
+            <g stroke="#EF9F27" stroke-width="1.5" opacity="0.25" fill="none">
+                <line x1="720" y1="400" x2="420" y2="280" />
+                <line x1="720" y1="400" x2="880" y2="320" />
+                <line x1="720" y1="400" x2="600" y2="540" />
+                <line x1="720" y1="400" x2="1040" y2="500" />
+                <line x1="720" y1="400" x2="660" y2="180" />
+                <line x1="720" y1="400" x2="1100" y2="200" />
+            </g>
+            <!-- Purple data nodes -->
+            <g fill="none" stroke="#534AB7" opacity="0.3">
+                <circle cx="200" cy="150" r="8" stroke-width="1.5" />
+                <circle cx="200" cy="150" r="3" fill="#534AB7" />
+                <circle cx="420" cy="280" r="7" stroke-width="1.5" />
+                <circle cx="420" cy="280" r="2.5" fill="#534AB7" />
+                <circle cx="660" cy="180" r="9" stroke-width="1.5" />
+                <circle cx="660" cy="180" r="3.5" fill="#534AB7" />
+                <circle cx="880" cy="320" r="8" stroke-width="1.5" />
+                <circle cx="880" cy="320" r="3" fill="#534AB7" />
+                <circle cx="1100" cy="200" r="7" stroke-width="1.5" />
+                <circle cx="1100" cy="200" r="2.5" fill="#534AB7" />
+                <circle cx="1300" cy="340" r="8" stroke-width="1.5" />
+                <circle cx="1300" cy="340" r="3" fill="#534AB7" />
+                <circle cx="360" cy="480" r="7" stroke-width="1.5" />
+                <circle cx="360" cy="480" r="2.5" fill="#534AB7" />
+                <circle cx="600" cy="540" r="8" stroke-width="1.5" />
+                <circle cx="600" cy="540" r="3" fill="#534AB7" />
+                <circle cx="800" cy="620" r="7" stroke-width="1.5" />
+                <circle cx="800" cy="620" r="2.5" fill="#534AB7" />
+                <circle cx="1040" cy="500" r="8" stroke-width="1.5" />
+                <circle cx="1040" cy="500" r="3" fill="#534AB7" />
+            </g>
+            <!-- Central semantic hub — amber -->
+            <g fill="none" stroke="#EF9F27" opacity="0.4">
+                <circle cx="720" cy="400" r="22" stroke-width="2" />
+                <circle cx="720" cy="400" r="8" fill="#EF9F27" />
+                <circle cx="720" cy="400" r="32" stroke-width="1" opacity="0.15">
+                    <animate attributeName="r" values="30;36;30" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.15;0.08;0.15" dur="3s" repeatCount="indefinite"/>
+                </circle>
+            </g>
+        </svg>
+
+        <div class="hero-content text-center relative z-10">
+            <div class="max-w-3xl">
+                <p class="text-sm font-semibold tracking-widest uppercase text-primary mb-4"
+                   style="font-family: 'DM Sans', sans-serif; letter-spacing: 3px;">Built for AI Agents</p>
+                <h1 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: clamp(2.5rem, 6vw, 4rem); letter-spacing: -1px; line-height: 1.1;">
+                    Data your agents can consume from day one
+                </h1>
+                <p class="py-6 text-lg text-neutral/70 max-w-2xl mx-auto">Every Cogstrata dataset ships with a semantic layer that tells AI agents what the data means, how it relates, and when to use it. No transformation. No mapping. No leg work.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <a class="btn btn-primary btn-lg" href="/contact">Join Wait List</a>
+                    <a class="btn btn-outline btn-primary btn-lg" href="/data">Explore the Data</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="border-t border-b border-base-300 py-8 bg-base-100/50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-12">
+                <div class="text-center">
+                    <p class="font-bold text-2xl text-primary">5,000+</p>
+                    <p class="text-xs text-neutral/70">Semantically tagged attributes</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-bold text-2xl text-primary">Zero</p>
+                    <p class="text-xs text-neutral/70">Transformation required</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-bold text-2xl text-primary">Day 1</p>
+                    <p class="text-xs text-neutral/70">Agent-consumable</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-bold text-2xl text-primary">Full</p>
+                    <p class="text-xs text-neutral/70">Semantic layer included</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         THE PROBLEM — Why most data isn't agent-ready
+    ═══════════════════════════════════════════════════════════ -->
+    <div class="bg-base-100 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral mb-4"
+                    style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">
+                    Most data wasn't built for agents
+                </h2>
+                <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Traditional demographic datasets were designed for human analysts with spreadsheets. They ship as flat files with cryptic column names, no descriptions, and no relationships. Before an agent can do anything useful, someone has to do all the leg work of mapping, transforming, and explaining the data.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Traditional Data -->
+                <div class="card bg-base-200 shadow-sm border border-base-300">
+                    <div class="h-1 w-full rounded-t-2xl bg-error/60"></div>
+                    <div class="card-body">
+                        <div class="flex items-center gap-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-error/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                            </svg>
+                            <h3 class="text-xl font-bold text-neutral" style="font-family: 'Space Grotesk', sans-serif;">Traditional Data</h3>
+                        </div>
+                        <p class="text-neutral/70 text-sm mb-4">Columns like <span class="font-mono text-xs bg-base-300 px-1.5 py-0.5 rounded">SEG_CD_04</span> or <span class="font-mono text-xs bg-base-300 px-1.5 py-0.5 rounded">ACORN_GRP</span> mean nothing to an agent. Every dataset needs weeks of data engineering before it's useful — mapping columns, writing descriptions, building join logic, and defining business rules. By the time it's ready, the data is already stale.</p>
+                        <div class="space-y-2 text-sm text-neutral/60">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3 h-3 text-error/60 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                                <span>Cryptic column names with no context</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3 h-3 text-error/60 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                                <span>No relationship definitions between fields</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3 h-3 text-error/60 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                                <span>Weeks of data engineering before first query</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3 h-3 text-error/60 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                                <span>Business logic lives in someone's head</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cogstrata Data -->
+                <div class="card bg-base-200 shadow-sm border border-base-300">
+                    <div class="h-1 w-full rounded-t-2xl" style="background:#EF9F27;"></div>
+                    <div class="card-body">
+                        <div class="flex items-center gap-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" style="color:#EF9F27;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h3 class="text-xl font-bold text-neutral" style="font-family: 'Space Grotesk', sans-serif;">Cogstrata Data</h3>
+                        </div>
+                        <p class="text-neutral/70 text-sm mb-4">Every attribute ships with semantic tags that describe what it measures, how it relates to other fields, what units it uses, and what questions it can answer. An agent receiving Cogstrata data understands it immediately — the same way a human colleague would if you handed them a well-documented brief.</p>
+                        <div class="space-y-2 text-sm text-neutral/60">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3 h-3 flex-shrink-0" style="color:#EF9F27;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                <span>Human-readable names with full descriptions</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3 h-3 flex-shrink-0" style="color:#EF9F27;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                <span>Relationship graph between every attribute</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3 h-3 flex-shrink-0" style="color:#EF9F27;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                <span>Consumable by agents the moment it arrives</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3 h-3 flex-shrink-0" style="color:#EF9F27;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                <span>Business logic embedded in the data itself</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         WHAT THE SEMANTIC LAYER INCLUDES
+    ═══════════════════════════════════════════════════════════ -->
+    <div class="bg-base-200 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral mb-4"
+                    style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">
+                    What ships with every dataset
+                </h2>
+                <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Our semantic layer isn't an add-on. It's baked into the data from the start — every attribute, every relationship, every business rule — so agents can reason over your data the same way your best analyst would.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Semantic Tags -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="h-1 w-full rounded-t-2xl" style="background:#3E77FF;"></div>
+                    <div class="card-body">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                            </svg>
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Semantic Tags</h3>
+                        </div>
+                        <p class="text-neutral/70 text-sm">Every attribute carries rich metadata — a plain-English description, the measurement unit, the data type, valid ranges, and a category label. An agent knows what "Greenspace Access Score" means without asking.</p>
+                    </div>
+                </div>
+
+                <!-- Relationship Graph -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="h-1 w-full rounded-t-2xl" style="background:#534AB7;"></div>
+                    <div class="card-body">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" style="color:#534AB7;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                            </svg>
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Relationship Graph</h3>
+                        </div>
+                        <p class="text-neutral/70 text-sm">Attributes don't exist in isolation. The semantic layer maps how fields relate — which attributes compose a segment, which signals feed a model, and how geospatial hierarchies nest. Agents can traverse the graph to answer compound questions.</p>
+                    </div>
+                </div>
+
+                <!-- Business Context -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="h-1 w-full rounded-t-2xl" style="background:#EF9F27;"></div>
+                    <div class="card-body">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex-shrink-0" style="color:#EF9F27;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Business Context</h3>
+                        </div>
+                        <p class="text-neutral/70 text-sm">Each attribute is annotated with the business questions it can answer and the domains it serves — retail, financial services, insurance, energy. Agents don't just know what the data is; they know what it's for.</p>
+                    </div>
+                </div>
+
+                <!-- Controlled Vocabulary -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="h-1 w-full rounded-t-2xl" style="background:#1D9E75;"></div>
+                    <div class="card-body">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            <h3 class="card-title text-lg text-neutral"
+                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Controlled Vocabulary</h3>
+                        </div>
+                        <p class="text-neutral/70 text-sm">Our 3-facet naming convention uses a fixed vocabulary of 18 terms. Agents parse segment names deterministically — no guessing, no hallucinating what "Group 4B" might mean. The labels are the documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HOW IT WORKS — From data to agent understanding
+    ═══════════════════════════════════════════════════════════ -->
+    <div class="bg-base-100 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral mb-4"
+                    style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">
+                    AI-ready means zero leg work
+                </h2>
+                <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Once stitched to your customer data, agents can immediately reason over the combined dataset. The semantic layer bridges the gap between raw attributes and natural-language understanding.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="mx-auto mb-6 w-16 h-16 rounded-full flex items-center justify-center" style="background: rgba(62,119,255,0.1);">
+                        <span class="text-2xl font-bold text-primary" style="font-family: 'Space Grotesk', sans-serif;">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral mb-3" style="font-family: 'Space Grotesk', sans-serif;">Stitch</h3>
+                    <p class="text-neutral/70 text-sm">Connect Cogstrata to your customer records via postcode, UPRN, or our API. Your first-party data gains 5,000+ semantically tagged attributes in a single join.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="mx-auto mb-6 w-16 h-16 rounded-full flex items-center justify-center" style="background: rgba(83,74,183,0.1);">
+                        <span class="text-2xl font-bold" style="font-family: 'Space Grotesk', sans-serif; color:#534AB7;">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral mb-3" style="font-family: 'Space Grotesk', sans-serif;">Understand</h3>
+                    <p class="text-neutral/70 text-sm">Your agent reads the semantic layer and instantly knows what every attribute means, how fields relate to each other, and which business questions each one can answer. No prompt engineering required.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="mx-auto mb-6 w-16 h-16 rounded-full flex items-center justify-center" style="background: rgba(239,159,39,0.1);">
+                        <span class="text-2xl font-bold" style="font-family: 'Space Grotesk', sans-serif; color:#EF9F27;">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral mb-3" style="font-family: 'Space Grotesk', sans-serif;">Act</h3>
+                    <p class="text-neutral/70 text-sm">Agents start answering complex questions across your enriched dataset immediately. Natural-language queries that would have taken weeks of data prep now work from the moment the data lands.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         WHY THIS MATTERS — The compounding value
+    ═══════════════════════════════════════════════════════════ -->
+    <div class="bg-base-200 py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral mb-4"
+                    style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">
+                    The value compounds
+                </h2>
+                <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Agent-ready data isn't just about convenience. It fundamentally changes what's possible when you remove the gap between receiving data and using it.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="card-body">
+                        <h3 class="card-title text-lg text-neutral"
+                            style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">No Data Engineering Bottleneck</h3>
+                        <p class="text-neutral/70 text-sm">Skip the weeks of column mapping, schema documentation, and transformation pipelines that traditional data demands. Your team focuses on outcomes, not plumbing.</p>
+                    </div>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="card-body">
+                        <h3 class="card-title text-lg text-neutral"
+                            style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Agents That Don't Hallucinate</h3>
+                        <p class="text-neutral/70 text-sm">When every field carries explicit meaning and defined ranges, agents ground their reasoning in the data rather than guessing. The semantic layer acts as guardrails that keep responses accurate.</p>
+                    </div>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="card-body">
+                        <h3 class="card-title text-lg text-neutral"
+                            style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Compound Querying</h3>
+                        <p class="text-neutral/70 text-sm">Because relationships between attributes are explicit, agents can chain reasoning across multiple dimensions — combining demographic, environmental, economic, and behavioural data in a single query without custom code.</p>
+                    </div>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="card-body">
+                        <h3 class="card-title text-lg text-neutral"
+                            style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Future-Proof Architecture</h3>
+                        <p class="text-neutral/70 text-sm">As agent frameworks evolve, semantically tagged data becomes more valuable — not less. You're investing in a data layer that gets better with every generation of AI tooling.</p>
+                    </div>
+                </div>
+
+                <!-- Value 5 -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="card-body">
+                        <h3 class="card-title text-lg text-neutral"
+                            style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Works With Any Agent</h3>
+                        <p class="text-neutral/70 text-sm">The semantic layer follows open standards. Whether you're building with LangChain, AutoGen, Claude, GPT, or a proprietary framework — Cogstrata data slots in without adapter code.</p>
+                    </div>
+                </div>
+
+                <!-- Value 6 -->
+                <div class="card bg-base-100 shadow-sm border border-base-300">
+                    <div class="card-body">
+                        <h3 class="card-title text-lg text-neutral"
+                            style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Always Fresh, Always Tagged</h3>
+                        <p class="text-neutral/70 text-sm">Our agentic augmentation pipeline continuously refreshes the underlying data and keeps semantic tags in sync. When new attributes appear, they arrive fully tagged and ready — the semantic layer never falls behind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         FINAL CTA
+    ═══════════════════════════════════════════════════════════ -->
+    <div class="bg-base-100 py-20">
+        <div class="container mx-auto px-4 text-center max-w-2xl">
+            <p class="text-sm font-semibold tracking-widest uppercase text-primary mb-4" style="font-family: 'DM Sans', sans-serif; letter-spacing: 3px;">AI Agent Ready</p>
+            <h2 class="text-5xl font-bold mb-6 text-neutral"
+                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Stop preparing data.<br>Start using it.</h2>
+            <p class="text-xl text-neutral/70 mb-8">Cogstrata is the only demographic intelligence platform where every dataset is AI-ready from day one. Your agents deserve data that speaks their language.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a class="btn btn-primary btn-lg" href="/contact">Join Wait List</a>
+                <a class="btn btn-outline btn-primary btn-lg" href="/contact">Contact Us</a>
+            </div>
+            <p class="text-sm text-neutral/60 mt-6">Enriched results on your own data within 24 hours. No contract, no commitment.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-neutral text-neutral-content rounded">
+        <div class="flex items-center gap-3">
+            <svg width="24" height="24" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <line x1="10" y1="10" x2="22" y2="24" stroke="#91c1ff" stroke-width="1.2" />
+                <line x1="22" y1="24" x2="10" y2="37" stroke="#91c1ff" stroke-width="1.2" />
+                <line x1="22" y1="24" x2="34" y2="14" stroke="#91c1ff" stroke-width="1.2" />
+                <line x1="22" y1="24" x2="34" y2="34" stroke="#91c1ff" stroke-width="1.8" />
+                <line x1="34" y1="34" x2="43" y2="27" stroke="#91c1ff" stroke-width="1.5" />
+                <circle cx="10" cy="10" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                <circle cx="10" cy="10" r="1.5" fill="#3e77ff" />
+                <circle cx="10" cy="37" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                <circle cx="10" cy="37" r="1.5" fill="#3e77ff" />
+                <circle cx="34" cy="14" r="3.5" fill="none" stroke="#3e77ff" stroke-width="1.5" />
+                <circle cx="34" cy="14" r="1.5" fill="#3e77ff" />
+                <circle cx="22" cy="24" r="6" fill="none" stroke="#3e77ff" stroke-width="2" />
+                <circle cx="22" cy="24" r="2.5" fill="#3e77ff" />
+                <circle cx="34" cy="34" r="4.5" fill="none" stroke="#91c1ff" stroke-width="1.8" />
+                <circle cx="34" cy="34" r="1.8" fill="#91c1ff" />
+                <circle cx="43" cy="27" r="3" fill="none" stroke="#91c1ff" stroke-width="1.5" />
+                <circle cx="43" cy="27" r="1.2" fill="#91c1ff" />
+            </svg>
+            <span
+                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
+        </div>
+        <p
+            style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">
+            Agent-ready demographic intelligence</p>
+        <nav class="flex flex-wrap justify-center gap-4">
+            <a class="link link-hover" href="/#features">Features</a>
+            <a class="link link-hover" href="/#use-cases">Use Cases</a>
+            <a class="link link-hover" href="/#pricing">Pricing</a>
+            <a class="link link-hover" href="/#faq">FAQ</a>
+            <a class="link link-hover" href="/data">Data</a>
+            <a class="link link-hover" href="/blog/">Blog</a>
+            <a class="link link-hover" href="/contact">Contact</a>
+        </nav>
+        <aside>
+            <p>Copyright &copy; 2026 - All rights reserved by Cogstrata</p>
+        </aside>
+    </footer>
+<script>
+  // Mobile menu toggle fix for touch devices
+  (function() {
+    var navbar = document.querySelector(".navbar");
+    if (!navbar) return;
+    var dropdown = navbar.querySelector(".dropdown");
+    if (!dropdown) return;
+    var btn = dropdown.querySelector("[role=button]");
+    var menu = dropdown.querySelector(".dropdown-content");
+    if (!btn || !menu) return;
+
+    var open = false;
+
+    function showMenu() {
+      open = true;
+      menu.style.cssText = "display:block!important;visibility:visible!important;opacity:1!important;transform:none!important;position:absolute;z-index:9999;";
+    }
+    function hideMenu() {
+      open = false;
+      menu.style.cssText = "display:none!important;";
+    }
+
+    btn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      if (open) hideMenu(); else showMenu();
+    });
+
+    document.addEventListener("click", function() {
+      if (open) hideMenu();
+    });
+
+    menu.querySelectorAll("a").forEach(function(a) {
+      a.addEventListener("click", hideMenu);
+    });
+  })();
+</script>
+</body>
+</html>

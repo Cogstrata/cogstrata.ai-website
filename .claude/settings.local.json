@@ -23,7 +23,15 @@
       "Bash(git checkout:*)",
       "Bash(python3 -:*)",
       "Bash(npx tailwindcss:*)",
-      "Bash(git -C /Users/andy/Development/cogstrata_website show main:website/assets/css/styles.css)"
+      "Bash(git -C /Users/andy/Development/cogstrata_website show main:website/assets/css/styles.css)",
+      "Bash(grep -rn cogstrata.ai /Users/andy/Development/cogstrata_website/website --include=*.html --include=*.xml --include=*.txt)",
+      "Bash(grep -rn Cogstrata.ai /Users/andy/Development/cogstrata_website/website --include=*.html)",
+      "Bash(git push:*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//Users/andy/Development/cogstrata_website/**)",
+      "Bash(ls /Users/andy/Development/cogstrata_website/website/*.html)",
+      "Bash(find /Users/andy/Development/cogstrata_website -maxdepth 3 -name netlify.toml -o -name vercel.json -o -name _redirects -o -name _headers -o -name .htaccess -o -name next.config*)"
     ]
   }
 }

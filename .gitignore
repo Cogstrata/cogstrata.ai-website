@@ -22,3 +22,9 @@ npm-debug.log*
 
 # Context
 context/
+
+# Backup files
+*.bak
+
+# FUSE filesystem artifacts
+.fuse_hidden*
