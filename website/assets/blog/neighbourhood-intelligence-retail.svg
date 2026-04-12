@@ -1,0 +1,89 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradRetail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#162640;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1d33;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradRetail)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#91c1ff" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="0" x2="1200" y2="0" /><line x1="0" y1="60" x2="1200" y2="60" /><line x1="0" y1="120" x2="1200" y2="120" /><line x1="0" y1="180" x2="1200" y2="180" /><line x1="0" y1="240" x2="1200" y2="240" /><line x1="0" y1="300" x2="1200" y2="300" /><line x1="0" y1="360" x2="1200" y2="360" /><line x1="0" y1="420" x2="1200" y2="420" /><line x1="0" y1="480" x2="1200" y2="480" /><line x1="0" y1="540" x2="1200" y2="540" /><line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="0" y1="0" x2="0" y2="630" /><line x1="120" y1="0" x2="120" y2="630" /><line x1="240" y1="0" x2="240" y2="630" /><line x1="360" y1="0" x2="360" y2="630" /><line x1="480" y1="0" x2="480" y2="630" /><line x1="600" y1="0" x2="600" y2="630" /><line x1="720" y1="0" x2="720" y2="630" /><line x1="840" y1="0" x2="840" y2="630" /><line x1="960" y1="0" x2="960" y2="630" /><line x1="1080" y1="0" x2="1080" y2="630" /><line x1="1200" y1="0" x2="1200" y2="630" />
+  </g>
+
+  <!-- Postcode grid cells -->
+  <g fill="none" stroke="#3E77FF" stroke-width="1" opacity="0.3">
+    <rect x="200" y="140" width="100" height="80"/>
+    <rect x="300" y="140" width="100" height="80"/>
+    <rect x="400" y="140" width="100" height="80"/>
+    <rect x="200" y="220" width="100" height="80"/>
+    <rect x="300" y="220" width="100" height="80"/>
+    <rect x="400" y="220" width="100" height="80"/>
+    <rect x="200" y="300" width="100" height="80"/>
+    <rect x="300" y="300" width="100" height="80"/>
+    <rect x="400" y="300" width="100" height="80"/>
+    <rect x="200" y="380" width="100" height="80"/>
+    <rect x="300" y="380" width="100" height="80"/>
+    <rect x="400" y="380" width="100" height="80"/>
+    <rect x="200" y="460" width="100" height="80"/>
+    <rect x="300" y="460" width="100" height="80"/>
+    <rect x="400" y="460" width="100" height="80"/>
+  </g>
+
+  <!-- Filled cells indicating demographic density -->
+  <rect x="300" y="220" width="100" height="80" fill="#3E77FF" opacity="0.18"/>
+  <rect x="400" y="300" width="100" height="80" fill="#3E77FF" opacity="0.25"/>
+  <rect x="300" y="300" width="100" height="80" fill="#3E77FF" opacity="0.35"/>
+  <rect x="200" y="380" width="100" height="80" fill="#3E77FF" opacity="0.15"/>
+  <rect x="300" y="380" width="100" height="80" fill="#3E77FF" opacity="0.28"/>
+
+  <!-- Store location pins -->
+  <circle cx="350" cy="260" r="10" fill="#EF9F27" opacity="0.9"/>
+  <line x1="350" y1="260" x2="350" y2="285" stroke="#EF9F27" stroke-width="2" opacity="0.7"/>
+  <circle cx="450" cy="340" r="10" fill="#EF9F27" opacity="0.9"/>
+  <line x1="450" y1="340" x2="450" y2="365" stroke="#EF9F27" stroke-width="2" opacity="0.7"/>
+  <circle cx="250" cy="420" r="8" fill="#EF9F27" opacity="0.7"/>
+  <line x1="250" y1="420" x2="250" y2="440" stroke="#EF9F27" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Catchment radius rings -->
+  <circle cx="350" cy="260" r="55" fill="none" stroke="#EF9F27" stroke-width="1" stroke-dasharray="4,4" opacity="0.35"/>
+  <circle cx="450" cy="340" r="55" fill="none" stroke="#EF9F27" stroke-width="1" stroke-dasharray="4,4" opacity="0.35"/>
+
+  <!-- Right: insight output panel -->
+  <rect x="700" y="140" width="380" height="360" rx="8" fill="#1e3a5f" opacity="0.5"/>
+  <rect x="700" y="140" width="380" height="360" rx="8" fill="none" stroke="#3E77FF" stroke-width="1" opacity="0.4"/>
+
+  <!-- Segment bars -->
+  <rect x="730" y="180" width="220" height="14" rx="3" fill="#3E77FF" opacity="0.7"/>
+  <rect x="730" y="204" width="160" height="14" rx="3" fill="#3E77FF" opacity="0.5"/>
+  <rect x="730" y="228" width="270" height="14" rx="3" fill="#EF9F27" opacity="0.7"/>
+  <rect x="730" y="252" width="130" height="14" rx="3" fill="#3E77FF" opacity="0.4"/>
+  <rect x="730" y="276" width="200" height="14" rx="3" fill="#EF9F27" opacity="0.5"/>
+
+  <!-- Segment labels dots -->
+  <circle cx="720" cy="187" r="4" fill="#3E77FF" opacity="0.9"/>
+  <circle cx="720" cy="211" r="4" fill="#3E77FF" opacity="0.7"/>
+  <circle cx="720" cy="235" r="4" fill="#EF9F27" opacity="0.9"/>
+  <circle cx="720" cy="259" r="4" fill="#3E77FF" opacity="0.6"/>
+  <circle cx="720" cy="283" r="4" fill="#EF9F27" opacity="0.7"/>
+
+  <!-- Divider -->
+  <line x1="730" y1="310" x2="1060" y2="310" stroke="#3E77FF" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- Small scatter plot -->
+  <circle cx="770" cy="370" r="5" fill="#EF9F27" opacity="0.7"/>
+  <circle cx="820" cy="345" r="7" fill="#EF9F27" opacity="0.8"/>
+  <circle cx="870" cy="390" r="4" fill="#3E77FF" opacity="0.7"/>
+  <circle cx="920" cy="355" r="6" fill="#EF9F27" opacity="0.6"/>
+  <circle cx="970" cy="340" r="8" fill="#EF9F27" opacity="0.9"/>
+  <circle cx="1020" cy="365" r="5" fill="#3E77FF" opacity="0.7"/>
+  <!-- Trend line -->
+  <line x1="760" y1="380" x2="1040" y2="330" stroke="#EF9F27" stroke-width="1.5" opacity="0.4" stroke-dasharray="6,3"/>
+
+  <!-- Arrow: grid to panel -->
+  <line x1="510" y1="315" x2="690" y2="315" stroke="#91c1ff" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.4"/>
+  <polygon points="686,308 704,315 686,322" fill="#91c1ff" opacity="0.4"/>
+</svg>

@@ -1,0 +1,71 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradProp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#162640;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1d33;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradProp)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#91c1ff" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="0" x2="1200" y2="0" /><line x1="0" y1="60" x2="1200" y2="60" /><line x1="0" y1="120" x2="1200" y2="120" /><line x1="0" y1="180" x2="1200" y2="180" /><line x1="0" y1="240" x2="1200" y2="240" /><line x1="0" y1="300" x2="1200" y2="300" /><line x1="0" y1="360" x2="1200" y2="360" /><line x1="0" y1="420" x2="1200" y2="420" /><line x1="0" y1="480" x2="1200" y2="480" /><line x1="0" y1="540" x2="1200" y2="540" /><line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="0" y1="0" x2="0" y2="630" /><line x1="120" y1="0" x2="120" y2="630" /><line x1="240" y1="0" x2="240" y2="630" /><line x1="360" y1="0" x2="360" y2="630" /><line x1="480" y1="0" x2="480" y2="630" /><line x1="600" y1="0" x2="600" y2="630" /><line x1="720" y1="0" x2="720" y2="630" /><line x1="840" y1="0" x2="840" y2="630" /><line x1="960" y1="0" x2="960" y2="630" /><line x1="1080" y1="0" x2="1080" y2="630" /><line x1="1200" y1="0" x2="1200" y2="630" />
+  </g>
+
+  <!-- LSOA hex-ish grid (rectangles approximating) -->
+  <g fill="none" stroke="#3E77FF" stroke-width="0.8" opacity="0.22">
+    <rect x="120" y="120" width="80" height="70"/><rect x="200" y="120" width="80" height="70"/><rect x="280" y="120" width="80" height="70"/><rect x="360" y="120" width="80" height="70"/>
+    <rect x="120" y="190" width="80" height="70"/><rect x="200" y="190" width="80" height="70"/><rect x="280" y="190" width="80" height="70"/><rect x="360" y="190" width="80" height="70"/>
+    <rect x="120" y="260" width="80" height="70"/><rect x="200" y="260" width="80" height="70"/><rect x="280" y="260" width="80" height="70"/><rect x="360" y="260" width="80" height="70"/>
+    <rect x="120" y="330" width="80" height="70"/><rect x="200" y="330" width="80" height="70"/><rect x="280" y="330" width="80" height="70"/><rect x="360" y="330" width="80" height="70"/>
+    <rect x="120" y="400" width="80" height="70"/><rect x="200" y="400" width="80" height="70"/><rect x="280" y="400" width="80" height="70"/><rect x="360" y="400" width="80" height="70"/>
+  </g>
+
+  <!-- Gradient fill cells (showing price growth intensity) -->
+  <rect x="280" y="190" width="80" height="70" fill="#EF9F27" opacity="0.25"/>
+  <rect x="280" y="260" width="80" height="70" fill="#EF9F27" opacity="0.35"/>
+  <rect x="360" y="260" width="80" height="70" fill="#EF9F27" opacity="0.2"/>
+  <rect x="200" y="260" width="80" height="70" fill="#3E77FF" opacity="0.2"/>
+  <rect x="200" y="330" width="80" height="70" fill="#3E77FF" opacity="0.15"/>
+  <rect x="280" y="330" width="80" height="70" fill="#EF9F27" opacity="0.18"/>
+
+  <!-- Right: trend chart -->
+  <rect x="540" y="100" width="560" height="440" rx="8" fill="#1e3a5f" opacity="0.4"/>
+  <rect x="540" y="100" width="560" height="440" rx="8" fill="none" stroke="#3E77FF" stroke-width="1" opacity="0.35"/>
+
+  <!-- Chart axes -->
+  <line x1="590" y1="460" x2="1060" y2="460" stroke="#91c1ff" stroke-width="1" opacity="0.35"/>
+  <line x1="590" y1="150" x2="590" y2="460" stroke="#91c1ff" stroke-width="1" opacity="0.35"/>
+
+  <!-- Guide lines -->
+  <line x1="590" y1="380" x2="1060" y2="380" stroke="#3E77FF" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.2"/>
+  <line x1="590" y1="300" x2="1060" y2="300" stroke="#3E77FF" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.2"/>
+  <line x1="590" y1="220" x2="1060" y2="220" stroke="#3E77FF" stroke-width="0.5" stroke-dasharray="4,4" opacity="0.2"/>
+
+  <!-- Rising trend line (property values) -->
+  <polyline points="610,430 680,400 750,390 820,360 890,330 960,295 1040,255"
+            fill="none" stroke="#EF9F27" stroke-width="2.5" opacity="0.75"/>
+
+  <!-- Area fill under trend -->
+  <polygon points="610,430 680,400 750,390 820,360 890,330 960,295 1040,255 1040,460 610,460"
+           fill="#EF9F27" opacity="0.07"/>
+
+  <!-- Data points on trend line -->
+  <circle cx="610" cy="430" r="5" fill="#EF9F27" opacity="0.85"/>
+  <circle cx="680" cy="400" r="5" fill="#EF9F27" opacity="0.85"/>
+  <circle cx="750" cy="390" r="5" fill="#EF9F27" opacity="0.85"/>
+  <circle cx="820" cy="360" r="5" fill="#EF9F27" opacity="0.85"/>
+  <circle cx="890" cy="330" r="5" fill="#EF9F27" opacity="0.85"/>
+  <circle cx="960" cy="295" r="5" fill="#EF9F27" opacity="0.85"/>
+  <circle cx="1040" cy="255" r="5" fill="#EF9F27" opacity="0.85"/>
+
+  <!-- Comparison line (lower growth area) -->
+  <polyline points="610,440 680,435 750,428 820,420 890,415 960,405 1040,395"
+            fill="none" stroke="#3E77FF" stroke-width="1.5" opacity="0.5" stroke-dasharray="6,3"/>
+
+  <!-- Arrow: grid to chart -->
+  <line x1="448" y1="315" x2="528" y2="315" stroke="#91c1ff" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.4"/>
+  <polygon points="524,308 542,315 524,322" fill="#91c1ff" opacity="0.4"/>
+</svg>

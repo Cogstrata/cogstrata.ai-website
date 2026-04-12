@@ -1,0 +1,84 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradAI" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#162640;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1d33;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradAI)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#91c1ff" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="0" x2="1200" y2="0" /><line x1="0" y1="60" x2="1200" y2="60" /><line x1="0" y1="120" x2="1200" y2="120" /><line x1="0" y1="180" x2="1200" y2="180" /><line x1="0" y1="240" x2="1200" y2="240" /><line x1="0" y1="300" x2="1200" y2="300" /><line x1="0" y1="360" x2="1200" y2="360" /><line x1="0" y1="420" x2="1200" y2="420" /><line x1="0" y1="480" x2="1200" y2="480" /><line x1="0" y1="540" x2="1200" y2="540" /><line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="0" y1="0" x2="0" y2="630" /><line x1="120" y1="0" x2="120" y2="630" /><line x1="240" y1="0" x2="240" y2="630" /><line x1="360" y1="0" x2="360" y2="630" /><line x1="480" y1="0" x2="480" y2="630" /><line x1="600" y1="0" x2="600" y2="630" /><line x1="720" y1="0" x2="720" y2="630" /><line x1="840" y1="0" x2="840" y2="630" /><line x1="960" y1="0" x2="960" y2="630" /><line x1="1080" y1="0" x2="1080" y2="630" /><line x1="1200" y1="0" x2="1200" y2="630" />
+  </g>
+
+  <!-- Left cluster: raw data world (thin/sparse) -->
+  <circle cx="180" cy="200" r="8" fill="#91c1ff" opacity="0.4"/>
+  <circle cx="140" cy="280" r="6" fill="#91c1ff" opacity="0.35"/>
+  <circle cx="200" cy="340" r="8" fill="#91c1ff" opacity="0.4"/>
+  <circle cx="150" cy="420" r="6" fill="#91c1ff" opacity="0.35"/>
+  <circle cx="220" cy="460" r="8" fill="#91c1ff" opacity="0.4"/>
+  <circle cx="240" cy="160" r="6" fill="#91c1ff" opacity="0.3"/>
+  <circle cx="280" cy="380" r="5" fill="#91c1ff" opacity="0.3"/>
+  <!-- Sparse lines: unstructured raw data -->
+  <line x1="180" y1="200" x2="140" y2="280" stroke="#91c1ff" stroke-width="0.8" opacity="0.2"/>
+  <line x1="140" y1="280" x2="200" y2="340" stroke="#91c1ff" stroke-width="0.8" opacity="0.2"/>
+  <line x1="200" y1="340" x2="150" y2="420" stroke="#91c1ff" stroke-width="0.8" opacity="0.15"/>
+  <line x1="150" y1="420" x2="220" y2="460" stroke="#91c1ff" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Centre: Cogstrata demographic context layer — structured concentric rings -->
+  <circle cx="600" cy="315" r="200" fill="none" stroke="#3E77FF" stroke-width="1" opacity="0.2"/>
+  <circle cx="600" cy="315" r="155" fill="none" stroke="#3E77FF" stroke-width="1.2" opacity="0.28"/>
+  <circle cx="600" cy="315" r="110" fill="none" stroke="#3E77FF" stroke-width="1.5" opacity="0.38"/>
+  <circle cx="600" cy="315" r="68" fill="none" stroke="#3E77FF" stroke-width="2" opacity="0.55"/>
+  <circle cx="600" cy="315" r="32" fill="#3E77FF" opacity="0.25"/>
+  <circle cx="600" cy="315" r="14" fill="#3E77FF" opacity="0.9"/>
+
+  <!-- Attribute nodes on the rings -->
+  <!-- Inner ring -->
+  <circle cx="600" cy="247" r="7" fill="#EF9F27" opacity="0.9"/>
+  <circle cx="668" cy="315" r="7" fill="#EF9F27" opacity="0.9"/>
+  <circle cx="600" cy="383" r="7" fill="#EF9F27" opacity="0.9"/>
+  <circle cx="532" cy="315" r="7" fill="#EF9F27" opacity="0.9"/>
+
+  <!-- Mid ring -->
+  <circle cx="600" cy="205" r="6" fill="#3E77FF" opacity="0.8"/>
+  <circle cx="710" cy="245" r="6" fill="#3E77FF" opacity="0.8"/>
+  <circle cx="710" cy="385" r="6" fill="#3E77FF" opacity="0.8"/>
+  <circle cx="600" cy="425" r="6" fill="#3E77FF" opacity="0.8"/>
+  <circle cx="490" cy="385" r="6" fill="#3E77FF" opacity="0.8"/>
+  <circle cx="490" cy="245" r="6" fill="#3E77FF" opacity="0.8"/>
+
+  <!-- Outer ring -->
+  <circle cx="600" cy="115" r="5" fill="#91c1ff" opacity="0.7"/>
+  <circle cx="755" cy="165" r="5" fill="#91c1ff" opacity="0.7"/>
+  <circle cx="800" cy="315" r="5" fill="#91c1ff" opacity="0.7"/>
+  <circle cx="755" cy="465" r="5" fill="#91c1ff" opacity="0.7"/>
+  <circle cx="600" cy="515" r="5" fill="#91c1ff" opacity="0.7"/>
+  <circle cx="445" cy="465" r="5" fill="#91c1ff" opacity="0.7"/>
+  <circle cx="400" cy="315" r="5" fill="#91c1ff" opacity="0.7"/>
+  <circle cx="445" cy="165" r="5" fill="#91c1ff" opacity="0.7"/>
+
+  <!-- Data flow from raw (left) into the context layer -->
+  <line x1="288" y1="315" x2="398" y2="315" stroke="#91c1ff" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.4"/>
+  <polygon points="398,308 416,315 398,322" fill="#91c1ff" opacity="0.4"/>
+
+  <!-- Right side: AI agent node consuming enriched context -->
+  <circle cx="1020" cy="315" r="42" fill="none" stroke="#EF9F27" stroke-width="2" opacity="0.8"/>
+  <circle cx="1020" cy="315" r="24" fill="#EF9F27" opacity="0.25"/>
+  <circle cx="1020" cy="315" r="10" fill="#EF9F27" opacity="0.95"/>
+
+  <!-- Data flow from context layer to agent -->
+  <line x1="804" y1="315" x2="972" y2="315" stroke="#EF9F27" stroke-width="2" opacity="0.5"/>
+  <polygon points="968,306 990,315 968,324" fill="#EF9F27" opacity="0.5"/>
+
+  <!-- Agent outputs (downstream actions) -->
+  <circle cx="1140" cy="210" r="8" fill="#EF9F27" opacity="0.7"/>
+  <circle cx="1160" cy="315" r="8" fill="#EF9F27" opacity="0.7"/>
+  <circle cx="1140" cy="420" r="8" fill="#EF9F27" opacity="0.7"/>
+  <line x1="1062" y1="295" x2="1134" y2="218" stroke="#EF9F27" stroke-width="1.2" opacity="0.35"/>
+  <line x1="1062" y1="315" x2="1152" y2="315" stroke="#EF9F27" stroke-width="1.2" opacity="0.35"/>
+  <line x1="1062" y1="335" x2="1134" y2="412" stroke="#EF9F27" stroke-width="1.2" opacity="0.35"/>
+</svg>
