@@ -1,0 +1,71 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradMkt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#162640;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f1d33;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradMkt)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#91c1ff" stroke-width="0.3" opacity="0.08">
+    <line x1="0" y1="0" x2="1200" y2="0" /><line x1="0" y1="60" x2="1200" y2="60" /><line x1="0" y1="120" x2="1200" y2="120" /><line x1="0" y1="180" x2="1200" y2="180" /><line x1="0" y1="240" x2="1200" y2="240" /><line x1="0" y1="300" x2="1200" y2="300" /><line x1="0" y1="360" x2="1200" y2="360" /><line x1="0" y1="420" x2="1200" y2="420" /><line x1="0" y1="480" x2="1200" y2="480" /><line x1="0" y1="540" x2="1200" y2="540" /><line x1="0" y1="600" x2="1200" y2="600" />
+    <line x1="0" y1="0" x2="0" y2="630" /><line x1="120" y1="0" x2="120" y2="630" /><line x1="240" y1="0" x2="240" y2="630" /><line x1="360" y1="0" x2="360" y2="630" /><line x1="480" y1="0" x2="480" y2="630" /><line x1="600" y1="0" x2="600" y2="630" /><line x1="720" y1="0" x2="720" y2="630" /><line x1="840" y1="0" x2="840" y2="630" /><line x1="960" y1="0" x2="960" y2="630" /><line x1="1080" y1="0" x2="1080" y2="630" /><line x1="1200" y1="0" x2="1200" y2="630" />
+  </g>
+
+  <!-- Left: cookie / tracking signal breaking apart -->
+  <circle cx="230" cy="315" r="70" fill="none" stroke="#91c1ff" stroke-width="1.5" opacity="0.3" stroke-dasharray="8,5"/>
+  <circle cx="230" cy="315" r="45" fill="none" stroke="#91c1ff" stroke-width="1" opacity="0.2" stroke-dasharray="5,5"/>
+  <!-- Fragmenting dots representing cookie -->
+  <circle cx="230" cy="245" r="5" fill="#91c1ff" opacity="0.4"/>
+  <circle cx="285" cy="275" r="4" fill="#91c1ff" opacity="0.35"/>
+  <circle cx="295" cy="340" r="5" fill="#91c1ff" opacity="0.3"/>
+  <circle cx="250" cy="385" r="4" fill="#91c1ff" opacity="0.35"/>
+  <circle cx="175" cy="375" r="4" fill="#91c1ff" opacity="0.3"/>
+  <circle cx="162" cy="295" r="5" fill="#91c1ff" opacity="0.35"/>
+  <circle cx="195" cy="250" r="3" fill="#91c1ff" opacity="0.25"/>
+  <!-- Center fading core -->
+  <circle cx="230" cy="315" r="18" fill="#91c1ff" opacity="0.08"/>
+
+  <!-- Breaking lines -->
+  <line x1="230" y1="270" x2="225" y2="245" stroke="#91c1ff" stroke-width="0.8" opacity="0.2"/>
+  <line x1="255" y1="290" x2="285" y2="275" stroke="#91c1ff" stroke-width="0.8" opacity="0.2"/>
+  <line x1="262" y1="330" x2="295" y2="340" stroke="#91c1ff" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Centre: transformation arrow -->
+  <line x1="320" y1="315" x2="420" y2="315" stroke="#91c1ff" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.35"/>
+  <polygon points="416,308 434,315 416,322" fill="#91c1ff" opacity="0.35"/>
+
+  <!-- Right: audience segment bubbles emerging -->
+  <!-- Large primary segment -->
+  <circle cx="660" cy="230" r="65" fill="#3E77FF" opacity="0.18"/>
+  <circle cx="660" cy="230" r="65" fill="none" stroke="#3E77FF" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="660" cy="230" r="8" fill="#3E77FF" opacity="0.9"/>
+
+  <!-- Second segment -->
+  <circle cx="820" cy="280" r="50" fill="#EF9F27" opacity="0.15"/>
+  <circle cx="820" cy="280" r="50" fill="none" stroke="#EF9F27" stroke-width="1.5" opacity="0.55"/>
+  <circle cx="820" cy="280" r="7" fill="#EF9F27" opacity="0.9"/>
+
+  <!-- Third segment -->
+  <circle cx="730" cy="420" r="42" fill="#3E77FF" opacity="0.14"/>
+  <circle cx="730" cy="420" r="42" fill="none" stroke="#3E77FF" stroke-width="1.2" opacity="0.45"/>
+  <circle cx="730" cy="420" r="6" fill="#3E77FF" opacity="0.85"/>
+
+  <!-- Fourth smaller segment -->
+  <circle cx="950" cy="350" r="35" fill="#EF9F27" opacity="0.12"/>
+  <circle cx="950" cy="350" r="35" fill="none" stroke="#EF9F27" stroke-width="1" opacity="0.4"/>
+  <circle cx="950" cy="350" r="5" fill="#EF9F27" opacity="0.8"/>
+
+  <!-- Fifth small segment -->
+  <circle cx="1050" cy="220" r="28" fill="#3E77FF" opacity="0.1"/>
+  <circle cx="1050" cy="220" r="28" fill="none" stroke="#3E77FF" stroke-width="1" opacity="0.35"/>
+  <circle cx="1050" cy="220" r="5" fill="#3E77FF" opacity="0.75"/>
+
+  <!-- Connection lines between segments (shared attributes) -->
+  <line x1="660" y1="230" x2="820" y2="280" stroke="#91c1ff" stroke-width="0.8" opacity="0.2"/>
+  <line x1="820" y1="280" x2="730" y2="420" stroke="#91c1ff" stroke-width="0.8" opacity="0.18"/>
+  <line x1="820" y1="280" x2="950" y2="350" stroke="#91c1ff" stroke-width="0.8" opacity="0.18"/>
+  <line x1="950" y1="350" x2="1050" y2="220" stroke="#91c1ff" stroke-width="0.8" opacity="0.15"/>
+</svg>
