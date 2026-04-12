@@ -148,14 +148,17 @@
     </div>
 
     <!-- Blog Post -->
-    <div class="container mx-auto px-4 py-16">
-        <h1 class="text-4xl font-bold mb-4 text-neutral">The demographic data layer your AI agents are missing</h1>
-        <p class="text-sm mb-8 text-neutral/70">Published on June 23, 2026</p>
+    <div class="container mx-auto px-4 py-16 max-w-3xl">
+        <div class="mb-4">
+            <span class="badge badge-warning badge-outline">Industry Insights</span>
+        </div>
+        <h1 class="text-4xl font-bold mb-4 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">The demographic data layer your AI agents are missing</h1>
+        <p class="text-sm mb-10 text-neutral/60">Published 23 June 2026 &nbsp;·&nbsp; 7 min read</p>
         <picture>
           <source srcset="../../assets/blog/neighbourhood-intelligence-ai-agents.webp" type="image/webp">
           <img decoding="async" loading="lazy" src="../../assets/blog/neighbourhood-intelligence-ai-agents.png" alt="AI agent workflow diagram showing demographic data enrichment layer for customer intelligence and personalisation" class="w-full rounded-xl mb-10 shadow-sm">
         </picture>
-        <div class="prose max-w-none">
+        <div class="prose max-w-none text-neutral/80 space-y-6">
             <p>AI agents in production are often working with remarkably thin context. An agent handling customer onboarding, writing personalised communications, making risk decisions, or recommending products typically sees: a name, an email address, a transaction history. It doesn't know anything about where the customer lives, what kind of neighbourhood they're in, or what their area's socioeconomic profile looks like. The result is output that is technically fluent but contextually generic. The agent cannot personalise, cannot calibrate tone, and cannot flag signals that should change how the business treats that customer. This gap in context is not a small problem — it's a structural limitation that compounds across every agent workflow in production.</p>
 
             <p>What does "context" mean for an agent? Consider a mortgage application agent processing a customer's loan request. The agent knows the applicant's stated income and employment status. But a Cogstrata-enriched agent knows something deeper: the applicant's postcode is in a "City Professionals" area with high private renting, low car ownership, and above-average broadband quality. The LSOA sits in the top quartile for degree-level residents. The area is showing early signs of demographic transition toward higher affluence. That additional context shifts the entire conversation. The agent can now offer a genuinely relevant product — perhaps highlighting flexible terms that appeal to mobile professionals rather than suburban homeowners. It can calibrate its tone to match the neighbourhood's profile. It can flag that this customer is likely a first-time buyer in a transitioning urban market, not a suburban remortgager, and route the application accordingly. Context transforms generic output into intelligence.</p>
