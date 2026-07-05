@@ -626,3 +626,133 @@
   display: block;
   width: 100%;
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Light section bands — dark themes only
+   ───────────────────────────────────────────────────────────────────────────
+   The dark themes (sentient-architect, digital-schematic) paint every section
+   in one of two near-identical navies, so the page reads as a single flat dark
+   slab. Promote the base-200 SECTION bands (they always carry a py-* class;
+   cards never do) to a porcelain light surface so they break up the page.
+   Text sitting directly on the band flips to dark navy for legibility, while
+   cards keep their dark surface + light text so they pop against the porcelain.
+   Scoped strictly to the two dark themes — the light themes (cogstrata,
+   chromatic-velocity) already have light backgrounds and are left untouched.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Band surface + default inherited text ─────────────────────────────────── */
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"],
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] {
+  background-color: #f5f7fa !important;
+  color: #33455c;
+}
+
+/* ── Headings directly on the band → dark navy ─────────────────────────────── */
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] :is(h1,h2,h3,h4,h5,h6),
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] :is(h1,h2,h3,h4,h5,h6) {
+  color: #101f33 !important;
+}
+
+/* ── Body / muted text on the band → slate at matching opacity steps ───────── */
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .text-neutral,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .text-neutral {
+  color: #33455c;
+}
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .text-neutral\/50,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .text-neutral\/50 {
+  color: rgba(51, 69, 92, 0.6);
+}
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .text-neutral\/60,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .text-neutral\/60 {
+  color: rgba(51, 69, 92, 0.7);
+}
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .text-neutral\/70,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .text-neutral\/70 {
+  color: rgba(51, 69, 92, 0.8);
+}
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .text-neutral\/80,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .text-neutral\/80 {
+  color: rgba(51, 69, 92, 0.88);
+}
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .text-neutral\/90,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .text-neutral\/90 {
+  color: rgba(51, 69, 92, 0.95);
+}
+
+/* ── Accent labels / links on the band → readable brand blue ───────────────── */
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .text-primary,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .text-primary {
+  color: #185fa5;
+}
+
+/* ── Outline / secondary buttons on the band → readable brand blue ─────────── */
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .btn-outline.btn-primary,
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .btn-secondary,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .btn-outline.btn-primary,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .btn-secondary {
+  color: #185fa5;
+  border-color: #185fa5;
+  background-color: transparent;
+}
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .btn-outline.btn-primary:hover,
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .btn-secondary:hover,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .btn-outline.btn-primary:hover,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .btn-secondary:hover {
+  color: #ffffff;
+  border-color: #185fa5;
+  background-color: #185fa5;
+}
+
+/* ── Hairline dividers / collapse borders on the band → soft grey ──────────── */
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .border-base-300,
+[data-theme="digital-schematic"]  .bg-base-200[class*="py-"] .border-base-300 {
+  border-color: #d7dee8;
+}
+
+/* ═══ Card resets — keep cards dark + light-texted on the porcelain band ═════ */
+
+/* sentient-architect */
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card {
+  color: #c4c5d9;
+}
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card :is(h1,h2,h3,h4,h5,h6),
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .card-title {
+  color: #eaf0ff !important;
+}
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .text-neutral {
+  color: #c4c5d9;
+}
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .text-neutral\/50 { color: rgba(196,197,217,0.5); }
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .text-neutral\/60 { color: rgba(196,197,217,0.6); }
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .text-neutral\/70 { color: rgba(196,197,217,0.7); }
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .text-neutral\/80 { color: rgba(196,197,217,0.8); }
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .text-neutral\/90 { color: rgba(196,197,217,0.9); }
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .text-primary { color: #a4c9ff; }
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .border-base-300 { border-color: #1f2a3c; }
+[data-theme="sentient-architect"] .bg-base-200[class*="py-"] .card .btn-outline.btn-primary {
+  color: #a4c9ff;
+  border-color: #a4c9ff;
+  background-color: transparent;
+}
+
+/* digital-schematic */
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card {
+  color: #dfe2eb;
+}
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card :is(h1,h2,h3,h4,h5,h6),
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .card-title {
+  color: #dfe2eb !important;
+}
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .text-neutral { color: #dfe2eb; }
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .text-neutral\/50 { color: rgba(223,226,235,0.5); }
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .text-neutral\/60 { color: rgba(223,226,235,0.6); }
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .text-neutral\/70 { color: rgba(223,226,235,0.7); }
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .text-neutral\/80 { color: rgba(223,226,235,0.8); }
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .text-neutral\/90 { color: rgba(223,226,235,0.9); }
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .text-primary { color: #00e5ff; }
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .border-base-300 { border-color: #31353c; }
+[data-theme="digital-schematic"] .bg-base-200[class*="py-"] .card .btn-outline.btn-primary {
+  color: #00e5ff;
+  border-color: #00e5ff;
+  background-color: transparent;
+}
