@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="sentient-architect">
+<html lang="en" data-theme="cogstrata">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZBCGQDWVH"></script>
@@ -15,13 +15,14 @@
       /* A/B theme assignment — runs before first paint to avoid flash */
       (function() {
         try {
-          var t = localStorage.getItem('cs-ab-theme') || 'sentient-architect';
+          var t = localStorage.getItem('cs-ab-theme');
+          if (!t || t === 'sentient-architect') { t = 'cogstrata'; try { localStorage.setItem('cs-ab-theme', t); } catch(e) {} }
           document.documentElement.setAttribute('data-theme', t);
         } catch(e) {}
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cogstrata vs CACI Acorn: Always-Fresh Data vs 2011 Census Classifications | Cogstrata</title>
+    <title>CACI Acorn Alternative — Cogstrata vs Acorn Compared | Cogstrata</title>
     <meta name="description" content="Compare Cogstrata and CACI Acorn across 10 criteria — data freshness, AI-readiness, postcode coverage, and TCO. See why teams are leaving census-anchored geodemographics.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cogstrata.com/cogstrata-vs-caci-acorn">
@@ -74,22 +75,15 @@
                     </svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/#faq">FAQ</a></li>
-                    <li>
-                        <details>
-                            <summary class="text-primary hover:text-secondary">Features</summary>
-                            <ul>
-                                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
-                                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
-                </ul>
+                <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/faq">FAQ</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
+            </ul>
             </div>
             <a class="btn btn-ghost flex items-center gap-2" href="/">
                 <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -118,19 +112,12 @@
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
-                <li><a class="text-primary hover:text-secondary" href="/#faq">FAQ</a></li>
-                <li>
-                    <details>
-                        <summary class="text-primary hover:text-secondary">Features</summary>
-                        <ul class="bg-base-100 rounded-box shadow-lg z-[2] w-44 p-2">
-                            <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
-                            <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
-                        </ul>
-                    </details>
-                </li>
                 <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/faq">FAQ</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
             </ul>
         </div>
@@ -143,7 +130,7 @@
     <section class="bg-base-200 py-20">
         <div class="container mx-auto px-4 max-w-4xl text-center">
             <span class="inline-block px-4 py-1 rounded-full text-sm font-semibold mb-6" style="background-color: rgba(62,119,255,0.12); color: #3E77FF; font-family: 'DM Sans', sans-serif;">Alternative to CACI Acorn</span>
-            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Cogstrata vs CACI Acorn</h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-neutral" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Cogstrata vs CACI Acorn: The Always-Fresh Acorn Alternative</h1>
             <p class="text-lg text-neutral/70 max-w-2xl mx-auto mb-10" style="font-family: 'DM Sans', sans-serif;">CACI Acorn has served UK data teams well for decades. But it was built around census snapshots — and the last census was 2011. Here's how the two products compare.</p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="/contact" class="btn btn-primary">Request a Free Sample</a>
@@ -277,7 +264,7 @@
             <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
         </div>
         <!-- Brand override: DM Sans 300, uppercase, wide-tracked tagline -->
-        <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Agent-ready demographic intelligence</p>
+        <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Signals your first-party data can't see</p>
         <nav class="flex flex-wrap justify-center gap-4">
             <a class="link link-hover" href="/#features">Features</a>
             <a class="link link-hover" href="/#use-cases">Use Cases</a>
