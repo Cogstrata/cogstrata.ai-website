@@ -1,0 +1,28 @@
+# Cogstrata
+
+> Cogstrata is a third-party data augmentation platform. It enriches first-party customer data with 5,000+ external signals — demographics, economics, environment — at neighbourhood level, continuously recalibrated against live macro signals and structured for both human analysts and AI agents.
+
+Key facts:
+- Coverage: neighbourhood-level micro-areas (postcode / ZIP / district), aggregated with no individual PII
+- Attributes: 500+ base attributes expanding to 5,000+ derived datapoints per record
+- Classification: 24 groups, each with a three-part plain-English label (Economic Position · Household Profile · Setting), trait tags, and a pre-written AI summary for agent context windows
+- Refresh: continuous recalibration against live signals (central-bank rates, inflation, employment, energy prices, house-price indices)
+- Delivery: REST API, batch export, cloud data marketplaces (rolling out)
+- Compliance: GDPR-compliant, aligned with regional privacy frameworks; no personal data held
+- Evaluation: free 24-hour sample run on your own file, no contract
+
+## Pages
+
+- [Home](https://cogstrata.com/): positioning, features, use cases, pricing
+- [Data](https://cogstrata.com/data): the 24-group geodemographic classification explained
+- [AI Agents](https://cogstrata.com/agentic): how agents consume Cogstrata data
+- [Free Sample](https://cogstrata.com/sample): free 24-hour enrichment sample run
+- [FAQ](https://cogstrata.com/faq): compliance, access methods, attribute categories
+- [Glossary](https://cogstrata.com/glossary): geodemographic terms
+- [Cogstrata vs Experian Mosaic](https://cogstrata.com/cogstrata-vs-experian-mosaic): comparison
+- [Cogstrata vs CACI Acorn](https://cogstrata.com/cogstrata-vs-caci-acorn): comparison
+- [Blog](https://cogstrata.com/blog/): agent-ready data, market analysis, thought leadership
+
+## Contact
+
+- [Contact / request sample](https://cogstrata.com/contact)

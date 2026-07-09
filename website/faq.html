@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="sentient-architect">
+<html lang="en" data-theme="cogstrata">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZBCGQDWVH"></script>
@@ -15,14 +15,15 @@
       /* A/B theme assignment — runs before first paint to avoid flash */
       (function() {
         try {
-          var t = localStorage.getItem('cs-ab-theme') || 'sentient-architect';
+          var t = localStorage.getItem('cs-ab-theme');
+          if (!t || t === 'sentient-architect') { t = 'cogstrata'; try { localStorage.setItem('cs-ab-theme', t); } catch(e) {} }
           document.documentElement.setAttribute('data-theme', t);
         } catch(e) {}
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cogstrata FAQ — UK GDPR Compliant Geodemographic Data</title>
-    <meta name="description" content="Common questions about Cogstrata answered. UK GDPR compliant, postcode-level only, API-first. Get enriched results on your own data with a free 24-hour sample.">
+    <title>Cogstrata FAQ — GDPR-Compliant Geodemographic Data</title>
+    <meta name="description" content="Common questions about Cogstrata answered. GDPR-compliant, area-level only, API-first. Get enriched results on your own data with a free 24-hour sample.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cogstrata.com/faq">
     <!-- Open Graph -->
@@ -80,7 +81,7 @@
           "name": "Is the data GDPR compliant?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. All Cogstrata data is aggregated at postcode or output area level — no individual-level personal data is stored or transmitted. We hold no PII. Our data processing is fully compliant with UK GDPR, the Data Protection Act 2018, and US privacy frameworks."
+            "text": "Yes. All Cogstrata data is aggregated at area level — no individual-level personal data is stored or transmitted. We hold no PII. Our data processing is fully compliant with GDPR and equivalent regional privacy frameworks."
           }
         },
         {
@@ -106,22 +107,15 @@
                     </svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/#faq">FAQ</a></li>
-                    <li>
-                        <details>
-                            <summary class="text-primary hover:text-secondary">Features</summary>
-                            <ul>
-                                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
-                                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
-                </ul>
+                <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/faq">FAQ</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
+            </ul>
             </div>
             <a class="btn btn-ghost flex items-center gap-2" href="/">
                 <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -150,19 +144,12 @@
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
-                <li><a class="text-primary hover:text-secondary" href="/#faq">FAQ</a></li>
-                <li>
-                    <details>
-                        <summary class="text-primary hover:text-secondary">Features</summary>
-                        <ul class="bg-base-100 rounded-box shadow-lg z-[2] w-44 p-2">
-                            <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
-                            <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
-                        </ul>
-                    </details>
-                </li>
                 <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/faq">FAQ</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
             </ul>
         </div>
@@ -201,7 +188,7 @@
                     <input type="radio" name="faq-accordion" />
                     <div class="collapse-title text-xl font-medium">Is the data GDPR and privacy compliant?</div>
                     <div class="collapse-content">
-                        <p class="text-neutral/70">Yes. All Cogstrata data is aggregated at postcode or output area level — no individual-level personal data is stored or transmitted. We hold no PII. Our data processing is fully compliant with UK GDPR, the Data Protection Act 2018, and US privacy frameworks.</p>
+                        <p class="text-neutral/70">Yes. All Cogstrata data is aggregated at area level — no individual-level personal data is stored or transmitted. We hold no PII. Our data processing is fully compliant with GDPR and equivalent regional privacy frameworks.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-arrow join-item border border-base-300">
@@ -255,7 +242,7 @@
             <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
         </div>
         <!-- Brand override: DM Sans 300, uppercase, wide-tracked tagline -->
-        <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Agent-ready demographic intelligence</p>
+        <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">Signals your first-party data can't see</p>
         <nav class="flex flex-wrap justify-center gap-4">
             <a class="link link-hover" href="/#features">Features</a>
             <a class="link link-hover" href="/#use-cases">Use Cases</a>

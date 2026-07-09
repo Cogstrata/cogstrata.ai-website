@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="sentient-architect">
+<html lang="en" data-theme="cogstrata">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JZBCGQDWVH"></script>
@@ -14,28 +14,29 @@
       /* A/B theme assignment — runs before first paint to avoid flash */
       (function() {
         try {
-          var t = localStorage.getItem('cs-ab-theme') || 'sentient-architect';
+          var t = localStorage.getItem('cs-ab-theme');
+          if (!t || t === 'sentient-architect') { t = 'cogstrata'; try { localStorage.setItem('cs-ab-theme', t); } catch(e) {} }
           document.documentElement.setAttribute('data-theme', t);
         } catch(e) {}
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UK Geodemographic Classification Data — 24 Groups, 8 Supergroups | Cogstrata</title>
-    <meta name="description" content="Postcode demographics for every active UK postcode. 24 geodemographic groups, 8 supergroups, 5,000+ attributes — the freshest alternative to Mosaic and Acorn.">
+    <title>Geodemographic Classification Data — 24 Groups, 8 Supergroups | Cogstrata</title>
+    <meta name="description" content="Neighbourhood demographics at postcode and ZIP level. 24 geodemographic groups, 8 supergroups, 5,000+ attributes — the freshest alternative to legacy classifications.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cogstrata.com/data">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cogstrata.com/data">
-    <meta property="og:title" content="UK Geodemographic Classification Data — 24 Groups, 8 Supergroups | Cogstrata">
-    <meta property="og:description" content="Postcode demographics for every active UK postcode. 24 geodemographic groups, 8 supergroups, 5,000+ attributes — the freshest alternative to Mosaic and Acorn.">
+    <meta property="og:title" content="Geodemographic Classification Data — 24 Groups, 8 Supergroups | Cogstrata">
+    <meta property="og:description" content="Neighbourhood demographics at postcode and ZIP level. 24 geodemographic groups, 8 supergroups, 5,000+ attributes — the freshest alternative to legacy classifications.">
     <meta property="og:image" content="https://cogstrata.com/assets/og-image.png">
     <meta property="og:site_name" content="Cogstrata">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cogstrata.com/data">
-    <meta name="twitter:title" content="UK Geodemographic Classification Data — 24 Groups, 8 Supergroups | Cogstrata">
-    <meta name="twitter:description" content="Postcode demographics for every active UK postcode. 24 geodemographic groups, 8 supergroups, 5,000+ attributes — the freshest alternative to Mosaic and Acorn.">
+    <meta name="twitter:title" content="Geodemographic Classification Data — 24 Groups, 8 Supergroups | Cogstrata">
+    <meta name="twitter:description" content="Neighbourhood demographics at postcode and ZIP level. 24 geodemographic groups, 8 supergroups, 5,000+ attributes — the freshest alternative to legacy classifications.">
     <meta name="twitter:image" content="https://cogstrata.com/assets/og-image.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,22 +58,15 @@
                     </svg>
                 </div>
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/#faq">FAQ</a></li>
-                    <li>
-                        <details>
-                            <summary class="text-primary hover:text-secondary">Features</summary>
-                            <ul>
-                                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
-                                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
-                </ul>
+                <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/faq">FAQ</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
+            </ul>
             </div>
             <a class="btn btn-ghost flex items-center gap-2" href="/">
                 <svg width="32" height="32" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -100,19 +94,12 @@
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a class="text-primary hover:text-secondary" href="/#features">Features</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/#use-cases">Use Cases</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/#pricing">Pricing</a></li>
-                <li><a class="text-primary hover:text-secondary" href="/#faq">FAQ</a></li>
-                <li>
-                    <details>
-                        <summary class="text-primary hover:text-secondary">Features</summary>
-                        <ul class="bg-base-100 rounded-box shadow-lg z-[2] w-44 p-2">
-                            <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
-                            <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
-                        </ul>
-                    </details>
-                </li>
                 <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/faq">FAQ</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
             </ul>
         </div>
@@ -130,7 +117,7 @@
                style="font-family: 'DM Sans', sans-serif; letter-spacing: 3px;">Proprietary Classification</p>
             <h1 class="text-5xl font-bold text-neutral mb-6"
                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; letter-spacing: -1px;">
-                UK Geodemographic Classification Data & API
+                Geodemographic Classification Data & API
             </h1>
             <p class="text-lg text-neutral/70 mb-10">
                 24 geodemographic groups. 8 supergroups. One consistent 3-facet convention
@@ -367,7 +354,7 @@
                         <div class="h-2 w-full" style="background: linear-gradient(to right, #3E77FF, #534AB7, #EF9F27);"></div>
                         <div class="card-body py-6 px-7">
                             <p class="text-xs text-neutral/50 uppercase tracking-widest mb-2"
-                               style="font-family: 'DM Sans', sans-serif; font-weight: 300;">GU21 &mdash; Woking, Surrey</p>
+                               style="font-family: 'DM Sans', sans-serif; font-weight: 300;">GU21 &mdash; Sample district</p>
                             <div class="flex items-center gap-3 mb-2">
                                 <span class="badge font-bold text-sm px-3 py-2"
                                       style="background:#3E77FF;color:#fff;border:none;font-family:'Space Grotesk',sans-serif;">PF</span>
@@ -531,7 +518,7 @@
                     8 Supergroups, 24 Groups
                 </h2>
                 <p class="text-lg text-neutral/70 max-w-2xl mx-auto">
-                    Every UK postcode maps to one of 24 groups, nested within 8 supergroups.
+                    Every neighbourhood maps to one of 24 groups, nested within 8 supergroups.
                     All 24 convention names are globally unique — no lookup table needed.
                 </p>
             </div>
@@ -755,7 +742,7 @@
             <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem;">cogstrata</span>
         </div>
         <p style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">
-            Agent-ready demographic intelligence</p>
+            Signals your first-party data can't see</p>
         <nav class="flex flex-wrap justify-center gap-4">
             <a class="link link-hover" href="/#features">Features</a>
             <a class="link link-hover" href="/#use-cases">Use Cases</a>

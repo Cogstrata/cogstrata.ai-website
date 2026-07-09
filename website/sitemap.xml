@@ -156,4 +156,40 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+    <url>
+        <loc>https://cogstrata.com/sample</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cogstrata.com/blog/posts/neighbourhood-intelligence-ai-agents</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cogstrata.com/blog/posts/neighbourhood-intelligence-insurance</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cogstrata.com/blog/posts/neighbourhood-intelligence-marketing</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cogstrata.com/blog/posts/neighbourhood-intelligence-property</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cogstrata.com/blog/posts/neighbourhood-intelligence-retail</loc>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

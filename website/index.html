@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="sentient-architect">
+<html lang="en" data-theme="cogstrata">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -16,28 +16,29 @@
       /* A/B theme assignment — runs before first paint to avoid flash */
       (function() {
         try {
-          var t = localStorage.getItem('cs-ab-theme') || 'sentient-architect';
+          var t = localStorage.getItem('cs-ab-theme');
+          if (!t || t === 'sentient-architect') { t = 'cogstrata'; try { localStorage.setItem('cs-ab-theme', t); } catch(e) {} }
           document.documentElement.setAttribute('data-theme', t);
         } catch(e) {}
       })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered Demographic Data & Customer Intelligence | Cogstrata</title>
-    <meta name="description" content="Agent-ready geodemographic data for every UK postcode. 5,000+ attributes, 1.8M+ postcodes, 24 groups — structured for AI agents and human teams. Free 24-hr sample.">
+    <title>Customer Data Enrichment & Demographic Intelligence | Cogstrata</title>
+    <meta name="description" content="Augment your first-party customer data with 5,000+ external signals at neighbourhood level. Continuously refreshed, GDPR-safe, built for analysts and AI agents. Free 24-hr sample.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cogstrata.com/">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cogstrata.com/">
-    <meta property="og:title" content="Cogstrata - Agent-Ready Demographic Intelligence">
-    <meta property="og:description" content="Connecting AI agents to trusted demographic data. 5,000+ enriched attributes, real-time signals, and eight AI models — structured for humans and machines alike.">
+    <meta property="og:title" content="Cogstrata — Signals Your First-Party Data Can't See">
+    <meta property="og:description" content="Augment the customer data you already hold with 5,000+ external signals — demographics, economics, environment — continuously refreshed and structured for analysts and AI agents.">
     <meta property="og:image" content="https://cogstrata.com/assets/og-image.png">
     <meta property="og:site_name" content="Cogstrata">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cogstrata.com/">
-    <meta name="twitter:title" content="Cogstrata - Agent-Ready Demographic Intelligence">
-    <meta name="twitter:description" content="Connecting AI agents to trusted demographic data. 5,000+ enriched attributes, real-time signals, and eight AI models — structured for humans and machines alike.">
+    <meta name="twitter:title" content="Cogstrata — Signals Your First-Party Data Can't See">
+    <meta name="twitter:description" content="Augment the customer data you already hold with 5,000+ external signals — demographics, economics, environment — continuously refreshed and structured for analysts and AI agents.">
     <meta name="twitter:image" content="https://cogstrata.com/assets/og-image.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +55,7 @@
       "name": "Cogstrata",
       "url": "https://cogstrata.com",
       "logo": "https://cogstrata.com/favicon.svg",
-      "description": "Agent-ready demographic intelligence platform. 5,000+ enriched attributes, real-time signals, and eight AI models — connecting AI agents to trusted data.",
+      "description": "Third-party data augmentation platform. 5,000+ external signals at neighbourhood level that enrich first-party customer data — continuously refreshed and structured for analysts and AI agents.",
       "sameAs": [],
       "contactPoint": {
         "@type": "ContactPoint",
@@ -80,20 +81,12 @@
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                     <li><a class="text-primary hover:text-secondary" href="#features">Features</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="#how-it-works">How it Works</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
                     <li><a class="text-primary hover:text-secondary" href="#use-cases">Use Cases</a></li>
                     <li><a class="text-primary hover:text-secondary" href="#pricing">Pricing</a></li>
-                    <li><a class="text-primary hover:text-secondary" href="#faq">FAQ</a></li>
-                    <li>
-                        <details>
-                            <summary class="text-primary hover:text-secondary">Features</summary>
-                            <ul>
-                                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
-                                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
-                            </ul>
-                        </details>
-                    </li>
                     <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                    <li><a class="text-primary hover:text-secondary" href="/faq">FAQ</a></li>
                     <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
                 </ul>
             </div>
@@ -125,20 +118,12 @@
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a class="text-primary hover:text-secondary" href="#features">Features</a></li>
-                <li><a class="text-primary hover:text-secondary" href="#how-it-works">How it Works</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
                 <li><a class="text-primary hover:text-secondary" href="#use-cases">Use Cases</a></li>
                 <li><a class="text-primary hover:text-secondary" href="#pricing">Pricing</a></li>
-                <li><a class="text-primary hover:text-secondary" href="#faq">FAQ</a></li>
-                <li>
-                    <details>
-                        <summary class="text-primary hover:text-secondary">Features</summary>
-                        <ul class="bg-base-100 rounded-box shadow-lg z-[2] w-44 p-2">
-                            <li><a class="text-primary hover:text-secondary" href="/data">Data</a></li>
-                            <li><a class="text-primary hover:text-secondary" href="/agentic">AI Agents</a></li>
-                        </ul>
-                    </details>
-                </li>
                 <li><a class="text-primary hover:text-secondary" href="/blog/">Blog</a></li>
+                <li><a class="text-primary hover:text-secondary" href="/faq">FAQ</a></li>
                 <li><a class="text-primary hover:text-secondary" href="/contact">Contact</a></li>
             </ul>
         </div>
@@ -148,10 +133,10 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="hero min-h-screen bg-base-100 relative overflow-hidden">
+    <div class="hero relative overflow-hidden" style="background:linear-gradient(180deg,#081425 0%,#10203a 100%); padding:6rem 1rem 7rem;">
 
         <!-- Brand override: constellation SVG background echoing the logo mark -->
-        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1440 810" preserveAspectRatio="xMidYMid slice"
+        <svg class="absolute inset-0 w-full h-full" style="opacity:0.8" viewBox="0 0 1440 810" preserveAspectRatio="xMidYMid slice"
             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <!-- Connection lines — cogstrata-mid at low opacity -->
             <g stroke="#91c1ff" stroke-width="1" opacity="0.25" fill="none">
@@ -236,14 +221,17 @@
 
         <div class="hero-content text-center relative z-10">
             <div class="max-w-3xl">
-               <h1 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #393333; font-size: clamp(2.5rem, 6vw, 4rem); letter-spacing: -1px; line-height: 1.1;">
-                    AI-powered demographic data & customer intelligence
+               <h1 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #f4f7ff; font-size: clamp(2.5rem, 6vw, 4rem); letter-spacing: -1px; line-height: 1.1;">
+                    Signals your first-party data can't see
                 </h1>
-                <p class="py-6 text-lg text-neutral/70 max-w-2xl mx-auto">The most advanced customer personalisation
-                    solution on the market. Providing enterprise-grade intelligence, structured for humans and machines alike.</p>                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                    <a class="btn btn-primary btn-lg" href="/contact">Join Wait List</a>
+                <p class="py-6 text-lg max-w-2xl mx-auto" style="color: rgba(230,237,248,0.78);">Augment the customer data you already hold with
+                    5,000+ external signals — demographics, economics, environment — continuously refreshed and
+                    structured for both analysts and AI agents.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-3">
+                    <a class="btn btn-primary btn-lg" href="/contact">Join the Wait List</a>
+                    <a class="btn btn-outline btn-lg" href="/sample" style="color:#cfe0ff; border-color:rgba(207,224,255,0.5);">Free 24-Hour Sample Run</a>
                 </div>
+                <p class="text-sm" style="color: rgba(230,237,248,0.55);">Send us your customer file, get enriched results back in 24 hours. No contract, no commitment.</p>
             </div>
         </div>
     </div>
@@ -254,33 +242,34 @@
             <div class="flex flex-wrap justify-center items-center gap-12">
                 <div class="text-center">
                     <p class="font-bold text-2xl text-primary">5,000+</p>
-                    <p class="text-xs text-neutral/70">Derived datapoints</p>
+                    <p class="text-xs text-neutral/70">Derived datapoints per record</p>
                 </div>
                 <div class="text-center">
-                    <p class="font-bold text-2xl text-primary">99.9%</p>
-                    <p class="text-xs text-neutral/70">Data Accuracy</p>
+                    <p class="font-bold text-2xl text-primary">24</p>
+                    <p class="text-xs text-neutral/70">Plain-English classification groups</p>
                 </div>
                 <div class="text-center">
-                    <p class="font-bold text-2xl text-primary">Real time</p>
-                    <p class="text-xs text-neutral/70">Macro-economic signals</p>
+                    <p class="font-bold text-2xl text-primary">Continuous</p>
+                    <p class="text-xs text-neutral/70">Recalibration against live macro signals</p>
                 </div>
                 <div class="text-center">
-                    <p class="font-bold text-2xl text-primary">8</p>
-                    <p class="text-xs text-neutral/70">AI inference models</p>
+                    <p class="font-bold text-2xl text-primary">24hr</p>
+                    <p class="text-xs text-neutral/70">Free sample run on your data</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Core Features Section -->
-        <div id="features" class="bg-base-100 py-20">
+        <div id="features" class="bg-base-200 py-20">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-neutral mb-4">Everything you need to know your
-                        customers better than they know themselves
+                    <h2 class="text-4xl font-bold text-neutral mb-4">The third-party layer for your
+                        first-party data
                     </h2>
-                    <p class="text-lg text-neutral/70 max-w-xl mx-auto">Four layers of intelligence that compound to
-                        deliver personalisation no single dataset can match.</p>
+                    <p class="text-lg text-neutral/70 max-w-xl mx-auto">Your CRM knows what customers did with you.
+                        Cogstrata adds the context it can't see — who they are, what's changing around them, and what
+                        they're likely to do next.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -294,7 +283,7 @@
     sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
   <img
     src="assets/profile_enrichment-500w.webp"
-    alt="Customer profile enrichment using 5,000+ UK demographic data attributes"
+    alt="Customer profile enrichment using 5,000+ demographic data attributes"
     width="500"
     height="273"
     loading="lazy"
@@ -304,33 +293,9 @@
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Profile Enrichment
                             </h3>
-                            <p class="text-neutral/70 text-sm">500+ base enrichment attributes that expand to 5,000+ derived datapoints when combined with live signals and AI inference. Extend every customer profile with deep attributes spanning Retail & Consumer Spending, Financial Services, Automotive, Telecoms, Energy and Insurance.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 2: Segmentation -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="card-body">
-                            <picture>
-  <source
-    type="image/webp"
-    srcset="assets/segmentation-500w.webp 500w, assets/segmentation-1000w.webp 1000w"
-    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
-  <img
-    src="assets/segmentation-500w.webp"
-    alt="Geodemographic customer segmentation across housing, education, and retail access"
-    width="500"
-    height="273"
-    loading="lazy"
-    decoding="async"
-    class="mb-4 object-contain">
-</picture>
-                            <h3 class="card-title text-lg text-neutral"
-                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Segmentation</h3>
-                            <p class="text-neutral/70 text-sm">Proprietary Segmentation. Go beyond basic demographics.
-                                Our markers cover Housing, Household Composition, Education & Work, Retail Access,
-                                Banking Access, Transport & Commute and Crime & Financial Risk — so every segment is
-                                contextually precise.</p>
+                            <p class="text-neutral/70 text-sm">500+ base attributes that expand to 5,000+ derived
+                                datapoints when combined with live signals and AI inference — spanning housing,
+                                household composition, spending, financial risk and more.</p>
                         </div>
                     </div>
 
@@ -354,35 +319,8 @@
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Live Signals</h3>
                             <p class="text-neutral/70 text-sm">Real-Time Macro Signals. Customer context changes daily.
-                                We recalibrate profiles against the BoE base rate, CPI/RPI inflation, regional weather,
-                                employment stats, fuel & energy prices, house price indices and local news sentiment —
+                                We recalibrate profiles against central-bank rates, inflation, regional weather, employment statistics, fuel and energy prices, house-price indices and local news sentiment —
                                 automatically.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 4: Intelligence -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="card-body">
-                            <picture>
-  <source
-    type="image/webp"
-    srcset="assets/intelligence-500w.webp 500w, assets/intelligence-1000w.webp 1000w"
-    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
-  <img
-    src="assets/intelligence-500w.webp"
-    alt="AI-powered demographic intelligence for customer analysis and targeting"
-    width="500"
-    height="273"
-    loading="lazy"
-    decoding="async"
-    class="mb-4 object-contain">
-</picture>
-                            <h3 class="card-title text-lg text-neutral"
-                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Intelligence</h3>
-                            <p class="text-neutral/70 text-sm">AI-Powered Inference. Turn raw data into action. Eight
-                                proprietary models surface Mortgage Pressure Delta, Discretionary Spend Estimates, Churn
-                                Risk Uplift, Cost-of-Living Stress, Demand Intent Score and more — before your
-                                competitors even notice the shift.</p>
                         </div>
                     </div>
 
@@ -430,62 +368,17 @@
 </picture>
                             <h3 class="card-title text-lg text-neutral"
                                 style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Prediction</h3>
-                            <p class="text-neutral/70 text-sm">Predictive Actions Engine. Don't just understand your
-                                customers — anticipate them. Our predictive services analyse enriched profiles and
-                                deliver suggestive next-best-actions, turning data into measurable revenue outcomes.</p>
+                            <p class="text-neutral/70 text-sm">Eight AI inference models turn enriched profiles into
+                                forward signals — Mortgage Pressure, Discretionary Spend, Churn Risk Uplift,
+                                Cost-of-Living Stress, Demand Intent and more — with suggested next-best-actions.</p>
                         </div>
                     </div>
 
-                    <!-- Feature 7: Compliance -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="card-body">
-                            <picture>
-  <source
-    type="image/webp"
-    srcset="assets/compliance-500w.webp 500w, assets/compliance-1000w.webp 1000w"
-    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
-  <img
-    src="assets/compliance-500w.webp"
-    alt="Compliance"
-    width="500"
-    height="273"
-    loading="lazy"
-    decoding="async"
-    class="mb-4 object-contain">
-</picture>
-                            <h3 class="card-title text-lg text-neutral"
-                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Compliance</h3>
-                            <p class="text-neutral/70 text-sm">Enterprise-Grade Security. SOC 2 compliant, GDPR-ready
-                                architecture with full audit trails. Role-based access, encryption at rest and in
-                                transit, and data residency controls built for regulated industries from day one.</p>
-                        </div>
-                    </div>
+                </div>
 
-                    <!-- Feature 8: Accessibility -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="card-body">
-                            <picture>
-  <source
-    type="image/webp"
-    srcset="assets/accessibility-500w.webp 500w, assets/accessibility-1000w.webp 1000w"
-    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1023px) calc(50vw - 2rem), calc(25vw - 2rem)">
-  <img
-    src="assets/accessibility-500w.webp"
-    alt="Accessibility"
-    width="500"
-    height="273"
-    loading="lazy"
-    decoding="async"
-    class="mb-4 object-contain">
-</picture>
-                            <h3 class="card-title text-lg text-neutral"
-                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Accessibility</h3>
-                            <p class="text-neutral/70 text-sm">Team-Wide Accessibility. Built so every team — not just
-                                data scientists — can extract value. Intuitive dashboards, no-code segmentation
-                                builders, and API access mean marketing, product and CX teams all operate from the same
-                                intelligence layer.</p>
-                        </div>
-                    </div>
+                <!-- Trust strip -->
+                <div class="text-center mt-12">
+                    <p class="text-sm text-neutral/60">No individual PII — aggregated at area level · GDPR-compliant, aligned with regional privacy laws · SOC 2-aligned architecture · Encryption at rest and in transit</p>
                 </div>
             </div>
         </div>
@@ -496,259 +389,186 @@
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-bold text-neutral mb-4"
                         style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">How it works</h2>
-                    <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Six stages transform raw open data into
-                        continuously refreshed, decision-ready intelligence — powered by AI agents that never stop
-                        learning.</p>
+                    <p class="text-lg text-neutral/70 max-w-2xl mx-auto">From raw open data to decision-ready intelligence, in three steps.</p>
                 </div>
-                <div class="w-full mx-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 540" font-family="'DM Sans', sans-serif" class="w-full h-auto">
-                    <defs>
-                      <linearGradient id="pipeLineGrad" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#3E77FF"/>
-                        <stop offset="45%" stop-color="#534AB7"/>
-                        <stop offset="100%" stop-color="#EF9F27"/>
-                      </linearGradient>
-                      <!-- Individual segment gradients for curved connectors -->
-                      <linearGradient id="pipeGrad12" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#3E77FF"/><stop offset="100%" stop-color="#3E77FF"/>
-                      </linearGradient>
-                      <linearGradient id="pipeGrad23" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#3E77FF"/><stop offset="100%" stop-color="#534AB7"/>
-                      </linearGradient>
-                      <linearGradient id="pipeGrad34" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#534AB7"/><stop offset="100%" stop-color="#534AB7"/>
-                      </linearGradient>
-                      <linearGradient id="pipeGrad45" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#534AB7"/><stop offset="100%" stop-color="#EF9F27"/>
-                      </linearGradient>
-                      <linearGradient id="pipeGrad56" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#EF9F27"/><stop offset="100%" stop-color="#EF9F27"/>
-                      </linearGradient>
-                      <filter id="pipeGlow">
-                        <feGaussianBlur stdDeviation="3" result="blur"/>
-                        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-                      </filter>
-                      <filter id="pipeSoftShadow">
-                        <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.06"/>
-                      </filter>
-                    </defs>
-
-                    <!-- Background grid -->
-                    <pattern id="pipeGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e8e8e8" stroke-width="0.5"/>
-                    </pattern>
-                    <rect width="1400" height="540" fill="transparent"/>
-                    <rect width="1400" height="540" fill="url(#pipeGrid)" opacity="0.3"/>
-
-                    <!-- Curved connectors between stages (prominent S-curves) -->
-                    <!-- Node centres: 1@(120,110) 2@(360,230) 3@(600,110) 4@(840,230) 5@(1080,110) 6@(1320,230) -->
-                    <path d="M 170 110 C 230 110, 260 230, 310 230" fill="none" stroke="url(#pipeGrad12)" stroke-width="2.5" stroke-linecap="round" opacity="0.2"/>
-                    <path d="M 410 230 C 460 230, 500 110, 550 110" fill="none" stroke="url(#pipeGrad23)" stroke-width="2.5" stroke-linecap="round" opacity="0.2"/>
-                    <path d="M 650 110 C 710 110, 740 230, 790 230" fill="none" stroke="url(#pipeGrad34)" stroke-width="2.5" stroke-linecap="round" opacity="0.2"/>
-                    <path d="M 890 230 C 940 230, 980 110, 1030 110" fill="none" stroke="url(#pipeGrad45)" stroke-width="2.5" stroke-linecap="round" opacity="0.2"/>
-                    <path d="M 1130 110 C 1190 110, 1220 230, 1270 230" fill="none" stroke="url(#pipeGrad56)" stroke-width="2.5" stroke-linecap="round" opacity="0.2"/>
-
-                    <!-- Full wave path for animation -->
-                    <path d="M 120 110 C 200 110, 260 230, 360 230 C 460 230, 500 110, 600 110 C 700 110, 740 230, 840 230 C 940 230, 980 110, 1080 110 C 1180 110, 1220 230, 1320 230" fill="none" stroke="url(#pipeLineGrad)" stroke-width="2" stroke-linecap="round" opacity="0.06"/>
-
-                    <!-- Animated pulse dots following the full wave -->
-                    <circle r="5" fill="#91c1ff" filter="url(#pipeGlow)">
-                      <animateMotion dur="7s" repeatCount="indefinite" path="M 120 110 C 200 110, 260 230, 360 230 C 460 230, 500 110, 600 110 C 700 110, 740 230, 840 230 C 940 230, 980 110, 1080 110 C 1180 110, 1220 230, 1320 230"/>
-                    </circle>
-                    <circle r="4" fill="#EF9F27" filter="url(#pipeGlow)">
-                      <animateMotion dur="7s" repeatCount="indefinite" begin="3.5s" path="M 120 110 C 200 110, 260 230, 360 230 C 460 230, 500 110, 600 110 C 700 110, 740 230, 840 230 C 940 230, 980 110, 1080 110 C 1180 110, 1220 230, 1320 230"/>
-                    </circle>
-
-                    <!-- Connection dots at each node -->
-                    <circle cx="120" cy="110" r="7" fill="#3E77FF" opacity="0.15"/>
-                    <circle cx="360" cy="230" r="7" fill="#3E77FF" opacity="0.15"/>
-                    <circle cx="600" cy="110" r="7" fill="#534AB7" opacity="0.15"/>
-                    <circle cx="840" cy="230" r="7" fill="#534AB7" opacity="0.15"/>
-                    <circle cx="1080" cy="110" r="7" fill="#EF9F27" opacity="0.15"/>
-                    <circle cx="1320" cy="230" r="7" fill="#EF9F27" opacity="0.15"/>
-
-                    <!-- STAGE 1: COLLECTION (high) -->
-                    <g transform="translate(50, 62)">
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="white" filter="url(#pipeSoftShadow)"/>
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="none" stroke="#3E77FF" stroke-width="1.5" opacity="0.25"/>
-                      <circle cx="18" cy="18" r="12" fill="#3E77FF"/>
-                      <text x="18" y="22" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="white">1</text>
-                      <g transform="translate(100, 6)">
-                        <rect x="0" y="0" width="28" height="28" rx="7" fill="#3E77FF" opacity="0.08"/>
-                        <path d="M8 9 C8 7.5, 22 7.5, 22 9 C22 10.5, 8 10.5, 8 9 M8 9 L8 19 C8 20.5, 22 20.5, 22 19 L22 9 M8 14 C8 15.5, 22 15.5, 22 14" fill="none" stroke="#3E77FF" stroke-width="1.2" stroke-linecap="round"/>
-                      </g>
-                      <text x="70" y="48" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="12" fill="#1a1a1a">Collection</text>
-                      <text x="70" y="64" text-anchor="middle" font-size="9.5" fill="#888">Open data &amp;</text>
-                      <text x="70" y="74" text-anchor="middle" font-size="9.5" fill="#888">geospatial sources</text>
-                    </g>
-
-                    <!-- STAGE 2: QUALITY & LINKAGE (low) -->
-                    <g transform="translate(290, 182)">
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="white" filter="url(#pipeSoftShadow)"/>
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="none" stroke="#3E77FF" stroke-width="1.5" opacity="0.25"/>
-                      <circle cx="18" cy="18" r="12" fill="#3E77FF"/>
-                      <text x="18" y="22" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="white">2</text>
-                      <g transform="translate(100, 6)">
-                        <rect x="0" y="0" width="28" height="28" rx="7" fill="#3E77FF" opacity="0.08"/>
-                        <path d="M9 14 L13 18 L21 10 M8 22 L22 22 M8 7 L22 7" fill="none" stroke="#3E77FF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </g>
-                      <text x="70" y="48" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="12" fill="#1a1a1a">Quality &amp; Linkage</text>
-                      <text x="70" y="64" text-anchor="middle" font-size="9.5" fill="#888">Validate, deduplicate</text>
-                      <text x="70" y="74" text-anchor="middle" font-size="9.5" fill="#888">&amp; link at geospatial level</text>
-                    </g>
-
-                    <!-- STAGE 3: ENRICHMENT (high) -->
-                    <g transform="translate(530, 62)">
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="white" filter="url(#pipeSoftShadow)"/>
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="none" stroke="#534AB7" stroke-width="1.5" opacity="0.25"/>
-                      <circle cx="18" cy="18" r="12" fill="#534AB7"/>
-                      <text x="18" y="22" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="white">3</text>
-                      <g transform="translate(100, 6)">
-                        <rect x="0" y="0" width="28" height="28" rx="7" fill="#534AB7" opacity="0.08"/>
-                        <path d="M15 8 L15 20 M9 14 L21 14 M9 9 L9 19 M21 9 L21 19" fill="none" stroke="#534AB7" stroke-width="1.2" stroke-linecap="round"/>
-                      </g>
-                      <text x="70" y="48" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="12" fill="#1a1a1a">Enrichment</text>
-                      <text x="70" y="64" text-anchor="middle" font-size="9.5" fill="#888">Layer in health, digital,</text>
-                      <text x="70" y="74" text-anchor="middle" font-size="9.5" fill="#888">environmental &amp; more</text>
-                    </g>
-
-                    <!-- STAGE 4: ALGORITHMS & ML (low) -->
-                    <g transform="translate(770, 182)">
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="white" filter="url(#pipeSoftShadow)"/>
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="none" stroke="#534AB7" stroke-width="1.5" opacity="0.25"/>
-                      <circle cx="18" cy="18" r="12" fill="#534AB7"/>
-                      <text x="18" y="22" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="white">4</text>
-                      <g transform="translate(100, 6)">
-                        <rect x="0" y="0" width="28" height="28" rx="7" fill="#534AB7" opacity="0.08"/>
-                        <circle cx="8" cy="9" r="2.2" fill="none" stroke="#534AB7" stroke-width="0.9"/>
-                        <circle cx="8" cy="19" r="2.2" fill="none" stroke="#534AB7" stroke-width="0.9"/>
-                        <circle cx="20" cy="9" r="2.2" fill="none" stroke="#534AB7" stroke-width="0.9"/>
-                        <circle cx="20" cy="19" r="2.2" fill="none" stroke="#534AB7" stroke-width="0.9"/>
-                        <circle cx="14" cy="14" r="2.8" fill="none" stroke="#534AB7" stroke-width="1"/>
-                        <line x1="10" y1="9.5" x2="11.5" y2="12.5" stroke="#534AB7" stroke-width="0.6"/>
-                        <line x1="10" y1="18.5" x2="11.5" y2="15.5" stroke="#534AB7" stroke-width="0.6"/>
-                        <line x1="16.5" y1="12.5" x2="18" y2="9.5" stroke="#534AB7" stroke-width="0.6"/>
-                        <line x1="16.5" y1="15.5" x2="18" y2="18.5" stroke="#534AB7" stroke-width="0.6"/>
-                      </g>
-                      <text x="70" y="48" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="12" fill="#1a1a1a">Algorithms &amp; ML</text>
-                      <text x="70" y="64" text-anchor="middle" font-size="9.5" fill="#888">Indices, propensities</text>
-                      <text x="70" y="74" text-anchor="middle" font-size="9.5" fill="#888">&amp; composite scoring</text>
-                    </g>
-
-                    <!-- STAGE 5: AGENTIC AUGMENTATION (high) -->
-                    <g transform="translate(1010, 62)">
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="white" filter="url(#pipeSoftShadow)"/>
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="none" stroke="#EF9F27" stroke-width="1.5" opacity="0.35"/>
-                      <rect x="-2" y="-2" width="144" height="84" rx="14" fill="none" stroke="#EF9F27" stroke-width="1" opacity="0.15">
-                        <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite"/>
-                      </rect>
-                      <circle cx="18" cy="18" r="12" fill="#EF9F27"/>
-                      <text x="18" y="22" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="white">5</text>
-                      <g transform="translate(100, 6)">
-                        <rect x="0" y="0" width="28" height="28" rx="7" fill="#EF9F27" opacity="0.08"/>
-                        <path d="M10 10 A5 5 0 0 1 20 10 M20 18 A5 5 0 0 1 10 18" fill="none" stroke="#EF9F27" stroke-width="1.2" stroke-linecap="round"/>
-                        <path d="M18.5 7.5 L20 10 L17.5 10.5" fill="none" stroke="#EF9F27" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M11.5 20.5 L10 18 L12.5 17.5" fill="none" stroke="#EF9F27" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                      </g>
-                      <text x="70" y="44" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="#1a1a1a">Agentic</text>
-                      <text x="70" y="57" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="#1a1a1a">Augmentation</text>
-                      <text x="70" y="74" text-anchor="middle" font-size="9.5" fill="#EF9F27" font-weight="500">Continuous refresh</text>
-                    </g>
-
-                    <!-- STAGE 6: AGENTIC PREDICTIONS (low) -->
-                    <g transform="translate(1250, 182)">
-                      <rect x="0" y="0" width="140" height="80" rx="12" fill="#1a1a1a" filter="url(#pipeSoftShadow)"/>
-                      <rect x="-1" y="-1" width="142" height="82" rx="13" fill="none" stroke="#EF9F27" stroke-width="1.5" opacity="0.25">
-                        <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2.5s" repeatCount="indefinite"/>
-                      </rect>
-                      <circle cx="18" cy="18" r="12" fill="#EF9F27"/>
-                      <text x="18" y="22" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="#1a1a1a">6</text>
-                      <g transform="translate(100, 6)">
-                        <rect x="0" y="0" width="28" height="28" rx="7" fill="#EF9F27" opacity="0.12"/>
-                        <path d="M15 7 L16.2 12.5 L22 14 L16.2 15.5 L15 21 L13.8 15.5 L8 14 L13.8 12.5 Z" fill="none" stroke="#EF9F27" stroke-width="0.9" stroke-linejoin="round"/>
-                        <circle cx="15" cy="14" r="1.8" fill="#EF9F27" opacity="0.4"/>
-                      </g>
-                      <text x="70" y="44" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="white">Agentic</text>
-                      <text x="70" y="57" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="11" fill="white">Predictions</text>
-                      <text x="70" y="74" text-anchor="middle" font-size="9.5" fill="#EF9F27" font-weight="500">Predictive intelligence</text>
-                    </g>
-
-                    <!-- DETAIL LABELS (alternating heights) -->
-                    <g transform="translate(50, 152)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5" class="pipe-detail-bg"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">Multiple curated</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">open data sources</text>
-                      <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#3E77FF" font-weight="500">International coverage</text>
-                    </g>
-                    <g transform="translate(290, 272)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5" class="pipe-detail-bg"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">Cross-source linkage</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">&amp; country harmonisation</text>
-                      <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#3E77FF" font-weight="500">10m+ Regions</text>
-                    </g>
-                    <g transform="translate(530, 152)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5" class="pipe-detail-bg"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">Supplementary datasets</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">across 12 categories</text>
-                      <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#534AB7" font-weight="500">100+ base attributes</text>
-                    </g>
-                    <g transform="translate(770, 272)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#e0e0e0" stroke-width="0.5" class="pipe-detail-bg"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">AI-weighted derivation</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">with full lineage</text>
-                      <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#534AB7" font-weight="500">175+ total attributes</text>
-                    </g>
-                    <g transform="translate(1010, 152)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="white" opacity="0.6" stroke="#EF9F27" stroke-width="0.5" stroke-opacity="0.3" class="pipe-detail-bg"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">Autonomous monitoring</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="#888" class="pipe-detail-text">&amp; drift detection</text>
-                      <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#EF9F27" font-weight="500">Never goes stale</text>
-                    </g>
-                    <g transform="translate(1250, 272)">
-                      <rect x="0" y="0" width="140" height="58" rx="8" fill="#1a1a1a" opacity="0.9"/>
-                      <text x="70" y="18" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">Trajectory forecasts</text>
-                      <text x="70" y="31" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.5)">&amp; demand signals</text>
-                      <text x="70" y="48" text-anchor="middle" font-size="9.5" fill="#EF9F27" font-weight="500">Forward-looking</text>
-                    </g>
-
-                    <!-- DATA GROWTH VISUAL -->
-                    <g transform="translate(50, 375)">
-                      <text x="0" y="0" font-size="8.5" fill="#bbb" font-weight="500" letter-spacing="0.8">DATA DEPTH</text>
-                      <rect x="70" y="15" width="100" height="12" rx="2" fill="#3E77FF" opacity="0.12"/><rect x="70" y="15" width="35" height="12" rx="2" fill="#3E77FF" opacity="0.3"/>
-                      <rect x="310" y="15" width="100" height="12" rx="2" fill="#3E77FF" opacity="0.12"/><rect x="310" y="15" width="50" height="12" rx="2" fill="#3E77FF" opacity="0.3"/>
-                      <rect x="550" y="15" width="100" height="12" rx="2" fill="#534AB7" opacity="0.12"/><rect x="550" y="15" width="65" height="12" rx="2" fill="#534AB7" opacity="0.3"/>
-                      <rect x="790" y="15" width="100" height="12" rx="2" fill="#534AB7" opacity="0.12"/><rect x="790" y="15" width="80" height="12" rx="2" fill="#534AB7" opacity="0.3"/>
-                      <rect x="1030" y="15" width="100" height="12" rx="2" fill="#EF9F27" opacity="0.12"/><rect x="1030" y="15" width="90" height="12" rx="2" fill="#EF9F27" opacity="0.3"/>
-                      <rect x="1270" y="15" width="100" height="12" rx="2" fill="#EF9F27" opacity="0.12"/><rect x="1270" y="15" width="100" height="12" rx="2" fill="#EF9F27" opacity="0.35"/>
-                    </g>
-                    <g transform="translate(50, 415)">
-                      <text x="0" y="0" font-size="8.5" fill="#bbb" font-weight="500" letter-spacing="0.8">FRESHNESS</text>
-                      <rect x="70" y="15" width="100" height="12" rx="2" fill="#3E77FF" opacity="0.12"/><rect x="70" y="15" width="18" height="12" rx="2" fill="#3E77FF" opacity="0.3"/>
-                      <rect x="310" y="15" width="100" height="12" rx="2" fill="#3E77FF" opacity="0.12"/><rect x="310" y="15" width="25" height="12" rx="2" fill="#3E77FF" opacity="0.3"/>
-                      <rect x="550" y="15" width="100" height="12" rx="2" fill="#534AB7" opacity="0.12"/><rect x="550" y="15" width="35" height="12" rx="2" fill="#534AB7" opacity="0.3"/>
-                      <rect x="790" y="15" width="100" height="12" rx="2" fill="#534AB7" opacity="0.12"/><rect x="790" y="15" width="50" height="12" rx="2" fill="#534AB7" opacity="0.3"/>
-                      <rect x="1030" y="15" width="100" height="12" rx="2" fill="#EF9F27" opacity="0.12"/><rect x="1030" y="15" width="80" height="12" rx="2" fill="#EF9F27" opacity="0.3"/>
-                      <rect x="1270" y="15" width="100" height="12" rx="2" fill="#EF9F27" opacity="0.12"/><rect x="1270" y="15" width="100" height="12" rx="2" fill="#EF9F27" opacity="0.35"/>
-                    </g>
-                    <text x="50" y="475" font-size="8" fill="#bbb" letter-spacing="0.5">Low</text>
-                    <text x="1360" y="475" font-size="8" fill="#bbb" letter-spacing="0.5" text-anchor="end">High</text>
-
-                    <!-- Colour legend -->
-                    <g transform="translate(500, 510)">
-                      <circle cx="0" cy="0" r="4" fill="#3E77FF" opacity="0.5"/>
-                      <text x="10" y="4" font-size="9" fill="#888" class="pipe-detail-text">Open data</text>
-                      <circle cx="120" cy="0" r="4" fill="#534AB7" opacity="0.5"/>
-                      <text x="130" y="4" font-size="9" fill="#888" class="pipe-detail-text">AI-derived</text>
-                      <circle cx="240" cy="0" r="4" fill="#EF9F27" opacity="0.5"/>
-                      <text x="250" y="4" font-size="9" fill="#888" class="pipe-detail-text">Agent-maintained</text>
-                    </g>
-                    </svg>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="card bg-base-100 shadow-sm border border-base-300">
+                        <div class="card-body items-center text-center">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-2" style="background:#3E77FF; font-family:'Space Grotesk',sans-serif;">1</div>
+                            <h3 class="card-title text-lg text-neutral" style="font-family:'Space Grotesk',sans-serif; font-weight:700;">Collect &amp; link</h3>
+                            <p class="text-neutral/70 text-sm">We gather curated open data and geospatial sources, then validate, deduplicate and link them at neighbourhood level.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm border border-base-300">
+                        <div class="card-body items-center text-center">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-2" style="background:#534AB7; font-family:'Space Grotesk',sans-serif;">2</div>
+                            <h3 class="card-title text-lg text-neutral" style="font-family:'Space Grotesk',sans-serif; font-weight:700;">Enrich &amp; model</h3>
+                            <p class="text-neutral/70 text-sm">500+ base attributes are combined with live macro signals and run through our AI inference models, producing 5,000+ derived datapoints per record.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-sm border border-base-300">
+                        <div class="card-body items-center text-center">
+                            <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-2" style="background:#EF9F27; font-family:'Space Grotesk',sans-serif;">3</div>
+                            <h3 class="card-title text-lg text-neutral" style="font-family:'Space Grotesk',sans-serif; font-weight:700;">Deliver &amp; refresh</h3>
+                            <p class="text-neutral/70 text-sm">Consume via REST API, batch export or cloud marketplace. Profiles recalibrate continuously as conditions change &mdash; no annual snapshots.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- Data Preview Section -->
+        <section id="data-preview" class="bg-base-200 py-20">
+            <div class="container mx-auto px-4">
+
+                <!-- Section heading -->
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-neutral mb-4"
+                        style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">
+                        Data You Can Reason With
+                    </h2>
+                </div>
+
+                <!-- Row 1: explanatory text + dashboard card -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+
+                    <!-- Text -->
+                    <div>
+                        <p class="text-neutral/70 mb-4">
+                            Every neighbourhood maps to one of 24 groups, identified by a three-part label drawn from a fixed vocabulary. No codebook required — the label <em>is</em> the description.
+                        </p>
+                        <p class="text-neutral/70 mb-6">
+                            Alongside the label, every record includes the supergroup, a plain-English descriptor, structured trait tags for filtering and segmentation, and a pre-written AI summary ready for direct injection into an agent's context window.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-2 text-sm font-semibold"
+                             style="font-family:'Space Grotesk',sans-serif;">
+                            <span class="px-3 py-1 rounded-full" style="background:#3E77FF18;color:#3E77FF;border:1.5px solid #3E77FF44;">Economic Position</span>
+                            <span class="text-neutral/30 text-xl select-none">&middot;</span>
+                            <span class="px-3 py-1 rounded-full facet-pill-purple">Household Profile</span>
+                            <span class="text-neutral/30 text-xl select-none">&middot;</span>
+                            <span class="px-3 py-1 rounded-full" style="background:#EF9F2718;color:#C47A00;border:1.5px solid #EF9F2744;">Setting</span>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard card -->
+                    <div class="flex justify-center lg:justify-end">
+                        <div class="card bg-base-200 shadow-md border border-base-300 w-full max-w-sm overflow-hidden">
+                            <div class="h-1.5 w-full" style="background:linear-gradient(to right,#3E77FF,#534AB7,#EF9F27);"></div>
+                            <div class="card-body py-5 px-6">
+                                <p class="text-xs text-neutral/50 uppercase tracking-widest mb-1"
+                                   style="font-family:'DM Sans',sans-serif;font-weight:300;">GU21 &mdash; Sample district</p>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <span class="badge badge-sm font-bold"
+                                          style="background:#3E77FF;color:#fff;border:none;font-family:'Space Grotesk',sans-serif;">PF</span>
+                                    <span class="text-base font-bold text-neutral tracking-tight"
+                                          style="font-family:'Space Grotesk',sans-serif;font-weight:700;">PREMIER FAMILIES</span>
+                                </div>
+                                <p class="text-sm font-semibold mb-3 convention-name">
+                                    Affluent &middot; Working Families &middot; Suburban
+                                </p>
+                                <div class="flex flex-wrap gap-1.5 mb-3">
+                                    <span class="badge badge-sm badge-blue">dual-income</span>
+                                    <span class="badge badge-sm badge-blue">professional</span>
+                                    <span class="badge badge-sm badge-blue">mortgage-active</span>
+                                    <span class="badge badge-sm badge-purple">school-age-children</span>
+                                    <span class="badge badge-sm badge-purple">high-qualifications</span>
+                                </div>
+                                <div class="flex items-center gap-2 mt-1">
+                                    <div class="flex-1 h-1.5 rounded-full bg-base-300 overflow-hidden">
+                                        <div class="h-full rounded-full" style="width:91%;background:linear-gradient(to right,#3E77FF,#534AB7);"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold text-neutral/60"
+                                          style="font-family:'Space Grotesk',sans-serif;">91% confidence</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Row 2: three facet cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+
+                    <!-- Economic Position -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="h-1 w-full rounded-t-2xl" style="background:#3E77FF;"></div>
+                        <div class="card-body py-5 px-5">
+                            <div class="flex items-center gap-2 mb-2">
+                                <h3 class="font-bold text-neutral"
+                                    style="font-family:'Space Grotesk',sans-serif;">Economic Position</h3>
+                                <span class="badge badge-xs" style="background:#3E77FF;color:#fff;border:none;">5 tiers</span>
+                            </div>
+                            <p class="text-sm text-neutral/60 mb-4">Describes the financial standing of the area — from top-decile affluence through to high deprivation and benefit dependency.</p>
+                            <div class="flex flex-col gap-1.5">
+                                <span class="badge badge-sm w-full justify-start badge-blue">Affluent</span>
+                                <span class="badge badge-sm w-full justify-start badge-blue">Comfortable</span>
+                                <span class="badge badge-sm w-full justify-start badge-blue">Moderate</span>
+                                <span class="badge badge-sm w-full justify-start badge-purple">Squeezed</span>
+                                <span class="badge badge-sm w-full justify-start badge-purple">Supported</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Household Profile -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="h-1 w-full rounded-t-2xl" style="background:#534AB7;"></div>
+                        <div class="card-body py-5 px-5">
+                            <div class="flex items-center gap-2 mb-2">
+                                <h3 class="font-bold text-neutral"
+                                    style="font-family:'Space Grotesk',sans-serif;">Household Profile</h3>
+                                <span class="badge badge-xs" style="background:#534AB7;color:#fff;border:none;">6 types</span>
+                            </div>
+                            <p class="text-sm text-neutral/60 mb-4">Describes who lives there — age, household composition, and life stage, from young renters through to settled retirees.</p>
+                            <div class="flex flex-col gap-1.5">
+                                <span class="badge badge-sm w-full justify-start badge-purple">Young Singles</span>
+                                <span class="badge badge-sm w-full justify-start badge-purple">Young Families</span>
+                                <span class="badge badge-sm w-full justify-start badge-purple">Working Families</span>
+                                <span class="badge badge-sm w-full justify-start badge-purple">Established</span>
+                                <span class="badge badge-sm w-full justify-start badge-purple">Retired</span>
+                                <span class="badge badge-sm w-full justify-start badge-purple">Mixed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Setting -->
+                    <div class="card bg-base-200 shadow-sm border border-base-300">
+                        <div class="h-1 w-full rounded-t-2xl" style="background:#EF9F27;"></div>
+                        <div class="card-body py-5 px-5">
+                            <div class="flex items-center gap-2 mb-2">
+                                <h3 class="font-bold text-neutral"
+                                    style="font-family:'Space Grotesk',sans-serif;">Setting</h3>
+                                <span class="badge badge-xs" style="background:#C47A00;color:#fff;border:none;">7 types</span>
+                            </div>
+                            <p class="text-sm text-neutral/60 mb-4">Describes the physical environment and geography — from dense city cores and inner-city estates through to rural villages and dispersed countryside settlements.</p>
+                            <div class="flex flex-col gap-1.5">
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2710;color:#C47A00;border:none;">City Core</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2712;color:#C47A00;border:none;">Inner City</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2714;color:#C47A00;border:none;">Suburban</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2716;color:#C47A00;border:none;">Town</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2718;color:#C47A00;border:none;">Semi-Rural</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F271A;color:#C47A00;border:none;">Rural</span>
+                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F271C;color:#C47A00;border:none;">Estate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CTA -->
+                <div class="text-center">
+                    <a href="/data" class="btn btn-primary btn-lg">
+                        Explore all 24 groups
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
         <!-- Use Cases Section -->
-        <div id="use-cases" class="bg-base-200 py-20">
+        <div id="use-cases" class="bg-base-100 py-20">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-bold text-neutral mb-4"
@@ -774,8 +594,7 @@
                                 only customers with real buying intent</p>
                             <p class="text-neutral/70 text-sm mb-4">Layer Discretionary Spend Estimates and Seasonal
                                 Demand Signals onto your CRM to stop blanket discounting and start precision offers.
-                                Every pound of marketing spend goes to the customers most likely to convert.</p>
-                            <p class="text-sm font-bold text-primary mt-4">3.2× average campaign ROI uplift</p>
+                                Marketing spend goes only to the customers most likely to convert.</p>
                         </div>
                     </div>
 
@@ -794,7 +613,6 @@
                             <p class="text-neutral/70 text-sm mb-4">Mortgage Pressure Delta and Cost-of-Living Stress
                                 models flag customers approaching hardship — enabling proactive outreach, retention
                                 offers, and responsible lending decisions that protect revenue and reputation.</p>
-                            <p class="text-sm font-bold text-primary mt-4">41% reduction in early-stage churn</p>
                         </div>
                     </div>
 
@@ -812,63 +630,6 @@
                             <p class="text-neutral/70 text-sm mb-4">Combine Property Sentiment, Crime & Financial Risk
                                 markers, and regional weather data to sharpen underwriting accuracy. Move from annual
                                 repricing to living risk profiles that adjust as the world does.</p>
-                            <p class="text-sm font-bold text-primary mt-4">27% improvement in loss ratio accuracy</p>
-                        </div>
-                    </div>
-
-                    <!-- Telecoms & Utilities -->
-                    <div class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden">
-                        <picture>
-  <source srcset="assets/telecoms.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/telecoms.png" alt="Demographic segmentation data for telecoms and utilities customer marketing" class="w-full h-32 object-cover">
-</picture>
-                        <div class="card-body">
-                            <h3 class="card-title text-neutral"
-                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Telecoms & Utilities
-                            </h3>
-                            <p class="text-neutral/70 text-sm font-semibold mb-2">Predict churn before the customer even
-                                starts comparing alternatives</p>
-                            <p class="text-neutral/70 text-sm mb-4">Churn Risk Uplift models combined with Demand Intent
-                                Scores identify at-risk customers at the moment their behaviour shifts — not after
-                                they've already called to cancel. Intervene earlier, retain more.</p>
-                            <p class="text-sm font-bold text-primary mt-4">£2.4M annual retained revenue (avg.
-                                enterprise)</p>
-                        </div>
-                    </div>
-
-                    <!-- Automotive -->
-                    <div class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden">
-                        <picture>
-  <source srcset="assets/automotive.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/automotive.png" alt="Demographic intelligence for automotive sales prospecting and targeting" class="w-full h-32 object-cover">
-</picture>
-                        <div class="card-body">
-                            <h3 class="card-title text-neutral"
-                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Automotive</h3>
-                            <p class="text-neutral/70 text-sm font-semibold mb-2">Time your outreach to the exact moment
-                                purchase intent peaks</p>
-                            <p class="text-neutral/70 text-sm mb-4">Footfall Likelihood and Demand Intent Scores help
-                                dealerships and OEMs identify when households are entering the buying window — aligning
-                                sales efforts with real-world readiness, not arbitrary cadences.</p>
-                            <p class="text-sm font-bold text-primary mt-4">58% increase in test-drive conversion</p>
-                        </div>
-                    </div>
-
-                    <!-- Energy -->
-                    <div class="card bg-base-100 shadow-sm border border-base-300 overflow-hidden">
-                        <picture>
-  <source srcset="assets/energy.webp" type="image/webp">
-  <img decoding="async" loading="lazy" src="assets/energy.png" alt="Customer data enrichment for energy sector acquisition and retention" class="w-full h-32 object-cover">
-</picture>
-                        <div class="card-body">
-                            <h3 class="card-title text-neutral"
-                                style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Energy</h3>
-                            <p class="text-neutral/70 text-sm font-semibold mb-2">Personalise tariff offers based on
-                                real household economics</p>
-                            <p class="text-neutral/70 text-sm mb-4">Household Composition, Cost-of-Living Stress and
-                                fuel price sensitivity data let you build tariff bundles that speak to each customer's
-                                actual financial position — improving take-up rates and reducing bad debt.</p>
-                            <p class="text-sm font-bold text-primary mt-4">35% increase in tariff switch uptake</p>
                         </div>
                     </div>
                 </div>
@@ -1096,9 +857,9 @@
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-bold text-neutral mb-4">Cloud Data Marketplaces</h2>
-                    <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Access Cogstrata data through major cloud data
-                        marketplaces. Subscribe to the full attribute set and integrate directly into your data
-                        warehouse environment.</p>
+                    <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Cogstrata data is coming to the major cloud
+                        data marketplaces — subscribe to the full attribute set and use it directly inside your data
+                        warehouse. Listings are rolling out now; register interest for early access.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -1117,7 +878,7 @@
                                 Zero data movement required — the data lands in your existing S3 or Redshift
                                 environment.</p>
                             <div class="card-actions justify-end">
-                                <a class="btn btn-outline btn-primary" href="#" target="_blank">View on AWS</a>
+                                <a class="btn btn-outline btn-primary" href="/contact">Register Interest</a>
                             </div>
                         </div>
                     </div>
@@ -1135,7 +896,7 @@
                             <p class="text-neutral/70">Access live Cogstrata data shares inside Snowflake. Join directly
                                 to your customer tables without leaving your data warehouse.</p>
                             <div class="card-actions justify-end">
-                                <a class="btn btn-outline btn-primary" href="#" target="_blank">View on Snowflake</a>
+                                <a class="btn btn-outline btn-primary" href="/contact">Register Interest</a>
                             </div>
                         </div>
                     </div>
@@ -1153,493 +914,13 @@
                             <p class="text-neutral/70">Integrate Cogstrata data with BigQuery and your broader Google
                                 Cloud analytics stack. Available as a managed dataset.</p>
                             <div class="card-actions justify-end">
-                                <a class="btn btn-outline btn-primary" href="#" target="_blank">View on GCP</a>
+                                <a class="btn btn-outline btn-primary" href="/contact">Register Interest</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Get Started Section -->
-        <div id="get-started" class="bg-base-200 py-20">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-neutral mb-4"
-                        style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Up and running in five steps</h2>
-                    <p class="text-lg text-neutral/70 max-w-2xl mx-auto">Everything your AI agents or analysts need — structured, fresh, and delivered the way you work.</p>
-                </div>
-
-                <!-- Desktop: horizontal step flow -->
-                <div class="hidden lg:block w-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" font-family="'DM Sans', sans-serif" class="w-full h-auto">
-                        <defs>
-                            <!-- Step card shadow -->
-                            <filter id="gsCardShadow" x="-10%" y="-10%" width="120%" height="130%">
-                                <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0002"/>
-                            </filter>
-                            <!-- Connector gradient -->
-                            <linearGradient id="gsConnGrad" x1="0" y1="0" x2="1" y2="0">
-                                <stop offset="0%" stop-color="#3E77FF"/>
-                                <stop offset="50%" stop-color="#534AB7"/>
-                                <stop offset="100%" stop-color="#EF9F27"/>
-                            </linearGradient>
-                            <!-- Arrowhead marker -->
-                            <marker id="gsArrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                                <path d="M0,0 L0,6 L8,3 Z" fill="#534AB7"/>
-                            </marker>
-                            <marker id="gsArrow4" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                                <path d="M0,0 L0,6 L8,3 Z" fill="#EF9F27"/>
-                            </marker>
-                            <!-- Animated pulse -->
-                            <circle id="gsPulse" r="5" fill="#3E77FF" opacity="0.7"/>
-                        </defs>
-
-                        <!-- Subtle grid background -->
-                        <pattern id="gsGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-                            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#534AB720" stroke-width="0.5"/>
-                        </pattern>
-                        <rect width="1200" height="320" fill="url(#gsGrid)" rx="16"/>
-
-                        <!-- Animated pulse — rendered first so cards and text sit on top -->
-                        <path id="gsFullPath" d="M190,120 L276,120 L420,120 L506,120 L650,120 L736,120 L880,120 L966,120" fill="none" stroke="none"/>
-                        <circle r="5" fill="#3E77FF" opacity="0.55">
-                            <animateMotion dur="4s" repeatCount="indefinite" calcMode="linear">
-                                <mpath href="#gsFullPath"/>
-                            </animateMotion>
-                        </circle>
-
-                        <!-- Connector lines (card right-edge → next card left-edge) -->
-                        <!-- Card positions: 48,278,508,738,968  width=140  right-edges: 188,418,648,878,1108 -->
-                        <!-- 1→2: 190 → 276 -->
-                        <line x1="190" y1="120" x2="276" y2="120" stroke="#3E77FF" stroke-width="2" marker-end="url(#gsArrow)"/>
-                        <!-- 2→3: 420 → 506 -->
-                        <line x1="420" y1="120" x2="506" y2="120" stroke="#534AB7" stroke-width="2" marker-end="url(#gsArrow)"/>
-                        <!-- 3→4: 650 → 736 -->
-                        <line x1="650" y1="120" x2="736" y2="120" stroke="#534AB7" stroke-width="2" marker-end="url(#gsArrow4)"/>
-                        <!-- 4→5: 880 → 966 -->
-                        <line x1="880" y1="120" x2="966" y2="120" stroke="#EF9F27" stroke-width="2" marker-end="url(#gsArrow4)"/>
-
-                        <!-- STEP 1: Sign Up -->
-                        <g transform="translate(48, 44)">
-                            <rect width="140" height="168" rx="14" fill="white" filter="url(#gsCardShadow)"/>
-                            <rect width="140" height="168" rx="14" fill="none" stroke="#3E77FF" stroke-width="1.5" opacity="0.3"/>
-                            <!-- Number badge -->
-                            <circle cx="22" cy="22" r="14" fill="#3E77FF"/>
-                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">1</text>
-                            <!-- Icon: user-plus -->
-                            <g transform="translate(98, 8)">
-                                <rect width="30" height="30" rx="8" fill="#3E77FF" opacity="0.1"/>
-                                <circle cx="13" cy="12" r="4" fill="none" stroke="#3E77FF" stroke-width="1.4"/>
-                                <path d="M6 24 C6 20 20 20 20 24" fill="none" stroke="#3E77FF" stroke-width="1.4" stroke-linecap="round"/>
-                                <line x1="23" y1="11" x2="23" y2="17" stroke="#3E77FF" stroke-width="1.4" stroke-linecap="round"/>
-                                <line x1="20" y1="14" x2="26" y2="14" stroke="#3E77FF" stroke-width="1.4" stroke-linecap="round"/>
-                            </g>
-                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Sign Up</text>
-                            <text x="70" y="90" text-anchor="middle" font-size="10" fill="#666">Join the wait list</text>
-                            <text x="70" y="103" text-anchor="middle" font-size="10" fill="#666">or become a pilot</text>
-                            <text x="70" y="116" text-anchor="middle" font-size="10" fill="#666">partner to gain</text>
-                            <text x="70" y="129" text-anchor="middle" font-size="10" fill="#666">early access.</text>
-                        </g>
-
-                        <!-- STEP 2: Choose Delivery -->
-                        <g transform="translate(278, 44)">
-                            <rect width="140" height="168" rx="14" fill="white" filter="url(#gsCardShadow)"/>
-                            <rect width="140" height="168" rx="14" fill="none" stroke="#3E77FF" stroke-width="1.5" opacity="0.3"/>
-                            <circle cx="22" cy="22" r="14" fill="#3E77FF"/>
-                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">2</text>
-                            <!-- Icon: delivery/cloud -->
-                            <g transform="translate(98, 8)">
-                                <rect width="30" height="30" rx="8" fill="#3E77FF" opacity="0.1"/>
-                                <path d="M8 19 C8 16 11 14 14 15 C14 12 18 10 21 13 C23 13 24 15 23 17 L8 19Z" fill="none" stroke="#3E77FF" stroke-width="1.4" stroke-linejoin="round"/>
-                            </g>
-                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Choose Delivery</text>
-                            <!-- Mini delivery option pills -->
-                            <rect x="12" y="82" width="116" height="18" rx="9" fill="#3E77FF" opacity="0.08"/>
-                            <text x="70" y="95" text-anchor="middle" font-size="9.5" fill="#3E77FF" font-weight="500">Marketplace</text>
-                            <rect x="12" y="105" width="116" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
-                            <text x="70" y="118" text-anchor="middle" font-size="9.5" fill="#534AB7" font-weight="500">Direct API</text>
-                            <rect x="12" y="128" width="116" height="18" rx="9" fill="#EF9F27" opacity="0.1"/>
-                            <text x="70" y="141" text-anchor="middle" font-size="9.5" fill="#b37200" font-weight="500">Managed Stitching</text>
-                        </g>
-
-                        <!-- STEP 3: Choose Cadence -->
-                        <g transform="translate(508, 44)">
-                            <rect width="140" height="168" rx="14" fill="white" filter="url(#gsCardShadow)"/>
-                            <rect width="140" height="168" rx="14" fill="none" stroke="#534AB7" stroke-width="1.5" opacity="0.3"/>
-                            <circle cx="22" cy="22" r="14" fill="#534AB7"/>
-                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">3</text>
-                            <!-- Icon: clock -->
-                            <g transform="translate(98, 8)">
-                                <rect width="30" height="30" rx="8" fill="#534AB7" opacity="0.1"/>
-                                <circle cx="15" cy="15" r="7" fill="none" stroke="#534AB7" stroke-width="1.4"/>
-                                <path d="M15 10 L15 15 L18 17" fill="none" stroke="#534AB7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Set Cadence</text>
-                            <!-- Cadence pills -->
-                            <rect x="12" y="82" width="54" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
-                            <text x="39" y="95" text-anchor="middle" font-size="9" fill="#534AB7" font-weight="500">Real-time</text>
-                            <rect x="74" y="82" width="54" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
-                            <text x="101" y="95" text-anchor="middle" font-size="9" fill="#534AB7" font-weight="500">Daily</text>
-                            <rect x="12" y="105" width="54" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
-                            <text x="39" y="118" text-anchor="middle" font-size="9" fill="#534AB7" font-weight="500">Weekly</text>
-                            <rect x="74" y="105" width="54" height="18" rx="9" fill="#534AB7" opacity="0.08"/>
-                            <text x="101" y="118" text-anchor="middle" font-size="9" fill="#534AB7" font-weight="500">Monthly</text>
-                            <text x="70" y="140" text-anchor="middle" font-size="9.5" fill="#888">Always fresh,</text>
-                            <text x="70" y="153" text-anchor="middle" font-size="9.5" fill="#888">on your schedule.</text>
-                        </g>
-
-                        <!-- STEP 4: Connect -->
-                        <g transform="translate(738, 44)">
-                            <rect width="140" height="168" rx="14" fill="white" filter="url(#gsCardShadow)"/>
-                            <rect width="140" height="168" rx="14" fill="none" stroke="#EF9F27" stroke-width="1.5" opacity="0.35"/>
-                            <circle cx="22" cy="22" r="14" fill="#EF9F27"/>
-                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">4</text>
-                            <!-- Icon: plug/connect -->
-                            <g transform="translate(98, 8)">
-                                <rect width="30" height="30" rx="8" fill="#EF9F27" opacity="0.12"/>
-                                <path d="M10 10 L10 16 M20 10 L20 16 M8 16 L22 16 L22 19 C22 22 8 22 8 19 L8 16Z" fill="none" stroke="#EF9F27" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                <line x1="15" y1="22" x2="15" y2="26" stroke="#EF9F27" stroke-width="1.4" stroke-linecap="round"/>
-                            </g>
-                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Connect</text>
-                            <text x="70" y="90" text-anchor="middle" font-size="10" fill="#666">Plug enriched</text>
-                            <text x="70" y="103" text-anchor="middle" font-size="10" fill="#666">data into your</text>
-                            <text x="70" y="116" text-anchor="middle" font-size="10" fill="#666">AI agents, CRM,</text>
-                            <text x="70" y="129" text-anchor="middle" font-size="10" fill="#666">CDP or analytics</text>
-                            <text x="70" y="142" text-anchor="middle" font-size="10" fill="#666">stack.</text>
-                        </g>
-
-                        <!-- STEP 5: Unlock Value -->
-                        <g transform="translate(968, 44)">
-                            <rect width="140" height="168" rx="14" fill="white" filter="url(#gsCardShadow)"/>
-                            <!-- Amber glow border for final step -->
-                            <rect width="140" height="168" rx="14" fill="none" stroke="#EF9F27" stroke-width="2" opacity="0.6"/>
-                            <circle cx="22" cy="22" r="14" fill="#EF9F27"/>
-                            <text x="22" y="27" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="white">5</text>
-                            <!-- Icon: sparkle/star -->
-                            <g transform="translate(98, 8)">
-                                <rect width="30" height="30" rx="8" fill="#EF9F27" opacity="0.15"/>
-                                <path d="M15 6 L16.5 12 L22 12 L17.5 15.5 L19 21 L15 18 L11 21 L12.5 15.5 L8 12 L13.5 12 Z" fill="#EF9F27" opacity="0.8"/>
-                            </g>
-                            <text x="70" y="72" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="13" fill="#1a1a1a">Unlock Value</text>
-                            <text x="70" y="90" text-anchor="middle" font-size="10" fill="#666">Smarter decisions,</text>
-                            <text x="70" y="103" text-anchor="middle" font-size="10" fill="#666">sharper targeting,</text>
-                            <text x="70" y="116" text-anchor="middle" font-size="10" fill="#666">better predictions</text>
-                            <text x="70" y="129" text-anchor="middle" font-size="10" fill="#666">— from day one.</text>
-                        </g>
-
-                        <!-- Bottom label: delivery note -->
-                        <text x="600" y="230" text-anchor="middle" font-size="11" fill="#888" font-style="italic">Data arrives AI-ready — no transformation required on your side.</text>
-                    </svg>
-                </div>
-
-                <!-- Mobile: vertical step cards -->
-                <div class="lg:hidden flex flex-col gap-4">
-                    <!-- Step 1 -->
-                    <div class="flex gap-4 items-start">
-                        <div class="flex flex-col items-center">
-                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#3E77FF; font-family:'Space Grotesk',sans-serif;">1</div>
-                            <div class="w-0.5 flex-1 mt-1" style="background:linear-gradient(to bottom,#3E77FF,#534AB7); min-height:2rem;"></div>
-                        </div>
-                        <div class="card bg-base-100 shadow-sm border border-base-300 flex-1 mb-2">
-                            <div class="card-body py-4 px-5">
-                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Sign Up</h3>
-                                <p class="text-sm text-neutral/70">Join the wait list or become a pilot partner to gain early access.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Step 2 -->
-                    <div class="flex gap-4 items-start">
-                        <div class="flex flex-col items-center">
-                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#3E77FF; font-family:'Space Grotesk',sans-serif;">2</div>
-                            <div class="w-0.5 flex-1 mt-1" style="background:linear-gradient(to bottom,#3E77FF,#534AB7); min-height:2rem;"></div>
-                        </div>
-                        <div class="card bg-base-100 shadow-sm border border-base-300 flex-1 mb-2">
-                            <div class="card-body py-4 px-5">
-                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Choose Delivery Method</h3>
-                                <p class="text-sm text-neutral/70">Access via cloud marketplace, direct API, or let us stitch the data on your behalf.</p>
-                                <div class="flex flex-wrap gap-2 mt-2">
-                                    <span class="badge badge-sm badge-blue">Marketplace</span>
-                                    <span class="badge badge-sm badge-purple">Direct API</span>
-                                    <span class="badge badge-sm" style="background:#EF9F2718;color:#b37200;border:none;">Managed Stitching</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="flex gap-4 items-start">
-                        <div class="flex flex-col items-center">
-                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#534AB7; font-family:'Space Grotesk',sans-serif;">3</div>
-                            <div class="w-0.5 flex-1 mt-1" style="background:linear-gradient(to bottom,#534AB7,#EF9F27); min-height:2rem;"></div>
-                        </div>
-                        <div class="card bg-base-100 shadow-sm border border-base-300 flex-1 mb-2">
-                            <div class="card-body py-4 px-5">
-                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Set Update Cadence</h3>
-                                <p class="text-sm text-neutral/70">Choose how often your data refreshes — always fresh, on your schedule.</p>
-                                <div class="flex flex-wrap gap-2 mt-2">
-                                    <span class="badge badge-sm badge-purple">Real-time</span>
-                                    <span class="badge badge-sm badge-purple">Daily</span>
-                                    <span class="badge badge-sm badge-purple">Weekly</span>
-                                    <span class="badge badge-sm badge-purple">Monthly</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Step 4 -->
-                    <div class="flex gap-4 items-start">
-                        <div class="flex flex-col items-center">
-                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#EF9F27; font-family:'Space Grotesk',sans-serif;">4</div>
-                            <div class="w-0.5 flex-1 mt-1" style="background:#EF9F27; min-height:2rem;"></div>
-                        </div>
-                        <div class="card bg-base-100 shadow-sm border border-base-300 flex-1 mb-2">
-                            <div class="card-body py-4 px-5">
-                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Connect Your Agents or Analysts</h3>
-                                <p class="text-sm text-neutral/70">Plug enriched data directly into your AI agents, CRM, CDP, or analytics stack — no transformation needed.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Step 5 -->
-                    <div class="flex gap-4 items-start">
-                        <div class="flex flex-col items-center">
-                            <div class="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0" style="background:#EF9F27; font-family:'Space Grotesk',sans-serif;">5</div>
-                        </div>
-                        <div class="card bg-base-100 shadow-sm flex-1 mb-2" style="border:2px solid #EF9F2799;">
-                            <div class="card-body py-4 px-5">
-                                <h3 class="font-bold text-neutral text-base" style="font-family:'Space Grotesk',sans-serif;">Unlock Value</h3>
-                                <p class="text-sm text-neutral/70">Smarter decisions, sharper targeting, better predictions — from day one.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CTA nudge -->
-                <div class="text-center mt-12">
-                    <a href="/contact" class="btn btn-primary btn-lg">Join the Wait List</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Testimonials Section -->
-        <div class="bg-base-100 py-20">
-            <div class="container mx-auto px-4">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-bold text-neutral mb-4">What early adopters are saying</h2>
-                    <p class="text-lg text-neutral/70 max-w-xl mx-auto">We're onboarding design partners across key industries. Here's what they're finding.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Value Prop 1 -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="card-body">
-                            <div class="flex items-center gap-3 mb-4">
-                                <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                </svg>
-                                <h3 class="card-title text-neutral text-lg" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">24-Hour Sample Run</h3>
-                            </div>
-                            <p class="text-neutral/70 text-sm">Send us your customer file and receive enriched results within 24 hours. No contract, no commitment. See the data quality for yourself before you invest.</p>
-                            <div class="card-actions mt-4">
-                                <a class="btn btn-outline btn-primary btn-sm" href="/contact">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Value Prop 2 -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="card-body">
-                            <div class="flex items-center gap-3 mb-4">
-                                <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
-                                </svg>
-                                <h3 class="card-title text-neutral text-lg" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">Live Data, Not Annual Snapshots</h3>
-                            </div>
-                            <p class="text-neutral/70 text-sm">Legacy providers like Experian Mosaic and CACI Acorn refresh annually. Cogstrata recalibrates continuously against real-time macro signals, so your decisions are based on today's reality.</p>
-                        </div>
-                    </div>
-
-                    <!-- Value Prop 3 -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="card-body">
-                            <div class="flex items-center gap-3 mb-4">
-                                <svg class="w-10 h-10 text-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
-                                </svg>
-                                <h3 class="card-title text-neutral text-lg" style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">No PII. Fully Compliant.</h3>
-                            </div>
-                            <p class="text-neutral/70 text-sm">All data is aggregated at output area level with zero individual PII. GDPR-ready, DPA 2018 compliant, SOC 2 architecture. Built for regulated industries from day one.</p>
-                        </div>
-                    </div>
-                </div>
-
-<div class="text-center mt-12">
-                    <p class="text-neutral/70 mb-4">Trusted by early adopters across financial services, retail, and insurance</p>
-                    <div class="flex flex-wrap justify-center gap-8">
-                        <div class="text-center">
-                            <p class="text-2xl font-bold text-primary">30 days</p>
-                            <p class="text-xs text-neutral/70">Average time to value</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-2xl font-bold text-primary">No PII</p>
-                            <p class="text-xs text-neutral/70">Fully GDPR compliant</p>
-                        </div>
-                        <div class="text-center">
-                            <p class="text-2xl font-bold text-primary">24hr</p>
-                            <p class="text-xs text-neutral/70">Free sample turnaround</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Data Preview Section -->
-        <section id="data-preview" class="bg-base-100 py-20">
-            <div class="container mx-auto px-4">
-
-                <!-- Section heading -->
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold text-neutral mb-4"
-                        style="font-family: 'Space Grotesk', sans-serif; font-weight: 700;">
-                        Data You Can Reason With
-                    </h2>
-                </div>
-
-                <!-- Row 1: explanatory text + dashboard card -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-
-                    <!-- Text -->
-                    <div>
-                        <p class="text-neutral/70 mb-4">
-                            Each postcode maps to one of 24 groups, identified by a three-part label drawn from a fixed vocabulary. No codebook required — the label <em>is</em> the description.
-                        </p>
-                        <p class="text-neutral/70 mb-6">
-                            Alongside the label, every record includes the supergroup, a plain-English descriptor, structured trait tags for filtering and segmentation, and a pre-written AI summary ready for direct injection into an agent's context window.
-                        </p>
-                        <div class="flex flex-wrap items-center gap-2 text-sm font-semibold"
-                             style="font-family:'Space Grotesk',sans-serif;">
-                            <span class="px-3 py-1 rounded-full" style="background:#3E77FF18;color:#3E77FF;border:1.5px solid #3E77FF44;">Economic Position</span>
-                            <span class="text-neutral/30 text-xl select-none">&middot;</span>
-                            <span class="px-3 py-1 rounded-full facet-pill-purple">Household Profile</span>
-                            <span class="text-neutral/30 text-xl select-none">&middot;</span>
-                            <span class="px-3 py-1 rounded-full" style="background:#EF9F2718;color:#C47A00;border:1.5px solid #EF9F2744;">Setting</span>
-                        </div>
-                    </div>
-
-                    <!-- Dashboard card -->
-                    <div class="flex justify-center lg:justify-end">
-                        <div class="card bg-base-200 shadow-md border border-base-300 w-full max-w-sm overflow-hidden">
-                            <div class="h-1.5 w-full" style="background:linear-gradient(to right,#3E77FF,#534AB7,#EF9F27);"></div>
-                            <div class="card-body py-5 px-6">
-                                <p class="text-xs text-neutral/50 uppercase tracking-widest mb-1"
-                                   style="font-family:'DM Sans',sans-serif;font-weight:300;">GU21 &mdash; Woking, Surrey</p>
-                                <div class="flex items-center gap-2 mb-1">
-                                    <span class="badge badge-sm font-bold"
-                                          style="background:#3E77FF;color:#fff;border:none;font-family:'Space Grotesk',sans-serif;">PF</span>
-                                    <span class="text-base font-bold text-neutral tracking-tight"
-                                          style="font-family:'Space Grotesk',sans-serif;font-weight:700;">PREMIER FAMILIES</span>
-                                </div>
-                                <p class="text-sm font-semibold mb-3 convention-name">
-                                    Affluent &middot; Working Families &middot; Suburban
-                                </p>
-                                <div class="flex flex-wrap gap-1.5 mb-3">
-                                    <span class="badge badge-sm badge-blue">dual-income</span>
-                                    <span class="badge badge-sm badge-blue">professional</span>
-                                    <span class="badge badge-sm badge-blue">mortgage-active</span>
-                                    <span class="badge badge-sm badge-purple">school-age-children</span>
-                                    <span class="badge badge-sm badge-purple">high-qualifications</span>
-                                </div>
-                                <div class="flex items-center gap-2 mt-1">
-                                    <div class="flex-1 h-1.5 rounded-full bg-base-300 overflow-hidden">
-                                        <div class="h-full rounded-full" style="width:91%;background:linear-gradient(to right,#3E77FF,#534AB7);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold text-neutral/60"
-                                          style="font-family:'Space Grotesk',sans-serif;">91% confidence</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Row 2: three facet cards -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-
-                    <!-- Economic Position -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="h-1 w-full rounded-t-2xl" style="background:#3E77FF;"></div>
-                        <div class="card-body py-5 px-5">
-                            <div class="flex items-center gap-2 mb-2">
-                                <h3 class="font-bold text-neutral"
-                                    style="font-family:'Space Grotesk',sans-serif;">Economic Position</h3>
-                                <span class="badge badge-xs" style="background:#3E77FF;color:#fff;border:none;">5 tiers</span>
-                            </div>
-                            <p class="text-sm text-neutral/60 mb-4">Describes the financial standing of the area — from top-decile affluence through to high deprivation and benefit dependency.</p>
-                            <div class="flex flex-col gap-1.5">
-                                <span class="badge badge-sm w-full justify-start badge-blue">Affluent</span>
-                                <span class="badge badge-sm w-full justify-start badge-blue">Comfortable</span>
-                                <span class="badge badge-sm w-full justify-start badge-blue">Moderate</span>
-                                <span class="badge badge-sm w-full justify-start badge-purple">Squeezed</span>
-                                <span class="badge badge-sm w-full justify-start badge-purple">Supported</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Household Profile -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="h-1 w-full rounded-t-2xl" style="background:#534AB7;"></div>
-                        <div class="card-body py-5 px-5">
-                            <div class="flex items-center gap-2 mb-2">
-                                <h3 class="font-bold text-neutral"
-                                    style="font-family:'Space Grotesk',sans-serif;">Household Profile</h3>
-                                <span class="badge badge-xs" style="background:#534AB7;color:#fff;border:none;">6 types</span>
-                            </div>
-                            <p class="text-sm text-neutral/60 mb-4">Describes who lives there — age, household composition, and life stage, from young renters through to settled retirees.</p>
-                            <div class="flex flex-col gap-1.5">
-                                <span class="badge badge-sm w-full justify-start badge-purple">Young Singles</span>
-                                <span class="badge badge-sm w-full justify-start badge-purple">Young Families</span>
-                                <span class="badge badge-sm w-full justify-start badge-purple">Working Families</span>
-                                <span class="badge badge-sm w-full justify-start badge-purple">Established</span>
-                                <span class="badge badge-sm w-full justify-start badge-purple">Retired</span>
-                                <span class="badge badge-sm w-full justify-start badge-purple">Mixed</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Setting -->
-                    <div class="card bg-base-200 shadow-sm border border-base-300">
-                        <div class="h-1 w-full rounded-t-2xl" style="background:#EF9F27;"></div>
-                        <div class="card-body py-5 px-5">
-                            <div class="flex items-center gap-2 mb-2">
-                                <h3 class="font-bold text-neutral"
-                                    style="font-family:'Space Grotesk',sans-serif;">Setting</h3>
-                                <span class="badge badge-xs" style="background:#C47A00;color:#fff;border:none;">7 types</span>
-                            </div>
-                            <p class="text-sm text-neutral/60 mb-4">Describes the physical environment and geography — from dense city cores and inner-city estates through to rural villages and dispersed countryside settlements.</p>
-                            <div class="flex flex-col gap-1.5">
-                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2710;color:#C47A00;border:none;">City Core</span>
-                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2712;color:#C47A00;border:none;">Inner City</span>
-                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2714;color:#C47A00;border:none;">Suburban</span>
-                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2716;color:#C47A00;border:none;">Town</span>
-                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F2718;color:#C47A00;border:none;">Semi-Rural</span>
-                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F271A;color:#C47A00;border:none;">Rural</span>
-                                <span class="badge badge-sm w-full justify-start" style="background:#EF9F271C;color:#C47A00;border:none;">Estate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- CTA -->
-                <div class="text-center">
-                    <a href="/data" class="btn btn-primary btn-lg">
-                        Explore all 24 groups
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
-
-            </div>
-        </section>
 
         <!-- FAQ Section -->
         <div id="faq" class="bg-base-200 py-20">
@@ -1655,10 +936,11 @@
                         <div class="collapse-title text-lg font-semibold text-neutral">How is Cogstrata different from
                             other data providers?</div>
                         <div class="collapse-content">
-                            <p class="text-neutral/70">Most providers sell static annual snapshots. Cogstrata uses AI to
-                                continuously re-process signals monthly, reflecting current market reality. We also
-                                include 60+ exclusive attributes (OAC classification, deprivation scores, food desert
-                                flags) unavailable anywhere else.</p>
+                            <p class="text-neutral/70">Most providers sell static annual snapshots. Cogstrata
+                                recalibrates continuously against live macro signals — inflation, rates, employment,
+                                energy prices — so profiles reflect current reality. Our attribute set also includes
+                                markers legacy products don't carry, such as deprivation scores, food-desert flags,
+                                banking-access and crime-risk indicators, derived from curated open data.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border border-base-300">
@@ -1684,9 +966,8 @@
                         <input type="radio" name="faq-accordion" />
                         <div class="collapse-title text-lg font-semibold text-neutral">Is the data GDPR compliant?</div>
                         <div class="collapse-content">
-                            <p class="text-neutral/70">Yes. All data is aggregated at location/output area level — no
-                                individual PII. We hold no personal data. Fully compliant with UK GDPR, Data Protection
-                                Act 2018, and US privacy frameworks.</p>
+                            <p class="text-neutral/70">Yes. All data is aggregated at area level — no
+                                individual PII. We hold no personal data. Fully compliant with GDPR and equivalent regional privacy frameworks.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-arrow join-item border border-base-300">
@@ -1751,14 +1032,14 @@
             <!-- Brand override: DM Sans 300, uppercase, wide-tracked tagline -->
             <p
                 style="font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 3px; text-transform: uppercase; opacity: 0.6;">
-                Agent-ready demographic intelligence</p>
+                Signals your first-party data can't see</p>
             <nav class="flex flex-wrap justify-center gap-4">
                 <a class="link link-hover" href="#features">Features</a>
                 <a class="link link-hover" href="#use-cases">Use Cases</a>
                 <a class="link link-hover" href="#pricing">Pricing</a>
-                <a class="link link-hover" href="#get-started">Get Started</a>
-                <a class="link link-hover" href="#faq">FAQ</a>
                 <a class="link link-hover" href="/data">Data</a>
+                <a class="link link-hover" href="/sample">Free Sample</a>
+                <a class="link link-hover" href="/faq">FAQ</a>
                 <a class="link link-hover" href="/blog/">Blog</a>
                 <a class="link link-hover" href="/contact">Contact</a>
             </nav>
