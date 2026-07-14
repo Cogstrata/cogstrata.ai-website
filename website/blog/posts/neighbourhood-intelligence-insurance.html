@@ -52,7 +52,7 @@
       "description": "Insurers have used postcode data for decades, but most are only scratching the surface. Discover how richer neighbourhood data transforms underwriting beyond crime maps and flood zones.",
       "url": "https://cogstrata.com/blog/posts/neighbourhood-intelligence-insurance",
       "datePublished": "2026-05-12T00:00:00+00:00",
-      "dateModified": "2026-05-12T00:00:00+00:00",
+      "dateModified": "2026-07-13T00:00:00+00:00",
       "author": { "@type": "Organization", "name": "Cogstrata", "url": "https://cogstrata.com" },
       "publisher": { "@type": "Organization", "name": "Cogstrata", "logo": { "@type": "ImageObject", "url": "https://cogstrata.com/favicon.svg" } },
       "image": "https://cogstrata.com/assets/blog/neighbourhood-intelligence-insurance.png",
@@ -148,8 +148,13 @@
         <div class="prose max-w-none text-neutral/80 space-y-6">
             <p>Insurers have used postcode data for decades. It's one of the most powerful rating factors in personal lines — home, motor, life. But most insurers are still working with a thin slice of what postcode-level data can reveal. Crime indices, flood risk, subsidence scores — useful signals, but they describe the physical environment of an area, not the financial character of the people who live there.</p>
 
-            <p>The financial resilience gap is where the real insight lives. An area's IMD income deprivation rate is a stronger predictor of late payment, policy lapse, and claims escalation than flood zone alone. DWP Universal Credit claimant density correlates with the likelihood of under-insurance — customers selecting the minimum viable cover to reduce premiums. Housing tenure mix — the proportion of outright owners versus social renters versus mortgaged households — reveals whether residents have a significant financial stake in the properties they're insuring. These signals operate independently of traditional physical risk factors, and they're invisible to most underwriting models today.</p>
-
+            <h2 class="text-2xl font-bold text-neutral mt-12 mb-4">The financial resilience gap that physical risk scores miss</h2>
+            <p>An area's IMD income deprivation rate is a stronger predictor of late payment, policy lapse, and claims escalation than flood zone alone. Three signals in particular operate independently of traditional physical risk factors, and they're invisible to most underwriting models today:</p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li><strong>IMD income deprivation rate</strong> — predicts late payment, policy lapse, and claims escalation.</li>
+                <li><strong>DWP Universal Credit claimant density</strong> — correlates with under-insurance, where customers select minimum viable cover to reduce premiums.</li>
+                <li><strong>Housing tenure mix</strong> — the proportion of outright owners versus social renters versus mortgaged households reveals whether residents have a significant financial stake in the properties they're insuring.</li>
+            </ul>
             <p>This is where Cogstrata's neighbourhood intelligence reframes the conversation. Rather than limiting postcode analysis to the physical and criminal environment, neighbourhood-level demographic signals capture the financial and social composition of the area. The 5,000+ attributes in Cogstrata's dataset — including income deprivation, benefit claimant counts, housing tenure, employment profile, and household composition — combine to create a far richer picture of area-level risk than traditional sources can provide.</p>
 
             <div class="not-prose my-12 p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/10">
@@ -162,11 +167,14 @@
                 </div>
             </div>
 
+            <h2 class="text-2xl font-bold text-neutral mt-12 mb-4">Underwriting on area data without an Equality Act exposure</h2>
             <p>Protected characteristics and GDPR compliance is a constant tension in insurance underwriting. Insurers operate under strict Equality Act constraints around the use of data that proxies for race, religion, disability, or other protected characteristics. One structural advantage of area-level data over individual behavioural or demographic data is that it operates at a level of aggregation that avoids this issue — Cogstrata's attributes describe neighbourhoods, not individuals, and are derived entirely from administrative and census data rather than inferred from individual behaviour. This means underwriters can confidently use these signals without creating a legal exposure around protected characteristic inference.</p>
 
+            <h2 class="text-2xl font-bold text-neutral mt-12 mb-4">Turning 24 geodemographic groups into risk tiers</h2>
             <p>Cogstrata's 8 supergroup and 24 group structure maps directly to meaningful risk tiers. "Affluent Commuters" — characterised by high income, outright ownership, and low deprivation — represent very different risk profiles from "Struggling Estates" and "High-Need Neighbourhoods" — marked by high Universal Credit dependency, elevated crime, and poor financial resilience. Insurers can use these groups as a ready-made segmentation layer to audit their existing book, identify cross-subsidisation, or build more granular risk scores. The groups function as a classification lingua franca: a simple postcode lookup returns not just a risk score, but a behavioural cluster with well-defined traits.</p>
 
-            <p>The freshness angle matters more than many realise. Traditional risk datasets from the ONS, OS, or commercial providers update infrequently — many are refreshed annually or less often. Cogstrata's attributes — including DWP claimant counts, EPC energy efficiency ratings, and crime signals — update continuously, meaning insurers working with Cogstrata data are rating risk against how a neighbourhood looks today, not how it looked twelve months ago. In a rapidly shifting economic environment, that currency is a genuine competitive edge. For a deeper dive into how area-level data operates within privacy and regulatory constraints, see our post on the postcode privacy advantage; for applications across financial services more broadly, explore neighbourhood intelligence in credit and lending.</p>
+            <h2 class="text-2xl font-bold text-neutral mt-12 mb-4">Why annual refresh cycles leave risk models rating a neighbourhood that no longer exists</h2>
+            <p>Traditional risk datasets from the ONS, OS, or commercial providers update infrequently — many are refreshed annually or less often. Cogstrata's attributes — including DWP claimant counts, EPC energy efficiency ratings, and crime signals — update continuously, meaning insurers working with Cogstrata data are rating risk against how a neighbourhood looks today, not how it looked twelve months ago. In a rapidly shifting economic environment, that currency is a genuine competitive edge. For a deeper dive into how area-level data operates within privacy and regulatory constraints, see our post on the postcode privacy advantage; for applications across financial services more broadly, explore neighbourhood intelligence in credit and lending.</p>
         </div>
 
         <div class="mt-12 p-6 bg-base-200 rounded-xl border border-base-300">
